@@ -7,99 +7,99 @@ import java.util.Date;
  */
 public class Stu {
     /** 考生ID*/
-    private  Integer s_Id;
+    private  Integer sId;
     /** 考生编号*/
-    private  String s_No;
+    private  String sNo;
     /** 密码*/
-    private   String s_Password;
+    private   String sPassword;
     /** 考生名字*/
-    private  String s_name;
+    private  String sName;
     /** 身份证号码*/
-    private  String  s_Idcard;
+    private  String  sIdcard;
     /** 性别*/
-    private  Integer s_Sex;
+    private  Integer sSex;
     /** 出生年月*/
-    private Date s_Birthday;
-
-    public Stu(Integer s_Id, String s_No, String s_Password, String s_name, String s_Idcard, Integer s_Sex, Date s_Birthday) {
-        this.s_Id = s_Id;
-        this.s_No = s_No;
-        this.s_Password = s_Password;
-        this.s_name = s_name;
-        this.s_Idcard = s_Idcard;
-        this.s_Sex = s_Sex;
-        this.s_Birthday = s_Birthday;
-    }
+    private Date sBirthday;
 
     public Stu() {
     }
 
-    public Integer getS_Id() {
-        return s_Id;
+    public Stu(Integer sId, String sNo, String sPassword, String sName, String sIdcard, Integer sSex, Date sBirthday) {
+        this.sId = sId;
+        this.sNo = sNo;
+        this.sPassword = sPassword;
+        this.sName = sName;
+        this.sIdcard = sIdcard;
+        this.sSex = sSex;
+        this.sBirthday = sBirthday;
     }
 
-    public void setS_Id(Integer s_Id) {
-        this.s_Id = s_Id;
+    public Integer getsId() {
+        return sId;
     }
 
-    public String getS_No() {
-        return s_No;
+    public void setsId(Integer sId) {
+        this.sId = sId;
     }
 
-    public void setS_No(String s_No) {
-        this.s_No = s_No;
+    public String getsNo() {
+        return sNo;
     }
 
-    public String getS_Password() {
-        return s_Password;
+    public void setsNo(String sNo) {
+        this.sNo = sNo;
     }
 
-    public void setS_Password(String s_Password) {
-        this.s_Password = s_Password;
+    public String getsPassword() {
+        return sPassword;
     }
 
-    public String getS_name() {
-        return s_name;
+    public void setsPassword(String sPassword) {
+        this.sPassword = sPassword;
     }
 
-    public void setS_name(String s_name) {
-        this.s_name = s_name;
+    public String getsName() {
+        return sName;
     }
 
-    public String getS_Idcard() {
-        return s_Idcard;
+    public void setsName(String sName) {
+        this.sName = sName;
     }
 
-    public void setS_Idcard(String s_Idcard) {
-        this.s_Idcard = s_Idcard;
+    public String getsIdcard() {
+        return sIdcard;
     }
 
-    public Integer getS_Sex() {
-        return s_Sex;
+    public void setsIdcard(String sIdcard) {
+        this.sIdcard = sIdcard;
     }
 
-    public void setS_Sex(Integer s_Sex) {
-        this.s_Sex = s_Sex;
+    public Integer getsSex() {
+        return sSex;
     }
 
-    public Date getS_Birthday() {
-        return s_Birthday;
+    public void setsSex(Integer sSex) {
+        this.sSex = sSex;
     }
 
-    public void setS_Birthday(Date s_Birthday) {
-        this.s_Birthday = s_Birthday;
+    public Date getsBirthday() {
+        return sBirthday;
+    }
+
+    public void setsBirthday(Date sBirthday) {
+        this.sBirthday = sBirthday;
     }
 
     @Override
     public String toString() {
-        return "Student{" +
-                "s_Id=" + s_Id +
-                ", s_No='" + s_No + '\'' +
-                ", s_Password='" + s_Password + '\'' +
-                ", s_name='" + s_name + '\'' +
-                ", s_Idcard='" + s_Idcard + '\'' +
-                ", s_Sex=" + s_Sex +
-                ", s_Birthday=" + s_Birthday +
+        return "Stu{" +
+                "sId=" + sId +
+                ", sNo='" + sNo + '\'' +
+                ", sPassword='" + sPassword + '\'' +
+                ", sName='" + sName + '\'' +
+                ", sIdcard='" + sIdcard + '\'' +
+                ", sSex=" + sSex +
+                ", sBirthday=" + sBirthday +
                 '}';
     }
 }

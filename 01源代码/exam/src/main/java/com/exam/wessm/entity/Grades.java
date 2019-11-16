@@ -4,35 +4,35 @@ package com.exam.wessm.entity;
  */
 public class Grades {
     /** 考生ID*/
-    private  Integer s_Id;
+    private  Integer sId;
     /** 考试id*/
-    private  Integer e_Id;
+    private  Integer eId;
     /** 成绩*/
     private   String grade;
 
     public Grades() {
     }
 
-    public Grades(Integer s_Id, Integer e_Id, String grade) {
-        this.s_Id = s_Id;
-        this.e_Id = e_Id;
+    public Grades(Integer sId, Integer eId, String grade) {
+        this.sId = sId;
+        this.eId = eId;
         this.grade = grade;
     }
 
-    public Integer getS_Id() {
-        return s_Id;
+    public Integer getsId() {
+        return sId;
     }
 
-    public void setS_Id(Integer s_Id) {
-        this.s_Id = s_Id;
+    public void setsId(Integer sId) {
+        this.sId = sId;
     }
 
-    public Integer getE_Id() {
-        return e_Id;
+    public Integer geteId() {
+        return eId;
     }
 
-    public void setE_Id(Integer e_Id) {
-        this.e_Id = e_Id;
+    public void seteId(Integer eId) {
+        this.eId = eId;
     }
 
     public String getGrade() {
@@ -41,5 +41,14 @@ public class Grades {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+
+    @Override
+    public String toString() {
+        return "Grades{" +
+                "sId=" + sId +
+                ", eId=" + eId +
+                ", grade='" + grade + '\'' +
+                '}';
     }
 }
