@@ -1,4 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper>
+    <!-- 查询所有考试成员-->
+    <select id="queryExaminers" resultType="examiners">
+        <![CDATA[
+        select
+            ex_id as exId,
+            s_id as sId,
+            e_id as eId,
+            zkzh as examCard,
+        from
+            Examiners
+        ]]>
+    </select>
+    <!-- 根据考试成员ID加载考试成员信息-->
+    <select id="getExaminers"  resultType="examiners" parameterType="int">
+        <![CDATA[
+        select
+            ex_id as exId,
+            s_id as sId,
+            e_id as eId,
+            zkzh as examCard,
+        from
+            Examiners
+        where ex_id=#{ex_id}
+       ]]>
+    </select>
+    <!-- 添加考试成员-->
+    <insert id="insertExaminers" parameterType="examiners">
+      <![CDATA[
+        insert into Examiners (
+            s_id as sId,
+            e_id as eId,
+            zkzh as examCard,
+        )
+        values
+        (
+            #{sId},
+            #{eId},
+            #{examCard}
+         )
+      ]]>
+    </insert>
+    <!-- 根据考试成员ID删除考试成员记录-->
+    <delete id="deleteExaminers" parameterType="int">
+        <![CDATA[
+        delete from Examiners where ex_id=#{ex_id}
+      ]]>
+    </delete>
+    <!-- 根据考试成员ID修改考试成员信息-->
+    <update id="updateExaminers" parameterType="emp">
+    <![CDATA[
+        update  Examiners
+        set     s_id=#{sId},
+                e_id=#{eId},
+                zkzh=#{examCard}
+        where ex_id=#{exId}
+     ]]>
+    </update>
 </mapper>
