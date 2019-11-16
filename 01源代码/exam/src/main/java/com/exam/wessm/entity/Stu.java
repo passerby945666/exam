@@ -5,7 +5,7 @@ import java.util.Date;
 /***
  * 考生信息实体类
  */
-public class Student {
+public class Stu {
     /** 考生ID*/
     private  Integer s_Id;
     /** 考生编号*/
@@ -21,7 +21,7 @@ public class Student {
     /** 出生年月*/
     private Date s_Birthday;
 
-    public Student(Integer s_Id, String s_No, String s_Password, String s_name, String s_Idcard, Integer s_Sex, Date s_Birthday) {
+    public Stu(Integer s_Id, String s_No, String s_Password, String s_name, String s_Idcard, Integer s_Sex, Date s_Birthday) {
         this.s_Id = s_Id;
         this.s_No = s_No;
         this.s_Password = s_Password;
@@ -31,7 +31,7 @@ public class Student {
         this.s_Birthday = s_Birthday;
     }
 
-    public Student() {
+    public Stu() {
     }
 
     public Integer getS_Id() {
