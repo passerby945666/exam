@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
+<mapper namespace="com.exam.wessm.mapper.StuMapper">
+    <!--考生注册-->
+    <insert id="registerStu" parameterType="stu">
+    <![CDATA[
+      insert into stu(s_id, s_no ,s_password,s_name,s_idcard,s_sex,s_birthday)
+      values(#{sId},#{sNo},#{sPassword},#{sName},#{sIdcard},#{sSex},#{sBirthday})
+    ]]>
+    </insert>
+    <!-- 考生登录-->
+    <select id="findNoAndPass" resultType="stu" parameterType="int">
+        <![CDATA[
+        select
+            s_no  as  sNo,
+           s_password as sPassword,
+        from
+            stu
+        where s_no=#{s_no}and s_password=#{s_password}
+     ]]>
 </mapper>
