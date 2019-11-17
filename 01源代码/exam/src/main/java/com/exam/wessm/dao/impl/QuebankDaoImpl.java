@@ -4,6 +4,7 @@ package com.exam.wessm.dao.impl;
 import com.exam.wessm.dao.IQuebankDao;
 import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Quebank;
+import com.exam.wessm.entity.Subject;
 
 import java.util.List;
 
@@ -14,12 +15,17 @@ public class QuebankDaoImpl implements IQuebankDao {
     }
 
     @Override
-    public Quebank getTm(Quebank qt) {
+    public Quebank getQuebank(Quebank quebank) {
         return null;
     }
 
     @Override
-    public Quebank getQuebank(Quebank km) {
+    public Quebank getTm(Quebank quebank) {
+        return null;
+    }
+
+    @Override
+    public Quebank getQuebank(Subject subject) {
         return null;
     }
 
@@ -29,7 +35,7 @@ public class QuebankDaoImpl implements IQuebankDao {
     }
 
     @Override
-    public int insertQuebank(Quebank tm) {
+    public int insertQuebank(Quebank quebank) {
         return 0;
     }
 
@@ -39,7 +45,7 @@ public class QuebankDaoImpl implements IQuebankDao {
     }
 
     @Override
-    public int updateQuebank(Quebank tm) {
+    public int updateQuebank(Quebank quebank) {
         return 0;
     }
 }
