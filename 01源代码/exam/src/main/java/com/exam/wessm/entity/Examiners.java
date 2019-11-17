@@ -7,35 +7,32 @@ public class Examiners {
     /** 成员ID*/
     private  Integer exId;
     /** 准考证号*/
-    private  Integer examCard;
+    private  String examCard;
     /** 考生id*/
     private  Integer sId;
     /** 考试id*/
     private  Integer eId;
 
-    public Examiners() {
+    public Integer getExId() {
+        return exId;
     }
 
-    public Examiners(Integer exId, Integer examCard, Integer sId, Integer eId) {
+    public Examiners(Integer exId, String examCard, Integer sId, Integer eId) {
         this.exId = exId;
         this.examCard = examCard;
         this.sId = sId;
         this.eId = eId;
     }
 
-    public Integer getExId() {
-        return exId;
-    }
-
     public void setExId(Integer exId) {
         this.exId = exId;
     }
 
-    public Integer getExamCard() {
+    public String getExamCard() {
         return examCard;
     }
 
-    public void setExamCard(Integer examCard) {
+    public void setExamCard(String examCard) {
         this.examCard = examCard;
     }
 
@@ -59,7 +56,7 @@ public class Examiners {
     public String toString() {
         return "Examiners{" +
                 "exId=" + exId +
-                ", examCard=" + examCard +
+                ", examCard='" + examCard + '\'' +
                 ", sId=" + sId +
                 ", eId=" + eId +
                 '}';

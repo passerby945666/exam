@@ -9,6 +9,32 @@ import java.util.List;
  *
  */
 public interface IStuDao {
+
+    /**
+     * 考生注册
+     *
+     * @param stu
+     * @return
+     */
+
+    int registerStu(Stu stu);
+
+    /**
+     * 考生通过账号和密码登录
+     * @param sNo
+     * @param sPassword
+     * @return
+     */
+
+    Stu findNoAndPass(String sNo,String sPassword );
+
+    /**
+     * 根据考生ID删除考生
+     * @param    sId  ID号
+     * @return
+     */
+    int deleteStu(int sId);
+
     /**
      * 查询考生信息
      * @return
@@ -18,25 +44,11 @@ public interface IStuDao {
     /**
      * 根据ID加载考生信息
      *
-     * @param    sId  ID号
+     * @param    sId
      * @return
      */
     Stu getStu(int sId);
 
-    /**
-     * 添加考生
-     *
-     * @param stu
-     * @return
-     */
-    int insertStu(Stu stu);
-
-    /**
-     * 根据考生ID删除考生
-     * @param    sId  ID号
-     * @return
-     */
-    int deleteStu(int sId);
 
     /**
      * 修改考生信息
