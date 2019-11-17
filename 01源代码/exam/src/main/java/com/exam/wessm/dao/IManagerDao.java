@@ -1,6 +1,5 @@
 package com.exam.wessm.dao;
 
-import com.exam.wessm.entity.Km;
 import com.exam.wessm.entity.Manager;
 
 import java.util.List;

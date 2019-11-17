@@ -1,9 +1,8 @@
 package com.exam.wessm.mapper;
 
 import com.exam.wessm.entity.Exam;
-import com.exam.wessm.entity.Km;
 import com.exam.wessm.entity.Manager;
-import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface ExamMapper {
