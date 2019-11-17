@@ -2,37 +2,42 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper>
     <!-- 查询所有考试成员-->
-    <select id="queryExaminers" resultType="examiners">
+    <select id="queryExaminers" resultType="java.util.Map">
         <![CDATA[
         select
-            ex_id as exId,
-            s_id as sId,
-            e_id as eId,
-            zkzh as examCard,
+            e_no as eNo
+            e_name as eName,
+            s_no as sNo,
+            s_name as sName,
+            examCard
         from
-            Examiners
+            (examiners left join exam on examiners.e_id=exam.e_id)
+        left join stu on examiners.s_id=stu.s_id
         ]]>
     </select>
-    <!-- 根据考试成员ID加载考试成员信息-->
-    <select id="getExaminers"  resultType="examiners" parameterType="int">
+    <!-- 根据考试ID加载考试成员信息-->
+    <select id="getExaminers"  resultType="java.util.Map" parameterType="String">
         <![CDATA[
         select
-            ex_id as exId,
-            s_id as sId,
-            e_id as eId,
-            zkzh as examCard,
+            e_no as eNo
+            e_name as eName,
+            s_no as sNo,
+            s_name as sName,
+            examCard
         from
-            Examiners
-        where ex_id=#{ex_id}
+            (examiners left join exam on examiners.e_id=exam.e_id)
+            left join stu on examiners.s_id=stu.s_id
+        where
+            e_no=#{examiners} or e_name like #{examiners}
        ]]>
     </select>
     <!-- 添加考试成员-->
     <insert id="insertExaminers" parameterType="examiners">
       <![CDATA[
-        insert into Examiners (
+        insert into examiners (
             s_id as sId,
             e_id as eId,
-            zkzh as examCard,
+            examCard
         )
         values
         (
@@ -45,18 +50,18 @@
     <!-- 根据考试成员ID删除考试成员记录-->
     <delete id="deleteExaminers" parameterType="int">
         <![CDATA[
-        delete from Examiners
+        delete from examiners
         where ex_id=#{ex_id}
       ]]>
     </delete>
     <!-- 根据考试成员ID修改考试成员信息-->
     <update id="updateExaminers" parameterType="examiners">
     <![CDATA[
-        update  Examiners
-        set     s_id=#{s_id},
-                e_id=#{e_id},
-                zkzh=#{examCard}
-        where ex_id=#{ex_id}
+        update  examiners
+        set     s_id=#{sId},
+                e_id=#{eId},
+                examCard=#{examCard}
+        where   ex_id=#{exId}
      ]]>
     </update>
 </mapper>

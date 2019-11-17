@@ -3,10 +3,11 @@ package com.exam.wessm.dao;
 
 
 import com.exam.wessm.entity.Manager;
-import com.exam.wessm.entity.Qt;
 import com.exam.wessm.entity.Quebank;
+import com.exam.wessm.entity.Subject;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IQuebankDao {
     /**
@@ -21,7 +22,7 @@ public interface IQuebankDao {
      * @param
      * @return
      */
-    Quebank getQuebank(Quebank tm);
+    List<Map> getQuebank(String quebank);
 
     /**
      * 根据类型加载题库信息
@@ -29,7 +30,7 @@ public interface IQuebankDao {
      * @param
      * @return
      */
-    Quebank getTm(Quebank qt);
+    Quebank getTm(Quebank quebank);
 
     /**
      * 根据科目编号或名称加载题库信息
@@ -37,7 +38,7 @@ public interface IQuebankDao {
      * @param
      * @return
      */
-    Quebank getQuebank(Quebank km);
+    Quebank getQuebank(Subject subject);
 
     /**
      * 根据负责人编号或名字加载题库信息
@@ -50,10 +51,10 @@ public interface IQuebankDao {
     /**
      * 添加题库信息
      *
-     * @param tm
+     * @param
      * @return
      */
-    int insertQuebank(Quebank tm);
+    int insertQuebank(Quebank quebank);
 
     /**
      * 根据题库id删除题库信息
@@ -64,8 +65,8 @@ public interface IQuebankDao {
 
     /**
      * 修改题库信息
-     * @param tm
+     * @param
      * @return
      */
-    int updateQuebank(Quebank tm);
+    int updateQuebank(Quebank quebank);
 }

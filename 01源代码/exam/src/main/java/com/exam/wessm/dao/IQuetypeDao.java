@@ -1,6 +1,6 @@
 package com.exam.wessm.dao;
 
-import com.exam.wessm.entity.Qt;
+
 import com.exam.wessm.entity.Quetype;
 
 import java.util.List;
@@ -27,7 +27,7 @@ public interface IQuetypeDao {
     /**
      * 添加题型
      *
-     * @param qt
+     * @param
      * @return
      */
     int insertQt(Quetype quetype);

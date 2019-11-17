@@ -2,8 +2,10 @@ package com.exam.wessm.dao;
 
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Manager;
+import com.exam.wessm.entity.Subject;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  *   考试Dao接口
@@ -16,25 +18,19 @@ public interface IExamDao {
     List<Exam> queryExam();
 
     /**
-     * 根据考试编号或名字或开考时间加载考试信息
-     * @param exam
+     * 根据考试id加载考试信息
+     * @param
      * @return
      */
-    Exam getExam(Exam exam);
+    Exam getExam(Integer eId);
+
     /**
-     * 根据科目编号或名字加载考试信息
+     * 根据关键字加载考试信息
      *
      * @param
      * @return
      */
-    Exam getExam();
-
-    /**
-     * 根据管理员编号或名字加载考试信息
-     * @param manager
-     * @return
-     */
-    Exam getExam(Manager manager);
+    List<Map> getExam(String exam);
 
     /**
      * 添加考试

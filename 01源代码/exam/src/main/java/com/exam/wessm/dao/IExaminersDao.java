@@ -4,6 +4,7 @@ import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Examiners;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  *   考试成员Dao接口
@@ -13,7 +14,7 @@ public interface IExaminersDao {
      * 查询考试成员信息
      * @return
      */
-    List<Examiners> queryExaminers();
+    List<Map> queryExaminers();
 
     /**
      * 根据考试编号或姓名加载考试成员信息
@@ -21,7 +22,7 @@ public interface IExaminersDao {
      * @param
      * @return
      */
-    Examiners getExaminers(Exam exam);
+    List<Map> getExaminers(String examiners);
 
     /**
      * 添加考试成员

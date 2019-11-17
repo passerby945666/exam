@@ -1,4 +1,109 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper>
+    <!-- 查询所有考试-->
+    <select id="queryExam" resultType="exam">
+        <![CDATA[
+        select
+            e_id as eId,
+            e_no as eNo,
+            e_name as eName,
+            m_id as mId,
+            k_id as kId,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd
+        from
+            exam
+        ]]>
+    </select>
+    <!-- 根据考试id加载考试信息-->
+    <select id="getExam"  resultType="exam" parameterType="int">
+        <![CDATA[
+        select
+            e_id as eId,
+            e_no as eNo,
+            e_name as eName,
+            m_id as mId,
+            k_id as kId,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd
+        from
+            exam
+        where e_id=#{e_id}
+       ]]>
+    </select>
+    <!-- 根据关键字加载考试信息-->
+    <select id="getExam"  resultType="java.util.Map" parameterType="String">
+        <![CDATA[
+        select
+            e_id as eId,
+            e_no as eNo,
+            e_name as eName,
+            m_id as mId,
+            k_id as kId,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd
+        from
+             (exam left join subject on exam.k_id=subjuct.k_id)
+            left join manager on exam.m_id=manager.m_id
+        where
+            e_no=#{exam} or e_name like #{exam}
+            or s_no=#{exam} or s_name like #{exam}
+            or m_no=#{exam} or m_name like #{exam}
+       ]]>
+    </select>
+    <!-- 添加考试信息-->
+    <insert id="insertExam" parameterType="exam">
+      <![CDATA[
+        insert into exam (
+            e_no as eNo,
+            e_name as eName,
+            m_id as mId,
+            k_id as kId,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd
+        )
+        values
+        (
+            #{eNo},
+            #{eName},
+            #{mId},
+            #{kId},
+            #{timeBegin},
+            #{timeTest},
+            #{timeBaomin},
+            #{timeEnd},
+         )
+      ]]>
+    </insert>
+    <!-- 根据考试成员ID删除考试记录-->
+    <delete id="deleteExam" parameterType="int">
+        <![CDATA[
+        delete from exam
+        where e_id=#{e_id}
+      ]]>
+    </delete>
+    <!-- 根据考试成员ID修改考试信息-->
+    <update id="updateExam" parameterType="exam">
+    <![CDATA[
+        update  exam
+        set     e_no as eNo,
+                e_name as eName,
+                m_id as mId,
+                k_id as kId,
+                time_begin as timeBegin,
+                time_test as timeTest,
+                time_baomin as timeBaomin,
+                time_end as timeEnd
+        where   e_id=#{eId}
+     ]]>
+    </update>
 </mapper>
