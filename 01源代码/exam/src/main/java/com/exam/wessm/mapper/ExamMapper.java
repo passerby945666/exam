@@ -5,6 +5,7 @@ import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Subject;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
+import java.util.Map;
 
 public interface ExamMapper {
     /**
@@ -14,25 +15,19 @@ public interface ExamMapper {
     List<Exam> queryExam();
 
     /**
-     * 根据考试编号或名字或开考时间加载考试信息
-     * @param exam
+     * 根据考试id加载考试信息
+     * @param
      * @return
      */
-    Exam getExam(Exam exam);
+    Exam getExam(@Param("e_id")Integer eId);
+
     /**
-     * 根据科目编号或名字加载考试信息
+     * 根据关键字加载考试信息
      *
      * @param
      * @return
      */
-    Exam getExam(Subject subject);
-
-    /**
-     * 根据管理员编号或名字加载考试信息
-     * @param manager
-     * @return
-     */
-    Exam getExam(Manager manager);
+    List<Map> getExam(@Param("exam")String exam);
 
     /**
      * 添加考试
@@ -47,7 +42,7 @@ public interface ExamMapper {
      * @param
      * @return
      */
-    int deleteEaxm(@Param("e_id") Integer eId);
+    int deleteEaxm(@Param("s_id")Integer eId);
 
     /**
      * 修改考试信息

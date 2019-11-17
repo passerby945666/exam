@@ -18,4 +18,5 @@
             stu
         where s_no=#{s_no}and s_password=#{s_password}
      ]]>
+    </select>
 </mapper>

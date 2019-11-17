@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.List;
+import java.util.Map;
 
 public class ExamServiceImpl implements IExamService {
 
@@ -28,20 +29,14 @@ public class ExamServiceImpl implements IExamService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public Exam getExam(Exam exam) {
+    public Exam getExam(Integer eId) {
+        return examDao.getExam(eId);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public List<Map> getExam(String exam) {
         return examDao.getExam(exam);
-    }
-
-    @Override
-    @Transactional(propagation = Propagation.REQUIRED)
-    public Exam getExam(Subject subject) {
-        return examDao.getExam(subject);
-    }
-
-    @Override
-    @Transactional(propagation = Propagation.REQUIRED)
-    public Exam getExam(Manager manager) {
-        return examDao.getExam(manager);
     }
 
     @Override

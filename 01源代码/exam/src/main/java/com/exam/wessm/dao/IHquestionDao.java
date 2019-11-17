@@ -4,7 +4,10 @@ import com.exam.wessm.entity.Examiners;
 import com.exam.wessm.entity.Hquestion;
 
 import java.util.List;
-
+/**
+ * 历史考题dao接口
+ *
+ */
 public interface IHquestionDao {
     /**
      * 查询历史考题信息
@@ -13,7 +16,7 @@ public interface IHquestionDao {
     List<Hquestion> queryHquestion();
 
     /**
-     *
+     *显示阅卷信息
      * @param mNo     管理员编号
      * @param eNo     考试编号
      * @param status  批改状态
@@ -21,7 +24,7 @@ public interface IHquestionDao {
      */
     List<Hquestion> queryHq(String mNo, String eNo, String status);
     /**
-     * 根据ID加载考试成员信息
+     * 根据考题id查询信息
      *
      * @param    hId  ID号
      * @return
@@ -29,7 +32,7 @@ public interface IHquestionDao {
     Examiners getHquestion(int hId);
 
     /**
-     * 添加考试成员
+     * 提交试卷(一道题)
      *
      * @param hq
      * @return
@@ -37,14 +40,14 @@ public interface IHquestionDao {
     int insertHquestion(Hquestion hq);
 
     /**
-     * 根据考试成员ID删除考试成员
+     * 根据历史考题ID删除记录
      * @param    hId  ID号
      * @return
      */
     int deleteHquestion(int hId);
 
     /**
-     * 修改考试成员信息
+     * 阅卷改分
      * @param hq
      * @return
      */
