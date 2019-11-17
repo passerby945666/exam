@@ -2,6 +2,7 @@ package com.exam.wessm.dao;
 
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Manager;
+import com.exam.wessm.entity.Subject;
 
 import java.util.List;
 
@@ -27,7 +28,7 @@ public interface IExamDao {
      * @param
      * @return
      */
-    Exam getExam();
+    Exam getExam(Subject subject);
 
     /**
      * 根据管理员编号或名字加载考试信息

@@ -1,6 +1,7 @@
 package com.exam.wessm.mapper;
 
 import com.exam.wessm.entity.Stu;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -24,14 +25,14 @@ public interface StuMapper {
      * @return
      */
 
-   Stu findNoAndPass(String sNo,String sPassword );
+    Stu findNoAndPass(@Param("s_no")String sNo, @Param("s_password")String sPassword );
 
     /**
      * 根据考生ID删除考生
      * @param    sId  ID号
      * @return
      */
-    int deleteStu(int sId);
+    int deleteStu(@Param("s_id")int sId);
 
     /**
      * 查询考生信息
@@ -45,7 +46,7 @@ public interface StuMapper {
      * @param    sId
      * @return
      */
-    Stu getStu(int sId);
+    Stu getStu(@Param("s_id")int sId);
 
 
     /**

@@ -2,7 +2,8 @@ package com.exam.wessm.mapper;
 
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Manager;
-
+import com.exam.wessm.entity.Subject;
+import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface ExamMapper {
@@ -24,7 +25,7 @@ public interface ExamMapper {
      * @param
      * @return
      */
-    Exam getExam();
+    Exam getExam(Subject subject);
 
     /**
      * 根据管理员编号或名字加载考试信息
@@ -42,11 +43,11 @@ public interface ExamMapper {
     int insertEaxm(Exam exam);
 
     /**
-     * 根据考试编号或名字删除考试
+     * 根据考试Id删除考试
      * @param
      * @return
      */
-    int deleteEaxm(Exam exam);
+    int deleteEaxm(@Param("e_id") Integer eId);
 
     /**
      * 修改考试信息
