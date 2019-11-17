@@ -1,47 +1,45 @@
 package com.exam.wessm.dao;
 
 
-import com.exam.wessm.entity.Stu;
+
+import com.exam.wessm.entity.Tm;
 
 import java.util.List;
-/**
- *   考生Dao接口
- *
- */
-public interface IStuDao {
+
+public interface ITmDao {
     /**
      * 查询考生信息
      * @return
      */
-    List<Stu> queryStu();
+    List<Tm> queryTm();
 
     /**
      * 根据ID加载考生信息
      *
-     * @param    sId  ID号
+     * @param    tId  ID号
      * @return
      */
-    Stu getStu(int sId);
+    Tm getTm(int tId);
 
     /**
      * 添加考生
      *
-     * @param stu
+     * @param tm
      * @return
      */
-    int insertStu(Stu stu);
+    int insertTm(Tm tm);
 
     /**
      * 根据考生ID删除考生
-     * @param    sId  ID号
+     * @param    tId  ID号
      * @return
      */
-    int deleteStu(int sId);
+    int deleteTm(int tId);
 
     /**
      * 修改考生信息
-     * @param stu
+     * @param tm
      * @return
      */
-    int updateStu(Stu stu);
+    int updateTm(Tm tm);
 }
