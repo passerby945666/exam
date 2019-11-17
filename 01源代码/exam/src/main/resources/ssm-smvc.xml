@@ -7,7 +7,7 @@
 http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
     <!-- 配置扫描包-->
-    <context:component-scan base-package="com.qst.ssm.controller">
+    <context:component-scan base-package="com.exam.wessm.controller">
         <!--只处理使用@Controller注解的类-->
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
@@ -44,7 +44,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
             <!--排除被拦截的URL,通常是具体的URL -->
             <mvc:exclude-mapping path="/dep/*"/>
             <mvc:exclude-mapping path="/dep/*"/>
-            <bean class="com.qst.ssm.controller.support.interceptor.LoginCheckHandlerInterceptor">
+            <bean class="com.exam.wessm.controller.support.interceptor.LoginCheckHandlerInterceptor">
                 <property name="loginPageURL">
                     <value>/login.jsp</value>
                 </property>
@@ -64,7 +64,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     </bean>-->
 
     <!--全局异常处理-->
-    <bean class="com.qst.ssm.controller.support.handler.CustomExceptionResolver">
+    <bean class="com.exam.wessm.controller.support.handler.CustomExceptionResolver">
         <property name="errorPage">
             <value>/WEB-INF/error.jsp</value>
         </property>
@@ -96,16 +96,16 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         <!--数据类型转换器可以将一种类型转换成另一种类型-->
         <property name="converters">
             <set>
-                <bean class="com.qst.ssm.controller.support.converter.UtilDateConverter">
+                <bean class="com.exam.wessm.controller.support.converter.UtilDateConverter">
                     <property name="dateFormat" value="yyyy-MM-dd"/>
                 </bean>
-                <bean class="com.qst.ssm.controller.support.converter.SqlDateConverter">
+                <bean class="com.exam.wessm.controller.support.converter.SqlDateConverter">
                     <property name="dateFormat" value="yyyy-MM-dd"/>
                 </bean>
-                <bean class="com.qst.ssm.controller.support.converter.SqlTimeConverter">
+                <bean class="com.exam.wessm.controller.support.converter.SqlTimeConverter">
                     <property name="timeFormat" value="yyyy-MM-dd HH:mm:ss"/>
                 </bean>
-                <bean class="com.qst.ssm.controller.support.converter.SqlTimestampConverter">
+                <bean class="com.exam.wessm.controller.support.converter.SqlTimestampConverter">
                     <property name="timeFormat" value="yyyy-MM-dd HH:mm:ss"/>
                 </bean>
             </set>
