@@ -1,11 +1,11 @@
 package com.exam.wessm.entity;
-
-import java.util.Date;
-
 /**
  * 题目实体类
  */
-public class Tm {
+
+import java.util.Date;
+
+public class Quebank {
     /** 题目ID*/
     private  Integer tId;
     /** 题目编号*/
@@ -25,10 +25,10 @@ public class Tm {
     /**题目负责人**/
     private Integer mId;
 
-    public Tm() {
+    public Quebank() {
     }
 
-    public Tm(Integer tId, String tNo, String content, Integer qId, String answer, String reply, Date tTime, Integer kId, Integer mId) {
+    public Quebank(Integer tId, String tNo, String content, Integer qId, String answer, String reply, Date tTime, Integer kId, Integer mId) {
         this.tId = tId;
         this.tNo = tNo;
         this.content = content;

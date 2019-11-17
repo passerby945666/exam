@@ -3,7 +3,7 @@ package com.exam.wessm.entity;
 /**
  * 科目实体类
  */
-public class Km {
+public class Subject {
     /** 科目ID*/
     private  Integer kId;
     /** 科目编号*/
@@ -11,10 +11,10 @@ public class Km {
     /** 名称*/
     private   String kName;
 
-    public Km() {
+    public Subject() {
     }
 
-    public Km(Integer kId, String kNo, String kName) {
+    public Subject(Integer kId, String kNo, String kName) {
         this.kId = kId;
         this.kNo = kNo;
         this.kName = kName;
