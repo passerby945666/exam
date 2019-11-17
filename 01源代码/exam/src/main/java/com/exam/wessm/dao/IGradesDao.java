@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface IGradesDao {
     /**
-     * 查询考试信息
+     * 查询成绩信息
      * @return
      */
     List<Grades> queryExam();
