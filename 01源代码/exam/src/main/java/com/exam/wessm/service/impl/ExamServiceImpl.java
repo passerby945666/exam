@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
-
+@Service("exaamService")
 public class ExamServiceImpl implements IExamService {
 
     @Autowired

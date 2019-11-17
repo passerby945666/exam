@@ -10,10 +10,10 @@ import java.util.List;
  */
 public interface IHquestionDao {
     /**
-     * 查询历史考题信息
-     * @return
-     */
-    List<Hquestion> queryHquestion();
+ * 查询历史考题信息
+ * @return
+ */
+List<Hquestion> queryHquestion();
 
     /**
      *显示阅卷信息
@@ -22,14 +22,14 @@ public interface IHquestionDao {
      * @param status  批改状态
      * @return
      */
-    List<Hquestion> queryHq(String mNo, String eNo, String status);
+    List<Hquestion> queryHquestion(String mNo, String eNo, String status);
     /**
      * 根据考题id查询信息
      *
      * @param    hId  ID号
      * @return
      */
-    Examiners getHquestion(int hId);
+    Hquestion getHquestion(int hId);
 
     /**
      * 提交试卷(一道题)
