@@ -1,7 +1,6 @@
 package com.exam.wessm.dao;
 
 import com.exam.wessm.entity.Exam;
-import com.exam.wessm.entity.Examiners;
 import com.exam.wessm.entity.Km;
 import com.exam.wessm.entity.Manager;
 
@@ -47,11 +46,11 @@ public interface IExamDao {
     int insertEaxm(Exam exam);
 
     /**
-     * 根据考试编号或名字删除考试
+     * 根据考试Id删除考试
      * @param
      * @return
      */
-    int deleteEaxm(Exam exam);
+    int deleteEaxm(Integer eId);
 
     /**
      * 修改考试信息

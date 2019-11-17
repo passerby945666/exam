@@ -2,7 +2,6 @@ package com.exam.wessm.dao;
 
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Examiners;
-import com.exam.wessm.entity.Stu;
 
 import java.util.List;
 
@@ -33,18 +32,11 @@ public interface IExaminersDao {
     int insertEaxminers(Examiners examiners);
 
     /**
-     * 根据成员准考证号删除考试成员
+     * 根据考试成员id删除考试成员
      * @param
      * @return
      */
-    int deleteEaxminers(Examiners examiners);
-
-    /**
-     * 根据考生编号或名字删除考试成员
-     * @param
-     * @return
-     */
-    int deleteEaxminers(Stu stu);
+    int deleteEaxminers(Integer exId);
 
     /**
      * 修改考试成员信息
