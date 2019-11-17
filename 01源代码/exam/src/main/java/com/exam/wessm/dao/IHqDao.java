@@ -13,6 +13,14 @@ public interface IHqDao {
     List<Hq> queryHq();
 
     /**
+     *
+     * @param mNo     管理员编号
+     * @param eNo     考试编号
+     * @param status  批改状态
+     * @return
+     */
+    List<Hq> queryHq(String mNo,String eNo,String status);
+    /**
      * 根据ID加载考试成员信息
      *
      * @param    hId  ID号
