@@ -5,15 +5,16 @@ import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Examiners;
 
 import java.util.List;
+import java.util.Map;
 
 public class ExaminersDaoImpl implements IExaminersDao {
     @Override
-    public List<Examiners> queryExaminers() {
+    public List<Map> queryExaminers() {
         return null;
     }
 
     @Override
-    public Examiners getExaminers(Exam exam) {
+    public List<Map> getExaminers(String examiners) {
         return null;
     }
 

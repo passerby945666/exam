@@ -1,4 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper>
+    <!-- 查询所有题目-->
+    <select id="queryQuebank" resultType="quebank">
+        <![CDATA[
+        select
+            t_id as tId,
+            t_no as tNo,
+            content,
+            q_id as qId,
+            answer,
+            reply,
+            t_time as tTime,
+            k_id as kId,
+            m_id as mId
+        from
+            quebank
+        ]]>
+    </select>
+    <!-- 根据关键字加载题目信息-->
+    <select id="getQuebank"  resultType="java.util.Map" parameterType="String">
+        <![CDATA[
+        select
+            t_id as tId,
+            t_no as tNo,
+            content,
+            q_type as qType,
+            answer,
+            reply,
+            t_time as tTime,
+            k_name as kName,
+            m_name as mName
+        from
+             ((quebank left join quetype on quebank.q_id=quetype.q_id)
+            left join manager on quebank.m_id=manager.m_id)
+            left join subject on quebank.k_id=subject.k_id
+        where
+            t_no=#{quebank} or q_type=#{quebank}
+            or k_no=#{quebank} or k_name like #{quebank}
+            or m_no=#{quebank} or m_name like #{quebank}
+       ]]>
+    </select>
+    <!-- 添加题目信息-->
+    <insert id="insertQuebank" parameterType="quebank">
+      <![CDATA[
+        insert into quebank (
+            t_no as tNo,
+            content,
+            q_id as qId,
+            answer,
+            reply,
+            t_time as tTime,
+            k_id as kId,
+            m_id as mId
+        )
+        values
+        (
+            #{tNo},
+            #{content},
+            #{qId},
+            #{answer},
+            #{reply},
+            #{tTest},
+            #{kId},
+            #{mId},
+         )
+      ]]>
+    </insert>
+    <!-- 根据题目ID删除题目记录-->
+    <delete id="deleteQuebank" parameterType="int">
+        <![CDATA[
+        delete from quebank
+        where t_id=#{t_id}
+      ]]>
+    </delete>
+    <!-- 根据考试成员ID修改题目信息-->
+    <update id="updateQuebank" parameterType="quebank">
+    <![CDATA[
+        update  quebank
+        set
+                t_no as tNo,
+                content,
+                q_id as qId,
+                answer,
+                reply,
+                t_time as tTime,
+                k_id as kId,
+                m_id as mId
+        where   t_id=#{tId}
+     ]]>
+    </update>
 </mapper>

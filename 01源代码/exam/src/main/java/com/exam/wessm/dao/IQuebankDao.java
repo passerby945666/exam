@@ -25,30 +25,6 @@ public interface IQuebankDao {
     List<Map> getQuebank(String quebank);
 
     /**
-     * 根据类型加载题库信息
-     *
-     * @param
-     * @return
-     */
-    Quebank getTm(Quebank quebank);
-
-    /**
-     * 根据科目编号或名称加载题库信息
-     *
-     * @param
-     * @return
-     */
-    Quebank getQuebank(Subject subject);
-
-    /**
-     * 根据负责人编号或名字加载题库信息
-     *
-     * @param
-     * @return
-     */
-    Quebank getQuebank(Manager manager);
-
-    /**
      * 添加题库信息
      *
      * @param

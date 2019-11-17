@@ -2,11 +2,11 @@ package com.exam.wessm.dao.impl;
 
 
 import com.exam.wessm.dao.IQuebankDao;
-import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Quebank;
-import com.exam.wessm.entity.Subject;
+
 
 import java.util.List;
+import java.util.Map;
 
 public class QuebankDaoImpl implements IQuebankDao {
     @Override
@@ -15,22 +15,7 @@ public class QuebankDaoImpl implements IQuebankDao {
     }
 
     @Override
-    public Quebank getQuebank(Quebank quebank) {
-        return null;
-    }
-
-    @Override
-    public Quebank getTm(Quebank quebank) {
-        return null;
-    }
-
-    @Override
-    public Quebank getQuebank(Subject subject) {
-        return null;
-    }
-
-    @Override
-    public Quebank getQuebank(Manager manager) {
+    public List<Map> getQuebank(String quebank) {
         return null;
     }
 
@@ -48,4 +33,5 @@ public class QuebankDaoImpl implements IQuebankDao {
     public int updateQuebank(Quebank quebank) {
         return 0;
     }
+
 }
