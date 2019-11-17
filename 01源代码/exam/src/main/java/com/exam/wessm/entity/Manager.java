@@ -7,99 +7,99 @@ import java.util.Date;
  **/
 public class Manager {
     /** 管理员ID*/
-    private  Integer m_Id;
+    private  Integer mId;
     /** 管理员编号*/
-    private  String m_No;
+    private  String mNo;
     /** 密码*/
-    private   String m_password;
+    private   String mPassword;
     /** 管理员名字*/
-    private  String m_Name;
+    private  String mName;
     /** 管理员身份证号码*/
-    private  String  m_idcard;
+    private  String  mIdcard;
     /** 性别*/
-    private  Integer m_sex;
+    private  Integer mSex;
     /** 出生年月*/
-    private Date m_birthday;
+    private Date mBirthday;
 
     public Manager() {
     }
 
-    public Manager(Integer m_Id, String m_No, String m_password, String m_Name, String m_idcard, Integer m_sex, Date m_birthday) {
-        this.m_Id = m_Id;
-        this.m_No = m_No;
-        this.m_password = m_password;
-        this.m_Name = m_Name;
-        this.m_idcard = m_idcard;
-        this.m_sex = m_sex;
-        this.m_birthday = m_birthday;
+    public Manager(Integer mId, String mNo, String mPassword, String mName, String mIdcard, Integer mSex, Date mBirthday) {
+        this.mId = mId;
+        this.mNo = mNo;
+        this.mPassword = mPassword;
+        this.mName = mName;
+        this.mIdcard = mIdcard;
+        this.mSex = mSex;
+        this.mBirthday = mBirthday;
     }
 
-    public Integer getM_Id() {
-        return m_Id;
+    public Integer getmId() {
+        return mId;
     }
 
-    public void setM_Id(Integer m_Id) {
-        this.m_Id = m_Id;
+    public void setmId(Integer mId) {
+        this.mId = mId;
     }
 
-    public String getM_No() {
-        return m_No;
+    public String getmNo() {
+        return mNo;
     }
 
-    public void setM_No(String m_No) {
-        this.m_No = m_No;
+    public void setmNo(String mNo) {
+        this.mNo = mNo;
     }
 
-    public String getM_password() {
-        return m_password;
+    public String getmPassword() {
+        return mPassword;
     }
 
-    public void setM_password(String m_password) {
-        this.m_password = m_password;
+    public void setmPassword(String mPassword) {
+        this.mPassword = mPassword;
     }
 
-    public String getM_Name() {
-        return m_Name;
+    public String getmName() {
+        return mName;
     }
 
-    public void setM_Name(String m_Name) {
-        this.m_Name = m_Name;
+    public void setmName(String mName) {
+        this.mName = mName;
     }
 
-    public String getM_idcard() {
-        return m_idcard;
+    public String getmIdcard() {
+        return mIdcard;
     }
 
-    public void setM_idcard(String m_idcard) {
-        this.m_idcard = m_idcard;
+    public void setmIdcard(String mIdcard) {
+        this.mIdcard = mIdcard;
     }
 
-    public Integer getM_sex() {
-        return m_sex;
+    public Integer getmSex() {
+        return mSex;
     }
 
-    public void setM_sex(Integer m_sex) {
-        this.m_sex = m_sex;
+    public void setmSex(Integer mSex) {
+        this.mSex = mSex;
     }
 
-    public Date getM_birthday() {
-        return m_birthday;
+    public Date getmBirthday() {
+        return mBirthday;
     }
 
-    public void setM_birthday(Date m_birthday) {
-        this.m_birthday = m_birthday;
+    public void setmBirthday(Date mBirthday) {
+        this.mBirthday = mBirthday;
     }
 
     @Override
     public String toString() {
         return "Manager{" +
-                "m_Id=" + m_Id +
-                ", m_No='" + m_No + '\'' +
-                ", m_password='" + m_password + '\'' +
-                ", m_Name='" + m_Name + '\'' +
-                ", m_idcard='" + m_idcard + '\'' +
-                ", m_sex=" + m_sex +
-                ", m_birthday=" + m_birthday +
+                "mId=" + mId +
+                ", mNo='" + mNo + '\'' +
+                ", mPassword='" + mPassword + '\'' +
+                ", mName='" + mName + '\'' +
+                ", mIdcard='" + mIdcard + '\'' +
+                ", mSex=" + mSex +
+                ", mBirthday=" + mBirthday +
                 '}';
     }
 }

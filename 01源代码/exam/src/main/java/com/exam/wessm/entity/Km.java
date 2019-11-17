@@ -5,51 +5,51 @@ package com.exam.wessm.entity;
  */
 public class Km {
     /** 科目ID*/
-    private  Integer k_Id;
+    private  Integer kId;
     /** 科目编号*/
-    private  Integer k_No;
+    private  Integer kNo;
     /** 名称*/
-    private   String k_Name;
-
-    public Km(Integer k_Id, Integer k_No, String k_Name) {
-        this.k_Id = k_Id;
-        this.k_No = k_No;
-        this.k_Name = k_Name;
-    }
+    private   String kName;
 
     public Km() {
     }
 
-    public Integer getK_Id() {
-        return k_Id;
+    public Km(Integer kId, Integer kNo, String kName) {
+        this.kId = kId;
+        this.kNo = kNo;
+        this.kName = kName;
     }
 
-    public void setK_Id(Integer k_Id) {
-        this.k_Id = k_Id;
+    public Integer getkId() {
+        return kId;
     }
 
-    public Integer getK_No() {
-        return k_No;
+    public void setkId(Integer kId) {
+        this.kId = kId;
     }
 
-    public void setK_No(Integer k_No) {
-        this.k_No = k_No;
+    public Integer getkNo() {
+        return kNo;
     }
 
-    public String getK_Name() {
-        return k_Name;
+    public void setkNo(Integer kNo) {
+        this.kNo = kNo;
     }
 
-    public void setK_Name(String k_Name) {
-        this.k_Name = k_Name;
+    public String getkName() {
+        return kName;
+    }
+
+    public void setkName(String kName) {
+        this.kName = kName;
     }
 
     @Override
     public String toString() {
         return "Km{" +
-                "k_Id=" + k_Id +
-                ", k_No=" + k_No +
-                ", k_Name='" + k_Name + '\'' +
+                "kId=" + kId +
+                ", kNo=" + kNo +
+                ", kName='" + kName + '\'' +
                 '}';
     }
 }

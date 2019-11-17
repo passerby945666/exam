@@ -7,33 +7,111 @@ import java.util.Date;
  */
 public class Tm {
     /** 题目ID*/
-    private  Integer t_Id;
+    private  Integer tId;
     /** 题目编号*/
-    private  String t_No;
+    private  String tNo;
     /** 题目内容*/
     private   String content;
     /** 题目类型*/
-    private  String q_type;
+    private  String qType;
     /** 答案*/
     private  String answer;
     /** 解答*/
     private  String reply;
     /** 录入时间*/
-    private Date t_time;
+    private Date tTime;
     /** 科目*/
-    private  Integer k_Id;
+    private  Integer kId;
 
     public Tm() {
     }
 
-    public Tm(Integer t_Id, String t_No, String content, String q_type, String answer, String reply, Date t_time, Integer k_Id) {
-        this.t_Id = t_Id;
-        this.t_No = t_No;
+    public Tm(Integer tId, String tNo, String content, String qType, String answer, String reply, Date tTime, Integer kId) {
+        this.tId = tId;
+        this.tNo = tNo;
         this.content = content;
-        this.q_type = q_type;
+        this.qType = qType;
         this.answer = answer;
         this.reply = reply;
-        this.t_time = t_time;
-        this.k_Id = k_Id;
+        this.tTime = tTime;
+        this.kId = kId;
+    }
+
+    public Integer gettId() {
+        return tId;
+    }
+
+    public void settId(Integer tId) {
+        this.tId = tId;
+    }
+
+    public String gettNo() {
+        return tNo;
+    }
+
+    public void settNo(String tNo) {
+        this.tNo = tNo;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getqType() {
+        return qType;
+    }
+
+    public void setqType(String qType) {
+        this.qType = qType;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
+
+    public String getReply() {
+        return reply;
+    }
+
+    public void setReply(String reply) {
+        this.reply = reply;
+    }
+
+    public Date gettTime() {
+        return tTime;
+    }
+
+    public void settTime(Date tTime) {
+        this.tTime = tTime;
+    }
+
+    public Integer getkId() {
+        return kId;
+    }
+
+    public void setkId(Integer kId) {
+        this.kId = kId;
+    }
+
+    @Override
+    public String toString() {
+        return "Tm{" +
+                "tId=" + tId +
+                ", tNo='" + tNo + '\'' +
+                ", content='" + content + '\'' +
+                ", qType='" + qType + '\'' +
+                ", answer='" + answer + '\'' +
+                ", reply='" + reply + '\'' +
+                ", tTime=" + tTime +
+                ", kId=" + kId +
+                '}';
     }
 }

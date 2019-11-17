@@ -8,123 +8,123 @@ import java.util.List;
  */
 public class Exam  {
     /** 考试ID*/
-    private  Integer e_Id;
+    private  Integer eId;
     /** 考试编号*/
-    private  String e_No;
+    private  String eNo;
     /** 名字*/
-    private  String e_Name;
+    private  String eName;
     /** 开考时间*/
-    private  Date time_begin;
+    private  Date timeBegin;
     /** 考试时间*/
-    private  String  time_test;
+    private  String  timeTest;
     /** 报名时间*/
-    private  Date time_baomin;
+    private  Date timeBaomin;
     /**报名截止时间 */
-    private  Date time_end;
+    private  Date timeEnd;
     /** 科目id*/
-    private Integer  k_id;
+    private Integer  kId;
     /** 负责人id*/
-    private Integer  m_id;
+    private Integer  mId;
 
     public Exam() {
     }
 
-    public Exam(Integer e_Id, String e_No, String e_Name, Date time_begin, String time_test, Date time_baomin, Date time_end, Integer k_id, Integer m_id) {
-        this.e_Id = e_Id;
-        this.e_No = e_No;
-        this.e_Name = e_Name;
-        this.time_begin = time_begin;
-        this.time_test = time_test;
-        this.time_baomin = time_baomin;
-        this.time_end = time_end;
-        this.k_id = k_id;
-        this.m_id = m_id;
+    public Exam(Integer eId, String eNo, String eName, Date timeBegin, String timeTest, Date timeBaomin, Date timeEnd, Integer kId, Integer mId) {
+        this.eId = eId;
+        this.eNo = eNo;
+        this.eName = eName;
+        this.timeBegin = timeBegin;
+        this.timeTest = timeTest;
+        this.timeBaomin = timeBaomin;
+        this.timeEnd = timeEnd;
+        this.kId = kId;
+        this.mId = mId;
     }
 
-    public Integer getE_Id() {
-        return e_Id;
+    public Integer geteId() {
+        return eId;
     }
 
-    public void setE_Id(Integer e_Id) {
-        this.e_Id = e_Id;
+    public void seteId(Integer eId) {
+        this.eId = eId;
     }
 
-    public String getE_No() {
-        return e_No;
+    public String geteNo() {
+        return eNo;
     }
 
-    public void setE_No(String e_No) {
-        this.e_No = e_No;
+    public void seteNo(String eNo) {
+        this.eNo = eNo;
     }
 
-    public String getE_Name() {
-        return e_Name;
+    public String geteName() {
+        return eName;
     }
 
-    public void setE_Name(String e_Name) {
-        this.e_Name = e_Name;
+    public void seteName(String eName) {
+        this.eName = eName;
     }
 
-    public Date getTime_begin() {
-        return time_begin;
+    public Date getTimeBegin() {
+        return timeBegin;
     }
 
-    public void setTime_begin(Date time_begin) {
-        this.time_begin = time_begin;
+    public void setTimeBegin(Date timeBegin) {
+        this.timeBegin = timeBegin;
     }
 
-    public String getTime_test() {
-        return time_test;
+    public String getTimeTest() {
+        return timeTest;
     }
 
-    public void setTime_test(String time_test) {
-        this.time_test = time_test;
+    public void setTimeTest(String timeTest) {
+        this.timeTest = timeTest;
     }
 
-    public Date getTime_baomin() {
-        return time_baomin;
+    public Date getTimeBaomin() {
+        return timeBaomin;
     }
 
-    public void setTime_baomin(Date time_baomin) {
-        this.time_baomin = time_baomin;
+    public void setTimeBaomin(Date timeBaomin) {
+        this.timeBaomin = timeBaomin;
     }
 
-    public Date getTime_end() {
-        return time_end;
+    public Date getTimeEnd() {
+        return timeEnd;
     }
 
-    public void setTime_end(Date time_end) {
-        this.time_end = time_end;
+    public void setTimeEnd(Date timeEnd) {
+        this.timeEnd = timeEnd;
     }
 
-    public Integer getK_id() {
-        return k_id;
+    public Integer getkId() {
+        return kId;
     }
 
-    public void setK_id(Integer k_id) {
-        this.k_id = k_id;
+    public void setkId(Integer kId) {
+        this.kId = kId;
     }
 
-    public Integer getM_id() {
-        return m_id;
+    public Integer getmId() {
+        return mId;
     }
 
-    public void setM_id(Integer m_id) {
-        this.m_id = m_id;
+    public void setmId(Integer mId) {
+        this.mId = mId;
     }
 
     @Override
     public String toString() {
         return "Exam{" +
-                "e_Id=" + e_Id +
-                ", e_No='" + e_No + '\'' +
-                ", e_Name='" + e_Name + '\'' +
-                ", time_begin=" + time_begin +
-                ", time_test='" + time_test + '\'' +
-                ", time_baomin=" + time_baomin +
-                ", time_end=" + time_end +
-                ", k_id=" + k_id +
-                ", m_id=" + m_id +
+                "eId=" + eId +
+                ", eNo='" + eNo + '\'' +
+                ", eName='" + eName + '\'' +
+                ", timeBegin=" + timeBegin +
+                ", timeTest='" + timeTest + '\'' +
+                ", timeBaomin=" + timeBaomin +
+                ", timeEnd=" + timeEnd +
+                ", kId=" + kId +
+                ", mId=" + mId +
                 '}';
     }
 }
