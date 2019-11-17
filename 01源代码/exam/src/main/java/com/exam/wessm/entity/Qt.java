@@ -1,52 +1,52 @@
 package com.exam.wessm.entity;
 
-public class Qt {
+public class QT {
     /** 题型ID*/
-    private  Integer qId;
+    private  Integer q_Id;
     /** 类型*/
-    private  String qType;
+    private  String q_type;
     /** 分值*/
-    private   String qValue;
+    private   String q_value;
 
-    public Qt() {
+    public QT() {
     }
 
-    public Qt(Integer qId, String qType, String qValue) {
-        this.qId = qId;
-        this.qType = qType;
-        this.qValue = qValue;
+    public QT(Integer q_Id, String q_type, String q_value) {
+        this.q_Id = q_Id;
+        this.q_type = q_type;
+        this.q_value = q_value;
     }
 
-    public Integer getqId() {
-        return qId;
+    public Integer getQ_Id() {
+        return q_Id;
     }
 
-    public void setqId(Integer qId) {
-        this.qId = qId;
+    public void setQ_Id(Integer q_Id) {
+        this.q_Id = q_Id;
     }
 
-    public String getqType() {
-        return qType;
+    public String getQ_type() {
+        return q_type;
     }
 
-    public void setqType(String qType) {
-        this.qType = qType;
+    public void setQ_type(String q_type) {
+        this.q_type = q_type;
     }
 
-    public String getqValue() {
-        return qValue;
+    public String getQ_value() {
+        return q_value;
     }
 
-    public void setqValue(String qValue) {
-        this.qValue = qValue;
+    public void setQ_value(String q_value) {
+        this.q_value = q_value;
     }
 
     @Override
     public String toString() {
         return "QT{" +
-                "qId=" + qId +
-                ", qType='" + qType + '\'' +
-                ", qValue='" + qValue + '\'' +
+                "q_Id=" + q_Id +
+                ", q_type='" + q_type + '\'' +
+                ", q_value='" + q_value + '\'' +
                 '}';
     }
 }

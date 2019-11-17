@@ -12,8 +12,8 @@ public class Tm {
     private  String tNo;
     /** 题目内容*/
     private   String content;
-    /** 题目类型*/
-    private  String qType;
+    /** 题目类型ID*/
+    private  Integer qId;
     /** 答案*/
     private  String answer;
     /** 解答*/
@@ -22,19 +22,22 @@ public class Tm {
     private Date tTime;
     /** 科目*/
     private  Integer kId;
+    /**题目负责人**/
+    private Integer mId;
 
     public Tm() {
     }
 
-    public Tm(Integer tId, String tNo, String content, String qType, String answer, String reply, Date tTime, Integer kId) {
+    public Tm(Integer tId, String tNo, String content, Integer qId, String answer, String reply, Date tTime, Integer kId, Integer mId) {
         this.tId = tId;
         this.tNo = tNo;
         this.content = content;
-        this.qType = qType;
+        this.qId = qId;
         this.answer = answer;
         this.reply = reply;
         this.tTime = tTime;
         this.kId = kId;
+        this.mId = mId;
     }
 
     public Integer gettId() {
@@ -61,12 +64,12 @@ public class Tm {
         this.content = content;
     }
 
-    public String getqType() {
-        return qType;
+    public Integer getqId() {
+        return qId;
     }
 
-    public void setqType(String qType) {
-        this.qType = qType;
+    public void setqId(Integer qId) {
+        this.qId = qId;
     }
 
     public String getAnswer() {
@@ -101,17 +104,26 @@ public class Tm {
         this.kId = kId;
     }
 
+    public Integer getmId() {
+        return mId;
+    }
+
+    public void setmId(Integer mId) {
+        this.mId = mId;
+    }
+
     @Override
     public String toString() {
         return "Tm{" +
                 "tId=" + tId +
                 ", tNo='" + tNo + '\'' +
                 ", content='" + content + '\'' +
-                ", qType='" + qType + '\'' +
+                ", qId=" + qId +
                 ", answer='" + answer + '\'' +
                 ", reply='" + reply + '\'' +
                 ", tTime=" + tTime +
                 ", kId=" + kId +
+                ", mId=" + mId +
                 '}';
     }
 }

@@ -7,14 +7,14 @@ public class Km {
     /** 科目ID*/
     private  Integer kId;
     /** 科目编号*/
-    private  Integer kNo;
+    private  String kNo;
     /** 名称*/
     private   String kName;
 
     public Km() {
     }
 
-    public Km(Integer kId, Integer kNo, String kName) {
+    public Km(Integer kId, String kNo, String kName) {
         this.kId = kId;
         this.kNo = kNo;
         this.kName = kName;
@@ -28,11 +28,11 @@ public class Km {
         this.kId = kId;
     }
 
-    public Integer getkNo() {
+    public String getkNo() {
         return kNo;
     }
 
-    public void setkNo(Integer kNo) {
+    public void setkNo(String kNo) {
         this.kNo = kNo;
     }
 
