@@ -11,13 +11,13 @@ import java.util.List;
  */
 public interface IQtDao {
     /**
-     * 查询考试成员信息
+     * 查询题型信息
      * @return
      */
     List<Qt> queryQt();
 
     /**
-     * 根据ID加载考试成员信息
+     * 根据ID加载题型信息
      *
      * @param    qId  ID号
      * @return
@@ -25,7 +25,7 @@ public interface IQtDao {
     Qt getQt(int qId);
 
     /**
-     * 添加考试成员
+     * 添加题型
      *
      * @param qt
      * @return
@@ -33,14 +33,14 @@ public interface IQtDao {
     int insertQt(Qt qt);
 
     /**
-     * 根据考试成员ID删除考试成员
+     * 根据题型ID删除题型
      * @param    qId  ID号
      * @return
      */
     int deleteQt(int qId);
 
     /**
-     * 修改考试成员信息
+     * 修改题型信息
      * @param qt
      * @return
      */

@@ -1,4 +1,4 @@
 package com.exam.wessm.service;
 
-public interface ITkService {
+public interface ITmService {
 }
