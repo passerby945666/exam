@@ -45,17 +45,18 @@
     <!-- 根据考试成员ID删除考试成员记录-->
     <delete id="deleteExaminers" parameterType="int">
         <![CDATA[
-        delete from Examiners where ex_id=#{ex_id}
+        delete from Examiners
+        where ex_id=#{ex_id}
       ]]>
     </delete>
     <!-- 根据考试成员ID修改考试成员信息-->
-    <update id="updateExaminers" parameterType="emp">
+    <update id="updateExaminers" parameterType="examiners">
     <![CDATA[
         update  Examiners
-        set     s_id=#{sId},
-                e_id=#{eId},
+        set     s_id=#{s_id},
+                e_id=#{e_id},
                 zkzh=#{examCard}
-        where ex_id=#{exId}
+        where ex_id=#{ex_id}
      ]]>
     </update>
 </mapper>
