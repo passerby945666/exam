@@ -1,6 +1,6 @@
 package com.exam.wessm.entity;
 
-public class QT {
+public class Qt {
     /** 题型ID*/
     private  Integer q_Id;
     /** 类型*/
@@ -8,10 +8,10 @@ public class QT {
     /** 分值*/
     private   String q_value;
 
-    public QT() {
+    public Qt() {
     }
 
-    public QT(Integer q_Id, String q_type, String q_value) {
+    public Qt(Integer q_Id, String q_type, String q_value) {
         this.q_Id = q_Id;
         this.q_type = q_type;
         this.q_value = q_value;

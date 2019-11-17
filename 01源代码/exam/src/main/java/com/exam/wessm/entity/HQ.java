@@ -3,7 +3,7 @@ package com.exam.wessm.entity;
 /**
  * 历史题目实体类
  */
-public class HQ {
+public class Hq {
     /** 历史题目ID*/
     private  Integer h_Id;
     /** 历史题目编号*/
@@ -22,10 +22,10 @@ public class HQ {
     /**考生答案*/
     private  Integer t_id;
 
-    public HQ() {
+    public Hq() {
     }
 
-    public HQ(Integer h_Id, String h_No, Integer status, String h_grade, String h_ansewr, Integer s_id, Integer e_id, Integer t_id) {
+    public Hq(Integer h_Id, String h_No, Integer status, String h_grade, String h_ansewr, Integer s_id, Integer e_id, Integer t_id) {
         this.h_Id = h_Id;
         this.h_No = h_No;
         this.status = status;
