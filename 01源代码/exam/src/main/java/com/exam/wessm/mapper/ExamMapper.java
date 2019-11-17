@@ -19,7 +19,7 @@ public interface ExamMapper {
      * @param
      * @return
      */
-    Exam getExam(@Param("e_id")Integer eId);
+    Exam getExamEId(@Param("e_id")Integer eId);
 
     /**
      * 根据关键字加载考试信息
@@ -27,7 +27,7 @@ public interface ExamMapper {
      * @param
      * @return
      */
-    List<Map> getExam(@Param("exam")String exam);
+    List<Map> getExamExam(@Param("exam")String exam);
 
     /**
      * 添加考试

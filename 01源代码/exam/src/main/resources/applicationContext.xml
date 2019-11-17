@@ -17,7 +17,7 @@ http://www.springframework.org/schema/aop  http://www.springframework.org/schema
             <value>root</value>
         </property>
         <property name="password">
-            <value></value>
+            <value>121800</value>
         </property>
         <property name="url">
             <value>jdbc:mysql://localhost:3306/exam?useUnicode=true&amp;characterEncoding=utf8</value>
@@ -72,12 +72,12 @@ http://www.springframework.org/schema/aop  http://www.springframework.org/schema
         <!--配置SQL Mapper XML文件-->
         <property name="mapperLocations">
             <list>
-                <value>classpath:com/qst/ssm/mapper/*.xml</value>
+                <value>classpath:com/exam/wessm/mapper/*.xml</value>
             </list>
         </property>
         <!--配置使用别名注解实体类所在的包-->
         <property name="typeAliasesPackage">
-            <value>com.qst.ssm.entity</value>
+            <value>com.exam.wessm.entity</value>
         </property>
     </bean>
 
@@ -85,7 +85,7 @@ http://www.springframework.org/schema/aop  http://www.springframework.org/schema
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- Mapper接口所在的包-->
         <property name="basePackage">
-            <value>com.qst.ssm.mapper</value>
+            <value>com.exam.wessm.mapper</value>
         </property>
         <property name="sqlSessionFactoryBeanName">
             <value>sqlSessionFactory</value>

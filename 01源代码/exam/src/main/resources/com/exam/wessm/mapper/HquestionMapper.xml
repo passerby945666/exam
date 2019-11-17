@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
-    <!-- 查询所有考试-->
-    <select id="queryExam" resultType="exam">
-        <![CDATA[
-        select
-            e_id as eId,
-            e_no as eNo,
-            e_name as eName,
-            m_id as mId,
-            k_id as kId,
-            time_begin as timeBegin,
-            time_test as timeTest,
-            time_baomin as timeBaomin,
-            time_end as timeEnd
-        from
-            exam
-        ]]>
-    </select>
+<mapper namespace="com.exam.wessm.mapper.HquestionMapper">
+
 </mapper>

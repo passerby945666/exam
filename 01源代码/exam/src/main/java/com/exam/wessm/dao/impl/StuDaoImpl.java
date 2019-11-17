@@ -11,8 +11,7 @@ import java.util.List;
 @Repository("stuDao")
 public class StuDaoImpl implements IStuDao {
     @Autowired
-    @Qualifier("StuMapper")
-
+    @Qualifier("stuMapper")
     private StuMapper stuMapper;
     @Override
     public int registerStu(Stu stu) {
@@ -22,8 +21,10 @@ public class StuDaoImpl implements IStuDao {
 
     @Override
     public Stu findNoAndPass(String sNo, String sPassword) {
-
-        return stuMapper.findNoAndPass(sNo,sPassword);
+        Stu stu=new Stu();
+        stu.setsNo(sNo);
+        stu.setsPassword(sPassword);
+        return stuMapper.findNoAndPass(stu);
     }
 
     @Override

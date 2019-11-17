@@ -7,10 +7,11 @@ import com.exam.wessm.entity.Subject;
 import com.exam.wessm.mapper.ExamMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
-
+@Repository("examDao")
 public class ExamDaoImpl implements IExamDao {
     @Autowired
     @Qualifier("examMapper")
@@ -22,13 +23,13 @@ public class ExamDaoImpl implements IExamDao {
     }
 
     @Override
-    public Exam getExam(Integer eId) {
-        return examMapper.getExam(eId);
+    public Exam getExamEId(Integer eId) {
+        return examMapper.getExamEId(eId);
     }
 
     @Override
-    public List<Map> getExam(String exam) {
-        return examMapper.getExam(exam);
+    public List<Map> getExamExam(String exam) {
+        return examMapper.getExamExam(exam);
     }
 
     @Override

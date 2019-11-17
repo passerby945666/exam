@@ -22,7 +22,7 @@ public interface IExamService {
      * @param
      * @return
      */
-    Exam getExam(Integer eId);
+    Exam getExamEId(Integer eId);
 
     /**
      * 根据关键字加载考试信息
@@ -30,7 +30,7 @@ public interface IExamService {
      * @param
      * @return
      */
-    List<Map> getExam(String exam);
+    List<Map> getExamExam(String exam);
 
     /**
      * 添加考试

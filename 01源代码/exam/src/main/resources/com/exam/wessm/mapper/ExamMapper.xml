@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
+<mapper namespace="com.exam.wessm.mapper.ExamMapper">
     <!-- 查询所有考试-->
     <select id="queryExam" resultType="exam">
         <![CDATA[
@@ -19,7 +19,7 @@
         ]]>
     </select>
     <!-- 根据考试id加载考试信息-->
-    <select id="getExam"  resultType="exam" parameterType="int">
+    <select id="getExamEId"  resultType="exam" parameterType="int">
         <![CDATA[
         select
             e_id as eId,
@@ -37,7 +37,7 @@
        ]]>
     </select>
     <!-- 根据关键字加载考试信息-->
-    <select id="getExam"  resultType="java.util.Map" parameterType="String">
+    <select id="getExamExam"  resultType="java.util.Map" parameterType="String">
         <![CDATA[
         select
             e_id as eId,

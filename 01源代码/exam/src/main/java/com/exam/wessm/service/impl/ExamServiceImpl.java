@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
-@Service("exaamService")
+@Service("examService")
 public class ExamServiceImpl implements IExamService {
 
     @Autowired
@@ -29,14 +29,14 @@ public class ExamServiceImpl implements IExamService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public Exam getExam(Integer eId) {
-        return examDao.getExam(eId);
+    public Exam getExamEId(Integer eId) {
+        return examDao.getExamEId(eId);
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public List<Map> getExam(String exam) {
-        return examDao.getExam(exam);
+    public List<Map> getExamExam(String exam) {
+        return examDao.getExamExam(exam);
     }
 
     @Override

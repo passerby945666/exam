@@ -1,4 +1,4 @@
 package com.exam.wessm.mapper;
 
-public interface Quetype {
+public interface QuetypeMapper {
 }

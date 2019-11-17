@@ -2,10 +2,18 @@ package com.exam.wessm.dao.impl;
 
 import com.exam.wessm.dao.ISubjectDao;
 import com.exam.wessm.entity.Subject;
+import com.exam.wessm.mapper.SubjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository("subjectDao")
 public class SubjectDaoImpl implements ISubjectDao {
+        @Autowired
+        @Qualifier("subjectMapper")
+        private SubjectMapper subjectMapper;
+
     @Override
     public List<Subject> querySubject() {
         return null;

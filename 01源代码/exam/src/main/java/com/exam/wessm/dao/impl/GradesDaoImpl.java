@@ -3,11 +3,19 @@ package com.exam.wessm.dao.impl;
 import com.exam.wessm.dao.IGradesDao;
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Grades;
+import com.exam.wessm.mapper.GradesMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository("gradesDao")
 public class GradesDaoImpl implements IGradesDao {
-    @Override
+        @Autowired
+        @Qualifier("gradesMapper")
+        private GradesMapper gradesMapper;
+
+        @Override
     public List<Grades> queryExam() {
         return null;
     }

@@ -20,12 +20,11 @@ public interface StuMapper {
 
     /**
      * 考生通过账号和密码登录
-     * @param sNo
-     * @param sPassword
+     * @param stu
      * @return
      */
 
-    Stu findNoAndPass(@Param("s_no")String sNo, @Param("s_password")String sPassword );
+    Stu findNoAndPass(Stu stu);
 
     /**
      * 根据考生ID删除考生
