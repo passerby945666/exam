@@ -27,7 +27,7 @@ public interface IExamDao {
      * @param
      * @return
      */
-    Exam getExam(Km km);
+    Exam getExam();
 
     /**
      * 根据管理员编号或名字加载考试信息
