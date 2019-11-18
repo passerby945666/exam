@@ -3,8 +3,10 @@ package com.exam.wessm.entity;
  * 题目实体类
  */
 
-import java.util.Date;
+import org.apache.ibatis.type.Alias;
 
+import java.util.Date;
+@Alias("quebank")
 public class Quebank {
     /** 题目ID*/
     private  Integer tId;

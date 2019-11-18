@@ -1,10 +1,13 @@
 package com.exam.wessm.entity;
 
+import org.apache.ibatis.type.Alias;
+
 import java.util.Date;
 
 /***
  * 考生信息实体类
  */
+@Alias("stu")
 public class Stu {
     /** 考生ID*/
     private  Integer sId;

@@ -1,8 +1,11 @@
 package com.exam.wessm.entity;
 
+import org.apache.ibatis.type.Alias;
+
 /**
  * 考试成员实体类
  */
+@Alias("examiners")
 public class Examiners {
     /** 成员ID*/
     private  Integer exId;

@@ -1,10 +1,13 @@
 package com.exam.wessm.entity;
 
+import org.apache.ibatis.type.Alias;
+
 import java.util.Date;
 
 /**
  * 管理员实体类
  **/
+@Alias("manager")
 public class Manager {
     /** 管理员ID*/
     private  Integer mId;

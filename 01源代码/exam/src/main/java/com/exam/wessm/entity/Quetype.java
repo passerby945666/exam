@@ -1,8 +1,11 @@
 package com.exam.wessm.entity;
 
+import org.apache.ibatis.type.Alias;
+
 /**
  * 题型实体类
  */
+@Alias("quetype")
 public class Quetype {
     /**题型id**/
     private Integer qId;

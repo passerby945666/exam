@@ -1,5 +1,8 @@
 package com.exam.wessm.entity;
 
+import org.apache.ibatis.type.Alias;
+
+@Alias("hquestion")
 public class Hquestion {
     /**历史题目id**/
     private Integer hId;

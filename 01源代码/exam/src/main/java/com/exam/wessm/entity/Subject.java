@@ -1,8 +1,11 @@
 package com.exam.wessm.entity;
 
+import org.apache.ibatis.type.Alias;
+
 /**
  * 科目实体类
  */
+@Alias("subject")
 public class Subject {
     /** 科目ID*/
     private  Integer kId;

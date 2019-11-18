@@ -25,7 +25,7 @@ WHERE
 
         ]]>
     </select>
-    <select id="queryHquestionAll" resultType="exam" >
+    <select id="queryHquestionAll" resultType="hquestion" >
         <![CDATA[
 SELECT
 	h_id AS hId,
@@ -42,7 +42,7 @@ FROM
         ]]>
     </select>
 
-    <select id="getHquestion" resultType="exam" parameterType="int" >
+    <select id="getHquestion" resultType="exam" parameterType="hquestion" >
         <![CDATA[
 SELECT
 	h_id AS hId,
@@ -50,7 +50,7 @@ SELECT
 	s_id AS sId,
 	e_id AS eId,
 	t_id AS tId,
-	STATUS AS STATUS,
+	status AS Status,
 	h_grade AS hGrade,
 	h_answer AS hAnswer
 FROM
@@ -59,21 +59,11 @@ WHERE
 	e_id = {e_id};
         ]]>
     </select>
-    <select id="insertHquestion" resultType="exam" parameterType="int" >
+    <select id="insertHquestion" resultType="int" parameterType="hquestion" >
         <![CDATA[
-SELECT
-	h_id AS hId,
-	h_no AS hNo,
-	s_id AS sId,
-	e_id AS eId,
-	t_id AS tId,
-	STATUS AS STATUS,
-	h_grade AS hGrade,
-	h_answer AS hAnswer
-FROM
-	hquestion
-WHERE
-	e_id = {e_id};
+INSERT INTO hquestion ( h_no, s_id, e_id, t_id, status, h_grade, h_answer )
+VALUES
+	(#{hNo},#{sId},#{eId},#{tId},#{Status},#{hGrade},#{hAnswer});
         ]]>
     </select>
 

@@ -1,7 +1,11 @@
 package com.exam.wessm.entity;
+
+import org.apache.ibatis.type.Alias;
+
 /**
  * 成绩实体类
  */
+@Alias("grades")
 public class Grades {
     /** 考生ID*/
     private  Integer sId;

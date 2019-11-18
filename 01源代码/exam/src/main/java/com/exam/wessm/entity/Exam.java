@@ -1,11 +1,14 @@
 package com.exam.wessm.entity;
 
+import org.apache.ibatis.type.Alias;
+
 import java.util.Date;
 import java.util.List;
 
 /**
  * 考试实体类
  */
+@Alias("exam")
 public class Exam  {
     /** 考试ID*/
     private  Integer eId;
