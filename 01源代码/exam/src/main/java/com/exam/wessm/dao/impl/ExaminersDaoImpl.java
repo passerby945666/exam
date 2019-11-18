@@ -19,26 +19,26 @@ public class ExaminersDaoImpl implements IExaminersDao {
 
     @Override
     public List<Map> queryExaminers() {
-        return null;
+        return examinersMapper.queryExaminers();
     }
 
     @Override
     public List<Map> getExaminers(String examiners) {
-        return null;
+        return examinersMapper.getExaminers(examiners);
     }
 
     @Override
     public int insertEaxminers(Examiners examiners) {
-        return 0;
+        return examinersMapper.insertEaxminers(examiners);
     }
 
     @Override
     public int deleteEaxminers(Integer exId) {
-        return 0;
+        return examinersMapper.deleteEaxminers(exId);
     }
 
     @Override
     public int updateEaxminers(Examiners examiners) {
-        return 0;
+        return examinersMapper.updateEaxminers(examiners);
     }
 }

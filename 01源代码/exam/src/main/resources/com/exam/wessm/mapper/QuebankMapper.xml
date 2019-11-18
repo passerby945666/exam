@@ -36,7 +36,7 @@
             left join manager on quebank.m_id=manager.m_id)
             left join subject on quebank.k_id=subject.k_id
         where
-            t_no=#{quebank} or q_type=#{quebank}
+            t_no=#{quebank} or q_type=#{quebank} or content like #{quebank}
             or k_no=#{quebank} or k_name like #{quebank}
             or m_no=#{quebank} or m_name like #{quebank}
        ]]>
