@@ -5,6 +5,9 @@ import com.exam.wessm.entity.Quebank;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 题库业务层接口
+ */
 public interface IQuebankService {
     /**
      * 查询所有题库信息
