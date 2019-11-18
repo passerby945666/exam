@@ -26,14 +26,14 @@ public class StuController {
         return "?rows="+rows;
     }
 
-    @RequestMapping(value = "register", method = RequestMethod.POST)
+    @RequestMapping(value = "login", method = RequestMethod.POST)
     public String login(String sNo,String sPassword) {
         Stu stu=null;
         stu = stuService.findNoAndPass(sNo,sPassword);
         if(stu!=null){
-            return " ";     //登录成功
+            return "/qqq.jsp";     //登录成功
         }else {
-            return "";      //登陆失败
+            return "/qqq.jsp";      //登陆失败
         }
 
     }
