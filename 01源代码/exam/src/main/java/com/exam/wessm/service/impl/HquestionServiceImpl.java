@@ -15,8 +15,8 @@ public class HquestionServiceImpl implements IHquestionService {
     private IHquestionDao hquestionDao;
 
     @Override
-    public List<Hquestion> queryHquestion() {
-        return hquestionDao.queryHquestion();
+    public List<Hquestion> queryHquestionAll() {
+        return hquestionDao.queryHquestionAll();
     }
 
     @Override

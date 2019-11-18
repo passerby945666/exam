@@ -2,20 +2,80 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.HquestionMapper">
     <!-- 查询所有考试-->
-    <select id="getHquestion" resultType="exam" parameterType="Map">
+    <select id="queryHquestion" resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
-        select
-            e_id as eId,
-            e_no as eNo,
-            e_name as eName,
-            m_id as mId,
-            k_id as kId,
-            time_begin as timeBegin,
-            time_test as timeTest,
-            time_baomin as timeBaomin,
-            time_end as timeEnd
-        from
-            exam
+       SELECT
+	t_no AS tNo,
+	content,
+	h_answer AS hAnswer,
+	q_value AS qValue
+FROM
+	(
+		(
+			( hquestion AS hq LEFT JOIN exam AS ex ON ex.e_id = hq.e_id )
+			LEFT JOIN manager AS ma ON ex.m_id = ma.m_id
+		)
+		LEFT JOIN quebank AS qu ON hq.t_id = qu.t_id
+	)
+	LEFT JOIN quetype AS qut ON qu.q_id = qut.q_id
+WHERE
+	m_no = #{mNo}
+	AND e_no = #{eNo}
+	AND STATUS =#{Status}
+
         ]]>
     </select>
+    <select id="queryHquestionAll" resultType="exam" >
+        <![CDATA[
+SELECT
+	h_id AS hId,
+	h_no AS hNo,
+	s_id AS sId,
+	e_id AS eId,
+	t_id AS tId,
+	STATUS AS STATUS,
+	h_grade AS hGrade,
+	h_answer AS hAnswer
+FROM
+	hquestion;
+
+        ]]>
+    </select>
+
+    <select id="getHquestion" resultType="exam" parameterType="int" >
+        <![CDATA[
+SELECT
+	h_id AS hId,
+	h_no AS hNo,
+	s_id AS sId,
+	e_id AS eId,
+	t_id AS tId,
+	STATUS AS STATUS,
+	h_grade AS hGrade,
+	h_answer AS hAnswer
+FROM
+	hquestion
+WHERE
+	e_id = {e_id};
+        ]]>
+    </select>
+    <select id="insertHquestion" resultType="exam" parameterType="int" >
+        <![CDATA[
+SELECT
+	h_id AS hId,
+	h_no AS hNo,
+	s_id AS sId,
+	e_id AS eId,
+	t_id AS tId,
+	STATUS AS STATUS,
+	h_grade AS hGrade,
+	h_answer AS hAnswer
+FROM
+	hquestion
+WHERE
+	e_id = {e_id};
+        ]]>
+    </select>
+
+
 </mapper>

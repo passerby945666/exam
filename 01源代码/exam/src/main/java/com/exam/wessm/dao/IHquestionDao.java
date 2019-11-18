@@ -13,7 +13,7 @@ public interface IHquestionDao {
  * 查询历史考题信息
  * @return
  */
-List<Hquestion> queryHquestion();
+List<Hquestion> queryHquestionAll();
 
     /**
      *显示阅卷信息
