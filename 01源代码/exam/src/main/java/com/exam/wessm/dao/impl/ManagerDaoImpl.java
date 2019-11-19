@@ -7,35 +7,47 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @Repository("managerDao")
 public class ManagerDaoImpl implements IManagerDao {
-        @Autowired
-        @Qualifier("managerMapper")
-        private ManagerMapper managerMapper;
+    @Autowired
+    @Qualifier("managerMapper")
+    private ManagerMapper managerMapper;
+
 
     @Override
     public List<Manager> queryManager() {
-        return null;
+        return managerMapper.queryManager();
     }
 
     @Override
-    public Manager getManager(int mId) {
-        return null;
+    public Manager getManagerMId(Integer mId) {
+        return managerMapper.getManagerMId(mId);
+    }
+
+    @Override
+    public Manager getManager(String manager) {
+        Map map=new HashMap();
+        map.put("no",manager);
+        map.put("name","%"+manager+"%");
+        return managerMapper.getManager(map);
     }
 
     @Override
     public int insertManager(Manager manager) {
-        return 0;
+        return managerMapper.insertManager(manager);
     }
 
     @Override
-    public int deleteManager(int mId) {
-        return 0;
+    public int deleteManager(Integer mId) {
+        return managerMapper.deleteManager(mId);
     }
 
     @Override
     public int updateManager(Manager manager) {
-        return 0;
+        return managerMapper.updateManager(manager);
     }
 }

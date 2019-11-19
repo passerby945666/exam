@@ -1,4 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.ManagerMapper">
+    <!-- 查询所有管理员信息-->
+    <select id="queryManager" resultType="manager">
+        <![CDATA[
+        select
+            m_no as mNo,
+            m_name as mName,
+            m_sex as mSex,
+            m_birthday as mBirthday
+        from
+            manager
+        ]]>
+    </select>
+    <!-- 根据管理员id加载管理员信息-->
+    <select id="getManagerMId"  resultType="manager" parameterType="int">
+        <![CDATA[
+        select
+            m_no as mNo,
+            m_name as mName,
+            m_sex as mSex,
+            m_birthday as mBirthday
+        from
+            manager
+        where
+            m_id=#{m_id}
+       ]]>
+    </select>
+    <!-- 根据管理员编号或名字或身份证号加载管理员信息-->
+    <select id="getManager"  resultType="manager" parameterType="java.util.Map">
+        <![CDATA[
+        select
+            m_no as mNo,
+            m_name as mName,
+            m_sex as mSex,
+            m_birthday as mBirthday
+        from
+            manager
+        where
+            m_no=#{no} or m_name like #{name} or m_idcard=#{no}
+       ]]>
+    </select>
+    <!-- 添加管理员信息-->
+    <insert id="insertManager" parameterType="manager">
+      <![CDATA[
+        insert into manager (
+            m_no ,
+            m_password,
+            m_name ,
+            m_idcard,
+            m_sex ,
+            m_birthday
+        )
+        values
+        (
+            #{mNo},
+            #{mPassword},
+            #{mName},
+            #{mIdcard},
+            #{mSex},
+            #{mBirthday}
+         )
+      ]]>
+    </insert>
+    <!-- 根据管理员ID删除管理员记录-->
+    <delete id="deleteManager" parameterType="int">
+        <![CDATA[
+        delete from manager
+        where m_id=#{m_id}
+      ]]>
+    </delete>
+    <!-- 根据管理员ID修改管理员信息-->
+    <update id="updateManager" parameterType="manager">
+    <![CDATA[
+        update  manager
+        set     m_no=#{mNo} ,
+                m_name=#{mName} ,
+                m_idcard=#{mIdcard} ,
+                m_sex=#{mSex} ,
+                m_birthday=#{mBirthday}
+        where   m_id=#{mId}
+     ]]>
+    </update>
 </mapper>
