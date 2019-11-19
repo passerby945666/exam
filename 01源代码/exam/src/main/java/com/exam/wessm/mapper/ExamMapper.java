@@ -27,7 +27,7 @@ public interface ExamMapper {
      * @param
      * @return
      */
-    List<Map> getExamExam(@Param("exam")String exam);
+    List<Map> getExamExam(Map map);
 
     /**
      * 添加考试
@@ -35,19 +35,19 @@ public interface ExamMapper {
      * @param exam
      * @return
      */
-    int insertEaxm(Exam exam);
+    int insertExam(Exam exam);
 
     /**
      * 根据考试Id删除考试
      * @param
      * @return
      */
-    int deleteEaxm(@Param("s_id")Integer eId);
+    int deleteExam(@Param("s_id")Integer eId);
 
     /**
      * 修改考试信息
      * @param exam
      * @return
      */
-    int updateEaxm(Exam exam);
+    int updateExam(Exam exam);
 }

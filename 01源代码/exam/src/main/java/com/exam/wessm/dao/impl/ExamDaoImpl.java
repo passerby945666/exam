@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 @Repository("examDao")
@@ -29,21 +30,24 @@ public class ExamDaoImpl implements IExamDao {
 
     @Override
     public List<Map> getExamExam(String exam) {
-        return examMapper.getExamExam(exam);
+        Map map=new HashMap();
+        map.put("no",exam);
+        map.put("name","%"+exam+"%");
+        return examMapper.getExamExam(map);
     }
 
     @Override
-    public int insertEaxm(Exam exam) {
-        return examMapper.insertEaxm(exam);
+    public int insertExam(Exam exam) {
+        return examMapper.insertExam(exam);
     }
 
     @Override
-    public int deleteEaxm(Integer eId) {
-        return examMapper.deleteEaxm(eId);
+    public int deleteExam(Integer eId) {
+        return examMapper.deleteExam(eId);
     }
 
     @Override
-    public int updateEaxm(Exam exam) {
-        return examMapper.updateEaxm(exam);
+    public int updateExam(Exam exam) {
+        return examMapper.updateExam(exam);
     }
 }

@@ -37,7 +37,7 @@
        ]]>
     </select>
     <!-- 根据关键字加载考试信息-->
-    <select id="getExamExam"  resultType="java.util.Map" parameterType="String">
+    <select id="getExamExam"  resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
         select
             e_id as eId,
@@ -53,9 +53,9 @@
              (exam left join subject on exam.k_id=subjuct.k_id)
             left join manager on exam.m_id=manager.m_id
         where
-            e_no=#{exam} or e_name like #{exam}
-            or s_no=#{exam} or s_name like #{exam}
-            or m_no=#{exam} or m_name like #{exam}
+            e_no=#{no} or e_name like #{name}
+            or s_no=#{no} or s_name like #{name}
+            or m_no=#{no} or m_name like #{name}
        ]]>
     </select>
     <!-- 添加考试信息-->
