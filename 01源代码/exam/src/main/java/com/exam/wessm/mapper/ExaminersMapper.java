@@ -15,12 +15,19 @@ public interface ExaminersMapper {
     List<Map> queryExaminers();
 
     /**
+     * 根据考试成员id加载考试成员信息
+     * @param
+     * @return
+     */
+    List<Map> getExaminersExId(@Param("ex_id")Integer exId);
+
+    /**
      * 根据考试编号或姓名加载考试成员信息
      *
      * @param
      * @return
      */
-    List<Map> getExaminers(@Param("examiners")String examiners);
+    List<Map> getExaminers(Map map);
 
     /**
      * 添加考试成员

@@ -23,13 +23,13 @@ public class ExamServiceImpl implements IExamService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public List<Exam> queryExam() {
+    public List<Map> queryExam() {
         return examDao.queryExam();
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public Exam getExamEId(Integer eId) {
+    public List<Map> getExamEId(Integer eId) {
         return examDao.getExamEId(eId);
     }
 

@@ -2,37 +2,37 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.ExamMapper">
     <!-- 查询所有考试-->
-    <select id="queryExam" resultType="exam">
+    <select id="queryExam" resultType="java.util.Map">
         <![CDATA[
         select
-            e_id as eId,
             e_no as eNo,
             e_name as eName,
-            m_id as mId,
-            k_id as kId,
+            m_name as mName,
+            k_name as kName,
             time_begin as timeBegin,
             time_test as timeTest,
             time_baomin as timeBaomin,
             time_end as timeEnd
         from
-            exam
+             (exam left join subject on exam.k_id=subject.k_id)
+            left join manager on exam.m_id=manager.m_id
         ]]>
     </select>
     <!-- 根据考试id加载考试信息-->
-    <select id="getExamEId"  resultType="exam" parameterType="int">
+    <select id="getExamEId"  resultType="java.util.Map" parameterType="int">
         <![CDATA[
         select
-            e_id as eId,
             e_no as eNo,
             e_name as eName,
-            m_id as mId,
-            k_id as kId,
+            m_name as mName,
+            k_name as kName,
             time_begin as timeBegin,
             time_test as timeTest,
             time_baomin as timeBaomin,
             time_end as timeEnd
         from
-            exam
+             (exam left join subject on exam.k_id=subject.k_id)
+            left join manager on exam.m_id=manager.m_id
         where e_id=#{e_id}
        ]]>
     </select>
@@ -40,7 +40,6 @@
     <select id="getExamExam"  resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
         select
-            e_id as eId,
             e_no as eNo,
             e_name as eName,
             m_name as mName,
@@ -67,7 +66,9 @@
             time_begin ,
             time_test,
             time_baomin ,
-            time_end
+            time_end,
+            k_id,
+            m_id
         )
         values
         (
@@ -76,7 +77,9 @@
             #{timeBegin},
             #{timeTest},
             #{timeBaomin},
-            #{timeEnd}
+            #{timeEnd},
+            #{kId},
+            #{mId}
          )
       ]]>
     </insert>

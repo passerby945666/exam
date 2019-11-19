@@ -1,7 +1,5 @@
 package com.exam.wessm.dao;
 
-
-
 import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Quebank;
 import com.exam.wessm.entity.Subject;
@@ -14,7 +12,14 @@ public interface IQuebankDao {
      * 查询所有题库信息
      * @return
      */
-    List<Quebank> queryQuebank();
+    List<Map> queryQuebank();
+
+    /**
+     * 根据题库id加载题库信息
+     * @param
+     * @return
+     */
+    List<Map> getQuebankTId(Integer tId);
 
     /**
      * 根据关键字加载题库信息

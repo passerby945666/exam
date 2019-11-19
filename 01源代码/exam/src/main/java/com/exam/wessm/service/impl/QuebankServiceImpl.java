@@ -18,8 +18,13 @@ public class QuebankServiceImpl implements IQuebankService {
     private IQuebankDao quebankDao;
 
     @Override
-    public List<Quebank> queryQuebank() {
+    public List<Map> queryQuebank() {
         return quebankDao.queryQuebank();
+    }
+
+    @Override
+    public List<Map> getQuebanTId(Integer tId) {
+        return quebankDao.getQuebankTId(tId);
     }
 
     @Override

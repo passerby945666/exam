@@ -11,7 +11,14 @@ public interface QuebankMapper {
      * 查询所有题库信息
      * @return
      */
-    List<Quebank> queryQuebank();
+    List<Map> queryQuebank();
+
+    /**
+     * 根据题库id加载题库信息
+     * @param
+     * @return
+     */
+    List<Map> getQuebankTId(@Param("t_id")Integer tId);
 
     /**
      * 根据关键字加载题库信息
@@ -19,7 +26,7 @@ public interface QuebankMapper {
      * @param
      * @return
      */
-    List<Map> getQuebank(@Param("quebank") String quebank);
+    List<Map> getQuebank(Map map);
 
     /**
      * 添加题库信息

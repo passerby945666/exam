@@ -2,27 +2,46 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.QuebankMapper">
     <!-- 查询所有题目-->
-    <select id="queryQuebank" resultType="quebank">
+    <select id="queryQuebank" resultType="java.util.Map">
         <![CDATA[
         select
-            t_id as tId,
             t_no as tNo,
             content,
-            q_id as qId,
+            q_type as qType,
             answer,
             reply,
             t_time as tTime,
-            k_id as kId,
-            m_id as mId
-        from
-            quebank
+            k_name as kName,
+            m_name as mName
+         from
+             ((quebank left join quetype on quebank.q_id=quetype.q_id)
+            left join manager on quebank.m_id=manager.m_id)
+            left join subject on quebank.k_id=subject.k_id
         ]]>
     </select>
-    <!-- 根据关键字加载题目信息-->
-    <select id="getQuebank"  resultType="java.util.Map" parameterType="String">
+    <!-- 根据题目id加载题目信息-->
+    <select id="getQuebankTId"  resultType="java.util.Map" parameterType="int">
         <![CDATA[
         select
-            t_id as tId,
+            t_no as tNo,
+            content,
+            q_type as qType,
+            answer,
+            reply,
+            t_time as tTime,
+            k_name as kName,
+            m_name as mName
+         from
+             ((quebank left join quetype on quebank.q_id=quetype.q_id)
+            left join manager on quebank.m_id=manager.m_id)
+            left join subject on quebank.k_id=subject.k_id
+        where t_id=#{t_id}
+       ]]>
+    </select>
+    <!-- 根据关键字加载题目信息-->
+    <select id="getQuebank"  resultType="java.util.Map" parameterType="java.util.Map">
+        <![CDATA[
+        select
             t_no as tNo,
             content,
             q_type as qType,
@@ -36,34 +55,34 @@
             left join manager on quebank.m_id=manager.m_id)
             left join subject on quebank.k_id=subject.k_id
         where
-            t_no=#{quebank} or q_type=#{quebank} or content like #{quebank}
-            or k_no=#{quebank} or k_name like #{quebank}
-            or m_no=#{quebank} or m_name like #{quebank}
+            t_no=#{no} or q_type=#{no} or content like #{name}
+            or k_no=#{no} or k_name like #{name}
+            or m_no=#{no} or m_name like #{name}
        ]]>
     </select>
     <!-- 添加题目信息-->
     <insert id="insertQuebank" parameterType="quebank">
       <![CDATA[
         insert into quebank (
-            t_no as tNo,
+            t_no ,
             content,
-            q_id as qId,
             answer,
             reply,
-            t_time as tTime,
-            k_id as kId,
-            m_id as mId
+            t_time,
+            q_id,
+            k_id,
+            m_id
         )
         values
         (
             #{tNo},
             #{content},
-            #{qId},
             #{answer},
             #{reply},
             #{tTest},
+            #{qId},
             #{kId},
-            #{mId},
+            #{mId}
          )
       ]]>
     </insert>
@@ -79,14 +98,11 @@
     <![CDATA[
         update  quebank
         set
-                t_no as tNo,
-                content,
-                q_id as qId,
-                answer,
-                reply,
-                t_time as tTime,
-                k_id as kId,
-                m_id as mId
+                t_no=#{tNo},
+                content=#{content},
+                answer=#{answer},
+                reply=#{reply},
+                t_time=#{tTime}
         where   t_id=#{tId}
      ]]>
     </update>

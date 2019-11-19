@@ -5,21 +5,36 @@
     <select id="queryExaminers" resultType="java.util.Map">
         <![CDATA[
         select
-            e_no as eNo
+            e_no as eNo,
             e_name as eName,
             s_no as sNo,
             s_name as sName,
             examCard
         from
             (examiners left join exam on examiners.e_id=exam.e_id)
-        left join stu on examiners.s_id=stu.s_id
+            left join stu on examiners.s_id=stu.s_id
         ]]>
     </select>
-    <!-- 根据考试ID加载考试成员信息-->
-    <select id="getExaminers"  resultType="java.util.Map" parameterType="String">
+    <!-- 根据考试成员id加载考试成员信息-->
+    <select id="getExaminersExId"  resultType="java.util.Map" parameterType="int">
         <![CDATA[
         select
-            e_no as eNo
+            e_no as eNo,
+            e_name as eName,
+            s_no as sNo,
+            s_name as sName,
+            examCard
+        from
+            (examiners left join exam on examiners.e_id=exam.e_id)
+            left join stu on examiners.s_id=stu.s_id
+        where ex_id=#{ex_id}
+       ]]>
+    </select>
+    <!-- 根据考试编号或名字加载考试成员信息-->
+    <select id="getExaminers"  resultType="java.util.Map" parameterType="java.util.Map">
+        <![CDATA[
+        select
+            e_no as eNo,
             e_name as eName,
             s_no as sNo,
             s_name as sName,
@@ -28,22 +43,22 @@
             (examiners left join exam on examiners.e_id=exam.e_id)
             left join stu on examiners.s_id=stu.s_id
         where
-            e_no=#{examiners} or e_name like #{examiners}
+            e_no=#{no} or e_name like #{name}
        ]]>
     </select>
     <!-- 添加考试成员-->
     <insert id="insertExaminers" parameterType="examiners">
       <![CDATA[
         insert into examiners (
-            s_id as sId,
-            e_id as eId,
-            examCard
+            examCard,
+            s_id,
+            e_id
         )
         values
         (
+            #{examCard},
             #{sId},
-            #{eId},
-            #{examCard}
+            #{eId}
          )
       ]]>
     </insert>
@@ -58,8 +73,7 @@
     <update id="updateExaminers" parameterType="examiners">
     <![CDATA[
         update  examiners
-        set     s_id=#{sId},
-                e_id=#{eId},
+        set
                 examCard=#{examCard}
         where   ex_id=#{exId}
      ]]>

@@ -20,6 +20,10 @@ public class Examiners {
         return exId;
     }
 
+    public Examiners() {
+
+    }
+
     public Examiners(Integer exId, String examCard, Integer sId, Integer eId) {
         this.exId = exId;
         this.examCard = examCard;

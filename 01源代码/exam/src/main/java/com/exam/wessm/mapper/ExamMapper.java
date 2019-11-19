@@ -12,14 +12,14 @@ public interface ExamMapper {
      * 查询考试信息
      * @return
      */
-    List<Exam> queryExam();
+    List<Map> queryExam();
 
     /**
      * 根据考试id加载考试信息
      * @param
      * @return
      */
-    Exam getExamEId(@Param("e_id")Integer eId);
+    List<Map> getExamEId(@Param("e_id")Integer eId);
 
     /**
      * 根据关键字加载考试信息

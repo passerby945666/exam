@@ -13,7 +13,14 @@ public interface IQuebankService {
      * 查询所有题库信息
      * @return
      */
-    List<Quebank> queryQuebank();
+    List<Map> queryQuebank();
+
+    /**
+     * 根据题库id加载题库信息
+     * @param
+     * @return
+     */
+    List<Map> getQuebanTId(Integer tId);
 
     /**
      * 根据关键字加载题库信息

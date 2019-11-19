@@ -15,14 +15,14 @@ public interface IExamService {
      * 查询考试信息
      * @return
      */
-    List<Exam> queryExam();
+    List<Map> queryExam();
 
     /**
      * 根据考试id加载考试信息
      * @param
      * @return
      */
-    Exam getExamEId(Integer eId);
+    List<Map> getExamEId(Integer eId);
 
     /**
      * 根据关键字加载考试信息

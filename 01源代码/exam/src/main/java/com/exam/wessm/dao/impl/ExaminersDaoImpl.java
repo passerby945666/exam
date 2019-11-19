@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 @Repository("examinersDao")
@@ -23,8 +24,16 @@ public class ExaminersDaoImpl implements IExaminersDao {
     }
 
     @Override
+    public List<Map> getExaminersExId(Integer exId) {
+        return examinersMapper.getExaminersExId(exId);
+    }
+
+    @Override
     public List<Map> getExaminers(String examiners) {
-        return examinersMapper.getExaminers(examiners);
+        Map map=new HashMap();
+        map.put("no",examiners);
+        map.put("name","%"+examiners+"%");
+        return examinersMapper.getExaminers(map);
     }
 
     @Override

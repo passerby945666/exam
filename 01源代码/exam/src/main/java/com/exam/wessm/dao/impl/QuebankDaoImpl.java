@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 @Repository("quebankDao")
@@ -19,13 +20,21 @@ public class QuebankDaoImpl implements IQuebankDao {
     private QuebankMapper quebankMapper;
 
     @Override
-    public List<Quebank> queryQuebank() {
+    public List<Map> queryQuebank() {
         return quebankMapper.queryQuebank();
     }
 
     @Override
+    public List<Map> getQuebankTId(Integer tId) {
+        return quebankMapper.getQuebankTId(tId);
+    }
+
+    @Override
     public List<Map> getQuebank(String quebank) {
-        return quebankMapper.getQuebank(quebank);
+        Map map=new HashMap();
+        map.put("no",quebank);
+        map.put("name","%"+quebank+"%");
+        return quebankMapper.getQuebank(map);
     }
 
     @Override

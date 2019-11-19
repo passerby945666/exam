@@ -19,12 +19,12 @@ public class ExamDaoImpl implements IExamDao {
     private ExamMapper examMapper;
 
     @Override
-    public List<Exam> queryExam() {
+    public List<Map> queryExam() {
         return examMapper.queryExam();
     }
 
     @Override
-    public Exam getExamEId(Integer eId) {
+    public List<Map> getExamEId(Integer eId) {
         return examMapper.getExamEId(eId);
     }
 

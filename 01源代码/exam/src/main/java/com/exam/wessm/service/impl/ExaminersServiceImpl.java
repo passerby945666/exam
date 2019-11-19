@@ -27,6 +27,11 @@ public class ExaminersServiceImpl implements IExaminersService {
     }
 
     @Override
+    public List<Map> getExaminersExId(Integer exId) {
+        return examinersDao.getExaminersExId(exId);
+    }
+
+    @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public List<Map> getExaminers(String examiners) {
         return examinersDao.getExaminers(examiners);
