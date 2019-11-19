@@ -46,7 +46,7 @@ public interface IHquestionService {
     int deleteHquestion(int hId);
 
     /**
-     * 阅卷改分
+     * 阅卷改分(分数是一个字符串，注意实体类对象的输入)
      * @param hq
      * @return
      */

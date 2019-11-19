@@ -28,7 +28,6 @@ WHERE
     <select id="queryHquestionAll" resultType="hquestion" >
         <![CDATA[
 SELECT
-	h_id AS hId,
 	h_no AS hNo,
 	s_id AS sId,
 	e_id AS eId,
@@ -42,10 +41,9 @@ FROM
         ]]>
     </select>
 
-    <select id="getHquestion" resultType="exam" parameterType="hquestion" >
+    <select id="getHquestion" resultType="hquestion" parameterType="int" >
         <![CDATA[
 SELECT
-	h_id AS hId,
 	h_no AS hNo,
 	s_id AS sId,
 	e_id AS eId,
@@ -56,16 +54,34 @@ SELECT
 FROM
 	hquestion
 WHERE
-	e_id = {e_id};
+	h_id =#{h_id};
         ]]>
     </select>
-    <select id="insertHquestion" resultType="int" parameterType="hquestion" >
+    <insert id="insertHquestion"  parameterType="hquestion" >
         <![CDATA[
+
 INSERT INTO hquestion ( h_no, s_id, e_id, t_id, status, h_grade, h_answer )
 VALUES
 	(#{hNo},#{sId},#{eId},#{tId},#{Status},#{hGrade},#{hAnswer});
         ]]>
-    </select>
-
-
+    </insert>
+    <delete id="deleteHquestion"  parameterType="int" >
+        <![CDATA[
+DELETE
+FROM
+	hquestion
+WHERE
+	h_id = #{h_id};
+        ]]>
+    </delete>
+    <update id="updateHquestion"  parameterType="hquestion" >
+        <![CDATA[
+UPDATE hquestion
+SET h_grade =#{hGrade}
+WHERE
+	s_id =#{sId}
+	AND e_id = #{eId}
+	AND h_no =#{hNo};
+        ]]>
+    </update>
 </mapper>

@@ -15,7 +15,7 @@ public class StuTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IStuService stuService = (IStuService) context.getBean("stuService");
         Stu stu=new Stu();
-        stu.setsNo("10086");
+        stu.setsNo("10088");
         stu.setsPassword("123456");
         int rows=stuService.registerStu(stu);
         System.out.println(rows);

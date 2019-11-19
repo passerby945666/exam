@@ -11,7 +11,7 @@ public interface HquestionMapper {
      * 查询历史考题信息
      * @return
      */
-    List<Hquestion> queryHquestion();
+    List<Hquestion> queryHquestionAll();
 
 
     /**

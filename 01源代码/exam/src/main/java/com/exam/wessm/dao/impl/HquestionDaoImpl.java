@@ -22,7 +22,7 @@ public class HquestionDaoImpl implements IHquestionDao {
 
     @Override
     public List<Hquestion> queryHquestionAll() {
-        return hquestionMapper.queryHquestion();
+        return hquestionMapper.queryHquestionAll();
     }
 
     @Override
