@@ -1,14 +1,12 @@
 package com.exam.wessm.test;
 
-import com.exam.wessm.entity.Manager;
+
 import com.exam.wessm.entity.Subject;
-import com.exam.wessm.service.IManagerService;
 import com.exam.wessm.service.ISubjectService;
 import org.junit.Test;
 import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.sql.Date;
 import java.util.List;
 
 public class SubjectTest01 {

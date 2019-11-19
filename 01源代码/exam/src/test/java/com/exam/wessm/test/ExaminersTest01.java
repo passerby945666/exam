@@ -37,6 +37,10 @@ public class ExaminersTest01 {
         }
         context.close();
     }
+
+    /**
+     * 查不到
+     */
     @Test
     public void examinersTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
