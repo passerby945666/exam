@@ -5,6 +5,8 @@ package com.exam.wessm.dao;
 import com.exam.wessm.entity.Subject;
 
 import java.util.List;
+import java.util.Map;
+
 /**
  *   题目Dao接口
  */
@@ -18,10 +20,18 @@ public interface ISubjectDao {
     /**
      * 根据ID加载科目信息
      *
-     * @param    kId  ID号
+     * @param
      * @return
      */
-    Subject getSubject(int kId);
+    Subject getSubjectKId(Integer kId);
+
+    /**
+     * 根据科目编号或名字加载科目信息
+     *
+     * @param
+     * @return
+     */
+    Subject getSubject(String subject);
 
     /**
      * 添加科目
@@ -36,7 +46,7 @@ public interface ISubjectDao {
      * @param    kId  ID号
      * @return
      */
-    int deleteSubject(int kId);
+    int deleteSubject(Integer kId);
 
     /**
      * 修改科目信息

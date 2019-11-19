@@ -7,35 +7,46 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @Repository("subjectDao")
 public class SubjectDaoImpl implements ISubjectDao {
-        @Autowired
-        @Qualifier("subjectMapper")
-        private SubjectMapper subjectMapper;
+    @Autowired
+    @Qualifier("subjectMapper")
+    private SubjectMapper subjectMapper;
 
     @Override
     public List<Subject> querySubject() {
-        return null;
+        return subjectMapper.querySubject();
     }
 
     @Override
-    public Subject getSubject(int kId) {
-        return null;
+    public Subject getSubjectKId(Integer kId) {
+        return subjectMapper.getSubjectKId(kId);
+    }
+
+    @Override
+    public Subject getSubject(String subject) {
+        Map map=new HashMap();
+        map.put("no",subject);
+        map.put("name","%"+subject+"%");
+        return subjectMapper.getSubject(map);
     }
 
     @Override
     public int insertSubject(Subject subject) {
-        return 0;
+        return subjectMapper.insertSubject(subject);
     }
 
     @Override
-    public int deleteSubject(int kId) {
-        return 0;
+    public int deleteSubject(Integer kId) {
+        return subjectMapper.deleteSubject(kId);
     }
 
     @Override
     public int updateSubject(Subject subject) {
-        return 0;
+        return subjectMapper.updateSubject(subject);
     }
 }

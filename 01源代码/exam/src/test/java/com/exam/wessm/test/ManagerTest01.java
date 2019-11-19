@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class ManagerTest01 {
     @Test
-    public void examTest01() {
+    public void managerTest01() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
         List<Manager> managers = managerService.queryManager();
@@ -26,7 +26,7 @@ public class ManagerTest01 {
         context.close();
     }
     @Test
-    public void examTest02() {
+    public void managerTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
         Manager managers = managerService.getManagerMId(1);
@@ -34,7 +34,7 @@ public class ManagerTest01 {
         context.close();
     }
     @Test
-    public void examTest03() {
+    public void managerTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
         Manager managers = managerService.getManager("234");
@@ -42,7 +42,7 @@ public class ManagerTest01 {
         context.close();
     }
     @Test
-    public void examTest04() {
+    public void managerTest04() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
         Manager manager=new Manager();
@@ -57,7 +57,7 @@ public class ManagerTest01 {
         context.close();
     }
     @Test
-    public void examTest05() {
+    public void managerTest05() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
         int rows=managerService.deleteManager(1);
@@ -65,7 +65,7 @@ public class ManagerTest01 {
         context.close();
     }
     @Test
-    public void examTest06() {
+    public void managerTest06() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
         Manager manager=new Manager();

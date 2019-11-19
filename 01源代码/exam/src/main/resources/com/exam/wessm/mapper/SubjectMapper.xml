@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.SubjectMapper">
-
+    <!-- 查询所有科目信息-->
+    <select id="querySubject" resultType="subject">
+        <![CDATA[
+        select
+            k_no as kNo,
+            k_name as kName
+        from
+            subject
+        ]]>
+    </select>
+    <!-- 根据科目id加载科目信息-->
+    <select id="getSubjectKId"  resultType="subject" parameterType="int">
+        <![CDATA[
+        select
+            k_no as kNo,
+            k_name as kName
+        from
+            subject
+        where
+            k_id=#{k_id}
+       ]]>
+    </select>
+    <!-- 根据科目编号或名字加载科目信息-->
+    <select id="getSubject"  resultType="subject" parameterType="java.util.Map">
+        <![CDATA[
+         select
+            k_no as kNo,
+            k_name as kName
+        from
+            subject
+        where
+            k_no=#{no} or k_name like #{name}
+       ]]>
+    </select>
+    <!-- 添加科目信息-->
+    <insert id="insertSubject" parameterType="subject">
+      <![CDATA[
+        insert into subject (
+            k_no ,
+            k_name
+        )
+        values
+        (
+            #{kNo},
+            #{kName}
+         )
+      ]]>
+    </insert>
+    <!-- 根据科目ID删除科目记录-->
+    <delete id="deleteSubject" parameterType="int">
+        <![CDATA[
+        delete from subject
+        where k_id=#{k_id}
+      ]]>
+    </delete>
+    <!-- 根据科目ID修改科目信息-->
+    <update id="updateSubject" parameterType="subject">
+    <![CDATA[
+        update  subject
+        set     k_no=#{kNo} ,
+                k_name=#{kName}
+        where   k_id=#{kId}
+     ]]>
+    </update>
 
 </mapper>
