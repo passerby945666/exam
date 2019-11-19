@@ -12,37 +12,44 @@ public interface IGradesDao {
      * 查询成绩信息
      * @return
      */
-    List<Grades> queryExam();
+    List<Grades> queryGrades();
 
     /**
-     * 根据ID加载考试信息
+     * 根据科目ID加载成绩信息
      *
      * @param
      * @return
      */
-    Grades getExam(int eId);
+    List<Grades> getGradekId(int kId);
 
     /**
-     * 添加考试
+     * 根据考试id查询成绩
+     * @param eId
+     * @return
+     */
+    Grades getgetGradeeId(int eId);
+
+    /**
+     * 添加成绩
      *
      * @param grades
      * @return
      */
-    int insertEaxm(Grades grades);
+    int insertGrade(Grades grades);
 
     /**
-     * 根据考试ID删除考试
+     * 根据成绩id删除成绩记录
      * @param
      * @return
      */
-    int deleteEaxm(int eId);
+    int deleteGrede(int gId);
 
     /**
-     * 修改考试信息
-     * @param exam
+     * 修改成绩信息
+     * @param grades
      * @return
      */
-    int updateEaxm(Exam exam);
+    int updateEaxm(Grades grades);
 
 
 }

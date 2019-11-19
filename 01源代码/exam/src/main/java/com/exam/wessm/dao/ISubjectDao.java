@@ -10,13 +10,13 @@ import java.util.List;
  */
 public interface ISubjectDao {
     /**
-     * 查询考试成员信息
+     * 查询所有科目信息
      * @return
      */
     List<Subject> querySubject();
 
     /**
-     * 根据ID加载考试成员信息
+     * 根据ID加载科目信息
      *
      * @param    kId  ID号
      * @return
@@ -24,23 +24,23 @@ public interface ISubjectDao {
     Subject getSubject(int kId);
 
     /**
-     * 添加考试成员
+     * 添加科目
      *
-     * @param km
+     * @param subject
      * @return
      */
     int insertSubject(Subject subject);
 
     /**
-     * 根据考试成员ID删除考试成员
+     * 根据科目ID删除科目
      * @param    kId  ID号
      * @return
      */
     int deleteSubject(int kId);
 
     /**
-     * 修改考试成员信息
-     * @param km
+     * 修改科目信息
+     * @param subject
      * @return
      */
     int updateSubject(Subject subject);
