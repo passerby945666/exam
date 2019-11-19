@@ -4,6 +4,8 @@ import com.exam.wessm.entity.Examiners;
 import com.exam.wessm.entity.Hquestion;
 
 import java.util.List;
+import java.util.Map;
+
 /**
  * 历史考题dao接口
  *
@@ -22,7 +24,7 @@ List<Hquestion> queryHquestionAll();
      * @param status  批改状态
      * @return
      */
-    List<Hquestion> queryHquestion(String mNo, String eNo, String status);
+    List<Map> queryHquestion(String mNo, String eNo, String status);
     /**
      * 根据考题id查询信息
      *

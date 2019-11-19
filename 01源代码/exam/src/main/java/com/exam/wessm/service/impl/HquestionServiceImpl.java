@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
+
 @Service("hquestionService")
 public class HquestionServiceImpl implements IHquestionService {
     @Autowired
@@ -20,7 +22,7 @@ public class HquestionServiceImpl implements IHquestionService {
     }
 
     @Override
-    public List<Hquestion> queryHquestion(String mNo, String eNo, String status) {
+    public List<Map> queryHquestion(String mNo, String eNo, String status) {
         return hquestionDao.queryHquestion(mNo, eNo, status);
     }
 

@@ -26,7 +26,7 @@ public class HquestionDaoImpl implements IHquestionDao {
     }
 
     @Override
-    public List<Hquestion> queryHquestion(String mNo, String eNo, String Status) {
+    public List<Map> queryHquestion(String mNo, String eNo, String Status) {
         Map map=new HashMap();
         map.put("mNo",mNo);
         map.put("eNo",eNo);

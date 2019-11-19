@@ -19,7 +19,7 @@ public interface HquestionMapper {
 
      * @return
      */
-    List<Hquestion> queryHquestion(Map map);
+    List<Map> queryHquestion(Map map);
     /**
      * 根据考题id查询信息
      *

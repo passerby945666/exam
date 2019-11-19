@@ -8,35 +8,56 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @Repository("gradesDao")
 public class GradesDaoImpl implements IGradesDao {
         @Autowired
         @Qualifier("gradesMapper")
         private GradesMapper gradesMapper;
 
-        @Override
-    public List<Grades> queryExam() {
-        return null;
+    @Override
+    public List<Map> queryGrades() {
+        return gradesMapper.queryGrades();
     }
 
     @Override
-    public Grades getExam(int eId) {
-        return null;
+    public List<Map> getGradekFind(String str) {
+        Map map=new HashMap();
+        map.put("no",str);
+        map.put("name","%"+str+"%");
+        return gradesMapper.getGradekFind(map);
     }
 
     @Override
-    public int insertEaxm(Grades grades) {
-        return 0;
+    public List<Map> getGradekChoose(String kId, Date mintime,Date maxtime) {
+        Map map=new HashMap();
+        map.put("kId",kId);
+        map.put("mintime",mintime);
+        map.put("maxtime",maxtime);
+        return gradesMapper.getGradekChoose(map);
     }
 
     @Override
-    public int deleteEaxm(int eId) {
-        return 0;
+    public Grades getGradegId(int gId) {
+        return gradesMapper.getGradegId(gId);
     }
 
     @Override
-    public int updateEaxm(Exam exam) {
-        return 0;
+    public int insertGrade(Grades grades) {
+        return gradesMapper.insertGrade(grades);
+    }
+
+    @Override
+    public int deleteGrade(int gId) {
+        return gradesMapper.deleteGrade(gId);
+    }
+
+    @Override
+    public int updateGrade(Grades grades) {
+        return gradesMapper.updateGrade(grades);
     }
 }

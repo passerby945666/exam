@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.GradesMapper">
+    <!-- 查询所有考试-->
+    <select id="queryGrades" resultType="java.util.Map" >
+        <![CDATA[
+SELECT
+	s_no AS sNo,
+	e_no AS eNo,
+	s_name AS sName,
+	e_name AS eName,
+	grade
+FROM
+	( grades AS g LEFT JOIN stu AS s ON g.s_id = s.s_id )
+	LEFT JOIN exam e ON g.e_id = e.e_id
+
+        ]]>
+    </select>
+    <select id="getGradekFind" resultType="java.util.Map" >
+        <![CDATA[
+SELECT
+	s_no AS sNo,
+	e_no AS eNo,
+	s_name AS sName,
+	e_name AS eName,
+	grade
+FROM
+	( grades AS g LEFT JOIN stu AS s ON g.s_id = s.s_id )
+	LEFT JOIN exam e ON g.e_id = e.e_id
+WHERE
+	e_no =#{no}
+	OR s_no =#{no}
+	OR e_name =#{name}
+	OR s_name=#{name} ;
+        ]]>
+    </select>
 </mapper>

@@ -3,7 +3,10 @@ package com.exam.wessm.dao;
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Grades;
 
+import java.sql.Date;
 import java.util.List;
+import java.util.Map;
+
 /**
  *   成绩Dao接口
  */
@@ -12,22 +15,31 @@ public interface IGradesDao {
      * 查询成绩信息
      * @return
      */
-    List<Grades> queryGrades();
+    List<Map> queryGrades();
 
     /**
-     * 根据科目ID加载成绩信息
+     * 根据检索信息加载成绩信息
      *
      * @param
      * @return
      */
-    List<Grades> getGradekId(int kId);
+    List<Map> getGradekFind(String str);
 
     /**
-     * 根据考试id查询成绩
-     * @param eId
+     * 根据筛选信息加载成绩信息
+     *
+     * @param
      * @return
      */
-    Grades getgetGradeeId(int eId);
+    List<Map> getGradekChoose(String kId, Date mintime, Date maxtime);
+
+    /**
+     * 根据成绩id查询成绩
+     * @param gId
+     * @return
+     */
+    Grades getGradegId(int gId);
+
 
     /**
      * 添加成绩
@@ -42,14 +54,14 @@ public interface IGradesDao {
      * @param
      * @return
      */
-    int deleteGrede(int gId);
+    int deleteGrade(int gId);
 
     /**
      * 修改成绩信息
      * @param grades
      * @return
      */
-    int updateEaxm(Grades grades);
+    int updateGrade(Grades grades);
 
 
 }

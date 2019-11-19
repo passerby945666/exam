@@ -7,6 +7,7 @@ import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
+import java.util.Map;
 
 public class HquestionTest01 {
     @Test
@@ -45,10 +46,10 @@ public class HquestionTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IHquestionService hquestionService = (IHquestionService) context.getBean("hquestionService");
 
-        List<Hquestion> list=hquestionService.queryHquestion("1223","23244","1");
+        List<Map> list=hquestionService.queryHquestion("1223","23244","1");
 
         if (list!= null) {
-            for (Hquestion hquestion1 :list) {
+            for (Map hquestion1 :list) {
                 System.out.println(hquestion1.toString());
             }
         }
