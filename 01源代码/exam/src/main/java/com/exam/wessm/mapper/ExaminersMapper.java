@@ -28,20 +28,20 @@ public interface ExaminersMapper {
      * @param
      * @return
      */
-    int insertEaxminers(Examiners examiners);
+    int insertExaminers(Examiners examiners);
 
     /**
      * 根据考试成员Id删除考试成员
      * @param
      * @return
      */
-    int deleteEaxminers(@Param("ex_id")Integer exId);
+    int deleteExaminers(@Param("ex_id")Integer exId);
 
     /**
      * 修改考试成员信息
      * @param
      * @return
      */
-    int updateEaxminers(Examiners examiners);
+    int updateExaminers(Examiners examiners);
 
 }

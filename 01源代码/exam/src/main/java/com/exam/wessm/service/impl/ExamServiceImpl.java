@@ -41,19 +41,19 @@ public class ExamServiceImpl implements IExamService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
-    public int insertEaxm(Exam exam) {
-        return examDao.insertEaxm(exam);
+    public int insertExam(Exam exam) {
+        return examDao.insertExam(exam);
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
-    public int deleteEaxm(Integer eId) {
-        return examDao.deleteEaxm(eId);
+    public int deleteExam(Integer eId) {
+        return examDao.deleteExam(eId);
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
-    public int updateEaxm(Exam exam) {
-        return examDao.updateEaxm(exam);
+    public int updateExam(Exam exam) {
+        return examDao.updateExam(exam);
     }
 }

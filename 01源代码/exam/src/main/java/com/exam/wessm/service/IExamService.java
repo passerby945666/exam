@@ -38,19 +38,19 @@ public interface IExamService {
      * @param exam
      * @return
      */
-    int insertEaxm(Exam exam);
+    int insertExam(Exam exam);
 
     /**
      * 根据考试Id删除考试
      * @param
      * @return
      */
-    int deleteEaxm(Integer eId);
+    int deleteExam(Integer eId);
 
     /**
      * 修改考试信息
      * @param exam
      * @return
      */
-    int updateEaxm(Exam exam);
+    int updateExam(Exam exam);
 }

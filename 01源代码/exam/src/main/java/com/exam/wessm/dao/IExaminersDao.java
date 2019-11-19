@@ -30,19 +30,19 @@ public interface IExaminersDao {
      * @param examiners
      * @return
      */
-    int insertEaxminers(Examiners examiners);
+    int insertExaminers(Examiners examiners);
 
     /**
      * 根据考试成员id删除考试成员
      * @param
      * @return
      */
-    int deleteEaxminers(Integer exId);
+    int deleteExaminers(Integer exId);
 
     /**
      * 修改考试成员信息
      * @param examiners
      * @return
      */
-    int updateEaxminers(Examiners examiners);
+    int updateExaminers(Examiners examiners);
 }

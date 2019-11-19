@@ -28,17 +28,17 @@ public class ExaminersDaoImpl implements IExaminersDao {
     }
 
     @Override
-    public int insertEaxminers(Examiners examiners) {
-        return examinersMapper.insertEaxminers(examiners);
+    public int insertExaminers(Examiners examiners) {
+        return examinersMapper.insertExaminers(examiners);
     }
 
     @Override
-    public int deleteEaxminers(Integer exId) {
-        return examinersMapper.deleteEaxminers(exId);
+    public int deleteExaminers(Integer exId) {
+        return examinersMapper.deleteExaminers(exId);
     }
 
     @Override
-    public int updateEaxminers(Examiners examiners) {
-        return examinersMapper.updateEaxminers(examiners);
+    public int updateExaminers(Examiners examiners) {
+        return examinersMapper.updateExaminers(examiners);
     }
 }

@@ -28,7 +28,8 @@ public class ExamController {
     @RequestMapping(value = "queryExam", method = RequestMethod.POST)
     public String queryExam() {
         List<Exam> exam = examService.queryExam();
-        return "/queryExam";
+        return "/exam/queryExam";
     }
+
 
 }

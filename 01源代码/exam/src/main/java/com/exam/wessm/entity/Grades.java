@@ -7,6 +7,8 @@ import org.apache.ibatis.type.Alias;
  */
 @Alias("grades")
 public class Grades {
+    /**成绩id**/
+    private Integer gId;
     /** 考生ID*/
     private  Integer sId;
     /** 考试id*/
@@ -17,10 +19,12 @@ public class Grades {
     public Grades() {
     }
 
-    public Grades(Integer sId, Integer eId, String grade) {
-        this.sId = sId;
-        this.eId = eId;
-        this.grade = grade;
+    public Integer getgId() {
+        return gId;
+    }
+
+    public void setgId(Integer gId) {
+        this.gId = gId;
     }
 
     public Integer getsId() {
@@ -47,10 +51,18 @@ public class Grades {
         this.grade = grade;
     }
 
+    public Grades(Integer gId, Integer sId, Integer eId, String grade) {
+        this.gId = gId;
+        this.sId = sId;
+        this.eId = eId;
+        this.grade = grade;
+    }
+
     @Override
     public String toString() {
         return "Grades{" +
-                "sId=" + sId +
+                "gId=" + gId +
+                ", sId=" + sId +
                 ", eId=" + eId +
                 ", grade='" + grade + '\'' +
                 '}';

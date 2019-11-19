@@ -37,7 +37,7 @@
        ]]>
     </select>
     <!-- 根据关键字加载考试信息-->
-    <select id="getExamExam"  resultType="java.util.Map" parameterType="String">
+    <select id="getExamExam"  resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
         select
             e_id as eId,
@@ -50,37 +50,33 @@
             time_baomin as timeBaomin,
             time_end as timeEnd
         from
-             (exam left join subject on exam.k_id=subjuct.k_id)
+             (exam left join subject on exam.k_id=subject.k_id)
             left join manager on exam.m_id=manager.m_id
         where
-            e_no=#{exam} or e_name like #{exam}
-            or s_no=#{exam} or s_name like #{exam}
-            or m_no=#{exam} or m_name like #{exam}
+            e_no=#{no} or e_name like #{name}
+            or k_no=#{no} or k_name like #{name}
+            or m_no=#{no} or m_name like #{name}
        ]]>
     </select>
     <!-- 添加考试信息-->
     <insert id="insertExam" parameterType="exam">
       <![CDATA[
         insert into exam (
-            e_no as eNo,
-            e_name as eName,
-            m_id as mId,
-            k_id as kId,
-            time_begin as timeBegin,
-            time_test as timeTest,
-            time_baomin as timeBaomin,
-            time_end as timeEnd
+            e_no ,
+            e_name ,
+            time_begin ,
+            time_test,
+            time_baomin ,
+            time_end
         )
         values
         (
             #{eNo},
             #{eName},
-            #{mId},
-            #{kId},
             #{timeBegin},
             #{timeTest},
             #{timeBaomin},
-            #{timeEnd},
+            #{timeEnd}
          )
       ]]>
     </insert>
@@ -95,14 +91,12 @@
     <update id="updateExam" parameterType="exam">
     <![CDATA[
         update  exam
-        set     e_no as eNo,
-                e_name as eName,
-                m_id as mId,
-                k_id as kId,
-                time_begin as timeBegin,
-                time_test as timeTest,
-                time_baomin as timeBaomin,
-                time_end as timeEnd
+        set     e_no=#{eNo} ,
+                e_name=#{eName} ,
+                time_begin=#{timeBegin} ,
+                time_test=#{timeTest} ,
+                time_baomin=#{timeBaomin} ,
+                time_end=#{timeEnd}
         where   e_id=#{eId}
      ]]>
     </update>
