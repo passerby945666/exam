@@ -42,7 +42,7 @@ public interface ExamMapper {
      * @param
      * @return
      */
-    int deleteExam(@Param("s_id")Integer eId);
+    int deleteExam(@Param("e_id")Integer eId);
 
     /**
      * 修改考试信息
