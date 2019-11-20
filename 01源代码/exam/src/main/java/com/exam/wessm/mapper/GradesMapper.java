@@ -1,6 +1,7 @@
 package com.exam.wessm.mapper;
 
 import com.exam.wessm.entity.Grades;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -33,7 +34,15 @@ public interface GradesMapper {
      * @param gId
      * @return
      */
-    Grades getGradegId(int gId);
+    Grades getGradegId(@Param("g_id")int gId);
+
+    /**
+     * 根据准考证号查询成绩
+     * @param examCard
+     * @return
+     */
+    Grades getGradeExamCard(@Param("examcard")String examCard);
+
 
 
     /**
@@ -49,7 +58,7 @@ public interface GradesMapper {
      * @param
      * @return
      */
-    int deleteGrade(int gId);
+    int deleteGrade(@Param("g_id")int gId);
 
     /**
      * 修改成绩信息

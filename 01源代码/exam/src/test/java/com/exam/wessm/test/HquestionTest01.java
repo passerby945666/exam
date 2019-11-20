@@ -46,7 +46,7 @@ public class HquestionTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IHquestionService hquestionService = (IHquestionService) context.getBean("hquestionService");
 
-        List<Map> list=hquestionService.queryHquestion("1223","23244","1");
+        List<Map> list=hquestionService.queryHquestion("1223","12345","1");
 
         if (list!= null) {
             for (Map hquestion1 :list) {

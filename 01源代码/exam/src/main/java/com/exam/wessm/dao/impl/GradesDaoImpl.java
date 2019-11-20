@@ -42,6 +42,11 @@ public class GradesDaoImpl implements IGradesDao {
     }
 
     @Override
+    public Grades getGradeExamCard(String examCard) {
+        return gradesMapper.getGradeExamCard(examCard);
+    }
+
+    @Override
     public Grades getGradegId(int gId) {
         return gradesMapper.getGradegId(gId);
     }

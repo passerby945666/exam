@@ -36,6 +36,12 @@ public interface IGradesService {
      */
     Grades getGradegId(int gId);
 
+    /**
+     * 根据准考证号查询成绩
+     * @param examCard
+     * @return
+     */
+    Grades getGradeExamCard(String examCard);
 
     /**
      * 添加成绩

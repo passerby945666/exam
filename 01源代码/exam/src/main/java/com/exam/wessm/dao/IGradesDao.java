@@ -2,6 +2,7 @@ package com.exam.wessm.dao;
 
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Grades;
+import org.apache.ibatis.annotations.Param;
 
 import java.sql.Date;
 import java.util.List;
@@ -39,7 +40,12 @@ public interface IGradesDao {
      * @return
      */
     Grades getGradegId(int gId);
-
+    /**
+     * 根据准考证号查询成绩
+     * @param examCard
+     * @return
+     */
+    Grades getGradeExamCard(String examCard);
 
     /**
      * 添加成绩

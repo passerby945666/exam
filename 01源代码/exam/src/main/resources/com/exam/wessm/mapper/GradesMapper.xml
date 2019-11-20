@@ -30,8 +30,63 @@ FROM
 WHERE
 	e_no =#{no}
 	OR s_no =#{no}
-	OR e_name =#{name}
-	OR s_name=#{name} ;
+	OR e_name like #{name}
+	OR s_name like #{name} ;
         ]]>
     </select>
+
+    <select id="getGradekChoose" resultType="java.util.Map" >
+        <![CDATA[
+SELECT
+	s_no AS sNo,
+	e_no AS eNo,
+	s_name AS sName,
+	e_name AS eName,
+	grade
+FROM
+	( grades AS g LEFT JOIN stu AS s ON g.s_id = s.s_id )
+	LEFT JOIN exam e ON g.e_id = e.e_id
+WHERE
+	time_begin > #{mintime}
+	AND time_begin <#{maxtime}
+	and k_id =#{kId};
+        ]]>
+    </select>
+
+    <select id="getGradegId" resultType="grades" parameterType="int" >
+        <![CDATA[
+SELECT
+	grade
+FROM
+	( grades AS g LEFT JOIN stu AS s ON g.s_id = s.s_id )
+	LEFT JOIN exam e ON g.e_id = e.e_id
+WHERE
+	g_id=#{g_id}
+        ]]>
+    </select>
+    <select id="getGradeExamCard" resultType="grades" parameterType="String" >
+        <![CDATA[
+SELECT
+	grade
+FROM
+	grades
+WHERE
+	e_id IN ( SELECT e_id FROM examiners WHERE examCard = #{examcard} )
+	AND s_id IN ( SELECT e_id FROM examiners WHERE examCard = #{examcard} );
+        ]]>
+    </select>
+
+
+    <insert id="insertGrade" parameterType="grades">
+insert into  grades(s_id,e_id,grade) value (#{sId},#{eId},#{grade});
+    </insert>
+
+    <update id="updateGrade" parameterType="grades">
+update grades SET grade=#{grade} where s_id=#{sId} and e_id=#{eId};
+    </update>
+
+    <delete id="deleteGrade" parameterType="int">
+delete from  grades where  g_id=#{g_id};
+    </delete>
+
 </mapper>
