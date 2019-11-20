@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.ManagerMapper">
+    <!--管理员注册-->
+    <insert id="registerManager" parameterType="manager">
+    <![CDATA[
+        insert into manager(m_no,m_password)
+        values(#{mNo},#{mPassword})
+    ]]>
+    </insert>
+    <!-- 管理员登录-->
+    <select id="findManagerNoAndPass" resultType="manager" parameterType="manager">
+    <![CDATA[
+        select
+            m_no  as  mNo,
+            m_password as mPassword
+        from
+            manager
+        where m_no=#{mNo}and m_password=#{mPassword}
+     ]]>
+    </select>
     <!-- 查询所有管理员信息-->
     <select id="queryManager" resultType="manager">
         <![CDATA[
@@ -79,6 +97,14 @@
                 m_idcard=#{mIdcard} ,
                 m_sex=#{mSex} ,
                 m_birthday=#{mBirthday}
+        where   m_id=#{mId}
+     ]]>
+    </update>
+    <!-- 根据管理员ID修改管理员密码-->
+    <update id="updateManagerPassword" parameterType="String">
+    <![CDATA[
+        update  manager
+        set     m_password=#{mPassword}
         where   m_id=#{mId}
      ]]>
     </update>

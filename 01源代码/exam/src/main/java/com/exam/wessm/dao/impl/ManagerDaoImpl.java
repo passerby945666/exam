@@ -17,6 +17,18 @@ public class ManagerDaoImpl implements IManagerDao {
     @Qualifier("managerMapper")
     private ManagerMapper managerMapper;
 
+    @Override
+    public int registerManager(Manager manager) {
+        return managerMapper.registerManager(manager);
+    }
+
+    @Override
+    public Manager findManagerNoAndPass(String mNo,String mPassword) {
+        Manager manager=new Manager();
+        manager.setmNo(mNo);
+        manager.setmPassword(mPassword);
+        return managerMapper.findManagerNoAndPass(manager);
+    }
 
     @Override
     public List<Manager> queryManager() {
@@ -49,5 +61,10 @@ public class ManagerDaoImpl implements IManagerDao {
     @Override
     public int updateManager(Manager manager) {
         return managerMapper.updateManager(manager);
+    }
+
+    @Override
+    public int updateManagerPassword(String password) {
+        return managerMapper.updateManagerPassword(password);
     }
 }

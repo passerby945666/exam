@@ -4,8 +4,8 @@
     <!--考生注册-->
     <insert id="registerStu" parameterType="stu">
     <![CDATA[
-      insert into stu(s_no,s_password)
-      values(#{sNo},#{sPassword})
+        insert into stu(s_no,s_password)
+        values(#{sNo},#{sPassword})
     ]]>
     </insert>
     <!-- 考生登录-->
@@ -13,10 +13,102 @@
         <![CDATA[
         select
             s_no  as  sNo,
-           s_password as sPassword
+            s_password as sPassword
         from
             stu
         where s_no=#{sNo}and s_password=#{sPassword}
      ]]>
     </select>
+    <!-- 查询所有考生信息-->
+    <select id="queryStu" resultType="stu">
+        <![CDATA[
+        select
+            s_no as sNo,
+            s_name as sName,
+            s_idcard as sIdcard,
+            s_sex as sSex,
+            s_birthday as sBirthday
+        from
+            stu
+        ]]>
+    </select>
+    <!-- 根据考生id加载考生信息-->
+    <select id="getStuSId"  resultType="stu" parameterType="int">
+        <![CDATA[
+        select
+            s_no as sNo,
+            s_name as sName,
+            s_idcard as sIdcard,
+            s_sex as sSex,
+            s_birthday as sBirthday
+        from
+            stu
+        where
+            s_id=#{s_id}
+       ]]>
+    </select>
+    <!-- 根据考生编号或名字或身份证号加载考生信息-->
+    <select id="getStu"  resultType="stu" parameterType="java.util.Map">
+        <![CDATA[
+        select
+            s_no as sNo,
+            s_name as sName,
+            s_idcard as sIdcard,
+            s_sex as sSex,
+            s_birthday as sBirthday
+        from
+            stu
+        where
+            s_no=#{no} or s_name like #{name} or s_idcard=#{no}
+       ]]>
+    </select>
+    <!-- 添加考生信息-->
+    <insert id="insertStu" parameterType="stu">
+      <![CDATA[
+        insert into manager (
+            s_no ,
+            s_password,
+            s_name ,
+            s_idcard,
+            s_sex ,
+            s_birthday
+        )
+        values
+        (
+            #{sNo},
+            #{sPassword},
+            #{sName},
+            #{sIdcard},
+            #{sSex},
+            #{sBirthday}
+         )
+      ]]>
+    </insert>
+    <!-- 根据考生ID删除考生记录-->
+    <delete id="deleteStu" parameterType="int">
+        <![CDATA[
+        delete from stu
+        where s_id=#{s_id}
+      ]]>
+    </delete>
+    <!-- 根据考生ID修改考生信息-->
+    <update id="updateStu" parameterType="stu">
+    <![CDATA[
+        update  stu
+        set     s_no=#{sNo} ,
+                s_name=#{sName} ,
+                s_idcard=#{sIdcard} ,
+                s_sex=#{sSex} ,
+                s_birthday=#{sBirthday}
+        where   s_id=#{sId}
+     ]]>
+    </update>
+    <!-- 根据考生ID修改考生密码-->
+    <update id="updateStuPassword" parameterType="String">
+    <![CDATA[
+        update  stu
+        set     s_password=#{sPassword}
+        where   s_id=#{sId}
+     ]]>
+    </update>
 </mapper>

@@ -7,7 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @Repository("stuDao")
 public class StuDaoImpl implements IStuDao {
     @Autowired
@@ -15,7 +18,6 @@ public class StuDaoImpl implements IStuDao {
     private StuMapper stuMapper;
     @Override
     public int registerStu(Stu stu) {
-
         return stuMapper.registerStu(stu);
     }
 
@@ -28,22 +30,40 @@ public class StuDaoImpl implements IStuDao {
     }
 
     @Override
-    public int deleteStu(int sId) {
-        return stuMapper.deleteStu(sId);
-    }
-
-    @Override
     public List<Stu> queryStu() {
         return stuMapper.queryStu();
     }
 
     @Override
-    public Stu getStu(int sId) {
-        return stuMapper.getStu(sId);
+    public Stu getStuSId(Integer sId) {
+        return stuMapper.getStuSId(sId);
+    }
+
+    @Override
+    public Stu getStu(String stu) {
+        Map map=new HashMap();
+        map.put("no",stu);
+        map.put("name","%"+stu+"%");
+        return stuMapper.getStu(map);
+    }
+
+    @Override
+    public int insertStu(Stu stu) {
+        return stuMapper.insertStu(stu);
+    }
+
+    @Override
+    public int deleteStu(Integer sId) {
+        return stuMapper.deleteStu(sId);
     }
 
     @Override
     public int updateStu(Stu stu) {
         return stuMapper.updateStu(stu);
+    }
+
+    @Override
+    public int updateStuPassword(String password) {
+        return stuMapper.updateStuPassword(password);
     }
 }

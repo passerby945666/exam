@@ -21,6 +21,18 @@ public class ManagerServiceImpl implements IManagerService {
     private IManagerDao managerDao;
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int registerManager(Manager manager) {
+        return managerDao.registerManager(manager);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public Manager findManagerNoAndPass(String mNo, String mPassword) {
+        return managerDao.findManagerNoAndPass(mNo,mPassword);
+    }
+
+    @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public List<Manager> queryManager() {
         return managerDao.queryManager();
@@ -54,5 +66,10 @@ public class ManagerServiceImpl implements IManagerService {
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateManager(Manager manager) {
         return managerDao.updateManager(manager);
+    }
+
+    @Override
+    public int updateManagerPassword(String password) {
+        return managerDao.updateManagerPassword(password);
     }
 }
