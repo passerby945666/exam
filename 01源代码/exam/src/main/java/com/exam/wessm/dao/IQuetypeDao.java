@@ -1,6 +1,7 @@
 package com.exam.wessm.dao;
 
 
+import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Quetype;
 
 import java.util.List;
@@ -17,12 +18,20 @@ public interface IQuetypeDao {
     List<Quetype> queryQuetype();
 
     /**
-     * 根据ID加载题型信息
+     * 根据题型ID加载题型信息
      *
-     * @param    qId  ID号
+     * @param
      * @return
      */
-    Quetype getQuetype(int qId);
+    Quetype getQuetypeQId(Integer qId);
+
+    /**
+     * 根据题目类型加载题型信息
+     *
+     * @param
+     * @return
+     */
+    Quetype getQuetypeQType(String quetype);
 
     /**
      * 添加题型
@@ -30,19 +39,19 @@ public interface IQuetypeDao {
      * @param
      * @return
      */
-    int insertQt(Quetype quetype);
+    int insertQuetype(Quetype quetype);
 
     /**
      * 根据题型ID删除题型
-     * @param    qId  ID号
+     * @param
      * @return
      */
-    int deleteQuetype(int qId);
+    int deleteQuetype(Integer qId);
 
     /**
      * 修改题型信息
-     * @param qt
+     * @param
      * @return
      */
-    int updateQuetype(Quetype qt);
+    int updateQuetype(Quetype quetype);
 }

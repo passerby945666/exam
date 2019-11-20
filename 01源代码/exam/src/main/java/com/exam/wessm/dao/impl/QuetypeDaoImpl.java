@@ -10,35 +10,37 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository("quetypeDao")
 public class QuetypeDaoImpl implements IQuetypeDao {
-
-
-
-        @Autowired
-        @Qualifier("quetypeMapper")
-        private QuetypeMapper quetypeMapper;
+    @Autowired
+    @Qualifier("quetypeMapper")
+    private QuetypeMapper quetypeMapper;
 
     @Override
     public List<Quetype> queryQuetype() {
-        return null;
+        return quetypeMapper.queryQuetype();
     }
 
     @Override
-    public Quetype getQuetype(int qId) {
-        return null;
+    public Quetype getQuetypeQId(Integer qId) {
+        return quetypeMapper.getQuetypeQId(qId);
     }
 
     @Override
-    public int insertQt(Quetype quetype) {
-        return 0;
+    public Quetype getQuetypeQType(String quetype) {
+        return quetypeMapper.getQuetypeQType(quetype);
     }
 
     @Override
-    public int deleteQuetype(int qId) {
-        return 0;
+    public int insertQuetype(Quetype quetype) {
+        return quetypeMapper.insertQuetype(quetype);
     }
 
     @Override
-    public int updateQuetype(Quetype qt) {
-        return 0;
+    public int deleteQuetype(Integer qId) {
+        return quetypeMapper.deleteQuetype(qId);
+    }
+
+    @Override
+    public int updateQuetype(Quetype quetype) {
+        return quetypeMapper.updateQuetype(quetype);
     }
 }

@@ -38,14 +38,12 @@ public class ExaminersTest01 {
         context.close();
     }
 
-    /**
-     * 查不到
-     */
+
     @Test
     public void examinersTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExaminersService examinersService = (IExaminersService) context.getBean("examinersService");
-        List<Map> examiners = examinersService.getExaminers("112");
+        List<Map> examiners = examinersService.getExaminers("语文");
         if (examiners != null) {
             for (Map map : examiners) {
                 System.out.println(map.toString());

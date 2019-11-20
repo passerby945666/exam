@@ -8,20 +8,20 @@ import java.util.Map;
 
 public interface IManagerService {
     /**
-     * 查询考试信息
+     * 查询管理员信息
      * @return
      */
     List<Manager> queryManager();
 
     /**
-     * 根据考试id加载考试信息
+     * 根据管理员id加载管理员信息
      * @param
      * @return
      */
     Manager getManagerMId(Integer mId);
 
     /**
-     * 根据关键字加载考试信息
+     * 根据关键字加载管理员信息
      *
      * @param
      * @return
@@ -29,7 +29,7 @@ public interface IManagerService {
     Manager getManager(String manager);
 
     /**
-     * 添加考试
+     * 添加管理员
      *
      * @param
      * @return
@@ -37,14 +37,14 @@ public interface IManagerService {
     int insertManager(Manager manager);
 
     /**
-     * 根据考试Id删除考试
+     * 根据管理员Id删除管理员
      * @param
      * @return
      */
     int deleteManager(Integer mId);
 
     /**
-     * 修改考试信息
+     * 修改管理员信息
      * @param
      * @return
      */
