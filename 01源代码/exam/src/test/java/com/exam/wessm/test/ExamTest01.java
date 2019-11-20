@@ -58,8 +58,8 @@ public class ExamTest01 {
         exam.setTimeTest("120");
         exam.setTimeBaomin(Date.valueOf("2019-11-2"));
         exam.setTimeEnd(Date.valueOf("2019-11-20"));
-        exam.setmId(2);
-        exam.setkId(2);
+        exam.setmId(1);
+        exam.setkId(1);
         int rows=examService.insertExam(exam);
         System.out.println(rows);
         context.close();

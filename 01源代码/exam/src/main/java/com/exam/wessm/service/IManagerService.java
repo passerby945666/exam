@@ -8,20 +8,36 @@ import java.util.Map;
 
 public interface IManagerService {
     /**
-     * 查询考试信息
+     * 管理员注册
+     *
+     * @param
+     * @return
+     */
+    int registerManager(Manager manager);
+
+    /**
+     * 管理员通过账号和密码登录
+     * @param
+     * @return
+     */
+    Manager findManagerNoAndPass(String mNo,String mPassword);
+
+    /**
+     * 查询管理员信息
      * @return
      */
     List<Manager> queryManager();
 
     /**
-     * 根据考试id加载考试信息
+     * 根据管理员ID加载管理员信息
+     *
      * @param
      * @return
      */
     Manager getManagerMId(Integer mId);
 
     /**
-     * 根据关键字加载考试信息
+     * 根据管理员编号或名字或身份证号加载管理员信息
      *
      * @param
      * @return
@@ -29,24 +45,31 @@ public interface IManagerService {
     Manager getManager(String manager);
 
     /**
-     * 添加考试
+     * 添加管理员
      *
-     * @param
+     * @param manager
      * @return
      */
     int insertManager(Manager manager);
 
     /**
-     * 根据考试Id删除考试
+     * 根据管理员ID删除管理员
      * @param
      * @return
      */
     int deleteManager(Integer mId);
 
     /**
-     * 修改考试信息
-     * @param
+     * 修改管理员
+     * @param manager
      * @return
      */
     int updateManager(Manager manager);
+
+    /**
+     * 修改管理员密码
+     * @param
+     * @return
+     */
+    int updateManagerPassword(String password);
 }

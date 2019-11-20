@@ -9,6 +9,21 @@ import java.util.Map;
 
 public interface ManagerMapper {
     /**
+     * 管理员注册
+     *
+     * @param
+     * @return
+     */
+    int registerManager(Manager manager);
+
+    /**
+     * 管理员通过账号和密码登录
+     * @param
+     * @return
+     */
+    Manager findManagerNoAndPass(Manager manager);
+
+    /**
      * 查询管理员信息
      * @return
      */
@@ -50,4 +65,11 @@ public interface ManagerMapper {
      * @return
      */
     int updateManager(Manager manager);
+
+    /**
+     * 修改管理员密码
+     * @param
+     * @return
+     */
+    int updateManagerPassword(@Param("password") String password);
 }

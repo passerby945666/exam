@@ -4,6 +4,7 @@ import com.exam.wessm.entity.Stu;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 考生Mapper接口
@@ -15,7 +16,6 @@ public interface StuMapper {
      * @param stu
      * @return
      */
-
     int registerStu(Stu stu);
 
     /**
@@ -23,15 +23,7 @@ public interface StuMapper {
      * @param stu
      * @return
      */
-
     Stu findNoAndPass(Stu stu);
-
-    /**
-     * 根据考生ID删除考生
-     * @param    sId  ID号
-     * @return
-     */
-    int deleteStu(@Param("s_id")int sId);
 
     /**
      * 查询考生信息
@@ -40,13 +32,35 @@ public interface StuMapper {
     List<Stu> queryStu();
 
     /**
-     * 根据ID加载考生信息
+     * 根据考生ID加载考生信息
      *
      * @param    sId
      * @return
      */
-    Stu getStu(@Param("s_id")int sId);
+    Stu getStuSId(@Param("s_id")Integer sId);
 
+    /**
+     * 根据考生编号或名字或身份证号加载考生信息
+     *
+     * @param
+     * @return
+     */
+    Stu getStu(Map map);
+
+    /**
+     * 添加考生
+     *
+     * @param
+     * @return
+     */
+    int insertStu(Stu stu);
+
+    /**
+     * 根据考生ID删除考生
+     * @param    sId  ID号
+     * @return
+     */
+    int deleteStu(@Param("s_id")Integer sId);
 
     /**
      * 修改考生信息
@@ -54,4 +68,11 @@ public interface StuMapper {
      * @return
      */
     int updateStu(Stu stu);
+
+    /**
+     * 修改考生密码
+     * @param
+     * @return
+     */
+    int updateStuPassword(@Param("password") String password);
 }

@@ -10,6 +10,21 @@ import java.util.Map;
  */
 public interface IManagerDao {
     /**
+     * 管理员注册
+     *
+     * @param
+     * @return
+     */
+    int registerManager(Manager manager);
+
+    /**
+     * 管理员通过账号和密码登录
+     * @param
+     * @return
+     */
+    Manager findManagerNoAndPass(String mNo,String mPassword);
+
+    /**
      * 查询管理员信息
      * @return
      */
@@ -52,4 +67,11 @@ public interface IManagerDao {
      * @return
      */
     int updateManager(Manager manager);
+
+    /**
+     * 修改管理员密码
+     * @param
+     * @return
+     */
+    int updateManagerPassword(String password);
 }

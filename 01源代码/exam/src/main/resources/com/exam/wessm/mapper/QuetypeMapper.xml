@@ -1,4 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.exam.wessm.mapper.QuetypeMapper">
+    <!-- 查询所有题目类型信息-->
+    <select id="queryQuetype" resultType="quetype">
+        <![CDATA[
+        select
+            q_type as qType,
+            q_value as qValue
+        from
+            quetype
+        ]]>
+    </select>
+    <!-- 根据题目类型id加载题目类型信息-->
+    <select id="getQuetypeQId"  resultType="quetype" parameterType="int">
+        <![CDATA[
+        select
+            q_type as qType,
+            q_value as qValue
+        from
+            quetype
+        where
+            q_id=#{q_id}
+       ]]>
+    </select>
+    <!-- 根据题目类型加载题目类型信息-->
+    <select id="getQuetypeQType"  resultType="quetype" parameterType="String">
+        <![CDATA[
+        select
+            q_type as qType,
+            q_value as qValue
+        from
+            quetype
+        where
+            q_type =#{q_type}
+       ]]>
+    </select>
+    <!-- 添加题目类型信息-->
+    <insert id="insertQuetype" parameterType="quetype">
+      <![CDATA[
+        insert into quetype (
+            q_type ,
+            q_value
+        )
+        values
+        (
+            #{qType},
+            #{qValue}
+         )
+      ]]>
+    </insert>
+    <!-- 根据题目类型ID删除题目类型记录-->
+    <delete id="deleteQuetype" parameterType="int">
+        <![CDATA[
+        delete from quetype
+        where q_id=#{q_id}
+      ]]>
+    </delete>
+    <!-- 根据题目类型ID修改题目类型信息-->
+    <update id="updateQuetype" parameterType="quetype">
+    <![CDATA[
+        update  quetype
+        set     q_type=#{qType} ,
+                q_value=#{qValue}
+        where   q_id=#{qId}
+     ]]>
+    </update>
 </mapper>
