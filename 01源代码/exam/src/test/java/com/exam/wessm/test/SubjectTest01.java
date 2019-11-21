@@ -11,7 +11,7 @@ import java.util.List;
 
 public class SubjectTest01 {
     @Test
-    public void examTest01() {
+    public void queryTest01() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         List<Subject> subjects = subjectService.querySubject();
@@ -23,7 +23,7 @@ public class SubjectTest01 {
         context.close();
     }
     @Test
-    public void examTest02() {
+    public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         Subject subject=subjectService.getSubjectKId(1);
@@ -31,7 +31,7 @@ public class SubjectTest01 {
         context.close();
     }
     @Test
-    public void examTest03() {
+    public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         Subject subject=subjectService.getSubject("1");
@@ -39,7 +39,7 @@ public class SubjectTest01 {
         context.close();
     }
     @Test
-    public void examTest04() {
+    public void insertTest04() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         Subject subject=new Subject();
@@ -50,7 +50,7 @@ public class SubjectTest01 {
         context.close();
     }
     @Test
-    public void examTest05() {
+    public void deleteTest05() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         int rows=subjectService.deleteSubject(1);
@@ -58,7 +58,7 @@ public class SubjectTest01 {
         context.close();
     }
     @Test
-    public void examTest06() {
+    public void updateTest06() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         Subject subject=new Subject();

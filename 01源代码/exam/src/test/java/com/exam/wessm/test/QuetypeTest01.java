@@ -10,7 +10,7 @@ import java.util.List;
 
 public class QuetypeTest01 {
     @Test
-    public void managerTest01() {
+    public void queryTest01() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         List<Quetype> quetypes =quetypeService.queryQuetype();
@@ -22,7 +22,7 @@ public class QuetypeTest01 {
         context.close();
     }
     @Test
-    public void managerTest02() {
+    public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         Quetype quetype=quetypeService.getQuetypeQId(1);
@@ -30,7 +30,7 @@ public class QuetypeTest01 {
         context.close();
     }
     @Test
-    public void managerTest03() {
+    public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         Quetype quetype=quetypeService.getQuetypeQType("1");
@@ -38,7 +38,7 @@ public class QuetypeTest01 {
         context.close();
     }
     @Test
-    public void managerTest04() {
+    public void insertTest04() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         Quetype quetype=new Quetype();
@@ -49,7 +49,7 @@ public class QuetypeTest01 {
         context.close();
     }
     @Test
-    public void managerTest05() {
+    public void deleteTest05() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         int rows=quetypeService.deleteQuetype(1);
@@ -57,7 +57,7 @@ public class QuetypeTest01 {
         context.close();
     }
     @Test
-    public void managerTest06() {
+    public void updateTest06() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         Quetype quetype=new Quetype();

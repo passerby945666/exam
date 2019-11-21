@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class ExaminersTest01 {
     @Test
-    public void examinersTest01() {
+    public void queryTest01() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExaminersService examinersService = (IExaminersService) context.getBean("examinersService");
         List<Map> examiners = examinersService.queryExaminers();
@@ -26,7 +26,7 @@ public class ExaminersTest01 {
         context.close();
     }
     @Test
-    public void examinersTest02() {
+    public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExaminersService examinersService = (IExaminersService) context.getBean("examinersService");
         List<Map> examiners = examinersService.getExaminersExId(1);
@@ -40,7 +40,7 @@ public class ExaminersTest01 {
 
 
     @Test
-    public void examinersTest03() {
+    public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExaminersService examinersService = (IExaminersService) context.getBean("examinersService");
         List<Map> examiners = examinersService.getExaminers("语文");
@@ -52,7 +52,7 @@ public class ExaminersTest01 {
         context.close();
     }
     @Test
-    public void examinersTest04() {
+    public void insertTest04() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExaminersService examinersService = (IExaminersService) context.getBean("examinersService");
         Examiners examiners=new Examiners();
@@ -65,7 +65,7 @@ public class ExaminersTest01 {
         context.close();
     }
     @Test
-    public void examinersTest05() {
+    public void deleteTest05() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExaminersService examinersService = (IExaminersService) context.getBean("examinersService");
         int rows=examinersService.deleteExaminers(1);
@@ -73,7 +73,7 @@ public class ExaminersTest01 {
         context.close();
     }
     @Test
-    public void examinersTest06() {
+    public void updateTest06() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExaminersService examinersService = (IExaminersService) context.getBean("examinersService");
         Examiners examiners=new Examiners();

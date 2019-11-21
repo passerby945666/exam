@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class ExamTest01 {
     @Test
-    public void examTest01() {
+    public void queryTest01() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
         List<Map> exams = examService.queryExam();
@@ -24,7 +24,7 @@ public class ExamTest01 {
         context.close();
     }
     @Test
-    public void examTest02() {
+    public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
         List<Map> exams = examService.getExamEId(1);
@@ -36,7 +36,7 @@ public class ExamTest01 {
         context.close();
     }
     @Test
-    public void examTest03() {
+    public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
         List<Map> exams = examService.getExamExam("11232");
@@ -48,7 +48,7 @@ public class ExamTest01 {
         context.close();
     }
     @Test
-    public void examTest04() {
+    public void insertTest04() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
         Exam exam=new Exam();
@@ -65,7 +65,7 @@ public class ExamTest01 {
         context.close();
     }
     @Test
-    public void examTest05() {
+    public void deleteTest05() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
         int rows=examService.deleteExam(1);
@@ -73,7 +73,7 @@ public class ExamTest01 {
         context.close();
     }
     @Test
-    public void examTest06() {
+    public void updateTest06() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
         Exam exam=new Exam();

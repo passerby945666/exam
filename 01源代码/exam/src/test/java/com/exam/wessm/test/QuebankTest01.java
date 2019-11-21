@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class QuebankTest01 {
     @Test
-    public void quebankTest01() {
+    public void queryTest01() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
         List<Map> quebank= quebankService.queryQuebank();
@@ -26,7 +26,7 @@ public class QuebankTest01 {
         context.close();
     }
     @Test
-    public void quebankTest02() {
+    public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
         List<Map> quebank= quebankService.getQuebanTId(1);
@@ -38,7 +38,7 @@ public class QuebankTest01 {
         context.close();
     }
     @Test
-    public void quebankTest03() {
+    public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
         List<Map> quebank= quebankService.getQuebank("11");
@@ -50,7 +50,7 @@ public class QuebankTest01 {
         context.close();
     }
     @Test
-    public void quebankTest04() {
+    public void insertTest04() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
         Quebank quebank=new Quebank();
@@ -67,7 +67,7 @@ public class QuebankTest01 {
         context.close();
     }
     @Test
-    public void examTest05() {
+    public void deleteTest05() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
         int rows=quebankService.deleteQuebank(1);
@@ -75,7 +75,7 @@ public class QuebankTest01 {
         context.close();
     }
     @Test
-    public void quebankTest06() {
+    public void updateTest06() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
         Quebank quebank=new Quebank();
