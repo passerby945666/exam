@@ -79,12 +79,36 @@ public class QuebankTest01 {
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
         Quebank quebank=new Quebank();
         quebank.settId(1);
-        quebank.settNo("1");
+        quebank.settNo("6");
         quebank.setAnswer("1");
         quebank.setReply("203");
         quebank.settTime(Date.valueOf("2017-01-10"));
         int rows=quebankService.updateQuebank(quebank);
         System.out.println(rows);
+        context.close();
+    }
+    @Test
+    public void getTest07() {
+        AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
+        List<Map> quebank= quebankService.getQuebankKId(1,"3");
+        if (quebank != null) {
+            for (Map map : quebank) {
+                System.out.println(map.toString());
+            }
+        }
+        context.close();
+    }
+    @Test
+    public void getTest08() {
+        AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
+        List<Map> quebank= quebankService.getQuebankKIdAndQType("1","3");
+        if (quebank != null) {
+            for (Map map : quebank) {
+                System.out.println(map.toString());
+            }
+        }
         context.close();
     }
 }
