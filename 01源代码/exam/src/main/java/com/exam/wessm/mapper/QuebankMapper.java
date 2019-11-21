@@ -49,4 +49,20 @@ public interface QuebankMapper {
      * @return
      */
     int updateQuebank(Quebank quebank);
+
+    /**
+     * 根据科目id加载题库信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getQuebankKId(Map map);
+
+    /**
+     * 根据科目id和题目类型加载题库信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getQuebankKIdAndQType(Map map);
 }

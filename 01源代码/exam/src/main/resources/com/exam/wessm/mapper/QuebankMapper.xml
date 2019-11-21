@@ -79,7 +79,7 @@
             #{content},
             #{answer},
             #{reply},
-            #{tTest},
+            #{tTime},
             #{qId},
             #{kId},
             #{mId}
@@ -106,4 +106,41 @@
         where   t_id=#{tId}
      ]]>
     </update>
+    <!-- 根据科目id加载题目信息-->
+    <select id="getQuebankKId"  resultType="java.util.Map" parameterType="java.util.Map">
+        <![CDATA[
+        select
+            (@rownum := @rownum + 1) rownum,
+            content,
+            t_no as tNo,
+            q_type as qType,
+            answer,
+            reply
+        from
+             quebank as qb LEFT JOIN quetype qt on qb.q_id=qt.q_id ,
+      (SELECT @rownum := 0) AS rn
+        where
+           k_id =#{no} and q_type=#{name};
+       ]]>
+    </select>
+    <!-- 根据科目id和题目类型加载题目信息-->
+    <select id="getQuebankKIdAndQType"  resultType="java.util.Map" parameterType="java.util.Map">
+        <![CDATA[
+        select
+            t_no as tNo,
+            content,
+            q_type as qType,
+            answer,
+            reply,
+            t_time as tTime,
+            k_name as kName,
+            m_name as mName
+        from
+             ((quebank left join quetype on quebank.q_id=quetype.q_id)
+            left join manager on quebank.m_id=manager.m_id)
+            left join subject on quebank.k_id=subject.k_id
+        where
+            k_id like #{no} and q_type like #{name}
+       ]]>
+    </select>
 </mapper>
