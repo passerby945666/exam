@@ -7,6 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ * 考生控制器类
+ */
+
+import javax.servlet.http.HttpSession;
+
 @Controller
 @RequestMapping("stu")
 public class StuController {
@@ -20,21 +26,43 @@ public class StuController {
      * @param stu
      * @return
      */
-    @RequestMapping(value = "register", method = RequestMethod.POST)
-    public String register(Stu stu) {
+    @RequestMapping(value = "register")
+    public String register(Stu stu, String Cpassword) {
+
+        if (Cpassword.equals(stu.getsPassword())){
         int rows = stuService.registerStu(stu);
-        return "?rows="+rows;
+        return "/login.jsp";
+        }
+        else {
+            return  "/404.jsp";
+        }
     }
 
-    @RequestMapping(value = "login", method = RequestMethod.POST)
-    public String login(String sNo,String sPassword) {
-        Stu stu=null;
-        stu = stuService.findNoAndPass(sNo,sPassword);
-        if(stu!=null){
-            return "";     //登录成功
-        }else {
-            return "";      //登陆失败
-        }
+    @RequestMapping(value = "login",method = RequestMethod.POST )
+    public String login(Integer type,String sNo, String sPassword  , HttpSession session) {
+           if (type==1){
+             Stu stu=stuService.findNoAndPass(sNo,sPassword);
+             if(stu!=null){
+                  session.setAttribute("stu_session",stu);
+                  return  "/stu/indexStu.jsp";
+             }
+           }
+           else{
+            return "/index.jsp";
+           }
+           return  "/404.jsp";
+    }
 
+    /**
+     * 退出登录
+     * @param session
+     * @return
+     */
+    @RequestMapping(value = "/logout.action")
+    public String logout(HttpSession session) {
+        // 清除Session
+        session.invalidate();
+        // 重定向
+        return "redirect:/login.jsp";
     }
 }

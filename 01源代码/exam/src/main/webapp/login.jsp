@@ -72,11 +72,11 @@ $(".registerform").Validform({
 
 });
 
-
-
-
 </script>
  -->--%>
+
+
+
 
 </head>
 
@@ -102,7 +102,7 @@ $(".registerform").Validform({
   <div id="o-box-down"  style="table-layout:fixed;">
    <div class="error-box"></div>
    
-   <form class="registerform"action="demo/ajax_post.jsp">
+   <form class="registerform"  action="/stu/login" method="post">
    <div class="fm-item">
 	   <label id="logonId" class="form-label">系统登陆：</label>
 	   <input type="text"  name="sNo"  placeholder="请输入账号/编号" maxlength="16" id="username" class="i-text" ajaxurl="demo/valid.jsp"  datatype="s6-18" errormsg="用户名至少6个字符,最多18个字符！"  >
@@ -114,7 +114,14 @@ $(".registerform").Validform({
 	   <input type="password" name="sPassword" value=""  placeholder="请输入密码" maxlength="36" id="password" class="i-text" datatype="*6-16" nullmsg="请设置密码！" errormsg="密码范围在6~16位之间！">
        <div class="ui-form-explain"></div>
   </div>
-  
+
+
+       <div class="fm-item">
+        <input type="radio" name="type" value="1" checked  />考生
+           <input type="radio" name="type" value="2"  />管理员
+
+       </div>
+
   <!--<div class="fm-item pos-r">
 	   <label for="logonId" class="form-label">验证码</label>
 	   <input type="text" value="输入验证码" maxlength="100" id="yzm" class="i-text yzm" nullmsg="请输入验证码！" >    
@@ -123,7 +130,7 @@ $(".registerform").Validform({
   
   <div class="fm-item">
 	   <label for="logonId" class="form-label"></label>
-	   <input type="submit" value="" tabindex="4" id="send-btn" class="btn-login"> 
+	   <input type="submit" value="" tabindex="4" id="send-btn" class="btn-login">
        <div class="ui-form-explain"></div>
   </div>
   

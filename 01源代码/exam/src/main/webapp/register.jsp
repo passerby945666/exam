@@ -100,22 +100,22 @@ $(".registerform").Validform({
   <div id="o-box-down"  style="table-layout:fixed;">
    <div class="error-box"></div>
    
-   <form class="registerform"action="demo/ajax_post.jsp">
+   <form class="registerform"action="/stu/register">
    <div class="fm-item">
 	   <label for="logonId" class="form-label">系统注册：</label>
-	   <input type="text" value=""  placeholder="请输入账号" maxlength="16" id="username" class="i-text" ajaxurl="demo/valid.jsp"  datatype="s6-18" errormsg="用户名至少6个字符,最多18个字符！"  >    
+	   <input type="text" value=""  placeholder="请输入账号" maxlength="16" name="sNo" class="i-text"  datatype="s6-18" errormsg="账号至少6个字符,最多18个字符！"  >
        <div class="ui-form-explain"></div>
   </div>
   
   <div class="fm-item">
 	   <label for="logonId" class="form-label">密码：</label>
-	   <input type="password" value=""  placeholder="请输入密码"maxlength="32" id="password" class="i-text" datatype="*6-16" nullmsg="请设置密码！" errormsg="密码范围在6~16位之间！">    
+	   <input type="password" value=""  placeholder="请输入密码"maxlength="32" name="sPassword" class="i-text" datatype="*6-16" nullmsg="请设置密码！" errormsg="密码范围在6~16位之间！">
        <div class="ui-form-explain"></div>
   </div>
   
     <div class="fm-item">
 	   <label for="logonId" class="form-label">确认密码：</label>
-	   <input type="password" value=""  placeholder="请输入确认密码"maxlength="32" id="password" class="i-text" datatype="*6-16" nullmsg="请设置密码！" errormsg="密码范围在6~16位之间！">    
+	   <input type="password" value=""  placeholder="请输入确认密码"maxlength="32" name="Cpassword" class="i-text" datatype="*6-16" nullmsg="请设置确认密码！" errormsg="密码范围在6~16位之间！">
        <div class="ui-form-explain"></div>
   </div>
   
