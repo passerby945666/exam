@@ -4,6 +4,7 @@ import com.exam.wessm.service.IStuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -28,22 +29,31 @@ public class StuController {
      */
     @RequestMapping(value = "register")
     public String register(Stu stu, String Cpassword) {
-
         if (Cpassword.equals(stu.getsPassword())){
-        int rows = stuService.registerStu(stu);
-        return "/login.jsp";
+            stuService.registerStu(stu);
+            return "/login.jsp";
         }
         else {
             return  "/404.jsp";
         }
     }
 
+    /**
+     * 登录
+     * @param type
+     * @param sNo
+     * @param sPassword
+     * @param session
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "login",method = RequestMethod.POST )
-    public String login(Integer type,String sNo, String sPassword  , HttpSession session) {
+    public String login(Integer type, String sNo, String sPassword  , HttpSession session, Model model) {
            if (type==1){
-             Stu stu=stuService.findNoAndPass(sNo,sPassword);
-             if(stu!=null){
-                  session.setAttribute("stu_session",stu);
+             Stu stu1=stuService.findNoAndPass(sNo,sPassword);
+             if(stu1!=null){
+                  session.setAttribute("stuSession",stu1);
+                  model.addAttribute("stu",stu1);
                   return  "/stu/indexStu.jsp";
              }
            }

@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%-- <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> --%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,16 +10,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5shiv.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/lib/respond.min.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <title>考试管理</title>
@@ -45,19 +45,19 @@
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
 	<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> 
 	<a class="btn btn-primary radius" data-title="添加考试" data-href="exam-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
-	<i class="Hui-iconfont">&#xe600;</i> 添加考试</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<i class="Hui-iconfont">&#xe600;</i> 添加考试</a></span> <span class="r">共有数据：<strong>${fn:length(requestScope.examList)}</strong> 条</span> </div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
 				<tr class="text-c">
 					<th width="25"><input type="checkbox" name="" value=""></th>
-					<th width="80">考试编号</th>
-					<th >考试名称</th>
+					<th width="30">考试编号</th>
+					<th width="40">考试名称</th>
 					<th width="80">科目</th>
-					<th width="80">开考时间</th>
-					<th width="60">考试时间</th>
-					<th width="75">报名时间</th>
-					<th width="60">报名截止时间</th>
+					<th width="120">开考时间</th>
+					<th width="50">考试时间</th>
+					<th width="120">报名时间</th>
+					<th width="120">报名截止时间</th>
 					<th width="60">负责人</th>
 					<th width="120">操作</th>
 				</tr>
@@ -65,20 +65,20 @@
 			<tbody>
 				<tr>
 			<c:choose>
-            <c:when test="${exam ==null}"><span>111</span></c:when>
-                <c:when test="${empty  exam} "><span>222</span></c:when>
+            <c:when test="${examList==null}"><span>查询不到考试信息</span></c:when>
+                <c:when test="${empty  examList} "><span>考试信息为空</span></c:when>
             <c:otherwise>
-                <c:forEach  items="${exam}" var="examlist">
+                <c:forEach  items="${examList}" var="exam">
                     <tr>
                      <td><input type="checkbox" value="" name=""></td>
-                    <td>${examlist.eNo}</td>
-                    <td>${examlist.eName}</td>
-                    <td>${examlist.timeBegin}</td>
-                    <td>${examlist.timeTest}</td>
-                    <td>${examlist.timeBaomin}</td>
-                    <td>${examlist.timeEnd}</td>
-                    <td>${examlist.kId}</td>
-					<td>${examlist.mId}</td>
+                    <td>${exam.eNo}</td>
+                    <td>${exam.eName}</td>
+					<td>${exam.kName}</td>
+                    <td>${exam.timeBegin}</td>
+                    <td>${exam.timeTest}</td>
+                    <td>${exam.timeBaomin}</td>
+                    <td>${exam.timeEnd}</td>
+					<td>${exam.mName}</td>
                        <td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','exam-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>
                 </c:forEach>

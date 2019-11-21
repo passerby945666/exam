@@ -4,11 +4,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>用户注册</title>
-<link href="css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
-<link href="css/demo.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/jquery1.42.min.js"></script>
-<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
-<script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+<link href="/css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="/css/demo.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="/js/Validform_v5.3.2_min.js"></script>
 
 <!-- <script>
 $(function(){

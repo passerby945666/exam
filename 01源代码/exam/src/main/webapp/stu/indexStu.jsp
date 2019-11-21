@@ -86,7 +86,7 @@ function loginout(){
 					<ul class="nav navbar-nav navbar-right">
 				
 						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎：${stu_session.sName}<strong class="caret"></strong></a>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎：${stu.sNo}<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
 									 <a href="#"  class="btn btn-primary" data-toggle="modal" data-target="#stuEditDialog">个人信息</a>
