@@ -50,4 +50,9 @@ public class ExamDaoImpl implements IExamDao {
     public int updateExam(Exam exam) {
         return examMapper.updateExam(exam);
     }
+
+    @Override
+    public List<Map> getExamSNo(String sNo) {
+        return examMapper.getExamSNo(sNo);
+    }
 }
