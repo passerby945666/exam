@@ -66,7 +66,7 @@ public class StuServiceImpl implements IStuService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
-    public int updateStuPassword(String password) {
-        return stuDao.updateStuPassword(password);
+    public int updateStuPassword(Stu stu) {
+        return stuDao.updateStuPassword(stu);
     }
 }

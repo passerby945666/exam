@@ -16,7 +16,7 @@ public class QuetypeTest01 {
         List<Quetype> quetypes =quetypeService.queryQuetype();
         if (quetypes != null) {
             for (Quetype quetype : quetypes) {
-                System.out.println(quetype);
+                System.out.println(quetype.toString());
             }
         }
         context.close();
@@ -26,7 +26,7 @@ public class QuetypeTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         Quetype quetype=quetypeService.getQuetypeQId(1);
-        System.out.println(quetype);
+        System.out.println(quetype.toString());
         context.close();
     }
     @Test
@@ -34,7 +34,7 @@ public class QuetypeTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuetypeService quetypeService= (IQuetypeService) context.getBean("quetypeService");
         Quetype quetype=quetypeService.getQuetypeQType("1");
-        System.out.println(quetype);
+        System.out.println(quetype.toString());
         context.close();
     }
     @Test

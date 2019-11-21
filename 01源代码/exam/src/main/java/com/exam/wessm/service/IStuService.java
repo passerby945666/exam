@@ -72,5 +72,5 @@ public interface IStuService {
      * @param
      * @return
      */
-    int updateStuPassword( String password);
+    int updateStuPassword(Stu stu);
 }

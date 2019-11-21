@@ -1,6 +1,7 @@
 package com.exam.wessm.dao;
 
 
+import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Stu;
 
 import java.util.List;
@@ -76,5 +77,5 @@ public interface IStuDao {
      * @param
      * @return
      */
-    int updateStuPassword( String password);
+    int updateStuPassword(Stu stu);
 }

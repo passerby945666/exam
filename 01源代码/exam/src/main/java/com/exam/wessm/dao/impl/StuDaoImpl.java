@@ -1,6 +1,7 @@
 package com.exam.wessm.dao.impl;
 
 import com.exam.wessm.dao.IStuDao;
+import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Stu;
 import com.exam.wessm.mapper.StuMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,7 +64,7 @@ public class StuDaoImpl implements IStuDao {
     }
 
     @Override
-    public int updateStuPassword(String password) {
-        return stuMapper.updateStuPassword(password);
+    public int updateStuPassword(Stu stu) {
+        return stuMapper.updateStuPassword(stu);
     }
 }

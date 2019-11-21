@@ -74,5 +74,5 @@ public interface StuMapper {
      * @param
      * @return
      */
-    int updateStuPassword(@Param("password") String password);
+    int updateStuPassword(Stu stu);
 }

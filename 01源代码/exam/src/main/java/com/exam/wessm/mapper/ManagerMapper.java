@@ -71,5 +71,5 @@ public interface ManagerMapper {
      * @param
      * @return
      */
-    int updateManagerPassword(@Param("password") String password);
+    int updateManagerPassword(Manager manager);
 }

@@ -17,7 +17,7 @@ public class SubjectTest01 {
         List<Subject> subjects = subjectService.querySubject();
         if (subjects != null) {
             for (Subject subject : subjects) {
-                System.out.println(subject);
+                System.out.println(subject.toString());
             }
         }
         context.close();
@@ -27,7 +27,7 @@ public class SubjectTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         Subject subject=subjectService.getSubjectKId(1);
-        System.out.println(subject);
+        System.out.println(subject.toString());
         context.close();
     }
     @Test
@@ -35,7 +35,7 @@ public class SubjectTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ISubjectService subjectService = (ISubjectService) context.getBean("subjectService");
         Subject subject=subjectService.getSubject("1");
-        System.out.println(subject);
+        System.out.println(subject.toString());
         context.close();
     }
     @Test

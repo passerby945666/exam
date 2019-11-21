@@ -101,7 +101,7 @@
      ]]>
     </update>
     <!-- 根据管理员ID修改管理员密码-->
-    <update id="updateManagerPassword" parameterType="String">
+    <update id="updateManagerPassword" parameterType="manager">
     <![CDATA[
         update  manager
         set     m_password=#{mPassword}

@@ -69,7 +69,7 @@ public class ManagerServiceImpl implements IManagerService {
     }
 
     @Override
-    public int updateManagerPassword(String password) {
-        return managerDao.updateManagerPassword(password);
+    public int updateManagerPassword(Manager manager) {
+        return managerDao.updateManagerPassword(manager);
     }
 }

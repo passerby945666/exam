@@ -64,7 +64,7 @@ public class ManagerDaoImpl implements IManagerDao {
     }
 
     @Override
-    public int updateManagerPassword(String password) {
-        return managerMapper.updateManagerPassword(password);
+    public int updateManagerPassword(Manager manager) {
+        return managerMapper.updateManagerPassword(manager);
     }
 }

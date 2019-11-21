@@ -71,5 +71,5 @@ public interface IManagerService {
      * @param
      * @return
      */
-    int updateManagerPassword(String password);
+    int updateManagerPassword(Manager manager);
 }

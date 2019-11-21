@@ -73,5 +73,5 @@ public interface IManagerDao {
      * @param
      * @return
      */
-    int updateManagerPassword(String password);
+    int updateManagerPassword(Manager manager);
 }

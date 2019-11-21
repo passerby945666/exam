@@ -1,8 +1,7 @@
 package com.exam.wessm.test;
 
-import com.exam.wessm.entity.Exam;
+
 import com.exam.wessm.entity.Quebank;
-import com.exam.wessm.service.IExamService;
 import com.exam.wessm.service.IQuebankService;
 import org.junit.Test;
 import org.springframework.context.support.AbstractXmlApplicationContext;

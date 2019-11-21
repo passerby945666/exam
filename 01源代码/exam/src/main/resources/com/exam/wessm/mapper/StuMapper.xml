@@ -65,7 +65,7 @@
     <!-- 添加考生信息-->
     <insert id="insertStu" parameterType="stu">
       <![CDATA[
-        insert into manager (
+        insert into stu (
             s_no ,
             s_password,
             s_name ,
@@ -104,7 +104,7 @@
      ]]>
     </update>
     <!-- 根据考生ID修改考生密码-->
-    <update id="updateStuPassword" parameterType="String">
+    <update id="updateStuPassword" parameterType="stu">
     <![CDATA[
         update  stu
         set     s_password=#{sPassword}
