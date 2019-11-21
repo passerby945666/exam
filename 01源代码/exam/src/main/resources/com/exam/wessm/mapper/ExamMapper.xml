@@ -103,4 +103,23 @@
         where   e_id=#{eId}
      ]]>
     </update>
+    <!-- 根据考生编号加载考试信息-->
+    <select id="getExamSNo"  resultType="java.util.Map" parameterType="String">
+        <![CDATA[
+        select
+            e_no as eNo,
+            e_name as eName,
+            k_name as kName,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd
+        from
+             ((exam left join subject on exam.k_id=subject.k_id)
+            left join examiners on exam.e_id=examiners.e_id)
+			left join stu on examiners.s_id=stu.s_id
+        where
+            s_no=#{s_no} and time_begin <=NOW()
+       ]]>
+    </select>
 </mapper>

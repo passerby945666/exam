@@ -54,4 +54,11 @@ public interface IExamDao {
      */
     int updateExam(Exam exam);
 
+    /**
+     * 根据考生编号加载考试信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getExamSNo(String sNo);
 }

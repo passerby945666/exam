@@ -56,4 +56,10 @@ public class ExamServiceImpl implements IExamService {
     public int updateExam(Exam exam) {
         return examDao.updateExam(exam);
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public List<Map> getExamSNo(String sNo) {
+        return examDao.getExamSNo(sNo);
+    }
 }

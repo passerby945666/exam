@@ -39,7 +39,7 @@ public class ExamTest01 {
     public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
-        List<Map> exams = examService.getExamExam("11232");
+        List<Map> exams = examService.getExamExam("1101");
         if (exams != null) {
             for (Map map: exams) {
                 System.out.println(map.toString());
@@ -54,7 +54,7 @@ public class ExamTest01 {
         Exam exam=new Exam();
         exam.seteNo("13542");
         exam.seteName("11232547869656");
-        exam.setTimeBegin(Date.valueOf("2019-11-18"));
+        exam.setTimeBegin(Date.valueOf("2019-11-10"));
         exam.setTimeTest("120");
         exam.setTimeBaomin(Date.valueOf("2019-11-2"));
         exam.setTimeEnd(Date.valueOf("2019-11-20"));
@@ -77,7 +77,7 @@ public class ExamTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
         Exam exam=new Exam();
-        exam.seteId(6);
+        exam.seteId(5);
         exam.seteNo("11242");
         exam.seteName("hh");
         exam.setTimeBegin(Date.valueOf("2019-11-18"));
@@ -86,6 +86,18 @@ public class ExamTest01 {
         exam.setTimeEnd(Date.valueOf("2019-11-20"));
         int rows=examService.updateExam(exam);
         System.out.println(rows);
+        context.close();
+    }
+    @Test
+    public void getTest07() {
+        AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        IExamService examService = (IExamService) context.getBean("examService");
+        List<Map> exams = examService.getExamSNo("11");
+        if (exams != null) {
+            for (Map map: exams) {
+                System.out.println(map.toString());
+            }
+        }
         context.close();
     }
 }
