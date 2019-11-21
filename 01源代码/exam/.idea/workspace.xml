@@ -6,8 +6,431 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bda712de-5a30-411e-b24d-11908a17d5b1" name="Default Changelist" comment="">
+    <list default="true" id="bda712de-5a30-411e-b24d-11908a17d5b1" name="Default Changelist" comment="前端">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/exam_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin-permission.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin-role.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/change-password.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/charts-1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/charts-2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exam-class.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exam-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/banner-shdow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/dot-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/dot-def.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/login-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/yzm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/Validform_v5.3.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/Validform_v5.3.2_min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.SuperSlide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery1.42.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/DD_belatedPNG_0.0.8a-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/datepicker-dev.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/datatables/1.10.0/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/echarts/3.4.0/echarts.common.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/expressInstall.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/highcharts-3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/highcharts-more.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/accessibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/accessibility.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/annotations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/annotations.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/boost.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/boost.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/broken-axis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/broken-axis.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/data.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/drilldown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/drilldown.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/exporting.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/funnel.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/gantt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/gantt.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/grid-axis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/grid-axis.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/heatmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/heatmap.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/no-data-to-display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/no-data-to-display.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/offline-exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/offline-exporting.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/overlapping-datalabels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/overlapping-datalabels.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/series-label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/series-label.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/solid-gauge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/solid-gauge.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/treemap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/treemap.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/xrange-series.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/xrange-series.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/dark-blue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/dark-green.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/dark-unica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/gray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/grid-light.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/sand-signika.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/skies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/license.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.contextmenu/jquery.contextmenu.r2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery/1.9.1/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery/1.9.1/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jselect-1.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/laypage/1.2/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/laypage/1.2/skin/laypage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/examples.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/squid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/Uploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/cropper/cropper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/cropper/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/cropper/uploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/expressInstall.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/image-upload/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/image-upload/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/icons.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/progress.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/md5-demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/md5-demo/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/requirejs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/requirejs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/requirejs/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/crossdomain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/fileupload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/fileupload2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/preview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.fis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.noimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.noimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.nolog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.nolog.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/member-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/member-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/quebank-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/quebank-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/read-list-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/read-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/acrossTab/acrossTab-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/admin-login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/admin-loginform-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/cn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/um.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/js/H-ui.admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/js/de_DE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/blue/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/blue/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/blue/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/blue/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/default/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/default/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/default/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/default/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/green/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/green/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/green/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/green/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/orange/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/orange/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/orange/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/orange/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/red/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/red/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/red/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/red/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/yellow/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/yellow/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/yellow/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/skin/yellow/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/css/H-ui.reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/Hui-tags/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/acrossTab/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/acrossTab/acrossTab-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/acrossTab/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/dataTable/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/dataTable/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/dataTable/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/dropDown/icon-jt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/201.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/202.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/203.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/204.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/205.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/206.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/207.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/208.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/209.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/210.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/100.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/101.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/102.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/103.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/104.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/105.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/106.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/72.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/73.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/74.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/75.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/76.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/77.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/78.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/79.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/80.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/81.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/82.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/83.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/84.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/85.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/86.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/87.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/88.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/89.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/90.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/91.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/92.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/93.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/94.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/95.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/96.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/97.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/98.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/face/QQ/99.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/minimal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/minimal@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iCheck/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/iconpic-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/jselect/iconpic-arrow-down2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/loading/loading-b.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/loading/loading-s.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/rollpic/unslider-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/star/iconpic-star-S-default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/star/iconpic-star-S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/steps/step_arrow-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/steps/step_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/steps/step_bg-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/steps/step_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/ucnter/avatar-default-S.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/ucnter/avatar-default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/ucnter/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/ucnter/noavatar_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/validform/iconpic-error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/validform/iconpic-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/validform/iconpic-warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/verticalTab/tabNav-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/verticalTab/tabNav-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/verticalTab/tabNav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/images/verticalTab/tab_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/js/H-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui/js/H-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stu/arrange.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stu/examing.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stu/imitate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stu/indexStu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stu/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stu/sign.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/themes/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/themes/theme-pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/themes/theme-pic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/uppassword.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Quebank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Quebank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.11.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/qqq.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,105 +441,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/exam/wessm/test/HquestionTest01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/exam/wessm/test/GradeTest01.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Grades.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-              <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IGradesService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/GradesServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-89">
-              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/ExamServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="84" />
+            <state relative-caret-position="179">
+              <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -154,6 +483,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/GradesServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -192,159 +523,6 @@
               <item name="exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="exam" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -354,7 +532,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574262376958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574298032622" />
     <property name="last_opened_file_path" value="D:/新建文件夹 (3)/可视化编程JAVA GUI/项目案例/GUI01" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -362,6 +540,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\exam\01源代码\exam\src\main\webapp" />
+      <recent name="E:\git\exam\01源代码\exam\src\main\webapp\js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -375,89 +559,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GradeTest01.deleteGradeTest01">
-    <configuration name="GradeTest01.deleteGradeTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exam.wessm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exam.wessm.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exam.wessm.test.GradeTest01" />
-      <option name="METHOD_NAME" value="deleteGradeTest01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GradeTest01.getGradegIdTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exam.wessm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exam.wessm.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exam.wessm.test.GradeTest01" />
-      <option name="METHOD_NAME" value="getGradegIdTest01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GradeTest01.getGradekChooseTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exam.wessm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exam.wessm.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exam.wessm.test.GradeTest01" />
-      <option name="METHOD_NAME" value="getGradekChooseTest01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GradeTest01.insertGradeTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exam.wessm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exam.wessm.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exam.wessm.test.GradeTest01" />
-      <option name="METHOD_NAME" value="insertGradeTest01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GradeTest01.updateGradeTest01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exam.wessm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exam.wessm.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exam.wessm.test.GradeTest01" />
-      <option name="METHOD_NAME" value="updateGradeTest01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Tomcat 8.5.351" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.351" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="exam:war exploded">
           <settings>
@@ -561,23 +666,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.Tomcat 8.5.351" />
-      <item itemvalue="JUnit.GradeTest01.getGradekChooseTest01" />
-      <item itemvalue="JUnit.GradeTest01.getGradegIdTest01" />
-      <item itemvalue="JUnit.GradeTest01.insertGradeTest01" />
-      <item itemvalue="JUnit.GradeTest01.updateGradeTest01" />
-      <item itemvalue="JUnit.GradeTest01.deleteGradeTest01" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.GradeTest01.deleteGradeTest01" />
-        <item itemvalue="JUnit.GradeTest01.updateGradeTest01" />
-        <item itemvalue="JUnit.GradeTest01.insertGradeTest01" />
-        <item itemvalue="JUnit.GradeTest01.getGradegIdTest01" />
-        <item itemvalue="JUnit.GradeTest01.getGradekChooseTest01" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -591,6 +679,7 @@
       <updated>1574148996657</updated>
       <workItem from="1574148998062" duration="4310000" />
       <workItem from="1574211358859" duration="20645000" />
+      <workItem from="1574297127613" duration="1251000" />
     </task>
     <task id="LOCAL-00001" summary="部分的成绩">
       <created>1574176996174</created>
@@ -610,9 +699,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GradeTest01_getGradeExamCardTest01 - 2019.11.20 at 22h 09m 32s.xml">
-      <configuration name="GradeTest01.getGradeExamCardTest01" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GradeTest01_getGradekChooseTest01 - 2019.11.20 at 22h 15m 57s.xml">
       <configuration name="GradeTest01.getGradekChooseTest01" configurationId="JUnit" />
     </history-entry>
@@ -640,17 +726,17 @@
     <history-entry file="GradeTest01_deleteGradeTest01 - 2019.11.20 at 22h 57m 49s.xml">
       <configuration name="GradeTest01.deleteGradeTest01" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GradeTest01_deleteGradeTest01 - 2019.11.21 at 08h 46m 19s.xml">
+      <configuration name="GradeTest01.deleteGradeTest01" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45847000" />
+    <option name="totallyTimeSpent" value="47098000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="JRebel" side_tool="true" />
-      <window_info id="Learn" weight="0.3297587" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27479893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -658,12 +744,11 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
-      <window_info anchor="bottom" id="JRebel Executor" />
+      <window_info id="Learn" order="8" weight="0.3297587" />
+      <window_info id="JRebel" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.49008498" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.15815486" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43767706" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -676,8 +761,11 @@
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.4815864" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -732,7 +820,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="部分的成绩" />
     <MESSAGE value="全部成绩" />
-    <option name="LAST_COMMIT_MESSAGE" value="全部成绩" />
+    <MESSAGE value="前端" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,14 +865,11 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Exam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IManagerDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
@@ -843,34 +929,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="839" selection-start-line="839" selection-end-line="839" />
-          <folding>
-            <element signature="e#31039#31040#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3161">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java" />
+    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/exam/wessm/test/ExaminersTest01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -958,16 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/exam/wessm/test/HquestionTest01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Quebank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1048,9 +1098,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/ExamDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/exam/wessm/test/HquestionTest01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Grades.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
+        <state relative-caret-position="1035">
           <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
           <folding>
             <element signature="e#347#348#0" expanded="true" />
@@ -1073,30 +1147,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/ExamDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/ExamServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IGradesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
+        <state relative-caret-position="575">
           <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1104,31 +1157,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/GradesServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="483">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/ExamServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        <state relative-caret-position="529">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/exam/wessm/test/GradeTest01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/qqq.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/h-ui/js/H-ui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/GradesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/info.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
         </state>
       </provider>
     </entry>

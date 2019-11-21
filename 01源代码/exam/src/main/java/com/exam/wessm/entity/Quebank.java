@@ -21,7 +21,7 @@ public class Quebank {
     /** 解答*/
     private  String reply;
     /** 录入时间*/
-    private Date tTime;
+    private Date tTime ;
     /** 科目*/
     private  Integer kId;
     /**题目负责人**/

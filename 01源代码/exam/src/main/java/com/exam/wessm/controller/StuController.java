@@ -31,9 +31,9 @@ public class StuController {
         Stu stu=null;
         stu = stuService.findNoAndPass(sNo,sPassword);
         if(stu!=null){
-            return "/qqq.jsp";     //登录成功
+            return "";     //登录成功
         }else {
-            return "/qqq.jsp";      //登陆失败
+            return "";      //登陆失败
         }
 
     }
