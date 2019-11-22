@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import java.util.List;
 import java.util.Map;
 
@@ -33,18 +35,40 @@ public class ExamController {
     }
 
     /**
+     *
+     * @param exam
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "insertExam")
+    public  int insertExam(Exam exam) {
+       int rows =examService.insertExam(exam);
+       return  rows;
+    }
+
+
+    /**
      * 删除考试信息
      * @param eId
      * @return
      */
     @RequestMapping(value = "deleteExam")
-    public String deleteExam(Integer eId) {
+    @ResponseBody
+    public int deleteExam(Integer eId) {
         int rows =examService.deleteExam(eId);
-        if(rows > 0){
-            return  "11";
-        }else{
-            return "222";
-        }
+        return rows;
+    }
+
+    /**
+     *
+     * @param eId
+     * @return
+     */
+    @RequestMapping(value = "getExamEId")
+    public String getExamEId(Integer eId,Model model) {
+     List<Map> mapList=examService.getExamEId(eId);
+     model.addAttribute("map",mapList);
+     return  "/exam-edit.jsp";
     }
 
 

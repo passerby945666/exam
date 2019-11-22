@@ -92,8 +92,6 @@
 				<ul>
 					<li><a data-href="member-list.jsp" data-title="会员列表" href="javascript:;">考生列表</a></li>
 					<li><a data-href="member-del.jsp" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
-					<li><a data-href="member-level.jsp" data-title="等级管理" href="javascript:;">等级管理</a></li>
-					<li><a data-href="member-scoreoperation.jsp" data-title="积分管理" href="javascript:;">积分管理</a></li>
 			</ul>
 		</dd>
 	</dl>
