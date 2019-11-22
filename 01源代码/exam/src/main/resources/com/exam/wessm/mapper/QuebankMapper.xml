@@ -79,7 +79,7 @@
             #{content},
             #{answer},
             #{reply},
-            #{tTime},
+            now(),
             #{qId},
             #{kId},
             #{mId}

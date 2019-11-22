@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
@@ -23,7 +24,7 @@
 <title>题库管理</title>
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 题库管理 <span class="c-gray en">&gt;</span> 试题列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 题库管理 <span class="c-gray en">&gt;</span> 题库信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
 	<div class="text-c">
 		<button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
@@ -37,22 +38,22 @@
 		<input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })" id="logmin" class="input-text Wdate" style="width:120px;">
 		-
 		<input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })" id="logmax" class="input-text Wdate" style="width:120px;">
-		<input type="text" name="" id="" placeholder=" 试题名称" style="width:250px" class="input-text">
-		<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜试题</button>
+		<input type="text" name="" id="" placeholder=" 题库名称" style="width:250px" class="input-text">
+		<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜题库</button>
 	</div>
-	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" data-title="添加资讯" data-href="quebank-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加试题</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
-	<div class="mt-20">
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" data-title="添加题库" data-href="quebank-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<div class="mt-20">ins
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
 				<tr class="text-c">
 					<th width="25"><input type="checkbox" name="" value=""></th>
 					<th width="80">题目编号</th>
-					<th >科目名称</th>
-					<th width="80">题目类型</th>
 					<th width="60">题目内容</th>
+                    <th width="80">题目类型</th>
 					<th width="75">答案</th>
 					<th width="60">解答内容</th>
 					<th width="60">录入时间</th>
+                    <th width="60">科目名称</th>
 					<th width="60">负责人名称</th>
 					<th width="120">操作</th>
 				</tr>
@@ -68,12 +69,16 @@
                      <td><input type="checkbox" value="" name="tId"></td>
                     <td>${quebank.tNo}</td>
                     <td>${quebank.content}</td>
+                     <td>${quebank.qType}</td>
                     <td>${quebank.answer}</td>
                     <td>${quebank.reply}</td>
                     <td>${quebank.tTime}</td>
-                    <td>${quebank.kId}</td>
-                    <td>${quebank.mId}</td>
-                       <td class="f-14 td-manage"><a style="text-decoration:none" onClick="quebank_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="quebank_edit('资讯编辑','/quebank-edit.jsp','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="quebank_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                    <td>${quebank.kName}</td>
+                    <td>${quebank.mName}</td>
+                    <td class="f-14 td-manage">
+                           <a style="text-decoration:none" onClick="quebank_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>
+                           <a style="text-decoration:none" class="ml-5" onClick="" href="/quebank/getQuebanTId?tId=${quebank.tId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+                           <a style="text-decoration:none" class="ml-5" onClick="quebank_del(this,'${quebank.tId}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>
@@ -127,10 +132,11 @@ function quebank_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '',
-			dataType: 'json',
+			url: '/quebank/deleteQuebank',
+            data:{"tId":id},
+			dataType: 'text',
 			success: function(data){
-				$(obj).parents("tr").remove();
+				$(obj).parents("tId").remove();
 				layer.msg('已删除!',{icon:1,time:1000});
 			},
 			error:function(data) {
