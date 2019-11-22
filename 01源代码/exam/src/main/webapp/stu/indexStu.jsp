@@ -92,7 +92,7 @@ function loginout(){
 									 <a href="#"  class="btn btn-primary" data-toggle="modal" data-target="#stuEditDialog">个人信息</a>
 								</li>
 								<li>
-									 <a href="stu/uppassword.jsp" target="table">修改密码</a>
+									 <a href="/stu/uppassword.jsp" target="table">修改密码</a>
 								</li>
 							<li>
 					<a href="/stu/logout.action">
