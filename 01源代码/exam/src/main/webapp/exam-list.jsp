@@ -79,7 +79,7 @@
                     <td>${exam.timeBaomin}</td>
                     <td>${exam.timeEnd}</td>
 					<td>${exam.mName}</td>
-                       <td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','exam-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('考试编辑','/exam-edit.jsp','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>
@@ -119,7 +119,7 @@ function article_add(title,url,w,h){
 	});
 	layer.full(index);
 }
-/*资讯-编辑*/
+/*考试-编辑*/
 function article_edit(title,url,id,w,h){
 	var index = layer.open({
 		type: 2,
@@ -128,12 +128,12 @@ function article_edit(title,url,id,w,h){
 	});
 	layer.full(index);
 }
-/*资讯-删除*/
+/*考试-删除*/
 function article_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '',
+			url: '/exam/deleteExam',
 			dataType: 'json',
 			success: function(data){
 				$(obj).parents("tr").remove();

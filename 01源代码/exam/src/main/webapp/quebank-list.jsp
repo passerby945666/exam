@@ -73,7 +73,7 @@
                     <td>${quebank.tTime}</td>
                     <td>${quebank.kId}</td>
                     <td>${quebank.mId}</td>
-                       <td class="f-14 td-manage"><a style="text-decoration:none" onClick="quebank_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="quebank_edit('资讯编辑','quebank-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="quebank_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                       <td class="f-14 td-manage"><a style="text-decoration:none" onClick="quebank_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="quebank_edit('资讯编辑','/quebank-edit.jsp','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="quebank_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>

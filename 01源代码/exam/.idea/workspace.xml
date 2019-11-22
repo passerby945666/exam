@@ -9,193 +9,19 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/QuebankMapper.xml" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bda712de-5a30-411e-b24d-11908a17d5b1" name="Default Changelist" comment="登录，注册">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/exam_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/DD_belatedPNG_0.0.8a-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/WdatePicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/lang/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/WdatePicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/datePicker.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/default/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/default/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/datepicker-dev.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/datatables/1.10.0/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/echarts/3.4.0/echarts.common.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/expressInstall.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/highcharts-3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/highcharts-more.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/highcharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/accessibility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/accessibility.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/annotations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/annotations.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/boost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/boost.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/broken-axis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/broken-axis.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/data.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/drilldown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/drilldown.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/exporting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/exporting.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/funnel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/funnel.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/gantt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/gantt.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/grid-axis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/grid-axis.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/heatmap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/heatmap.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/no-data-to-display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/no-data-to-display.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/offline-exporting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/offline-exporting.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/overlapping-datalabels.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/overlapping-datalabels.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/series-label.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/series-label.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/solid-gauge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/solid-gauge.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/treemap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/treemap.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/xrange-series.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/modules/xrange-series.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/dark-blue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/dark-green.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/dark-unica.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/gray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/grid-light.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/sand-signika.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/js/themes/skies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/license.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/hcharts/Highcharts/5.0.6/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.contextmenu/jquery.contextmenu.r2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.validation/1.14.0/messages_zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery/1.9.1/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery/1.9.1/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/jselect-1.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/laypage/1.2/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/laypage/1.2/skin/laypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/css/lightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/examples.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/images/prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/nprogress/0.2.0/nprogress.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/respond.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/squid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/swfobject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/Uploader.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/cropper/cropper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/cropper/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/cropper/uploader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/expressInstall.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/image-upload/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/image-upload/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/icons.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/progress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/progress.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/images/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/md5-demo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/md5-demo/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/requirejs/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/requirejs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/requirejs/require.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/crossdomain.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/fileupload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/fileupload2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/server/preview.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.fis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.flashonly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.flashonly.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.html5only.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.html5only.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.noimage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.noimage.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.nolog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.nolog.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.withoutimage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/webuploader/0.1.5/webuploader.withoutimage.min.js" afterDir="false" />
+    <list default="true" id="bda712de-5a30-411e-b24d-11908a17d5b1" name="Default Changelist" comment="修改页面">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exam-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/quebank-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/read-edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ssm-smvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ssm-smvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/404.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-permission.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-permission.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-role.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/change-password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/change-password.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/charts-1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/charts-1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/charts-2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/charts-2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/exam-class.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exam-class.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/exam-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exam-list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/member-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/member-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/member-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/member-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/qqq.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/quebank-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quebank-add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/quebank-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/quebank-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/read-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/read-add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/read-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/read-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/stu/indexStu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stu/indexStu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/uppassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stu/uppassword.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -219,99 +45,15 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/charts-2.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/charts-1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/change-password.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-role.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-permission.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="230">
+              <caret line="135" column="34" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -326,6 +68,15 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>article_edit</find>
+      <find>show</find>
+      <find>编辑</find>
+      <find>html</find>
+      <find>删除</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -346,11 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/exam/wessm/test/QuetypeQuetypeTest01.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/QuetypeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/ManagerMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/StuMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/StuMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/ManagerMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IManagerDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/ManagerDaoImpl.java" />
@@ -370,33 +116,38 @@
         <option value="$PROJECT_DIR$/src/main/resources/ssm-smvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/read-list-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/stu/sign.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/stu/indexStu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/exam-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/read-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/quebank-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/charts-1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin-permission.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin-role.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/change-password.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/charts-2.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/exam-class.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/member-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/member-list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/quebank-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/read-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/member-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/member-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/exam-class.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/user-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/user-list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/welcome.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/charts-2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/charts-1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/change-password.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin-role.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin-permission.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/user-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/404.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/exam-edit.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/exam-edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/read-edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/quebank-edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/quebank-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/read-list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/exam-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -427,8 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -486,17 +235,6 @@
               <item name="exam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -515,16 +253,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="exam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="wessm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exam" type="b2602c69:ProjectViewProjectNode" />
@@ -537,12 +265,24 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="exam" type="58d84e3e:PackageViewProjectNode" />
+              <item name="exam" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574345486054" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574393161827" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -552,14 +292,15 @@
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Gitdemo\SSM\my\exam\01源代码\exam\src\main\java\com\exam\wessm\service\aspect" />
-      <recent name="E:\Gitdemo\SSM\my\exam\01源代码\exam\src\main\java\com\exam\wessm" />
-      <recent name="E:\Gitdemo\SSM\my\exam\01源代码\exam\src\main\java\com\exam\wessm\mapper" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\git\exam\01源代码\exam\src\main\webapp\stu" />
       <recent name="E:\Gitdemo\SSM\my\exam\01源代码\exam\src\main\java\com\exam\wessm\entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\exam\01源代码\exam\src\main\webapp" />
+      <recent name="E:\Gitdemo\SSM\my\exam\01源代码\exam\src\main\java\com\exam\wessm\service\aspect" />
+      <recent name="E:\Gitdemo\SSM\my\exam\01源代码\exam\src\main\java\com\exam\wessm" />
+      <recent name="E:\Gitdemo\SSM\my\exam\01源代码\exam\src\main\java\com\exam\wessm\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -688,7 +429,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a8e6499a-54ae-462e-b902-2ab44666dff5" name="Default Changelist" comment="" />
+      <changelist id="bda712de-5a30-411e-b24d-11908a17d5b1" name="Default Changelist" comment="修改页面" />
       <created>1573894491059</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -709,6 +450,8 @@
       <workItem from="1574212006942" duration="1591000" />
       <workItem from="1574240604082" duration="16505000" />
       <workItem from="1574297878305" duration="5882000" />
+      <workItem from="1574383811478" duration="597000" />
+      <workItem from="1574384636020" duration="8474000" />
     </task>
     <task id="LOCAL-00001" summary="空的java文件  （少几个）">
       <created>1573912234659</created>
@@ -892,7 +635,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574338081083</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="页面2">
+      <created>1574345948734</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1574345948736</updated>
+    </task>
+    <task id="LOCAL-00028" summary="修改页面">
+      <created>1574350496139</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1574350496142</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -928,12 +685,51 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155408000" />
+    <option name="totallyTimeSpent" value="169060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info id="Learn" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.049423393" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.88395417" weight="0.049423393" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.1630972" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.22468793" side_tool="true" weight="0.31392047" />
+      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.12516823" />
+      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.20845272" weight="0.049423393" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2881997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -947,45 +743,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3261944" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.88395417" visible="true" weight="0.049423393" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32839838" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.22468793" side_tool="true" weight="0.31392047" />
-      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.12516823" />
-      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.20845272" weight="0.32784185" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2881997" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info id="Learn" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3261944" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.88395417" visible="true" weight="0.06425041" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1034,48 +791,17 @@
     <MESSAGE value="考生02" />
     <MESSAGE value="考试v5" />
     <MESSAGE value="登录，注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录，注册" />
+    <MESSAGE value="页面2" />
+    <MESSAGE value="lib包" />
+    <MESSAGE value="lib" />
+    <MESSAGE value="修改页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改页面" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/arrange.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/examing.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/imitate.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/dot-black.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/dot-def.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/login-btn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/logo.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/logo1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/images/yzm.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1089,38 +815,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/info.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExaminersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/GradesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/404.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/ExamMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/uppassword.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/uppassword.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/StuMapper.xml">
@@ -1133,13 +828,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/ExaminersMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/indexStu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
@@ -1156,38 +844,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-322">
+          <caret line="160" column="37" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/change-password.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-874">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="-340">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/charts-2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-class.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="-2714">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/quebank-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2369">
+          <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1198,154 +893,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/read-list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="1886">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4531">
+          <caret line="197" column="37" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/404.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="43" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/indexStu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="121" column="18" lean-forward="true" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/imitate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/layer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="318" selection-start-line="6" selection-start-column="318" selection-end-line="6" selection-end-column="318" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/layer/2.4/skin/default/loading-1.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExaminersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IExamDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/ExamMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2051">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/ExamServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IStuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2518">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/quebank-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/quebank-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="299">
+          <caret line="75" column="279" selection-start-line="75" selection-start-column="279" selection-end-line="75" selection-end-column="279" />
           <folding>
+            <element signature="n#style#0;n#a#0;n#td#8;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#8;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#td#8;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/read-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/read-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="-117">
+          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/quebank-add.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/read-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="1937">
+          <caret line="139" column="7" lean-forward="true" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/member-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding>
+            <element signature="e#1422#1426#1#HTML" expanded="true" />
+            <element signature="e#1463#1467#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#5;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#5;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#td#5;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/member-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-class.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/charts-2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/charts-1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/change-password.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-role-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-role.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-permission.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="163">
+          <caret line="38" column="232" selection-start-line="38" selection-start-column="232" selection-end-line="38" selection-end-column="232" />
           <folding>
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
@@ -1355,17 +1084,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="-1016">
+          <caret line="108" column="37" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-permission.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="23">
+          <caret line="33" column="268" selection-start-line="33" selection-start-column="264" selection-end-line="33" selection-end-column="268" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-password-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/charts-1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-role.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="73" column="353" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="353" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IExamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1288">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="93" column="107" selection-start-line="93" selection-start-column="107" selection-end-line="93" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/member-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/member-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/GradesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="135" column="34" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
