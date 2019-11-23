@@ -20,7 +20,7 @@ public interface IQuebankService {
      * @param
      * @return
      */
-    List<Map> getQuebanTId(Integer tId);
+    Map getQuebanTId(Integer tId);
 
     /**
      * 根据关键字加载题库信息

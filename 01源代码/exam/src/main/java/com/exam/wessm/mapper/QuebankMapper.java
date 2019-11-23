@@ -18,7 +18,7 @@ public interface QuebankMapper {
      * @param
      * @return
      */
-    List<Map> getQuebankTId(@Param("t_id")Integer tId);
+    Map getQuebankTId(@Param("t_id")Integer tId);
 
     /**
      * 根据关键字加载题库信息

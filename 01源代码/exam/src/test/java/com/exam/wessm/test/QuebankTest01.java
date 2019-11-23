@@ -28,12 +28,8 @@ public class QuebankTest01 {
     public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
-        List<Map> quebank= quebankService.getQuebanTId(1);
-        if (quebank != null) {
-            for (Map map : quebank) {
-                System.out.println(map.toString());
-            }
-        }
+        Map quebank= quebankService.getQuebanTId(1);
+        System.out.println(quebank.toString());
         context.close();
     }
     @Test

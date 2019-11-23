@@ -27,7 +27,7 @@ public class QuebankServiceImpl implements IQuebankService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public List<Map> getQuebanTId(Integer tId) {
+    public Map getQuebanTId(Integer tId) {
         return quebankDao.getQuebankTId(tId);
     }
 

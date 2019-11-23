@@ -27,12 +27,8 @@ public class ExamTest01 {
     public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IExamService examService = (IExamService) context.getBean("examService");
-        List<Map> exams = examService.getExamEId(1);
-        if (exams != null) {
-            for (Map map: exams) {
-                System.out.println(map.toString());
-            }
-        }
+        Map exams = examService.getExamEId(1);
+        System.out.println(toString());
         context.close();
     }
     @Test

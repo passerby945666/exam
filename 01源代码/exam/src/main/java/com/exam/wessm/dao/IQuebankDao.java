@@ -19,7 +19,7 @@ public interface IQuebankDao {
      * @param
      * @return
      */
-    List<Map> getQuebankTId(Integer tId);
+    Map getQuebankTId(Integer tId);
 
     /**
      * 根据关键字加载题库信息

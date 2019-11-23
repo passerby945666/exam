@@ -41,7 +41,7 @@
 		<input type="text" name="" id="" placeholder=" 题库名称" style="width:250px" class="input-text">
 		<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜题库</button>
 	</div>
-	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" data-title="添加题库" data-href="quebank-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;"  class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" data-title="添加题库" data-href="quebank-add.jsp"  href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
 	<div class="mt-20">ins
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
@@ -77,8 +77,8 @@
                     <td>${quebank.mName}</td>
                     <td class="f-14 td-manage">
                            <a style="text-decoration:none" onClick="quebank_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>
-                           <a style="text-decoration:none" class="ml-5" onClick="" href="/quebank/getQuebanTId?tId=${quebank.tId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
-                           <a style="text-decoration:none" class="ml-5" onClick="quebank_del(this,'${quebank.tId}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                           <a style="text-decoration:none" class="ml-5" onClick="" data-href="/quebank/getQuebankTId?tId=${quebank.tId}"  title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+                           <a style="text-decoration:none" class="ml-5" onClick=" quebank_del(this,'${quebank.tId}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>
@@ -129,14 +129,14 @@ function quebank_edit(title,url,id,w,h){
 }
 /*资讯-删除*/
 function quebank_del(obj,id){
-	layer.confirm('确认要删除吗？',function(index){
+	layer.confirm('确认要删除吗？',function(id){
 		$.ajax({
 			type: 'POST',
 			url: '/quebank/deleteQuebank',
             data:{"tId":id},
 			dataType: 'text',
 			success: function(data){
-				$(obj).parents("tId").remove();
+				$(obj).parents("tr").remove();
 				layer.msg('已删除!',{icon:1,time:1000});
 			},
 			error:function(data) {

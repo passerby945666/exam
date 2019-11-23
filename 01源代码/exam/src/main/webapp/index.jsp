@@ -81,7 +81,7 @@
 			<dt><i class="Hui-iconfont">&#xe620;</i> 题库管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="quebank-list.jsp" data-title="题库管理" href="javascript:void(0)">题库管理</a></li>
+					<li><a data-href="/quebank/queryQuebank" data-title="题库管理" href="javascript:void(0)">题库管理</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -101,7 +101,7 @@
 				<ul>
 					<li><a data-href="admin-role.jsp" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
 					<li><a data-href="admin-permission.jsp" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
-					<li><a data-href="admin-list.jsp" data-title="管理员列表" href="javascript:void(0)">管理员列表</a></li>
+					<li><a data-href="admin-list.jsp" data-title="管理员信息" href="javascript:void(0)">管理员信息</a></li>
 			</ul>
 		</dd>
 	</dl>

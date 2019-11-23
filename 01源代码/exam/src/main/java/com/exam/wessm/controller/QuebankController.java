@@ -34,9 +34,9 @@ public class QuebankController {
     /**
      *
      */
-    @RequestMapping(value = "getQuebanTId")
+    @RequestMapping(value = "getQuebankTId")
     public String getQuebanTId(Model model,Integer tId) {
-        List<Map> quebankList = quebankService.getQuebanTId(tId);
+        Map quebankList = quebankService.getQuebanTId(tId);
         model.addAttribute("quebankList",quebankList);
         return "/quebank-edit.jsp";
     }

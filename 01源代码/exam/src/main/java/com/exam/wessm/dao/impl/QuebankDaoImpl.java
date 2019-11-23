@@ -25,7 +25,7 @@ public class QuebankDaoImpl implements IQuebankDao {
     }
 
     @Override
-    public List<Map> getQuebankTId(Integer tId) {
+    public Map getQuebankTId(Integer tId) {
         return quebankMapper.getQuebankTId(tId);
     }
 
