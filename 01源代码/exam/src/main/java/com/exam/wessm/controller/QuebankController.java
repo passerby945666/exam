@@ -1,7 +1,10 @@
 package com.exam.wessm.controller;
 
 import com.exam.wessm.entity.Quebank;
+import com.exam.wessm.entity.Subject;
+import com.exam.wessm.service.IManagerService;
 import com.exam.wessm.service.IQuebankService;
+import com.exam.wessm.service.ISubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -20,6 +23,12 @@ public class QuebankController {
     @Autowired
     @Qualifier("quebankService")
     private IQuebankService quebankService;
+    @Autowired
+    @Qualifier("subjectService")
+    private ISubjectService subjectService;
+    @Autowired
+    @Qualifier("managerService")
+    private IManagerService managerService;
 
     /**
      * 查询题库信息
@@ -29,6 +38,7 @@ public class QuebankController {
     public String queryQuebank(Model model) {
         List<Map> quebankList = quebankService.queryQuebank();
         model.addAttribute("quebankList",quebankList);
+
         return "/quebank-list.jsp";
     }
 
@@ -69,12 +79,11 @@ public class QuebankController {
     /**
      * 添加题库
      *
-     * @param quebank
+     * @param
      * @return
      */
     @RequestMapping(value = "insertQuebank")
     public String insertQuebank(Quebank quebank) {
-        quebank.settNo("11111");
         int rows = quebankService.insertQuebank(quebank);
         return "redirect:/result.jsp?rows=" + rows;
     }
@@ -82,11 +91,19 @@ public class QuebankController {
     /**
      * 修改题库
      *
-     * @param quebank
+     * @param
      * @return
      */
     @RequestMapping(value = "updateQuebank")
-    public String updateQuebank(Quebank quebank) {
+    public String updateQuebank(@RequestParam Map map ) {
+        List<Map> list=(List<Map>) managerService.getManager(String.valueOf(map.get("kName")));
+        if(list.size()==0){
+
+        }
+        Integer qId=Integer.valueOf(String.valueOf(map.get("qId")));
+        Integer kId=Integer.valueOf(String.valueOf(map.get("kId")));
+        Integer tId=Integer.valueOf(""+list.get(0).get("tId"));
+        Quebank quebank=new Quebank(0,String.valueOf(map.get("tNo")),String.valueOf(map.get("content")),qId,String.valueOf(map.get("answer")),String.valueOf(map.get("reply")),null,kId,tId );
         int rows =quebankService.updateQuebank(quebank);
         return "redirect:/result.jsp?rows="+rows;
     }
