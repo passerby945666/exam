@@ -111,9 +111,11 @@
         <![CDATA[
         select
             (@rownum := @rownum + 1) rownum,
+            t_id as tId,
             content,
             t_no as tNo,
             q_type as qType,
+            q_value as qValue,
             answer,
             reply
         from

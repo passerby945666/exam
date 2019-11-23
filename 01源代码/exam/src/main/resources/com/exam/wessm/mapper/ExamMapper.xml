@@ -25,6 +25,7 @@
             e_no as eNo,
             e_name as eName,
             m_name as mName,
+            exam.k_id as kId,
             k_name as kName,
             time_begin as timeBegin,
             time_test as timeTest,
@@ -107,6 +108,7 @@
     <select id="getExamSNo"  resultType="java.util.Map" parameterType="String">
         <![CDATA[
         select
+            exam.e_id as eId,
             e_no as eNo,
             e_name as eName,
             k_name as kName,

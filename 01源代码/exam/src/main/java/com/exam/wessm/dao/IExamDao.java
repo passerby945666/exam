@@ -22,7 +22,7 @@ public interface IExamDao {
      * @param
      * @return
      */
-    List<Map> getExamEId(Integer eId);
+    Map getExamEId(Integer eId);
 
     /**
      * 根据关键字加载考试信息

@@ -24,7 +24,7 @@ public class ExamDaoImpl implements IExamDao {
     }
 
     @Override
-    public List<Map> getExamEId(Integer eId) {
+    public Map getExamEId(Integer eId) {
         return examMapper.getExamEId(eId);
     }
 

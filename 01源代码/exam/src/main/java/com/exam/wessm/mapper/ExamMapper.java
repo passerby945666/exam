@@ -19,7 +19,7 @@ public interface ExamMapper {
      * @param
      * @return
      */
-    List<Map> getExamEId(@Param("e_id")Integer eId);
+    Map getExamEId(@Param("e_id")Integer eId);
 
     /**
      * 根据关键字加载考试信息

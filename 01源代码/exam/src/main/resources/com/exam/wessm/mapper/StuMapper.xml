@@ -12,6 +12,7 @@
     <select id="findNoAndPass" resultType="stu" parameterType="stu">
         <![CDATA[
         select
+            s_id  as sId,
             s_no  as  sNo,
             s_password as sPassword
         from

@@ -78,7 +78,7 @@ function loginout(){
 							 <a href="stu/imitate.jsp" target="table" >模拟考场</a>
 						</li>
 							<li>
-							 <a href="stu/examing.jsp" target="table" >进入考试</a>
+							 <a href="/examing/choose" target="table" >进入考试</a>
 						</li>
 					
 					</ul>

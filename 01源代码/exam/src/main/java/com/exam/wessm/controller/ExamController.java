@@ -66,7 +66,7 @@ public class ExamController {
      */
     @RequestMapping(value = "getExamEId")
     public String getExamEId(Integer eId,Model model) {
-     List<Map> mapList=examService.getExamEId(eId);
+     Map mapList=examService.getExamEId(eId);
      model.addAttribute("map",mapList);
      return  "/exam-edit.jsp";
     }

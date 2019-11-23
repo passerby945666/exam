@@ -57,7 +57,7 @@ public class QuebankDaoImpl implements IQuebankDao {
         Map map=new HashMap();
         map.put("no",kId);
         map.put("name",qType);
-        return quebankMapper.getQuebank(map);
+        return quebankMapper.getQuebankKId(map);
     }
 
     @Override
@@ -65,6 +65,6 @@ public class QuebankDaoImpl implements IQuebankDao {
         Map map=new HashMap();
         map.put("no",kId);
         map.put("name",qType);
-        return quebankMapper.getQuebank(map);
+        return quebankMapper.getQuebankKIdAndQType(map);
     }
 }
