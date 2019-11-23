@@ -1,9 +1,6 @@
 package com.exam.wessm.controller;
 ;
-import com.exam.wessm.entity.Exam;
-import com.exam.wessm.entity.Grades;
-import com.exam.wessm.entity.Hquestion;
-import com.exam.wessm.entity.Stu;
+import com.exam.wessm.entity.*;
 import com.exam.wessm.service.*;
 import com.exam.wessm.util.examing.examingROM;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +42,9 @@ public class ExamingController {
     @Autowired
     @Qualifier("gradesService")
     private IGradesService gradesService;
+    @Autowired
+    @Qualifier("subjectService")
+    private ISubjectService subjectService;
     /**
      * 进入界面，选择考次
      * @return
@@ -72,7 +72,7 @@ public class ExamingController {
         return "/stu/examing.jsp";
     }
     /**
-     * 提交考试题
+     * 加载考试题
      * @return
      */
     @RequestMapping(value = "examing")
@@ -95,16 +95,16 @@ public class ExamingController {
         request.setAttribute("scr","/examing/examed");
         session.setAttribute("Exam",listAll);
         request.setAttribute("List",listAll);
-        request.setAttribute("thisEId",eId);
+        request.setAttribute("thisI",eId);
         return "/stu/examing2.jsp";
     }
     /**
-     * 加载考试题
+     * 提交考试题
      * @return
      */
     @RequestMapping(value = "examed")
-    public String Examed(HttpSession session, HttpServletRequest request,int eId) {
-        Map map=examService.getExamEId(eId);
+    public String Examed(HttpSession session, HttpServletRequest request,int Id) {
+        int eId=Id;
         List<Map> list=(List<Map>) session.getAttribute("Exam");
         List<String> hAnswerlist=new ArrayList<>();
         String []arr;
@@ -147,8 +147,91 @@ public class ExamingController {
         }
         Grades grades=new Grades(0,stu.getsId(),eId,String.valueOf(grade));
         gradesService.insertGrade(grades);
-
+        session.removeAttribute("Exam");
         return "/stu/examed.jsp";
+    }
+
+    /**
+     * 进入选择科目界面
+     * @return
+     */
+    @RequestMapping(value = "simulationbef")
+    public String SimulationBef(HttpSession session, HttpServletRequest request) {
+        List<Subject> list=subjectService.querySubject();
+        request.setAttribute("List",list);
+        return "/stu/simulation.jsp";
+    }
+
+
+
+
+
+    /**
+     * 进入模拟考
+     * @return
+     */
+    @RequestMapping(value = "simulation")
+    public String Simulation(HttpSession session, HttpServletRequest request,int kId) {
+
+        int[] arr={1,1,1,1};
+        List<Map> list;
+        List<Map> listAll=new ArrayList<>();
+        for(int i=0;i<arr.length;i++){
+            list=quebankService.getQuebankKId(kId,(i+1)+"");
+            List<Integer> list1= examingROM.rondom(list.size(),arr[i]);
+            for(int ints:list1){
+                listAll.add(list.get(ints));
+            }
+        }
+        for(int i=0;i<listAll.size();i++){
+            listAll.get(i).put("No",i+1);
+        }
+        request.setAttribute("scr","/examing/simulationed");
+        session.setAttribute("Exam",listAll);
+        request.setAttribute("List",listAll);
+        request.setAttribute("kId",kId);
+        return "/stu/examing2.jsp";
+    }
+
+    /**
+     * 提交模拟考试题
+     * @return
+     */
+    @RequestMapping(value = "simulationed")
+    public String Simulationed(HttpSession session, HttpServletRequest request) {
+        List<Map> list=(List<Map>) session.getAttribute("Exam");
+        List<String> hAnswerlist=new ArrayList<>();
+        String []arr;
+        String s="";
+        for(int i=0;i<list.size();i++){
+            if(String.valueOf(list.get(i).get("qType")).equals("2")){
+                arr=request.getParameterValues("hAnswer"+(i+1));
+                for(int j=0;j<arr.length;j++){
+                    s+=arr[j];
+                }
+                hAnswerlist.add(s);
+                s="";
+            }else {
+                hAnswerlist.add(request.getParameter("hAnswer"+(i+1)));
+            }
+        }
+        String qValue;
+        int grade=0;
+        for(int i=0;i<list.size();i++){
+            if(String.valueOf(list.get(i).get("qType")).equals("4")){
+
+            }else {
+                if(list.get(i).get("answer").equals(hAnswerlist.get(i))){
+                    qValue=String.valueOf(list.get(i).get("qValue"));
+                    grade+=Integer.valueOf(qValue);
+                }
+            }
+            list.get(i).put("hAnswer",hAnswerlist.get(i));
+        }
+        request.setAttribute("List",list);
+        request.setAttribute("grade",grade);
+        session.removeAttribute("Exam");
+        return "/stu/simulationed.jsp";
     }
 
 
