@@ -31,8 +31,9 @@ public class QuebankController {
         model.addAttribute("quebankList",quebankList);
         return "/quebank-list.jsp";
     }
+
     /**
-     *
+     *根据题库id加载题库信息
      */
     @RequestMapping(value = "getQuebankTId")
     public String getQuebanTId(Model model,Integer tId) {
@@ -40,6 +41,17 @@ public class QuebankController {
         model.addAttribute("quebankList",quebankList);
         return "/quebank-edit.jsp";
     }
+
+    /**
+     *根据关键字加载题库信息
+     */
+    @RequestMapping(value = "getQuebank")
+    public String getQuebank(Model model,String quebank) {
+        List<Map> quebankList = quebankService.getQuebank(quebank);
+        model.addAttribute("quebankList",quebankList);
+        return "/quebank-list.jsp";
+    }
+
     /**
      * 根据题库ID删除题库
      *

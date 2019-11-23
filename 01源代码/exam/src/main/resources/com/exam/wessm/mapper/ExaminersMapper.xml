@@ -5,6 +5,7 @@
     <select id="queryExaminers" resultType="java.util.Map">
         <![CDATA[
         select
+            ex_id as exId,
             e_no as eNo,
             e_name as eName,
             s_no as sNo,
@@ -34,6 +35,7 @@
     <select id="getExaminers"  resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
         select
+            ex_id as exId,
             e_no as eNo,
             e_name as eName,
             s_no as sNo,

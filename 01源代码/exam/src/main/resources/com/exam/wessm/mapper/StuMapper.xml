@@ -24,6 +24,7 @@
     <select id="queryStu" resultType="stu">
         <![CDATA[
         select
+            s_id as sId,
             s_no as sNo,
             s_name as sName,
             s_idcard as sIdcard,
@@ -52,6 +53,7 @@
     <select id="getStu"  resultType="stu" parameterType="java.util.Map">
         <![CDATA[
         select
+            s_id as sId,
             s_no as sNo,
             s_name as sName,
             s_idcard as sIdcard,

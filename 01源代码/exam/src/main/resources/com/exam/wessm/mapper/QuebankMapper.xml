@@ -5,6 +5,7 @@
     <select id="queryQuebank" resultType="java.util.Map">
         <![CDATA[
         select
+            t_id as tId,
             t_no as tNo,
             content,
             q_type as qType,
@@ -42,6 +43,7 @@
     <select id="getQuebank"  resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
         select
+            t_id as tId,
             t_no as tNo,
             content,
             q_type as qType,

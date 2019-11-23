@@ -23,6 +23,7 @@
     <select id="queryManager" resultType="manager">
         <![CDATA[
         select
+            m_id as mId,
             m_no as mNo,
             m_name as mName,
             m_sex as mSex,
@@ -49,6 +50,7 @@
     <select id="getManager"  resultType="manager" parameterType="java.util.Map">
         <![CDATA[
         select
+            m_id as mId ,
             m_no as mNo,
             m_name as mName,
             m_sex as mSex,

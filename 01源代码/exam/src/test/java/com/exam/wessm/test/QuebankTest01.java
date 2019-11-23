@@ -28,7 +28,7 @@ public class QuebankTest01 {
     public void getTest02() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IQuebankService quebankService = (IQuebankService) context.getBean("quebankService");
-        Map quebank= quebankService.getQuebanTId(1);
+        Map quebank= quebankService.getQuebanTId(4);
         System.out.println(quebank.toString());
         context.close();
     }

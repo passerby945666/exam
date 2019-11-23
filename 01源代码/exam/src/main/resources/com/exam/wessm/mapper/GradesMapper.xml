@@ -5,6 +5,7 @@
     <select id="queryGrades" resultType="java.util.Map" >
         <![CDATA[
 SELECT
+    g_id as gId,
 	s_no AS sNo,
 	e_no AS eNo,
 	s_name AS sName,
@@ -19,6 +20,7 @@ FROM
     <select id="getGradekFind" resultType="java.util.Map" >
         <![CDATA[
 SELECT
+    g_id as gId,
 	s_no AS sNo,
 	e_no AS eNo,
 	s_name AS sName,
@@ -38,6 +40,7 @@ WHERE
     <select id="getGradekChoose" resultType="java.util.Map" >
         <![CDATA[
 SELECT
+    g_id as gId,
 	s_no AS sNo,
 	e_no AS eNo,
 	s_name AS sName,

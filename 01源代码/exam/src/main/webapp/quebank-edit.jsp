@@ -31,58 +31,57 @@
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal" id="form-article-add" action="/quebank/updateQuebank" >
-
+	<form class="form form-horizontal"  action="/quebank/updateQuebank" >
         <div class="row c">
             <label class="form-label col-xs-4 col-sm-2">题库编号:</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebank.tNo}" placeholder="" id="articletitle" name="tNo">
+                <input type="text" class="input-text" value="${quebankList.tNo}" placeholder="" id="articletitle" name="tNo">
             </div>
         </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">题目内容：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebank.content}" placeholder="" id="articletitle1" name="content">
+                <input type="text" class="input-text" value="${quebankList.content}" placeholder="" id="articletitle1" name="content">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">题目的类型：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebank.qType}" placeholder="" id="articletitle2" name="qType">
+                <input type="text" class="input-text" value="${quebankList.qType}" placeholder="" id="articletitle2" name="qType">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">这题目的答案：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebank.answer}" placeholder="" id="articletitle3" name="answer">
+                <input type="text" class="input-text" value="${quebankList.answer}" placeholder="" id="articletitle3" name="answer">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">解答内容：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebank.reply}" placeholder="" id="articletitle4" name="reply">
+                <input type="text" class="input-text" value="${quebankList.reply}" placeholder="" id="articletitle4" name="reply">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">科目名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebank.kName}" placeholder="" id="articletitle5" name="kName">
+                <input type="text" class="input-text" value="${quebankList.kName}" placeholder="" id="articletitle5" name="kName">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">负责人:</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebank.mName}" placeholder="" id="author" name="mName">
+                <input type="text" class="input-text" value="${quebankList.mName}" placeholder="" id="author" name="mName">
             </div>
         </div>
 
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <input type="hidden" name="tId" value="${quebank.tId}">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button>
-                <button  class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-                <button  class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                <input type="hidden" name="tId" value="${quebankList.tId}">
+                <input  type="submit"  value="保存并提交审核"/>
+                <button onClick="article_save();"class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
+                <button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
     </form>

@@ -5,6 +5,7 @@
     <select id="queryQuetype" resultType="quetype">
         <![CDATA[
         select
+            q_id as qId,
             q_type as qType,
             q_value as qValue
         from
@@ -27,6 +28,7 @@
     <select id="getQuetypeQType"  resultType="quetype" parameterType="String">
         <![CDATA[
         select
+            q_id as qId,
             q_type as qType,
             q_value as qValue
         from

@@ -5,6 +5,7 @@
     <select id="queryExam" resultType="java.util.Map">
         <![CDATA[
         select
+            e_id as eId,
             e_no as eNo,
             e_name as eName,
             m_name as mName,
@@ -41,6 +42,7 @@
     <select id="getExamExam"  resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
         select
+            e_id as eId,
             e_no as eNo,
             e_name as eName,
             m_name as mName,

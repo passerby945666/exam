@@ -5,6 +5,7 @@
     <select id="querySubject" resultType="subject">
         <![CDATA[
         select
+            k_id as kId,
             k_no as kNo,
             k_name as kName
         from
@@ -27,6 +28,7 @@
     <select id="getSubject"  resultType="subject" parameterType="java.util.Map">
         <![CDATA[
          select
+            k_id as kId,
             k_no as kNo,
             k_name as kName
         from

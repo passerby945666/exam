@@ -5,6 +5,7 @@
     <select id="queryHquestion" resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
        SELECT
+    h_id as hId,
 	t_no AS tNo,
 	content,
 	h_answer AS hAnswer,
@@ -28,6 +29,7 @@ WHERE
     <select id="queryHquestionAll" resultType="hquestion" >
         <![CDATA[
 SELECT
+    h_id as hId,
 	h_no AS hNo,
 	s_id AS sId,
 	e_id AS eId,
