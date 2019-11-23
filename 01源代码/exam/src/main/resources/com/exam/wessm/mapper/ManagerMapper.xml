@@ -12,6 +12,7 @@
     <select id="findManagerNoAndPass" resultType="manager" parameterType="manager">
     <![CDATA[
         select
+        m_id as mId,
             m_no  as  mNo,
             m_password as mPassword
         from

@@ -1,5 +1,7 @@
 package com.exam.wessm.controller;
+import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Stu;
+import com.exam.wessm.service.IManagerService;
 import com.exam.wessm.service.IStuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,7 +22,9 @@ public class StuController {
     @Autowired
     @Qualifier("stuService")
     private IStuService stuService;
-
+    @Autowired
+    @Qualifier("managerService")
+    private IManagerService managerService;
     /**
      * 注册账号
      *
@@ -58,7 +62,12 @@ public class StuController {
              }
            }
            else{
-            return "/index.jsp";
+               Manager manager=managerService.findManagerNoAndPass(sNo,sPassword);
+               if(manager!=null){
+                   session.setAttribute("managerSession",manager);
+                   model.addAttribute("stu",manager);
+                   return  "/index.jsp";
+               }
            }
            return  "/404.jsp";
     }
