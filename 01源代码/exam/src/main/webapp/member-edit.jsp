@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
@@ -25,61 +27,70 @@
 <![endif]-->
 <!--/meta 作为公共模版分离出去-->
 
-<title>添加考生信息 - 考生管理</title>
+<title>修改考生信息 - 考生管理</title>
 <meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
 <meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
 </head>
 <body>
 <article class="page-container">
-	<form action="/stu/insertStu" method="post" class="form form-horizontal" >
+	<form   class="form form-horizontal" >
+
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>账号：</label>
+			<label class="form-label col-xs-4 col-sm-3">账号：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder=""  name="sNo">
+				<input type="text" class="input-text" value="${stu.sNo}" placeholder=""  name="sNo">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">姓名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder=""  name="sName">
+				<input type="text" class="input-text" value="${stu.sName}" placeholder=""  name="sName">
 			</div>
 		</div>
 
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3">密码：</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder=""  name="sPassword">
-			</div>
-		</div>
-		<div class="row cl">
+	<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">性别：</label>
 			<div class="formControls col-xs-8 col-sm-9 skin-minimal">
-				<div class="radio-box">
-				<label>	<input name="sSex" type="radio"  value="1" checked>男</label>
-				</div>
-				<div class="radio-box">
-					<label>	<input name="sSex" type="radio"  value="2" >女</label>
-				</div>
+                <c:choose>
+					<c:when test="${stu.sSex==1}">
+						<div class="radio-box">
+							<label>	<input name="sSex" type="radio"  value="1"  checked>男</label>
+						</div>
+						<div class="radio-box">
+							<label>	<input name="sSex" type="radio"  value="2" >女</label>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="radio-box">
+							<label>	<input name="sSex" type="radio"  value="1"  >男</label>
+						</div>
+						<div class="radio-box">
+							<label>	<input name="sSex" type="radio"  value="2" checked>女</label>
+						</div>
+					</c:otherwise>
+				</c:choose>
+
 			</div>
 		</div>
 
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>身份证号码：</label>
+			<label class="form-label col-xs-4 col-sm-3">身份证号码：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" placeholder="" name="sIdcard" >
+				<input type="text" class="input-text" placeholder="" name="sIdcard" value="${stu.sIdcard}" >
 			</div>
 		</div>
 
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">出生年月：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" placeholder="" name="sBirthday">
+				<input type="text" class="input-text" placeholder="" name="sBirthday"   value="${stu.sBirthday}"   />
 			</div>
 		</div>
 
+
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;确定&nbsp;&nbsp;">
+				<input class="btn btn-primary radius" onclick="updateExam()"  value="&nbsp;&nbsp;确定&nbsp;&nbsp;">
 				<input class="btn btn-primary radius" type="reset" value="&nbsp;&nbsp;重置&nbsp;&nbsp;">
 			</div>
 		</div>
@@ -98,47 +109,7 @@
 <script type="text/javascript" src="/lib/jquery.validation/1.14.0/validate-methods.js"></script>
 <script type="text/javascript" src="/lib/jquery.validation/1.14.0/messages_zh.js"></script>
 <script type="text/javascript">
-$(function(){
-	$('.skin-minimal input').iCheck({
-		checkboxClass: 'icheckbox-blue',
-		radioClass: 'iradio-blue',
-		increaseArea: '20%'
-	});
-	
-	$("#form-member-add").validate({
-		rules:{
-			username:{
-				required:true,
-				minlength:2,
-				maxlength:16
-			},
-			sex:{
-				required:true,
-			},
-			mobile:{
-				required:true,
-				isMobile:true,
-			},
-			email:{
-				required:true,
-				email:true,
-			},
-			uploadfile:{
-				required:true,
-			},
-			
-		},
-		onkeyup:false,
-		focusCleanup:true,
-		success:"valid",
-		submitHandler:function(form){
-			//$(form).ajaxSubmit();
-			var index = parent.layer.getFrameIndex(window.name);
-			//parent.$('.btn-refresh').click();
-			parent.layer.close(index);
-		}
-	});
-});
+
 </script> 
 <!--/请在上方写此页面业务相关的脚本-->
 </body>

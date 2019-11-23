@@ -90,7 +90,7 @@
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 考生管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="member-list.jsp" data-title="会员列表" href="javascript:;">考生列表</a></li>
+					<li><a data-href="/stu/queryStu" data-title="考生列表" href="javascript:;">考生列表</a></li>
 					<li><a data-href="member-del.jsp" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
 			</ul>
 		</dd>
