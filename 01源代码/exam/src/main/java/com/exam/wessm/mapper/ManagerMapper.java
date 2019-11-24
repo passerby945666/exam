@@ -42,7 +42,7 @@ public interface ManagerMapper {
      * @param
      * @return
      */
-    Manager getManager(Map map);
+    List<Manager> getManager(Map map);
 
     /**
      * 添加管理员

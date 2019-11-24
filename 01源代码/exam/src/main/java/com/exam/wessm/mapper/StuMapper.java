@@ -45,7 +45,7 @@ public interface StuMapper {
      * @param
      * @return
      */
-    Stu getStu(Map map);
+    List<Stu> getStu(Map map);
 
     /**
      * 添加考生
@@ -75,4 +75,24 @@ public interface StuMapper {
      * @return
      */
     int updateStuPassword(Stu stu);
+
+    /**
+     * 查询男女考生的数量
+     * @return
+     */
+    Map getSexnum();
+
+    /**
+     * 查询男女考生不同年龄范围的人数
+     * @param sSex
+     * @return
+     */
+    List<Map> getYearnum(@Param("sex")Integer sSex);
+
+    /**
+     * 查询不同科目的最近5场考试的所有考生的平均分
+     * @param kId
+     * @return
+     */
+    List<Map> getAvgnum(@Param("k_id")Integer kId);
 }

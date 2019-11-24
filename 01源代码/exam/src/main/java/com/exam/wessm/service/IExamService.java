@@ -61,4 +61,21 @@ public interface IExamService {
      * @return
      */
     List<Map> getExamSNo(String sNo);
+
+    /**
+     * 根据考生ID加载考试信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getExamSId(Integer sId);
+
+    /**
+     * 根据考生ID加载考试信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getExamBaoming(Integer sId);
+
 }

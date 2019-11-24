@@ -35,15 +35,15 @@ public class ExamController {
     }
 
     /**
-     *
+     *新增考试
      * @param exam
      * @return
      */
     @ResponseBody
     @RequestMapping(value = "insertExam")
-    public  int insertExam(Exam exam) {
+    public  String insertExam(Exam exam) {
        int rows =examService.insertExam(exam);
-       return  rows;
+        return "redirect:/result.jsp?rows="+rows;
     }
 
 
@@ -66,10 +66,46 @@ public class ExamController {
      */
     @RequestMapping(value = "getExamEId")
     public String getExamEId(Integer eId,Model model) {
-     Map mapList=examService.getExamEId(eId);
-     model.addAttribute("map",mapList);
+     Map map=examService.getExamEId(eId);
+     model.addAttribute("map",map);
+     model.addAttribute("eId",eId);
      return  "/exam-edit.jsp";
     }
 
+    /**
+     *修改考试信息
+     * @param exam
+     * @return
+     */
+    @RequestMapping(value = "updateExam")
+    public  String  updateExam(Exam exam){
+        int rows=examService.updateExam(exam);
+        return "redirect:/result.jsp?rows="+rows;
+    }
 
+    /**
+     * 根据关键字加载考试信息
+     * @param exam
+     * @param model
+     * @return
+     */
+   @RequestMapping(value = "getExamExam")
+   public String getExamExam(String exam,Model model){
+        List<Map> examList =examService.getExamExam(exam);
+       model.addAttribute("examList",examList);
+       return "/exam-list.jsp";
+}
+
+    /**
+     *
+     * @param sNo
+     * @return
+     */
+    @RequestMapping(value = "getExamSNo")
+    public  String getExamSNo(String sNo,Model model){
+    List<Map> mapList=examService.getExamSNo(sNo);
+    model.addAttribute("mapList",mapList);
+    model.addAttribute("sNo",sNo);
+    return "/stu/arrange.jsp";
+}
 }

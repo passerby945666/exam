@@ -69,7 +69,7 @@ function loginout(){
 							 <a href="stu/sign.jsp" target="table">考试报名</a>
 						</li>
 						<li>
-							 <a href="stu/info.jsp" target="table">成绩查询</a>
+							 <a href="/grade/getGradekFind?str=${stu.sNo}" target="table">成绩查询</a>
 						</li>
 						<li>
 							 <a href="stu/arrange.jsp" target="table">考试安排</a>
@@ -89,7 +89,7 @@ function loginout(){
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎：${stu.sNo}<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									 <a href="#"  class="btn btn-primary" data-toggle="modal" data-target="#stuEditDialog">个人信息</a>
+									 <a href="/stu/getStuSId"  class="btn btn-primary" data-toggle="modal" data-target="#stuEditDialog">个人信息</a>
 								</li>
 								<li>
 									 <a href="/stu/uppassword.jsp" target="table">修改密码</a>
@@ -136,13 +136,13 @@ function loginout(){
 					<div class="form-group">
 						<label for="edit_customerName" class="col-sm-2 control-label">考生编号</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sNo" placeholder="考生编号" name="sNo" />
+							<input type="text" class="form-control" id="edit_sNo" placeholder="考生编号" name="sNo"  value="${stu.sNo}"/>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="edit_customerName" class="col-sm-2 control-label">考生姓名</label>
+						<label for="edit_customerNe" class="col-sm-2 control-label">考生姓名</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sName" placeholder="考生姓名" name="sName" />
+							<input type="text" class="form-control" placeholder="考生姓名" name="sName"  value="${stu.sName}"/>
 						</div>
 					</div>
 					<div class="form-group">
@@ -159,14 +159,14 @@ function loginout(){
 					<div class="form-group">
 						<label for="edit_customerName" class="col-sm-2 control-label">身份证号码</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sIdcard" placeholder="身份证号码" name="sIdcard" />
+							<input type="text" class="form-control"  placeholder="身份证号码" name="sIdcard" value="${stu.sIdcard}" />
 						</div>
 					</div>
 				
 					<div class="form-group">
 						<label for="edit_customerName" class="col-sm-2 control-label">出生年月</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sIdcard" placeholder="出生年月" name="sBirthday" />
+							<input type="text" class="form-control"  placeholder="出生年月" name="sBirthday"  value="${stu.sBirthday}"/>
 						</div>
 					</div>
 				</form>

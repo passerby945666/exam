@@ -28,6 +28,7 @@
             m_no as mNo,
             m_name as mName,
             m_sex as mSex,
+            m_Idcard as mIdcard,
             m_birthday as mBirthday
         from
             manager
@@ -40,6 +41,7 @@
             m_no as mNo,
             m_name as mName,
             m_sex as mSex,
+            m_Idcard as mIdcard,
             m_birthday as mBirthday
         from
             manager
@@ -98,9 +100,10 @@
         set     m_no=#{mNo} ,
                 m_name=#{mName} ,
                 m_idcard=#{mIdcard} ,
-                m_sex=#{mSex} ,
-                m_birthday=#{mBirthday}
-        where   m_id=#{mId}
+                m_sex=#{mSex},
+                m_birthday= #{mBirthday}
+        where
+         m_id=#{mId}
      ]]>
     </update>
     <!-- 根据管理员ID修改管理员密码-->

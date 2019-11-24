@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
@@ -32,23 +33,18 @@
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal" >
+	<form class="form form-horizontal" action="/exam/updateExam"  >
+			<input type="hidden"  name="eId"  value="${eId}">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">考试编号：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text"  name="eNo"  value="${map.eNo}">
 			</div>
 		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">考试名称：</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder=""  value="${map.eName}" name="eName">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">科目：</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder=""  value="${map.kName}" name="kName">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">考试名称：</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" class="input-text"    value="${map.eName}" name="eName">
 			</div>
 		</div>
 		<div class="row cl">
@@ -73,20 +69,13 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">考试时长</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder=""  value="${map.timeTest}" name="timeTest">
-			</div>
-		</div>
-
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">负责人:</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" value="${map.mName}" name="mName">
+				<input type="text" class="input-text" placeholder=""  value="${map.timeTest}" name="timeTest">
 			</div>
 		</div>
 
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-				<button onClick="article_save_submit();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存修改</button>
+				<button  class="btn btn-primary radius"  type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存修改</button>
 				<button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 			</div>
 		</div>
@@ -108,9 +97,7 @@
 <script type="text/javascript" src="/lib/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
-<script type="text/javascript">
 
-</script>
 <!--/请在上方写此页面业务相关的脚本-->
 </body>
 </html>

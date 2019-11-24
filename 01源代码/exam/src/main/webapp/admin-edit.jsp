@@ -21,67 +21,72 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>添加管理员 - 管理员管理</title>
+<title>修改管理员 - 管理员管理</title>
 <meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
 <meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal"  action="/admin/insertManager" method="post">
-	<div class="row cl">
+	<form class="form form-horizontal"  action="/admin/updateManager" >
+		<tr>${mId}</tr>
+		<input type="hidden"  value="${mId}"   name="mId">
+		<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>管理员账号：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" value="" placeholder=""  name="mNo">
+			<input type="text" class="input-text" value="${admin.mNo}" placeholder=""  name="mNo">
 		</div>
 	</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>管理员姓名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder=""  name="mName">
+				<input type="text" class="input-text" value="${admin.mName}" placeholder=""  name="mName">
 			</div>
 		</div>
-	<div class="row cl">
-		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>初始密码：</label>
-		<div class="formControls col-xs-8 col-sm-9">
-			<input type="password" class="input-text"  value="" placeholder=""  name="mPassword">
-		</div>
-	</div>
-	<div class="row cl">
-		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
-		<div class="formControls col-xs-8 col-sm-9">
-			<input type="password" class="input-text"   placeholder="确认新密码"  name="password2" value="">
-		</div>
-	</div>
-	<div class="row cl">
-		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
-		<div class="formControls col-xs-8 col-sm-9 skin-minimal">
-			<div class="radio-box">
-				<input name="mSex" type="radio" id="sex-1"  value="1" checked>
-				<label for="sex-1">男</label>
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">性别：</label>
+			<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+				<c:choose>
+					<c:when test="${admin.mSex==1}">
+						<div class="radio-box">
+							<label>	<input name="mSex" type="radio"  value="1"  checked>男</label>
+						</div>
+						<div class="radio-box">
+							<label>	<input name="mSex" type="radio"  value="2" >女</label>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="radio-box">
+							<label>	<input name="mSex" type="radio"  value="1"  >男</label>
+						</div>
+						<div class="radio-box">
+							<label>	<input name="mSex" type="radio"  value="2" checked>女</label>
+						</div>
+					</c:otherwise>
+				</c:choose>
+
 			</div>
-			<div class="radio-box">
-				<input type="radio" id="sex-2" name="mSex" value="2">
-				<label for="sex-2">女</label>
-			</div>
 		</div>
-	</div>
+
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>身份证号码：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" class="input-text" value="" placeholder="" id="mIdcard" name="mIdcard">
+			<input type="text" class="input-text" value="${admin.mIdcard}" placeholder=""  name="mIdcard">
 		</div>
 	</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>出生年月：</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="yyyy-MM-dd"  name="mBirthday">
-			</div>
+
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>出生年月：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text"   value="${admin.mBirthday}" class="input-text" name="mBirthday" placeholder="yyyy-MM-dd">
 		</div>
+	</div>
 
 
 	<div class="row cl">
 		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
 			<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			<input class="btn btn-primary radius" type="reset" value="&nbsp;&nbsp;重置&nbsp;&nbsp;">
 		</div>
 	</div>
 	</form>

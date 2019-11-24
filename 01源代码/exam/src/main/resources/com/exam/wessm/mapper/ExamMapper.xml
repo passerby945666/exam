@@ -26,12 +26,12 @@
             e_no as eNo,
             e_name as eName,
             m_name as mName,
-            exam.k_id as kId,
             k_name as kName,
             time_begin as timeBegin,
             time_test as timeTest,
             time_baomin as timeBaomin,
             time_end as timeEnd
+
         from
              (exam left join subject on exam.k_id=subject.k_id)
             left join manager on exam.m_id=manager.m_id
@@ -42,7 +42,7 @@
     <select id="getExamExam"  resultType="java.util.Map" parameterType="java.util.Map">
         <![CDATA[
         select
-            e_id as eId,
+           e_id as eId,
             e_no as eNo,
             e_name as eName,
             m_name as mName,
@@ -110,7 +110,6 @@
     <select id="getExamSNo"  resultType="java.util.Map" parameterType="String">
         <![CDATA[
         select
-            exam.e_id as eId,
             e_no as eNo,
             e_name as eName,
             k_name as kName,
@@ -124,6 +123,49 @@
 			left join stu on examiners.s_id=stu.s_id
         where
             s_no=#{s_no} and time_begin <=NOW()
+       ]]>
+    </select>
+    <!-- 根据考生ID加载考试信息-->
+    <select id="getExamSId"  resultType="java.util.Map" parameterType="int">
+        <![CDATA[
+        select
+            exam.e_id as eId,
+            e_no as eNo,
+            e_name as eName,
+            k_name as kName,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd,
+            stu.s_id as stuId
+        from
+             ((exam left join subject on exam.k_id=subject.k_id)
+            left join examiners on exam.e_id=examiners.e_id)
+			left join stu on examiners.s_id=stu.s_id
+        where
+            s_id=#{sId} and time_begin >=NOW()
+       ]]>
+    </select>
+    <!-- 根据考生ID加载报名考试-->
+    <select id="getExamBaoming"  resultType="java.util.Map" parameterType="int">
+        <![CDATA[
+        select
+            exam.e_id as eId,
+            e_no as eNo,
+            e_name as eName,
+            k_name as kName,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd,
+            stu.s_id as stuId
+        from
+             ((exam left join subject on exam.k_id=subject.k_id)
+            left join examiners on exam.e_id=examiners.e_id)
+			left join stu on examiners.s_id=stu.s_id
+        where
+            s_id=#{sId} and time_baomin <=NOW() and time_end>=NOW()
+            and eId not in(select eId from examiners where s_id = #{sId})
        ]]>
     </select>
 </mapper>

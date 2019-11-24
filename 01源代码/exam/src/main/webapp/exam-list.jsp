@@ -28,19 +28,20 @@
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 考试管理 <span class="c-gray en">&gt;</span> 考试列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
 	<div class="text-c">
+		<form action="/exam/getExamExam">
 		<button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
 	 <span class="select-box inline">
-		<select name="" class="select">
-			<option value="0">全部分类</option>
-			<option value="1">分类一</option>
-			<option value="2">分类二</option>
+		<select name="exam11" class="select">
+			<option value="">科目</option>
+			<c:forEach items="${examList}" var="examList">
+				<option value="${examList.kName}" <c:if test="${examList.kName == exam}">selected</c:if>>${examList.kName}
+								</option>
+			</c:forEach>
 		 </select>
-		</span> 日期范围：
-		<input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })" id="logmin" class="input-text Wdate" style="width:120px;">
-		-
-		<input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })" id="logmax" class="input-text Wdate" style="width:120px;">
-		<input type="text" name=""  placeholder=" 考试名称" style="width:250px" class="input-text">
+		</span>
+		<input type="text" name="exam"  value="" placeholder=" 考试名称" style="width:250px" class="input-text">
 		<button name=""  class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜考试</button>
+		</form>
 	</div>
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
 	<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> 
@@ -79,7 +80,7 @@
                     <td>${exam.timeBaomin}</td>
                     <td>${exam.timeEnd}</td>
 					<td>${exam.mName}</td>
-					<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit()" href="/exam/getExamEId?eId=${exam.eId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,${exam.eId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<td class="f-14 td-manage"> <a style="text-decoration:none" class="ml-5" onClick="article_edit()" href="/exam/getExamEId?eId=${exam.eId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,${exam.eId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>
@@ -133,7 +134,7 @@ function article_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: "/exam/deleteExam",
+			url: '/exam/deleteExam',
 		     data:{"eId":id},
 			dataType: 'text',
 			success: function(data){

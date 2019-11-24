@@ -42,7 +42,7 @@ public interface IManagerService {
      * @param
      * @return
      */
-    Manager getManager(String manager);
+    List<Manager> getManager(String manager);
 
     /**
      * 添加管理员

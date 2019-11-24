@@ -32,23 +32,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="panel  panel-info">
 				<div class="panel-body">
 						<div class="col-md-12 column">
-							<form class="form-horizontal" role="form"  action="${basePath}login.action" method="post">
+							<form class="form-horizontal" role="form"  action="/stu/updateStuPassword" method="post">
 								<div class="form-group">
-						<label for="edit_customerName" class="col-sm-2 control-label">考生编号</label>
+									<input type="hidden" class="form-control"   name="sId" value="${stu.sId}" />
+						<label for="edit_customerName" class="col-sm-2 control-label">账号</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sNo" placeholder="账号" name="sNo" />
+							<input type="text" class="form-control"  placeholder="账号" name="sNo" />
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="edit_customerName" class="col-sm-2 control-label">密码</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sName" placeholder="密码" name="sName" />
+							<input type="text" class="form-control" id="edit_sName" placeholder="密码" name="sPassword" />
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="edit_customerName" class="col-sm-2 control-label">确认密码</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sName" placeholder="确认密码" name="sName" />
+							<input type="text" class="form-control" id="edit_sName" placeholder="确认密码" name="csPassword" />
 						</div>
 					</div>
 

@@ -55,4 +55,14 @@ public class ExamDaoImpl implements IExamDao {
     public List<Map> getExamSNo(String sNo) {
         return examMapper.getExamSNo(sNo);
     }
+
+    @Override
+    public List<Map> getExamSId(Integer sId) {
+        return examMapper.getExamSId(sId);
+    }
+
+    @Override
+    public List<Map> getExamBaoming(Integer sId) {
+        return examMapper.getExamBaoming(sId);
+    }
 }

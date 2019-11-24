@@ -31,7 +31,10 @@
             reply,
             t_time as tTime,
             k_name as kName,
-            m_name as mName
+            m_name as mName,
+            quetype.q_id as qId,
+            subject.k_id as kId,
+            manager.m_id as mId
          from
              ((quebank left join quetype on quebank.q_id=quetype.q_id)
             left join manager on quebank.m_id=manager.m_id)

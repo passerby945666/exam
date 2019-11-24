@@ -10,6 +10,8 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
+
 @Service("stuService")
 public class StuServiceImpl implements IStuService {
     @Autowired
@@ -42,7 +44,7 @@ public class StuServiceImpl implements IStuService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public Stu getStu(String stu) {
+    public   List<Stu> getStu(String stu) {
         return stuDao.getStu(stu);
     }
 
@@ -68,5 +70,23 @@ public class StuServiceImpl implements IStuService {
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateStuPassword(Stu stu) {
         return stuDao.updateStuPassword(stu);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public Map getSexnum() {
+        return stuDao.getSexnum();
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public List<Map> getYearnum(Integer sSex) {
+        return stuDao.getYearnum(sSex);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public List<Map> getAvgnum(Integer kId) {
+        return stuDao.getAvgnum( kId);
     }
 }

@@ -41,7 +41,7 @@ public class StuDaoImpl implements IStuDao {
     }
 
     @Override
-    public Stu getStu(String stu) {
+    public  List<Stu>getStu(String stu) {
         Map map=new HashMap();
         map.put("no",stu);
         map.put("name","%"+stu+"%");
@@ -66,5 +66,20 @@ public class StuDaoImpl implements IStuDao {
     @Override
     public int updateStuPassword(Stu stu) {
         return stuMapper.updateStuPassword(stu);
+    }
+
+    @Override
+    public Map getSexnum() {
+        return stuMapper.getSexnum();
+    }
+
+    @Override
+    public List<Map> getYearnum(Integer sSex) {
+        return stuMapper.getYearnum( sSex);
+    }
+
+    @Override
+    public List<Map> getAvgnum(Integer kId) {
+        return stuMapper.getAvgnum(kId);
     }
 }

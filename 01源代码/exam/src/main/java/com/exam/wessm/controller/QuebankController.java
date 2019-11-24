@@ -1,9 +1,12 @@
 package com.exam.wessm.controller;
 
+import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Quebank;
+import com.exam.wessm.entity.Quetype;
 import com.exam.wessm.entity.Subject;
 import com.exam.wessm.service.IManagerService;
 import com.exam.wessm.service.IQuebankService;
+import com.exam.wessm.service.IQuetypeService;
 import com.exam.wessm.service.ISubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -24,11 +27,14 @@ public class QuebankController {
     @Qualifier("quebankService")
     private IQuebankService quebankService;
     @Autowired
+    @Qualifier("managerService")
+    private IManagerService managerService;
+    @Autowired
     @Qualifier("subjectService")
     private ISubjectService subjectService;
     @Autowired
-    @Qualifier("managerService")
-    private IManagerService managerService;
+    @Qualifier("quetypeService")
+    private IQuetypeService quetypeService;
 
     /**
      * 查询题库信息
@@ -38,7 +44,6 @@ public class QuebankController {
     public String queryQuebank(Model model) {
         List<Map> quebankList = quebankService.queryQuebank();
         model.addAttribute("quebankList",quebankList);
-
         return "/quebank-list.jsp";
     }
 
@@ -46,9 +51,14 @@ public class QuebankController {
      *根据题库id加载题库信息
      */
     @RequestMapping(value = "getQuebankTId")
-    public String getQuebanTId(Model model,Integer tId) {
+    public String getQuebankTId(Model model,Integer tId) {
         Map quebankList = quebankService.getQuebanTId(tId);
+        List<Quetype> quetypeList=quetypeService.queryQuetype();
+        List<Subject> subjectList=subjectService.querySubject();
         model.addAttribute("quebankList",quebankList);
+        model.addAttribute("kName",subjectList);
+        model.addAttribute("qType",quetypeList);
+        model.addAttribute("tId",tId);
         return "/quebank-edit.jsp";
     }
 
@@ -95,15 +105,17 @@ public class QuebankController {
      * @return
      */
     @RequestMapping(value = "updateQuebank")
-    public String updateQuebank(@RequestParam Map map ) {
-        List<Map> list=(List<Map>) managerService.getManager(String.valueOf(map.get("kName")));
+    public String updateQuebank(@RequestParam Map map,Model model ) {
+        List<Manager> list= managerService.getManager(String.valueOf(map.get("mName")));
         if(list.size()==0){
-
+            model.addAttribute("quebank","找不到管理员");
+            getQuebankTId(model,Integer.valueOf(map.get("tId")+""));
+            return "/quebank-edit.jsp";
         }
         Integer qId=Integer.valueOf(String.valueOf(map.get("qId")));
         Integer kId=Integer.valueOf(String.valueOf(map.get("kId")));
-        Integer tId=Integer.valueOf(""+list.get(0).get("tId"));
-        Quebank quebank=new Quebank(0,String.valueOf(map.get("tNo")),String.valueOf(map.get("content")),qId,String.valueOf(map.get("answer")),String.valueOf(map.get("reply")),null,kId,tId );
+        Integer mId=Integer.valueOf(""+list.get(0).getmId());
+        Quebank quebank=new Quebank(Integer.valueOf(map.get("tId")+""),String.valueOf(map.get("tNo")),String.valueOf(map.get("content")),qId,String.valueOf(map.get("answer")),String.valueOf(map.get("reply")),null,kId,mId );
         int rows =quebankService.updateQuebank(quebank);
         return "redirect:/result.jsp?rows="+rows;
     }

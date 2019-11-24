@@ -16,7 +16,7 @@
     <c:when test="${1==param.rows}">
         <span style="color:rgb(0,0,255)">操作成功</span>
     </c:when>
-    <c:when test="${-1==param.rows}">
+    <c:when test="${0==param.rows}">
         <span style="color:rgb(255,0,0)">操作失败,服务器异常</span>
     </c:when>
     <c:otherwise>

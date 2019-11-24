@@ -1,8 +1,7 @@
 package com.exam.wessm.dao;
 
 import com.exam.wessm.entity.Exam;
-import com.exam.wessm.entity.Manager;
-import com.exam.wessm.entity.Subject;
+
 
 import java.util.List;
 import java.util.Map;
@@ -61,4 +60,21 @@ public interface IExamDao {
      * @return
      */
     List<Map> getExamSNo(String sNo);
+
+    /**
+     * 根据考生ID加载考试信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getExamSId( Integer sId);
+
+    /**
+     * 根据考生ID加载考试信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getExamBaoming(Integer sId);
+
 }
