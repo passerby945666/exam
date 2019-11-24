@@ -30,6 +30,7 @@ public class ExamServiceImpl implements IExamService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public Map getExamEId(Integer eId) {
+
         return examDao.getExamEId(eId);
     }
 
@@ -64,14 +65,12 @@ public class ExamServiceImpl implements IExamService {
     }
 
     @Override
-    @Transactional(propagation = Propagation.REQUIRED)
     public List<Map> getExamSId(Integer sId) {
-        return examDao.getExamSId(sId);
+        return null;
     }
 
     @Override
-    @Transactional(propagation = Propagation.REQUIRED)
     public List<Map> getExamBaoming(Integer sId) {
-        return examDao.getExamBaoming(sId);
+        return null;
     }
 }

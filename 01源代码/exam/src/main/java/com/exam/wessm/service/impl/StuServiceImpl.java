@@ -80,7 +80,7 @@ public class StuServiceImpl implements IStuService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public List<Map> getYearnum(Integer sSex) {
+    public Map getYearnum(Integer sSex) {
         return stuDao.getYearnum(sSex);
     }
 

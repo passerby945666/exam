@@ -87,7 +87,7 @@ public interface StuMapper {
      * @param sSex
      * @return
      */
-    List<Map> getYearnum(@Param("sex")Integer sSex);
+    Map getYearnum(@Param("sex")Integer sSex);
 
     /**
      * 查询不同科目的最近5场考试的所有考生的平均分

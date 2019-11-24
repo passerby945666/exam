@@ -91,7 +91,7 @@ public interface IStuDao {
      * @param sSex
      * @return
      */
-    List<Map> getYearnum(Integer sSex);
+    Map getYearnum(Integer sSex);
 
     /**
      * 查询不同科目的最近5场考试的所有考生的平均分

@@ -74,7 +74,7 @@ public class StuDaoImpl implements IStuDao {
     }
 
     @Override
-    public List<Map> getYearnum(Integer sSex) {
+    public Map getYearnum(Integer sSex) {
         return stuMapper.getYearnum( sSex);
     }
 
