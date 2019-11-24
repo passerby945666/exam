@@ -41,7 +41,7 @@ public class ManagerDaoImpl implements IManagerDao {
     }
 
     @Override
-    public Manager getManager(String manager) {
+    public List<Manager> getManager(String manager) {
         Map map=new HashMap();
         map.put("no",manager);
         map.put("name","%"+manager+"%");

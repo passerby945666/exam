@@ -114,4 +114,61 @@
         where   s_id=#{sId}
      ]]>
     </update>
+    <!-- 查询男女考生的数量-->
+    <select id="getSexnum"  resultType="java.util.Map">
+        <![CDATA[
+        SELECT
+	count( CASE WHEN s_sex = '1' THEN s_sex END ) AS 'man',
+	count( CASE WHEN s_sex = '2' THEN s_sex END ) AS 'woman'
+FROM stu
+	]]>
+    </select>
+    <!-- 查询男女考生不同年龄范围的人数-->
+    <select id="getYearnum"  resultType="java.util.Map" parameterType="String">
+        <![CDATA[
+        SELECT
+	count( CASE WHEN lij.nl < 9 THEN lij.nl END ) as '男1',
+	count( CASE WHEN lij.nl BETWEEN 10 AND 12 THEN lij.nl END ) as '男2',
+	count( CASE WHEN lij.nl BETWEEN 13 AND 15 THEN lij.nl END ) as '男3',
+	count( CASE WHEN lij.nl BETWEEN 16 AND 18 THEN lij.nl END ) as '男4',
+	count( CASE WHEN lij.nl BETWEEN 19 AND 21 THEN lij.nl END ) as '男5',
+	count( CASE WHEN lij.nl BETWEEN 22 AND 25 THEN lij.nl END )as '男6'
+FROM
+	(
+SELECT
+	s_no,
+	s_name,
+	( YEAR ( now( ) ) - YEAR ( s_birthday ) ) AS nl
+FROM
+	stu
+WHERE
+	s_sex = #{sex}
+	) AS lij
+	]]>
+    </select>
+    <!-- 查询不同科目的最近5场考试的所有考生的平均分-->
+    <select id="getAvgnum"  resultType="java.util.Map" parameterType="int">
+    <![CDATA[
+        SELECT
+	e_id,
+	pjf
+FROM
+	(
+SELECT
+	exam.e_id,
+	avg( grade ) AS pjf,
+	k_id
+FROM
+	grades
+	LEFT JOIN exam ON exam.e_id = grades.e_id
+GROUP BY
+	e_id
+	) AS lij
+WHERE
+	k_id = #{k_id}
+GROUP BY
+	e_id DESC
+	LIMIT 5
+	]]>
+    </select>
 </mapper>

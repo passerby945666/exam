@@ -29,7 +29,7 @@
 	<div class="text-c">
 		<button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
 	 <span class="select-box inline">
-		<select name="" class="select">
+		<select name="tId" class="select">
 			<option value="0">全部分类</option>
 			<option value="1">分类一</option>
 			<option value="2">分类二</option>
@@ -42,7 +42,7 @@
 		<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜题库</button>
 	</div>
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;"  class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
-        <a class="btn btn-primary radius" data-title="添加题库"     href="/quebank-add.jsp"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+        <a class="btn btn-primary radius" data-title="添加题库" href="/quebank-add.jsp"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
 	<div class="mt-20">ins
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
@@ -55,7 +55,7 @@
 					<th width="60">解答内容</th>
 					<th width="60">录入时间</th>
                     <th width="60">科目名称</th>
-					<th width="60">负责人名称</th>
+					<th width="60">负责人</th>
 					<th width="120">操作</th>
 				</tr>
 			</thead>
@@ -131,12 +131,12 @@ function quebank_edit(title,url,id,w,h){
 	layer.full(index);
 }
 /*资讯-删除*/
-function quebank_del(obj,id){
-	layer.confirm('确认要删除吗？',function(id){
+function quebank_del(obj,tId){
+	layer.confirm('确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '/quebank/deleteQuebank',
-            data:{"tId":id},
+			url: "/quebank/deleteQuebank",
+            data:{"tId":tId},
 			dataType: 'text',
 			success: function(data){
 				$(obj).parents("tr").remove();
