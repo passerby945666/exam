@@ -28,6 +28,7 @@
             m_no as mNo,
             m_name as mName,
             m_sex as mSex,
+            m_Idcard as mIdcard,
             m_birthday as mBirthday
         from
             manager
@@ -40,6 +41,7 @@
             m_no as mNo,
             m_name as mName,
             m_sex as mSex,
+            m_Idcard as mIdcard,
             m_birthday as mBirthday
         from
             manager

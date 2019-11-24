@@ -7,12 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 考生控制器类
  */
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 @RequestMapping("stu")
@@ -54,13 +56,13 @@ public class StuController {
              if(stu1!=null){
                   session.setAttribute("stuSession",stu1);
                   model.addAttribute("stu",stu1);
-                  return  "/stu/indexStu.jsp";
+                  return  "/stu/indexStu";
              }
            }
            else{
-            return "/index.jsp";
+            return "/index";
            }
-           return  "/404.jsp";
+           return  "/404";
     }
 
     /**
@@ -73,6 +75,94 @@ public class StuController {
         // 清除Session
         session.invalidate();
         // 重定向
-        return "redirect:/login.jsp";
+        return "redirect:/login";
+    }
+
+    /**
+     * 查询考生的所有信息
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "queryStu")
+    public  String queryStu(Model model){
+        List<Stu> stuList=stuService.queryStu();
+        model.addAttribute("stuList",stuList);
+        return "/member-list";
+    }
+
+    /**
+     *管理员删除考生信息
+     * @param sId
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "deleteStu")
+    public  int deleteStu(Integer sId){
+        int rows=stuService.deleteStu(sId);
+        return rows;
+    }
+
+    /**
+     * 管理员添加考生信息
+     * @param stu
+     * @return
+     */
+    @RequestMapping(value = "insertStu",method = RequestMethod.POST)
+    public int insertStu(Stu stu){
+        int rows=stuService.insertStu(stu);
+        return  rows;
+    }
+
+    /**
+     * 到管理员考生信息修改页面
+     * @param sId
+     * @param model
+     * @return
+     */
+    @RequestMapping(value ="getStuSId" )
+    public  String getStuSId(Integer sId,Model model){
+        Stu stu=stuService.getStuSId(sId);
+        model.addAttribute("stu",stu);
+        return "/member-edit";
+    }
+
+    /**
+     * 考生信息修改
+     * @param stu
+     * @return
+     */
+    @RequestMapping(value = "updateStu")
+    public int updateStu(Stu stu){
+        int rows=stuService.updateStu(stu);
+        return  rows;
+    }
+
+    /**
+     * 根据考生编号或名字或身份证号加载考生信息
+     * @param stu
+     * @return
+     */
+    @RequestMapping(value ="getStu" )
+    public  String  getStu(String stu,Model model){
+        Stu stuList=stuService.getStu(stu);
+        model.addAttribute("stuList",stuList);
+        return  "/member-list";
+    }
+
+    /**
+     *考生密码修改
+     * @param stu
+     * @return
+     */
+    @RequestMapping(value = "updateStuPassword",method = RequestMethod.POST)
+    public int  updateStuPassword(Stu stu,String csPassword, Model model){
+        if (csPassword.equals(stu.getsPassword())){
+            int rows  =stuService.updateStuPassword(stu);
+            return rows;
+        }
+        else{
+            model.addAttribute("msg","密码不一致");
+        }
+        return 1111;
     }
 }

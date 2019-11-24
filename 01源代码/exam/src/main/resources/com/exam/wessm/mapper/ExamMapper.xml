@@ -31,6 +31,7 @@
             time_test as timeTest,
             time_baomin as timeBaomin,
             time_end as timeEnd
+
         from
              (exam left join subject on exam.k_id=subject.k_id)
             left join manager on exam.m_id=manager.m_id

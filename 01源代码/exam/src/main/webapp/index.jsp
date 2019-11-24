@@ -101,7 +101,7 @@
 				<ul>
 					<li><a data-href="admin-role.jsp" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
 					<li><a data-href="admin-permission.jsp" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
-					<li><a data-href="admin-list.jsp" data-title="管理员信息" href="javascript:void(0)">管理员信息</a></li>
+					<li><a data-href="/admin/queryManager" data-title="管理员信息" href="javascript:;">管理员信息</a></li>
 			</ul>
 		</dd>
 	</dl>
