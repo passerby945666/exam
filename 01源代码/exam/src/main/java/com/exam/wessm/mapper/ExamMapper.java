@@ -58,4 +58,20 @@ public interface ExamMapper {
      * @return
      */
     List<Map> getExamSNo(@Param("s_no") String sNo);
+
+    /**
+     * 根据考生ID加载考试信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getExamSId(@Param("s_id") Integer sId);
+
+    /**
+     * 根据考生ID加载考试信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> getExamBaoming(@Param("s_id") Integer sId);
 }

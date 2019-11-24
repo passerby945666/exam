@@ -46,7 +46,7 @@ public class ManagerServiceImpl implements IManagerService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public Manager getManager(String manager) {
+    public List<Manager> getManager(String manager) {
         return managerDao.getManager(manager);
     }
 

@@ -36,8 +36,12 @@ public class ManagerTest01 {
     public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
-        Manager managers = managerService.getManager("234");
-        System.out.println(managers.toString());
+        List<Manager> managers = managerService.getManager("234");
+        if (managers != null) {
+            for (Manager manager : managers) {
+                System.out.println(manager.toString());
+            }
+        }
         context.close();
     }
     @Test
