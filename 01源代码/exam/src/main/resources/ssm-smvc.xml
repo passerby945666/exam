@@ -55,19 +55,19 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         </mvc:interceptor>
     </mvc:interceptors>
 
-       <!--视图解析器-->
+<!--       &lt;!&ndash;视图解析器&ndash;&gt;
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-   <!-- &lt;!&ndash;   制定页面存放的路径&ndash;&gt;-->
+   &lt;!&ndash; &lt;!&ndash;   制定页面存放的路径&ndash;&gt;&ndash;&gt;
         <property name="prefix" value=""/>
-  <!--  &lt;!&ndash;  文件的后缀 &ndash;&gt;-->
+  &lt;!&ndash;  &lt;!&ndash;  文件的后缀 &ndash;&gt;&ndash;&gt;
         <property name="suffix" value=".jsp"/>
-    </bean>
+    </bean>-->
 
 
     <!--全局异常处理-->
     <bean class="com.exam.wessm.controller.support.handler.CustomExceptionResolver">
         <property name="errorPage">
-            <value>/WEB-INF/error.jsp</value>
+            <value>/WEB-INF/error</value>
         </property>
         <property name="ajaxAsynchURLs">
             <ref bean="ajaxAsynchURLs"/>

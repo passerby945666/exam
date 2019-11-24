@@ -66,4 +66,12 @@ public interface IQuebankDao {
      * @return
      */
     List<Map> getQuebankKIdAndQType(String kId,String qType);
+
+    /**
+     * 根据下拉框加载题库信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> queryQuebankKId(String kId,String qId);
 }

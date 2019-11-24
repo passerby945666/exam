@@ -66,4 +66,10 @@ public class QuebankServiceImpl implements IQuebankService {
     public List<Map> getQuebankKIdAndQType(String kId,String qType) {
         return quebankDao.getQuebankKIdAndQType(kId, qType);
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public List<Map> queryQuebankKId(String kId, String qId) {
+        return quebankDao.queryQuebankKId(kId, qId);
+    }
 }

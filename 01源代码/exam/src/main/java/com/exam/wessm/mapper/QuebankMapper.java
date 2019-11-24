@@ -65,4 +65,12 @@ public interface QuebankMapper {
      * @return
      */
     List<Map> getQuebankKIdAndQType(Map map);
+
+    /**
+     * 根据下拉框加载题库信息
+     *
+     * @param
+     * @return
+     */
+    List<Map> queryQuebankKId(Map map);
 }

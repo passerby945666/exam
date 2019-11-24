@@ -8,42 +8,47 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<!--[if lt IE 9]>
-<script type="text/javascript" src="/lib/html5shiv.js"></script>
-<script type="text/javascript" src="/lib/respond.min.js"></script>
-<![endif]-->
 <link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
 <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
 <link rel="stylesheet" type="text/css" href="/lib/Hui-iconfont/1.0.8/iconfont.css" />
 <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/default/skin.css" id="skin" />
 <link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css" />
-<!--[if IE 6]>
-<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
-<script>DD_belatedPNG.fix('*');</script>
-<![endif]-->
 <title>题库管理</title>
 </head>
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 题库管理 <span class="c-gray en">&gt;</span> 题库信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
 	<div class="text-c">
-		<button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
-	 <span class="select-box inline">
-		<select name="tId" class="select">
-			<option value="0">全部分类</option>
-			<option value="1">分类一</option>
-			<option value="2">分类二</option>
-		</select>
-		</span> 日期范围：
-		<input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}' })" id="logmin" class="input-text Wdate" style="width:120px;">
-		-
-		<input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'logmin\')}',maxDate:'%y-%M-%d' })" id="logmax" class="input-text Wdate" style="width:120px;">
-		<input type="text" name="" id="" placeholder=" 题库名称" style="width:250px" class="input-text">
-		<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜题库</button>
-	</div>
-	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;"  class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
-        <a class="btn btn-primary radius" data-title="添加题库" href="/quebank-add.jsp"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
-	<div class="mt-20">ins
+        <form class="form form-horizontal" action="/quebank/queryQuebankKId" >
+            <button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
+            科目:
+            <span class="select-box inline">
+                <select name="kId" class="select">
+                    <option value="%">全部</option>
+                    <c:forEach  items="${kName}" var="k">
+                        <option value="${k.kId}">${k.kName}</option>
+                    </c:forEach>
+                </select>
+            </span>
+            题目类型：
+            <span class="select-box inline">
+                <select name="qId" class="select">
+                     <option value="%">全部</option>
+                    <c:forEach  items="${qType}" var="q">
+                        <option value="${q.qId}">${q.qType}</option>
+                    </c:forEach>
+                </select>
+            </span>
+            <input type="text"  placeholder=" 题库名称" style="width:250px" class="input-text" name="que">
+            <button class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜题库</button>
+        </form>
+    </div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+        <span class="l"><a href="/quebank/deleteQuebank"  class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+        <a class="btn btn-primary radius" data-title="添加题库" href="/quebank-add.jsp"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span>
+        <span class="r">共有数据：<strong>${size}</strong> 条</span>
+    </div>
+	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
 				<tr class="text-c">
@@ -102,34 +107,7 @@
 <script type="text/javascript" src="/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
-$('.table-sort').dataTable({
-	"aaSorting": [[ 1, "desc" ]],//默认第几个排序
-	"bStateSave": true,//状态保存
-	"pading":false,
-	"aoColumnDefs": [
-	  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
-	  {"orderable":false,"aTargets":[0,8]}// 不参与排序的列
-	]
-});
 
-/*资讯-添加*/
-function quebank_add(title,url,w,h){
-	var index = layer.open({
-		type: 2,
-		title: title,
-		content: url
-	});
-	layer.full(index);
-}
-/*资讯-编辑*/
-function quebank_edit(title,url,id,w,h){
-	var index = layer.open({
-		type: 2,
-		title: title,
-		content: url
-	});
-	layer.full(index);
-}
 /*资讯-删除*/
 function quebank_del(obj,tId){
 	layer.confirm('确认要删除吗？',function(index){
@@ -149,26 +127,6 @@ function quebank_del(obj,tId){
 	});
 }
 
-/*资讯-审核*/
-function quebank_shenhe(obj,id){
-	layer.confirm('审核文章？', {
-		btn: ['通过','不通过','取消'], 
-		shade: false,
-		closeBtn: 0
-	},
-	function(){
-		$(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="quebank_start(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-		$(obj).remove();
-		layer.msg('已发布', {icon:6,time:1000});
-	},
-	function(){
-		$(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="quebank_shenqing(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-danger radius">未通过</span>');
-		$(obj).remove();
-    	layer.msg('未通过', {icon:5,time:1000});
-	});	
-}
 /*资讯-下架*/
 function quebank_stop(obj,id){
 	layer.confirm('确认要下架吗？',function(index){
@@ -178,23 +136,6 @@ function quebank_stop(obj,id){
 		layer.msg('已下架!',{icon: 5,time:1000});
 	});
 }
-
-/*资讯-发布*/
-function quebank_start(obj,id){
-	layer.confirm('确认要发布吗？',function(index){
-		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="quebank_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-		$(obj).remove();
-		layer.msg('已发布!',{icon: 6,time:1000});
-	});
-}
-/*资讯-申请上线*/
-function quebank_shenqing(obj,id){
-	$(obj).parents("tr").find(".td-status").html('<span class="label label-default radius">待审核</span>');
-	$(obj).parents("tr").find(".td-manage").html("");
-	layer.msg('已提交申请，耐心等待审核!', {icon: 1,time:2000});
-}
-
 </script> 
 </body>
 </html>

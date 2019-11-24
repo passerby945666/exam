@@ -67,4 +67,12 @@ public class QuebankDaoImpl implements IQuebankDao {
         map.put("name",qType);
         return quebankMapper.getQuebankKIdAndQType(map);
     }
+
+    @Override
+    public List<Map> queryQuebankKId(String kId, String qId) {
+        Map map=new HashMap();
+        map.put("kId",kId);
+        map.put("qId",qId);
+        return quebankMapper.queryQuebankKId(map);
+    }
 }
