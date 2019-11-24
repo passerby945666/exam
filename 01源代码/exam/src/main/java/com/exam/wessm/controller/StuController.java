@@ -56,7 +56,7 @@ public class StuController {
              if(stu1!=null){
                   session.setAttribute("stuSession",stu1);
                   model.addAttribute("stu",stu1);
-                  return  "/stu/indexStu";
+                  return  "/stu/indexStu.jsp";
              }
            }
            else{
@@ -75,7 +75,7 @@ public class StuController {
         // 清除Session
         session.invalidate();
         // 重定向
-        return "redirect:/login";
+        return "redirect:/login.jsp";
     }
 
     /**
@@ -87,7 +87,7 @@ public class StuController {
     public  String queryStu(Model model){
         List<Stu> stuList=stuService.queryStu();
         model.addAttribute("stuList",stuList);
-        return "/member-list";
+        return "/member-list.jsp";
     }
 
     /**
@@ -123,7 +123,8 @@ public class StuController {
     public  String getStuSId(Integer sId,Model model){
         Stu stu=stuService.getStuSId(sId);
         model.addAttribute("stu",stu);
-        return "/member-edit";
+        model.addAttribute("sId",sId);
+        return "/member-edit.jsp";
     }
 
     /**
@@ -144,9 +145,9 @@ public class StuController {
      */
     @RequestMapping(value ="getStu" )
     public  String  getStu(String stu,Model model){
-        Stu stuList=stuService.getStu(stu);
+        List<Stu> stuList =stuService.getStu(stu);
         model.addAttribute("stuList",stuList);
-        return  "/member-list";
+        return  "/member-list.jsp";
     }
 
     /**

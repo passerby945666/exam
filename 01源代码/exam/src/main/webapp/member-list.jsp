@@ -1,6 +1,7 @@
 ﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -30,7 +31,7 @@
 	<div class="text-c">
 		<form action="/stu/getStu">
 			<button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
-			<input type="text" name="stu"  value="" placeholder=" 考试名称" style="width:250px" class="input-text">
+			<input type="text" name="stu"  value="" placeholder="考生编号或名字或身份证号" style="width:250px" class="input-text">
 			<button name=""  class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜考生</button>
 		</form>
 	</div>
@@ -38,7 +39,7 @@
 	<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
 	<a class="btn btn-primary radius" data-title="添加考生" data-href="member-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
 	<i class="Hui-iconfont">&#xe600;</i> 新增考生信息</a></span>
-		<span class="r">共有数据：<strong>${fn:length(requestScope.stuList)}</strong> 条</span> </div>
+		<span class="r">共有数据：<strong>${fn:length(requestScope.stuList)}</strong> 条</span></div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
@@ -66,7 +67,9 @@
 				<td>${1==stu.sSex?'男':'女'}</td>
 				<td>${stu.sIdcard}</td>
 				<td><fmt:formatDate value="${stu.sBirthday}" pattern="yyyy-MM-dd"/></td>
-				<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="member_edit()" href="/stu/getStuSId?sId=${stu.sId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="member_del(this,${stu.sId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>
+					<a style="text-decoration:none" class="ml-5" onClick="member_edit()" href="/stu/getStuSId?sId=${stu.sId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<a style="text-decoration:none" class="ml-5" onClick="member_del(this,${stu.sId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr>
 			</c:forEach>
 			</c:otherwise>

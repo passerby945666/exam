@@ -30,10 +30,7 @@
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理员管理 <span class="c-gray en">&gt;</span> 管理员信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<div class="text-c"> 日期范围：
-		<input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}' })" id="datemin" class="input-text Wdate" style="width:120px;">
-
-		<input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d' })" id="datemax" class="input-text Wdate" style="width:120px;">
+	<div class="text-c">
 		<input type="text" class="input-text" style="width:250px" placeholder="输入管理员名称" name="mName">
 		<button type="submit" class="btn btn-success" name="sName"><i class="Hui-iconfont">&#xe665;</i> 搜管理员</button>
 	</div>
@@ -64,11 +61,11 @@
                     <td>${admin.mNo}</td>
                     <td>${admin.mName}</td>
                     <td>${admin.mIdcard}</td>
-                    <td>${admin.mSex}</td>
+				<td>${1==admin.mSex?'男':'女'}</td>
 				<td>	<fmt:formatDate value="${admin.mBirthday}" pattern="yyyy-MM-dd"/></td>
                        <td class="f-14 td-manage">
 						   <a style="text-decoration:none" class="ml-5" onClick="admin_edit()" href="/admin/getManagerMId?mId=${admin.mId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
-                           <a style="text-decoration:none" class="ml-5" onClick="admin_del(this,'${admin.mId}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                           <a style="text-decoration:none" class="ml-5" onClick="admin_del(this,${admin.mId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>
@@ -107,7 +104,7 @@ function admin_del(obj,id){
 			type: 'POST',
 			url: "/admin/deleteManager",
             data: {"mId":id},
-			dataType: 'json',
+			dataType: 'text',
 			success: function(data){
 				$(obj).parents("tr").remove();
 				layer.msg('已删除!',{icon:1,time:1000});

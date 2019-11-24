@@ -27,10 +27,17 @@ public class GradesController {
         model.addAttribute("mapList",mapList);
         return "/stu/info";
     }
+
+    /**
+     * 考生查询自己的成绩信息
+     * @param str
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "getGradekFind")
     public  String getGradekFind(String str,Model model){
         List<Map> mapList=gradesService.getGradekFind(str);
         model.addAttribute("mapList",mapList);
-        return "/stu/info";
+        return "/stu/info.jsp";
     }
 }

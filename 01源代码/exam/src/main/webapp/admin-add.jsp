@@ -43,13 +43,13 @@
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>初始密码：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="password" class="input-text" autocomplete="off" value="" placeholder="密码" id="password" name="mPassword">
+			<input type="password" class="input-text"  value="" placeholder=""  name="mPassword">
 		</div>
 	</div>
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="password" class="input-text" autocomplete="off"  placeholder="确认新密码" id="password2" name="password2">
+			<input type="password" class="input-text"   placeholder="确认新密码"  name="password2" value="">
 		</div>
 	</div>
 	<div class="row cl">
@@ -71,12 +71,12 @@
 			<input type="text" class="input-text" value="" placeholder="" id="mIdcard" name="mIdcard">
 		</div>
 	</div>
-	<div class="row cl">
-		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>出生年月：</label>
-		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="${map.timeEnd}" class="input-text Wdate" name="timeEnd">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>出生年月：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="yyyy-MM-dd"  name="mBirthday">
+			</div>
 		</div>
-	</div>
 
 
 	<div class="row cl">

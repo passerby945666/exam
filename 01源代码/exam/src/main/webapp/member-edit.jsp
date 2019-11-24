@@ -33,7 +33,9 @@
 </head>
 <body>
 <article class="page-container">
-	<form   class="form form-horizontal" >
+	<form   class="form form-horizontal"  action="/stu/updateStu">
+
+		<input type="hidden"  value="${sId}"   name="sId">
 
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">账号：</label>
@@ -90,7 +92,7 @@
 
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-				<input class="btn btn-primary radius" onclick="updateExam()"  value="&nbsp;&nbsp;确定&nbsp;&nbsp;">
+				<input class="btn btn-primary radius" type="submit"  value="&nbsp;&nbsp;确定&nbsp;&nbsp;">
 				<input class="btn btn-primary radius" type="reset" value="&nbsp;&nbsp;重置&nbsp;&nbsp;">
 			</div>
 		</div>

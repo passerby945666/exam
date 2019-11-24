@@ -31,19 +31,19 @@ public class ExamController {
     public String queryExam(Model model) {
         List<Map> examList = examService.queryExam();
         model.addAttribute("examList",examList);
-        return "/exam-list";
+        return "/exam-list.jsp";
     }
 
     /**
-     *
+     *新增考试
      * @param exam
      * @return
      */
     @ResponseBody
     @RequestMapping(value = "insertExam")
-    public  int insertExam(Exam exam) {
+    public  String insertExam(Exam exam) {
        int rows =examService.insertExam(exam);
-       return  rows;
+        return "redirect:/result.jsp?rows="+rows;
     }
 
 
@@ -69,7 +69,7 @@ public class ExamController {
      Map map=examService.getExamEId(eId);
      model.addAttribute("map",map);
      model.addAttribute("eId",eId);
-     return  "/exam-edit";
+     return  "/exam-edit.jsp";
     }
 
     /**
@@ -78,9 +78,9 @@ public class ExamController {
      * @return
      */
     @RequestMapping(value = "updateExam")
-    public  int updateExam(Exam exam){
+    public  String  updateExam(Exam exam){
         int rows=examService.updateExam(exam);
-        return rows;
+        return "redirect:/result.jsp?rows="+rows;
     }
 
     /**
@@ -93,7 +93,19 @@ public class ExamController {
    public String getExamExam(String exam,Model model){
         List<Map> examList =examService.getExamExam(exam);
        model.addAttribute("examList",examList);
-       return "/exam-list";
+       return "/exam-list.jsp";
 }
 
+    /**
+     *
+     * @param sNo
+     * @return
+     */
+    @RequestMapping(value = "getExamSNo")
+    public  String getExamSNo(String sNo,Model model){
+    List<Map> mapList=examService.getExamSNo(sNo);
+    model.addAttribute("mapList",mapList);
+    model.addAttribute("sNo",sNo);
+    return "/stu/arrange.jsp";
+}
 }

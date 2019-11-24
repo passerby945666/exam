@@ -45,7 +45,7 @@ public interface StuMapper {
      * @param
      * @return
      */
-    Stu getStu(Map map);
+    List<Stu> getStu(Map map);
 
     /**
      * 添加考生

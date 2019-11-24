@@ -41,7 +41,7 @@ public class StuDaoImpl implements IStuDao {
     }
 
     @Override
-    public Stu getStu(String stu) {
+    public  List<Stu>getStu(String stu) {
         Map map=new HashMap();
         map.put("no",stu);
         map.put("name","%"+stu+"%");

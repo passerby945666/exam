@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -40,26 +41,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</tr>
 						</thead>
 						<tbody>
+						<tr>${mapList}</tr>
+						<tr>
 			<c:choose>
-            <c:when test="${examList==null}"><span>查询考试发生异常</span></c:when>
-                <c:when test="${empty  examList} "><span>没查到数据</span></c:when>
+            <c:when test="${mapList==null}"><span>查询考试发生异常</span></c:when>
+                <c:when test="${empty  mapList} "><span>没查到数据</span></c:when>
             <c:otherwise>
-                <c:forEach  items="${examList}" var="exam">
+                <c:forEach  items="${mapList}" var="map">
                     <tr>
-                     <td><input type="checkbox" value="choose" name="${exam.eId}"></td>
-                    <td>${exam.eNo}</td>
-                    <td>${exam.eName}</td>
-                    <td>${exam.timeBegin}</td>
-                    <td>${exam.timeTest}</td>
-                    <td>${exam.timeBaomin}</td>
-                    <td>${exam.timeEnd}</td>
-                    <td>${exam.kId}</td>
-					<td>${exam.mId}</td>
-                       <td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','exam-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                     <td><input type="checkbox" value="choose" name="${map.eId}"></td>
+                    <td>${map.eNo}</td>
+                    <td>${map.eName}</td>
+                    <td>${map.timeBegin}</td>
+                    <td>${map.timeTest}</td>
+                    <td>${map.timeBaomin}</td>
+                    <td>${map.timeEnd}</td>
+						<td>${map.sIdcard}</td>
                     </tr>
                 </c:forEach>
             </c:otherwise>
             </c:choose>
+						</tr>
 						</tbody>
 					</table>
 					<div class="col-md-12 text-right">

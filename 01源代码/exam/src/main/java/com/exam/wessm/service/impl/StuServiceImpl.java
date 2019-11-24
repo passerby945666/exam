@@ -42,7 +42,7 @@ public class StuServiceImpl implements IStuService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public Stu getStu(String stu) {
+    public   List<Stu> getStu(String stu) {
         return stuDao.getStu(stu);
     }
 

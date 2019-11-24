@@ -27,8 +27,10 @@
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal"  action="/admin/updateManager" method="post">
-	<div class="row cl">
+	<form class="form form-horizontal"  action="/admin/updateManager" >
+		<tr>${mId}</tr>
+		<input type="hidden"  value="${mId}"   name="mId">
+		<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>管理员账号：</label>
 		<div class="formControls col-xs-8 col-sm-9">
 			<input type="text" class="input-text" value="${admin.mNo}" placeholder=""  name="mNo">
@@ -47,18 +49,18 @@
 				<c:choose>
 					<c:when test="${admin.mSex==1}">
 						<div class="radio-box">
-							<label>	<input name="sSex" type="radio"  value="1"  checked>男</label>
+							<label>	<input name="mSex" type="radio"  value="1"  checked>男</label>
 						</div>
 						<div class="radio-box">
-							<label>	<input name="sSex" type="radio"  value="2" >女</label>
+							<label>	<input name="mSex" type="radio"  value="2" >女</label>
 						</div>
 					</c:when>
 					<c:otherwise>
 						<div class="radio-box">
-							<label>	<input name="sSex" type="radio"  value="1"  >男</label>
+							<label>	<input name="mSex" type="radio"  value="1"  >男</label>
 						</div>
 						<div class="radio-box">
-							<label>	<input name="sSex" type="radio"  value="2" checked>女</label>
+							<label>	<input name="mSex" type="radio"  value="2" checked>女</label>
 						</div>
 					</c:otherwise>
 				</c:choose>
@@ -72,10 +74,11 @@
 			<input type="text" class="input-text" value="${admin.mIdcard}" placeholder=""  name="mIdcard">
 		</div>
 	</div>
+
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>出生年月：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="${admin.mBirthday}" class="input-text Wdate" name="timeEnd">
+			<input type="text"   value="${admin.mBirthday}" class="input-text" name="mBirthday" placeholder="yyyy-MM-dd">
 		</div>
 	</div>
 

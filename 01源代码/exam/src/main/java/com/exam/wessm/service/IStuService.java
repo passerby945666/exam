@@ -43,7 +43,7 @@ public interface IStuService {
      * @param
      * @return
      */
-    Stu getStu(String stu);
+    List<Stu> getStu(String stu);
 
     /**
      * 添加考生
