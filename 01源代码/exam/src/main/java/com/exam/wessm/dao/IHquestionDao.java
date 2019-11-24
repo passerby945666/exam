@@ -2,6 +2,7 @@ package com.exam.wessm.dao;
 
 import com.exam.wessm.entity.Examiners;
 import com.exam.wessm.entity.Hquestion;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -54,4 +55,11 @@ List<Hquestion> queryHquestionAll();
      * @return
      */
     int updateHquestion(Hquestion hq);
+
+    /**
+     * 阅卷选择试卷界面查询
+     * @param mNo
+     * @return
+     */
+    List<Map> queryHquestionMNo(String mNo);
 }

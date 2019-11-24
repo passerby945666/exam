@@ -53,4 +53,23 @@ public class HquestionServiceImpl implements IHquestionService {
     public int updateHquestion(Hquestion hq) {
         return hquestionDao.updateHquestion(hq);
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public List<Map> queryHquestionMNo(String mNo) {
+        return hquestionDao.queryHquestionMNo(mNo);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int updateHquestions(List<Hquestion> list) {
+        int rows=-1;
+        for(Hquestion hquestion:list){
+               rows=hquestionDao.updateHquestion(hquestion);
+               if(rows!=1){
+                   return 0;
+               }
+           }
+        return 1;
+    }
 }

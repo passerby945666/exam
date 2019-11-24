@@ -53,4 +53,21 @@ public interface IHquestionService {
      * @return
      */
     int updateHquestion(Hquestion hq);
+
+    /**
+     * 阅卷选择试卷界面查询
+     * @param mNo
+     * @return
+     */
+    List<Map> queryHquestionMNo(String mNo);
+
+
+    /**
+     * 阅卷改分[多条数据](分数是一个字符串，注意实体类对象的输入)
+     * @param list
+     * @return
+     */
+    int updateHquestions(List<Hquestion> list);
+
+
 }
