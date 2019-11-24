@@ -53,4 +53,9 @@ public class HquestionDaoImpl implements IHquestionDao {
     public int updateHquestion(Hquestion hq) {
         return hquestionMapper.updateHquestion(hq);
     }
+
+    @Override
+    public List<Map> queryHquestionMNo(String mNo) {
+        return hquestionMapper.queryHquestionMNo(mNo);
+    }
 }

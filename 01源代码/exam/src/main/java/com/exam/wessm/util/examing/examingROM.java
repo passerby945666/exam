@@ -2,6 +2,7 @@ package com.exam.wessm.util.examing;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 考试工具类
@@ -30,6 +31,12 @@ public  class  examingROM {
                 }
             }
             list.add(t);
+        }
+        return list;
+    }
+    public static List setno(List<Map> list){
+        for(int i=0;i<list.size();i++){
+            list.get(i).put("No",i);
         }
         return list;
     }

@@ -79,11 +79,42 @@ WHERE
     <update id="updateHquestion"  parameterType="hquestion" >
         <![CDATA[
 UPDATE hquestion
-SET h_grade =#{hGrade}
+SET h_grade =#{hGrade},
+    status=2
 WHERE
-	s_id =#{sId}
-	AND e_id = #{eId}
-	AND h_no =#{hNo};
+   0 h_id =#{hId};
         ]]>
     </update>
+    <!--阅卷考试查询-->
+    <select id="queryHquestionMNo" resultType="java.util.Map" parameterType="String">
+        <![CDATA[
+      SELECT
+	ex.e_id AS eId,
+	e_no AS eNo,
+	e_name AS eName,
+	k_name AS kName,
+	time_begin AS timeBegin,
+	time_test AS timeTest,
+	count(h_id) as un
+FROM
+	(
+		(
+			(
+				( hquestion AS hq LEFT JOIN exam AS ex ON ex.e_id = hq.e_id )
+				LEFT JOIN manager AS ma ON ex.m_id = ma.m_id
+			)
+			LEFT JOIN quebank AS qu ON hq.t_id = qu.t_id
+		)
+		LEFT JOIN quetype AS qut ON qu.q_id = qut.q_id
+	)LEFT JOIN subject	AS su ON ex.k_id = su.k_id
+
+WHERE
+	m_no = #{m_no}
+	AND STATUS = 1
+GROUP BY
+	ex.e_id
+
+        ]]>
+    </select>
+
 </mapper>
