@@ -95,7 +95,7 @@
         where t_id=#{t_id}
       ]]>
     </delete>
-    <!-- 根据考试成员ID修改题目信息-->
+    <!-- 根据题目ID修改题目信息-->
     <update id="updateQuebank" parameterType="quebank">
     <![CDATA[
         update  quebank
@@ -104,7 +104,10 @@
                 content=#{content},
                 answer=#{answer},
                 reply=#{reply},
-                t_time=#{tTime}
+                t_time=now(),
+                q_id=#{qId},
+                k_id=#{kId},
+                m_id=#{mId}
         where   t_id=#{tId}
      ]]>
     </update>

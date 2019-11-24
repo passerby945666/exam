@@ -38,8 +38,8 @@
                         <c:forEach  items="${List}" var="map">
                             <option value="${map.kId}">${map.kName}</option>
                         </c:forEach>
-                        <input type="submit" value="开始进行模拟考试">
                     </select>
+                        <input type="submit" value="开始进行模拟考试">
                     </form>
                 </table>
             </div>
