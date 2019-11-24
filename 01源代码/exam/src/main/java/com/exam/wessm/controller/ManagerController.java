@@ -87,9 +87,9 @@ public class ManagerController {
      */
     @ResponseBody
     @RequestMapping(value = "updateManager")
-    public int updateManager(Manager manager) {
+    public String updateManager(Manager manager) {
         int rows = managerService.updateManager(manager);
-        return rows;
+        return "redirect:/result.jsp?rows="+rows;
     }
 
     /**
@@ -102,6 +102,19 @@ public class ManagerController {
     public String updateManagerPassword(Manager manager) {
         int rows = managerService.updateManagerPassword(manager);
         return "redirect:/result.jsp?rows="+rows;
+    }
+
+    /**
+     *
+     * @param manager
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "getManager")
+   public  String  getManager(String manager,Model model){
+        List<Manager> adminList =managerService.getManager(manager);
+        model.addAttribute("adminList",adminList);
+        return  "/admin-list.jsp";
     }
 
 }

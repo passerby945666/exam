@@ -72,7 +72,7 @@ function loginout(){
 							 <a href="/grade/getGradekFind?str=${stu.sNo}" target="table">成绩查询</a>
 						</li>
 						<li>
-							 <a href="stu/arrange.jsp" target="table">考试安排</a>
+							 <a href="/exam/getExamSId?sId=${stu.sId}" target="table">考试安排</a>
 						</li>
 						<li>
 							 <a href="/examing/simulationbef" target="table" >模拟考场</a>

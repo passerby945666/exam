@@ -135,15 +135,15 @@
             k_name as kName,
             time_begin as timeBegin,
             time_test as timeTest,
-            time_baomin as timeBaomin,
+            examCard as examCard,
             time_end as timeEnd,
-            stu.s_id as stuId
+            stu.s_id as sId
         from
              ((exam left join subject on exam.k_id=subject.k_id)
             left join examiners on exam.e_id=examiners.e_id)
 			left join stu on examiners.s_id=stu.s_id
         where
-            s_id=#{sId} and time_begin >=NOW()
+            stu.s_id=#{s_id} and time_begin >=NOW()
        ]]>
     </select>
     <!-- 根据考生ID加载报名考试-->

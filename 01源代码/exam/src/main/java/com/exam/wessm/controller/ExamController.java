@@ -60,7 +60,7 @@ public class ExamController {
     }
 
     /**
-     *
+     *到管理员考试信息修改页面
      * @param eId
      * @return
      */
@@ -97,15 +97,14 @@ public class ExamController {
 }
 
     /**
-     *
-     * @param sNo
+     *根据考生id查询考生自己的考试信息
+     * @param sId
      * @return
      */
-    @RequestMapping(value = "getExamSNo")
-    public  String getExamSNo(String sNo,Model model){
-    List<Map> mapList=examService.getExamSNo(sNo);
+    @RequestMapping(value = "getExamSId")
+    public  String getExamSId(Integer sId,Model model){
+    List<Map> mapList=examService.getExamSId(sId);
     model.addAttribute("mapList",mapList);
-    model.addAttribute("sNo",sNo);
     return "/stu/arrange.jsp";
 }
 }

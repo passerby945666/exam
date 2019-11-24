@@ -85,7 +85,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">出生年月：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" placeholder="" name="sBirthday"   value="${stu.sBirthday}"   />
+				<input type="date" class="input-text" placeholder="" name="sBirthday"   value="${stu.sBirthday}"  />
 			</div>
 		</div>
 

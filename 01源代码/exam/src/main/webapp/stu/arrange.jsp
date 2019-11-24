@@ -32,7 +32,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<thead>
 							<tr>
 								<th></th>
-								<th>考生编号</th>
 								<th>考试编号</th>
 								<th>考试名称</th>
 								<th>考试时间</th>
@@ -41,7 +40,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</tr>
 						</thead>
 						<tbody>
-						<tr>${mapList}</tr>
 						<tr>
 			<c:choose>
             <c:when test="${mapList==null}"><span>查询考试发生异常</span></c:when>
@@ -49,14 +47,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <c:otherwise>
                 <c:forEach  items="${mapList}" var="map">
                     <tr>
-                     <td><input type="checkbox" value="choose" name="${map.eId}"></td>
+                     <td><input type="hidden" value="" name="${map.eId}"></td>
                     <td>${map.eNo}</td>
                     <td>${map.eName}</td>
                     <td>${map.timeBegin}</td>
                     <td>${map.timeTest}</td>
-                    <td>${map.timeBaomin}</td>
-                    <td>${map.timeEnd}</td>
-						<td>${map.sIdcard}</td>
+							<td>${map.examCard}</td>
                     </tr>
                 </c:forEach>
             </c:otherwise>

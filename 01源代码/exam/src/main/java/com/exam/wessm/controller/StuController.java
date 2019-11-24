@@ -108,9 +108,9 @@ public class StuController {
      * @return
      */
     @RequestMapping(value = "insertStu",method = RequestMethod.POST)
-    public int insertStu(Stu stu){
+    public String insertStu(Stu stu){
         int rows=stuService.insertStu(stu);
-        return  rows;
+        return "redirect:/result.jsp?rows="+rows;
     }
 
     /**
@@ -133,9 +133,9 @@ public class StuController {
      * @return
      */
     @RequestMapping(value = "updateStu")
-    public int updateStu(Stu stu){
+    public String updateStu(Stu stu){
         int rows=stuService.updateStu(stu);
-        return  rows;
+        return "redirect:/result.jsp?rows="+rows;
     }
 
     /**
