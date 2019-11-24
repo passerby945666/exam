@@ -34,7 +34,6 @@ public class StuTest01 {
     public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IStuService stuService = (IStuService) context.getBean("stuService");
-
         context.close();
     }
     @Test

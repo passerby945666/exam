@@ -66,7 +66,7 @@ function loginout(){
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav  navbar-center">
 						<li >
-							 <a href="stu/sign.jsp" target="table">考试报名</a>
+							 <a href="/sign/choose" target="table">考试报名</a>
 						</li>
 						<li>
 							 <a href="/grade/getGradekFind?str=${stu.sNo}" target="table">成绩查询</a>

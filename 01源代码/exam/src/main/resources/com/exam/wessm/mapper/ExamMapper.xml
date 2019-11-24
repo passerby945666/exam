@@ -149,23 +149,25 @@
     <!-- 根据考生ID加载报名考试-->
     <select id="getExamBaoming"  resultType="java.util.Map" parameterType="int">
         <![CDATA[
-        select
+           select
             exam.e_id as eId,
             e_no as eNo,
             e_name as eName,
             k_name as kName,
+            m_name as mName,
             time_begin as timeBegin,
             time_test as timeTest,
             time_baomin as timeBaomin,
             time_end as timeEnd,
             stu.s_id as stuId
         from
-             ((exam left join subject on exam.k_id=subject.k_id)
+             (((exam left join subject on exam.k_id=subject.k_id)
             left join examiners on exam.e_id=examiners.e_id)
-			left join stu on examiners.s_id=stu.s_id
+			left join stu on examiners.s_id=stu.s_id)
+			left join manager on manager.m_id=exam.m_id
         where
-            s_id=#{sId} and time_baomin <=NOW() and time_end>=NOW()
-            and eId not in(select eId from examiners where s_id = #{sId})
+             time_baomin <=NOW() and time_end>=NOW()
+            and exam.e_id not in(select  examiners.e_id from examiners where s_id = #{s_id})
        ]]>
     </select>
 </mapper>

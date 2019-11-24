@@ -28,19 +28,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<th>考试编号</th>
 								<th>科目名称</th>
 								<th>开考时间</th>
+								<th>考试时长</th>
 								<th>报名时间</th>
 								<th>截止时间</th>
-								<th>考试时长</th>
+								<th>考试科目</th>
 								<th>监考老师</th>
 								<th>操作</th>
 							</tr>
 						</thead>
 						<tbody>
 			<c:choose>
-            <c:when test="${examList==null}"><span>查询考试发生异常</span></c:when>
-                <c:when test="${empty  examList} "><span>没查到数据</span></c:when>
+            <c:when test="${List==null}"><span>查询考试发生异常</span></c:when>
+                <c:when test="${empty  List} "><span>没查到数据</span></c:when>
             <c:otherwise>
-                <c:forEach  items="${examList}" var="exam">
+                <c:forEach  items="${List}" var="exam">
                     <tr>
                      <td><input type="checkbox" value="choose" name="${exam.eId}"></td>
                     <td>${exam.eNo}</td>
@@ -49,9 +50,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <td>${exam.timeTest}</td>
                     <td>${exam.timeBaomin}</td>
                     <td>${exam.timeEnd}</td>
-                    <td>${exam.kId}</td>
-					<td>${exam.mId}</td>
-                       <td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','exam-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                    <td>${exam.kName}</td>
+					<td>${exam.mName}</td>
+						<td><a href="/sign/getsign"?rows=""${exam.eId}></a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>

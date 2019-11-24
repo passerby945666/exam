@@ -66,11 +66,11 @@ public class ExamServiceImpl implements IExamService {
 
     @Override
     public List<Map> getExamSId(Integer sId) {
-        return null;
+        return examDao.getExamSId(sId);
     }
 
     @Override
     public List<Map> getExamBaoming(Integer sId) {
-        return null;
+        return examDao.getExamBaoming(sId);
     }
 }

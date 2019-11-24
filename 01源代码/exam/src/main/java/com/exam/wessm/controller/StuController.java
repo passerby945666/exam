@@ -60,7 +60,7 @@ public class StuController {
              }
            }
            else{
-            return "/index";
+            return "/index.jsp";
            }
            return  "/404";
     }
