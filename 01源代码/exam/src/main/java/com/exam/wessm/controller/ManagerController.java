@@ -22,7 +22,7 @@ import java.util.Map;
  * 管理员控制器类
  */
 @Controller
-@RequestMapping("manager")
+@RequestMapping("admin")
 public class ManagerController {
     @Autowired
     @Qualifier("managerService")
@@ -74,11 +74,11 @@ public class ManagerController {
      * 查询管理员信息
      * @return
      */
-    @RequestMapping(value = "queryManager",method = RequestMethod.POST)
+    @RequestMapping(value = "queryManager")
     public String queryManager(Model model) {
-        List<Manager> managerList = managerService.queryManager();
-        model.addAttribute("managerList",managerList);
-        return "/admin-list.jsp";
+        List<Manager> adminList = managerService.queryManager();
+        model.addAttribute("adminList",adminList);
+        return "/admin-list";
     }
 
     /**
@@ -87,8 +87,8 @@ public class ManagerController {
      * @param mId
      * @return
      */
-    @RequestMapping(value = "deleteManager",method = RequestMethod.POST)
-    public String deleteManager(@RequestParam("m_id") int mId) {
+    @RequestMapping(value = "deleteManager")
+    public String deleteManager(Integer mId) {
         int rows = managerService.deleteManager(mId);
         //重定向到删除结果的页面
         return "redirect:/result?rows=" + rows;
@@ -101,10 +101,30 @@ public class ManagerController {
      * @return
      */
     @RequestMapping(value = "insertManager",method = RequestMethod.POST)
-    public String insertManager(Manager manager) {
-        int rows = managerService.insertManager(manager);
-        return "redirect:/result?rows=" + rows;
+    public String insertManager(Manager manager,String password2) {
+        if (password2.equals(manager.getmPassword())){
+            int rows = managerService.insertManager(manager);
+            return "redirect:/result?rows=" + rows;
+        }
+      else {
+          return "/404";
+        }
     }
+
+    /**
+     * 到管理员信息修改页面
+     * @param mId
+     * @param model
+     * @return
+     */
+ @RequestMapping(value = "getManagerMId")
+ public String getManagerMId(Integer mId,Model model){
+     Manager admin =managerService.getManagerMId(mId);
+     model.addAttribute("admin",admin);
+     model.addAttribute("mId",mId);
+     return  "/admin-edit";
+ }
+
 
     /**
      * 修改管理员

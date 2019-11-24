@@ -1,4 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -8,8 +11,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <base href="<%=basePath%>">
-
-<title></title>
 <meta name="renderer" content="webkit"> 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -32,34 +33,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<table class="table  table-hover">
 						<thead>
 							<tr>
-								<th></th>
-								<th>考生编号</th>
-								<th>考试编号</th>
+								<th>考试科目</th>
 								<th>考生名称</th>
-								<th>开考时间</th>
 								<th>分数</th>
 							</tr>
 						</thead>
 						<tbody>
+						<tr>
 			<c:choose>
-            <c:when test="${gradeList==null}"><span>查询成绩发生异常</span></c:when>
-            <c:when test="${empty  gradeList} "><span>没查到数据</span></c:when>
+            <c:when test="${mapList==null}"><span>查询成绩发生异常</span></c:when>
             <c:otherwise>
-                <c:forEach  items="${gradeList}" var="grade">
+                <c:forEach  items="${mapList}" var="map">
                     <tr>
-                     <td><input type="checkbox" value="choose" name="${grade.gId}"></td>
-                    <td>${grade.sId}</td>
-                    <td>${grade.eId}</td>
-                    <td>${grade.grade}</td>
-                       <td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','exam-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<td>${map.eName}</td>
+                    <td>${map.sName}</td>
+                    <td>${map.grade}</td>
                     </tr>
                 </c:forEach>
             </c:otherwise>
             </c:choose>
+			</tr>
 						</tbody>
 					</table>
 					<div class="col-md-12 text-right">
-						<navigationTag:page url="${pageContext.request.contextPath }/toCourse.action" />
 					</div>
 				</div>
 			</div>

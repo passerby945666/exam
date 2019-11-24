@@ -33,12 +33,8 @@
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal"   >
-		<c:choose>
-		<c:when test="${mapList==null}"><span>数据异常</span></c:when>
-		<c:otherwise>
-		<c:forEach  items="${mapList}" var="map">
-			<input type="text"  name="eId"  value="${map.eId}">
+	<form class="form form-horizontal" action="/exam/updateExam"  >
+			<input type="hidden"  name="eId"  value="${eId}">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">考试编号：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -77,13 +73,9 @@
 			</div>
 		</div>
 
-		</c:forEach>
-		</c:otherwise>
-		</c:choose>
-
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-				<button  class="btn btn-primary radius"  onclick="updatexam()"><i class="Hui-iconfont">&#xe632;</i> 保存修改</button>
+				<button  class="btn btn-primary radius"  type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存修改</button>
 				<button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 			</div>
 		</div>
@@ -105,24 +97,7 @@
 <script type="text/javascript" src="/lib/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
-<script type="text/javascript">
-	function updatexam(){
-			// 获取输入的用户名和密码
-			var eId = $("#eId").val();
-			var eNo = $("#eNo").val();
-			var eName = $("#eName").val();
-			var timeBegin = $("#timeBegin").val();
-			var timeTest = $("#timeTest").val();
-			var timeBaomin = $("#timeBaomin").val();
-			var timeEnd = $("#timeEnd").val();
-			$.ajax({
-				type: 'post',
-				url: "/exam/updateExam",
-				data:{"eId":eId,"eNo":eNo,"eName":eName,"timeBegin":timeBegin,"timeTest":timeTest,"timeBaomin":timeBaomin,"timeEnd":timeEnd},
-				dataType: 'json',
-			});
-	}
-</script>
+
 <!--/请在上方写此页面业务相关的脚本-->
 </body>
 </html>

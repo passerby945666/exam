@@ -31,7 +31,7 @@ public class ExamController {
     public String queryExam(Model model) {
         List<Map> examList = examService.queryExam();
         model.addAttribute("examList",examList);
-        return "/exam-list.jsp";
+        return "/exam-list";
     }
 
     /**
@@ -66,10 +66,34 @@ public class ExamController {
      */
     @RequestMapping(value = "getExamEId")
     public String getExamEId(Integer eId,Model model) {
-     Map mapList=examService.getExamEId(eId);
-     model.addAttribute("map",mapList);
-     return  "/exam-edit.jsp";
+     Map map=examService.getExamEId(eId);
+     model.addAttribute("map",map);
+     model.addAttribute("eId",eId);
+     return  "/exam-edit";
     }
 
+    /**
+     *修改考试信息
+     * @param exam
+     * @return
+     */
+    @RequestMapping(value = "updateExam")
+    public  int updateExam(Exam exam){
+        int rows=examService.updateExam(exam);
+        return rows;
+    }
+
+    /**
+     * 根据关键字加载考试信息
+     * @param exam
+     * @param model
+     * @return
+     */
+   @RequestMapping(value = "getExamExam")
+   public String getExamExam(String exam,Model model){
+        List<Map> examList =examService.getExamExam(exam);
+       model.addAttribute("examList",examList);
+       return "/exam-list";
+}
 
 }
