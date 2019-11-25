@@ -74,4 +74,12 @@ public interface ExamMapper {
      * @return
      */
     List<Map> getExamBaoming(@Param("s_id") Integer sId);
+
+    /**
+     *根据下拉框加载考试
+     *
+     * @param
+     * @return
+     */
+    List<Map> queryExamKId(@Param("k_id") String kId);
 }

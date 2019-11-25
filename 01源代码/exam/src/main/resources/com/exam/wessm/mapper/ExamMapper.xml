@@ -173,4 +173,24 @@
             and exam.e_id not in(select  examiners.e_id from examiners where s_id = #{s_id})
        ]]>
     </select>
+    <!-- 根据下拉框加载考试-->
+    <select id="queryExamKId" resultType="java.util.Map" parameterType="String">
+        <![CDATA[
+        select
+            e_id as eId,
+            e_no as eNo,
+            e_name as eName,
+            m_name as mName,
+            k_name as kName,
+            time_begin as timeBegin,
+            time_test as timeTest,
+            time_baomin as timeBaomin,
+            time_end as timeEnd,
+            exam.k_id as kId
+        from
+             (exam left join subject on exam.k_id=subject.k_id)
+            left join manager on exam.m_id=manager.m_id
+        where exam.k_id like #{k_id}
+        ]]>
+    </select>
 </mapper>
