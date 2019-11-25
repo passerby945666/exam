@@ -52,7 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <td>${exam.timeEnd}</td>
                     <td>${exam.kName}</td>
 					<td>${exam.mName}</td>
-						<td><a href="/sign/getsign"?rows=""${exam.eId}></a></td>
+						<td><a href="/sign/getsign"?eId=""${exam.eId}>进入报名</a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>

@@ -44,9 +44,10 @@ public class SignController {
      * @return
      */
     @RequestMapping(value = "getsign")
-    public String getsign(HttpSession session, HttpServletRequest request) {
+    public String getsign(HttpSession session, HttpServletRequest request,int eId) {
+        session.setAttribute("eId",eId);
         Stu stu=(Stu) session.getAttribute("stuSession");
-        List<Map> list=examService.getExamBaoming(stu.getsId());
+        List<Stu> list=stuService.queryStu();
         request.setAttribute("List",list);
         return  "/stu/sign.jsp";
     }
