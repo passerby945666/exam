@@ -117,9 +117,10 @@ $(".registerform").Validform({
 
 
        <div class="fm-item">
-        <input type="radio" name="type" value="1" checked  />考生
-           <input type="radio" name="type" value="2"  />管理员
+        <input type="radio" name="type" value="1" checked style="color: red" />考生
+           <input type="radio" name="type" value="2"  style="color: red" />管理员
 
+           <span style="color: red">${param.msg}</span>
        </div>
 
   <!--<div class="fm-item pos-r">

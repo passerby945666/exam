@@ -38,13 +38,19 @@ public class StuController {
      * @return
      */
     @RequestMapping(value = "register")
-    public String register(Stu stu, String Cpassword) {
+    public String register(Stu stu, String Cpassword,Model model) {
         if (Cpassword.equals(stu.getsPassword())){
-            stuService.registerStu(stu);
-            return "/login.jsp";
+            int rows=stuService.registerStu(stu);
+            if(rows==1){
+                return "/login.jsp";
+            }else {
+                model.addAttribute("msg", "用户已存在");
+                return  "/register.jsp";
+            }
         }
         else {
-            return  "/404.jsp";
+            model.addAttribute("msg", "密码不一致");
+            return  "/register.jsp";
         }
     }
 
@@ -67,13 +73,14 @@ public class StuController {
                   return  "/stu/indexStu.jsp";
              }
            }
-           else{
+           else if(type==2){
                Manager manager=managerService.findManagerNoAndPass(sNo,sPassword);
                session.setAttribute("managerSession",manager);
                model.addAttribute("stu",manager);
             return "/index.jsp";
            }
-           return  "/404.jsp";
+          model.addAttribute("msg","账号密码错误");
+           return  "redirect:/login.jsp";
     }
 
     /**
@@ -210,7 +217,7 @@ public class StuController {
                     return "/resetBySms2.jsp";
                 }
             } else {
-                model.addAttribute("msg", "密码不一致");
+
                 return "/resetBySms2.jsp";
             }
         }
