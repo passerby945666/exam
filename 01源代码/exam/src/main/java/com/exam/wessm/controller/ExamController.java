@@ -50,11 +50,10 @@ public class ExamController {
      * @param exam
      * @return
      */
-    @ResponseBody
     @RequestMapping(value = "insertExam")
     public  String insertExam(Exam exam) {
        int rows =examService.insertExam(exam);
-       return "redirect:/result.jsp?rows="+rows;
+       return "/result.jsp?rows="+rows;
     }
 
 

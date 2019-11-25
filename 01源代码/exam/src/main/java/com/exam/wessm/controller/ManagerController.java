@@ -85,7 +85,6 @@ public class ManagerController {
      * @param manager
      * @return
      */
-    @ResponseBody
     @RequestMapping(value = "updateManager")
     public String updateManager(Manager manager) {
         int rows = managerService.updateManager(manager);

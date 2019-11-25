@@ -94,7 +94,6 @@
 			<dd>
 				<ul>
 					<li><a data-href="/stu/queryStu" data-title="考生列表" href="javascript:;">考生列表</a></li>
-					<li><a data-href="/stu/deleteStu" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -102,9 +101,7 @@
 			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="admin-role.jsp" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
-					<li><a data-href="admin-permission.jsp" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
-					<li><a data-href="/admin/queryManager" data-title="管理员信息" href="javascript:;">管理员信息</a></li>
+                    <li><a data-href="/admin/queryManager" data-title="管理员信息" href="javascript:;">管理员信息</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -152,30 +149,5 @@
 <script type="text/javascript" src="/lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="/static/h-ui/js/H-ui.min.js" charset="UTF-8"></script>
 <script type="text/javascript" src="/static/h-ui.admin/js/H-ui.admin.js"charset="UTF-8"></script>
-
-
-<!--/_footer 作为公共模版分离出去-->
-
-<!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/jquery.contextmenu/jquery.contextmenu.r2.js"></script>
-<script type="text/javascript">
-$(function(){
-	/*$("#min_title_list li").contextMenu('Huiadminmenu', {
-		bindings: {
-			'closethis': function(t) {
-				console.log(t);
-				if(t.find("i")){
-					t.find("i").trigger("click");
-				}		
-			},
-			'closeall': function(t) {
-				alert('Trigger was '+t.id+'\nAction was Email');
-			},
-		}
-	});*/
-});
-</script> 
-
-
 </body>
 </html>
