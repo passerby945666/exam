@@ -105,7 +105,7 @@ public class ManagerController {
     }
 
     /**
-     *
+     *关键字查询
      * @param manager
      * @param model
      * @return

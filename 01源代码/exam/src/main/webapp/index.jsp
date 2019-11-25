@@ -73,8 +73,8 @@
 			<dt><i class="Hui-iconfont">&#xe613;</i> 阅卷管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="/read-list.jsp" data-title="阅卷管理" href="javascript:void(0)">阅卷管理</a></li>
-			</ul>
+					<li><a data-href="/grade/queryGrades" data-title="考试成绩" href="javascript:void(0)">考试成绩</a></li>
+    			</ul>
 				<ul>
 					<li><a data-href="/correct/choose" data-title="批改试卷" href="javascript:void(0)">批改试卷</a></li>
 				</ul>
@@ -112,9 +112,9 @@
 			<dt><i class="Hui-iconfont">&#xe61a;</i> 统计查询<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="/tongji/sexnum" data-title="男女比例图" href="javascript:void(0)">男女比例图</ a></li>
-					<li><a data-href="/tongji/yearnum" data-title="考生年龄统计" href="javascript:void(0)">考生年龄统计</ a></li>
-					<li><a data-href="/tongji/avgnum" data-title="考试平均分" href="javascript:void(0)">考试平均分</ a></li>
+					<li><a data-href="/tongji/sexnum" data-title="男女比例图" href="javascript:void(0)">男女比例图</a></li>
+					<li><a data-href="/tongji/yearnum" data-title="考生年龄统计" href="javascript:void(0)">考生年龄统计</a></li>
+					<li><a data-href="/tongji/avgnum" data-title="考试平均分" href="javascript:void(0)">考试平均分</a></li>
 			</ul>
 		</dd>
 	</dl>
