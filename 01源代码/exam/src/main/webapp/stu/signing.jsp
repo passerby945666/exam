@@ -16,46 +16,82 @@
     <title>考试报名</title>
 </head>
 <body>
-<div class="container">
-    <div class="row clearfix">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="col-md-12 column">
-                    <h1>请确认您的信息</h1>
-
-                        <c:choose>
-                            <c:when test="${List==null}"><span>查询考试发生异常</span></c:when>
-                            <c:when test="${empty  List} "><span>没查到数据</span></c:when>
-                            <c:otherwise>
-                                编号<input type="text" value="${List.sNo}" name="sNo"  readonly>
-                                姓名<input type="text" value="${List.sName}" name="sName" readonly>
-                                身份证号<input type="text" value="${List.sIdcard}" name="sIdcard" readonly>
-                                <c:choose>
-                                    <c:when test="${List.sSex==1}">
-                                       性别<input type="text" value="男" name="sSex" readonly>
-                                    </c:when>
-                                    <c:otherwise>
-                                        性别<input type="text" value="女" name="sSex" readonly>
-                                    </c:otherwise>
-                                </c:choose>
-                                考试编号<input type="text" value="${exam.eNo}" name="eNo"  readonly>
-                                考试名称<input type="text" value="${exam.eName}" name="eName"  readonly>
-                                开考时间<input type="text" value="${exam.timeBegin}" name="timeBegin"  readonly>
-                                考试时长<input type="text" value="${exam.timeTest}" name="timeTest"  readonly>
-                                科目名称<input type="text" value="${exam.kName}" name="kName"  readonly>
-                                负责人<input type="text" value="${exam.mName}" name="mName"  readonly>
-                            </c:otherwise>
-                        </c:choose>
-                    <a href="/stu/getStuSId?sId=${List.sId}">修改个人信息</a>
-                    <a href="/sign/choose">重新选择考试</a>
-                    <a href="/sign/signed?eId=${exam.eId}">报考</a>
-                    <div class="col-md-12 text-right">
-                        <navigationTag:page url="${pageContext.request.contextPath }/toCourse.action" />
-                    </div>
-                </div>
-            </div>
-        </div>
+<br>
+<br>
+<br>
+<div style="margin-left: 15%;">
+    <c:choose>
+        <c:when test="${List==null}"><span>查询考试发生异常</span></c:when>
+        <c:when test="${empty  List} "><span>没查到数据</span></c:when>
+        <c:otherwise>
+            <table style="margin-left: 25%; width: 50%;text-align-last: center" border="3">
+                <tr><th colspan="2"><h3>确认报考信息</h3></th></tr>
+                <tr>
+                    <td>编号</td>
+                    <td>${List.sNo}</td>
+                </tr>
+                <tr>
+                    <td>姓名</td>
+                    <td>${List.sName}</td>
+                </tr>
+                <tr>
+                    <td>身份证号</td>
+                    <td>${List.sIdcard}</td>
+                </tr>
+                <c:choose>
+                    <c:when test="${List.sSex==1}">
+                        <tr>
+                            <td>性别</td>
+                            <td>男</td>
+                        </tr>
+                    </c:when>
+                    <c:otherwise>
+                        <tr>
+                            <td>性别</td>
+                            <td>女</td>
+                        </tr>
+                    </c:otherwise>
+                </c:choose>
+                <tr>
+                    <td>考试名称</td>
+                    <td>${exam.eName}</td>
+                </tr>
+                <tr>
+                    <td>考试编号</td>
+                    <td>${exam.eNo}</td>
+                </tr>
+                <tr>
+                    <td>开考时间</td>
+                    <td>${exam.timeBegin}</td>
+                </tr>
+                <tr>
+                    <td>考试时长</td>
+                    <td>${exam.timeTest}</td>
+                </tr>
+                <tr>
+                    <td>科目名称</td>
+                    <td>${exam.kName}</td>
+                </tr>
+                <tr>
+                    <td>负责人</td>
+                    <td>${exam.mName}</td>
+                </tr>
+            </table>
+        </c:otherwise>
+    </c:choose>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <button><a href="/sign/signed?eId=${exam.eId}">确定报考</a></button>
+        &nbsp;&nbsp;
+        <button><a href="/sign/choose">重新选择考试</a></button>
+        &nbsp;&nbsp;
+        <button><a href="/stu/getStuSId?sId=${List.sId}">修改个人信息</a></button>
     </div>
+    <div class="col-md-12 text-right">
+        <navigationTag:page url="${pageContext.request.contextPath }/toCourse.action" />
+    </div>
+
 </div>
 </body>
 </html>
