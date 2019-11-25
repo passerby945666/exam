@@ -49,7 +49,7 @@ public class ManagerTest01 {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IManagerService managerService = (IManagerService) context.getBean("managerService");
         Manager manager=new Manager();
-        manager.setmNo("11");
+        manager.setmNo("1111");
         manager.setmPassword("12345");
         manager.setmName("说得好");
         manager.setmIdcard("123456743245678907");

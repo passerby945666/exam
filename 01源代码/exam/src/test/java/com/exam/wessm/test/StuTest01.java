@@ -30,12 +30,12 @@ public class StuTest01 {
         System.out.println(stu.toString());
         context.close();
     }
-    @Test
+/*    @Test
     public void getTest03() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         IStuService stuService = (IStuService) context.getBean("stuService");
         context.close();
-    }
+    }*/
     @Test
     public void insertTest04() {
         AbstractXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");

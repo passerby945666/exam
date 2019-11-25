@@ -73,7 +73,7 @@ public class StuController {
                model.addAttribute("stu",manager);
             return "/index.jsp";
            }
-           return  "/404";
+           return  "/404.jsp";
     }
 
     /**

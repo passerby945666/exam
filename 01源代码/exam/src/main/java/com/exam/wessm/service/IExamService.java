@@ -22,7 +22,7 @@ public interface IExamService {
      * @param
      * @return
      */
-    Map getExamEId(Integer eId);
+    Map  getExamEId(Integer eId);
 
     /**
      * 根据关键字加载考试信息
