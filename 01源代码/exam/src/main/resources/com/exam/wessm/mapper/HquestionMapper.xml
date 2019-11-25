@@ -82,7 +82,7 @@ UPDATE hquestion
 SET h_grade =#{hGrade},
     status=2
 WHERE
-   0 h_id =#{hId};
+    h_id =#{hId};
         ]]>
     </update>
     <!--阅卷考试查询-->

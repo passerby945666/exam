@@ -54,6 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										  <button type="reset" class="btn btn-default"class="text-right" >取消</button>
 									</div>
 								</div>
+								</div>
 							</form>
 						</div>
 				</div>

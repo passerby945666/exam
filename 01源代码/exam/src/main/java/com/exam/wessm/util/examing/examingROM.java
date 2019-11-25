@@ -1,5 +1,7 @@
 package com.exam.wessm.util.examing;
 
+import com.exam.wessm.entity.Stu;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -49,5 +51,40 @@ public  class  examingROM {
 
     public static String addsIdcard(String sNo,String eName){
         return eName+sNo;
+    }
+
+    /**    核对身份证号跟账号
+     *
+     * @param sNo
+     * @param sIdcard
+     * @param stus
+     * @return
+     */
+    public static int eqNosIdcard(String sNo, String sIdcard, List<Stu> stus){
+        int rows=0;
+        for(Stu stu:stus){
+            if(stu.getsIdcard().equals(sIdcard)&&stu.getsNo().equals(sNo)){
+                rows=1;
+                break;
+            }
+        }
+        return rows;
+    }
+    /**    核对身份证号跟账号
+     *
+     * @param sNo
+
+     * @param stus
+     * @return
+     */
+    public static int eqNo(String sNo, List<Stu> stus){
+        int rows=0;
+        for(Stu stu:stus){
+            if(stu.getsNo().equals(sNo)){
+                rows=1;
+                break;
+            }
+        }
+        return rows;
     }
 }

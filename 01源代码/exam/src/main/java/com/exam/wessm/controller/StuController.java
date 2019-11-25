@@ -3,6 +3,7 @@ import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Stu;
 import com.exam.wessm.service.IManagerService;
 import com.exam.wessm.service.IStuService;
+import com.exam.wessm.util.examing.examingROM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * 考生控制器类
  */
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -178,4 +180,42 @@ public class StuController {
             return "/stu/uppassword.jsp";
         }
     }
+    @RequestMapping(value = "forgetStuPassword",method = RequestMethod.POST)
+    public String  forgetStuPassword(String sNo, String  sIdcard, HttpSession session, HttpServletRequest request){
+        List<Stu> stus=stuService.getStu(sIdcard);
+        if(stus.size()!=0){
+            int rows=examingROM.eqNosIdcard(sNo,sIdcard,stus);
+            if(rows==1){
+                session.setAttribute("forget",sNo);
+                return "/resetBySms2.jsp";
+            }
+        }
+        request.setAttribute("smg","信息不匹配");
+             return "/resetBySms.jsp";
+    }
+
+    @RequestMapping(value = "forgetStuPassword2",method = RequestMethod.POST)
+    public String  forgetStuPassword2(Stu stu,String csPassword, Model model,HttpSession session) {
+        String sNo = String.valueOf(session.getAttribute("forget"));
+        List<Stu>  stus=stuService.getStu(sNo);
+        if(stus.size()!=0){
+            int row=examingROM.eqNo(sNo,stus);
+            if(row==1&&csPassword.equals(stu.getsPassword())){
+                stu.setsId(stus.get(0).getsId());
+                int rows = stuService.updateStuPassword(stu);
+                if(row==1){
+                    return "/resetBySms3.jsp?rows=" + rows;
+                }else {
+                    model.addAttribute("msg", "修改发生异常");
+                    return "/resetBySms2.jsp";
+                }
+            } else {
+                model.addAttribute("msg", "密码不一致");
+                return "/resetBySms2.jsp";
+            }
+        }
+        model.addAttribute("msg", "非法操作");
+        return "/resetBySms2.jsp";
+    }
+
 }

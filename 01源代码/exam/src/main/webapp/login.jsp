@@ -135,8 +135,8 @@ $(".registerform").Validform({
   </div>
   
       <div class="checkbox no-padding">
-                    <a href="register.jsp" class="a text-left">立即注册</a>
-                    <a href="/resetBySms" class="a pull-right">忘记密码？</a>
+                    <a href="/register.jsp" class="a text-left">立即注册</a>
+                    <a href="/resetBySms.jsp" class="a pull-right">忘记密码？</a>
 					  <div class="ui-form-explain"></div>
       </div>
 
