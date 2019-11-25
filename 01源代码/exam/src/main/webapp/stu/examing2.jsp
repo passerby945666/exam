@@ -27,7 +27,7 @@
 
 </head>
 <body>
-<form action='${scr}' method='post'>
+<form action='${scr}' method='post' id="examing2">
 <div class="container">
     <div class="row clearfix">
         <div class="panel panel-default">
@@ -130,11 +130,13 @@
             seconds = Math.floor(maxtime % 60);
             msg = "距离结束还有" + minutes + "分" + seconds + "秒";
             document.all["timer"].innerHTML = msg;
-            if (maxtime == 5 * 60)alert("距离结束仅剩5分钟");
+            if (maxtime == 15 * 60)alert("距离考试结束仅剩15分钟");
             --maxtime;
         } else{
             clearInterval(timer);
             alert("时间到，结束!");
+            var form = document.getElementById('examing2');
+            form.submit();
         }
     }
     timer = setInterval("CountDown()", 1000);

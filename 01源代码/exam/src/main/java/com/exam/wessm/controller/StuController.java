@@ -166,14 +166,16 @@ public class StuController {
      * @return
      */
     @RequestMapping(value = "updateStuPassword",method = RequestMethod.POST)
-    public int  updateStuPassword(Stu stu,String csPassword, Model model){
+    public String  updateStuPassword(Stu stu,String csPassword, Model model,HttpSession session){
+        Stu stu1=(Stu)session.getAttribute("stuSession");
         if (csPassword.equals(stu.getsPassword())){
+            stu.setsId(stu1.getsId());
             int rows  =stuService.updateStuPassword(stu);
-            return rows;
+            return "/stu/result.jsp?rows="+rows;
         }
         else{
             model.addAttribute("msg","密码不一致");
+            return "/stu/uppassword.jsp";
         }
-        return 1111;
     }
 }
