@@ -131,6 +131,7 @@ public class StuController {
     @RequestMapping(value ="getStuSId" )
     public  String getStuSId(Integer sId,Model model){
         Stu stu=stuService.getStuSId(sId);
+        stu.setsId(sId);
         model.addAttribute("stu",stu);
         model.addAttribute("sId",sId);
         return "/member-edit.jsp";

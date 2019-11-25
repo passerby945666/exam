@@ -43,7 +43,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <c:otherwise>
                 <c:forEach  items="${List}" var="exam">
                     <tr>
-                     <td><input type="checkbox" value="choose" name="${exam.eId}"></td>
                     <td>${exam.eNo}</td>
                     <td>${exam.eName}</td>
                     <td>${exam.timeBegin}</td>
@@ -52,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <td>${exam.timeEnd}</td>
                     <td>${exam.kName}</td>
 					<td>${exam.mName}</td>
-						<td><a href="/sign/getsign"?eId=""${exam.eId}>进入报名</a></td>
+						<td><a href="/sign/getsign?eId=${exam.eId}">进入报名</a></td>
                     </tr>
                 </c:forEach>
             </c:otherwise>

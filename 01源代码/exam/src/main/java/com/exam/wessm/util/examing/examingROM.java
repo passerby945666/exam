@@ -34,10 +34,20 @@ public  class  examingROM {
         }
         return list;
     }
+
+    /**
+     * 给题目打印编号
+     * @param list
+     * @return
+     */
     public static List setno(List<Map> list){
         for(int i=0;i<list.size();i++){
             list.get(i).put("No",i);
         }
         return list;
+    }
+
+    public static String addsIdcard(String sNo,String eName){
+        return eName+sNo;
     }
 }

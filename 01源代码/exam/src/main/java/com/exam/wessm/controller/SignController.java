@@ -1,7 +1,10 @@
 package com.exam.wessm.controller;
+import com.exam.wessm.entity.Examiners;
 import com.exam.wessm.entity.Stu;
 import com.exam.wessm.service.IExamService;
+import com.exam.wessm.service.IExaminersService;
 import com.exam.wessm.service.IStuService;
+import com.exam.wessm.util.examing.examingROM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpRequest;
@@ -25,6 +28,9 @@ public class SignController {
     @Autowired
     @Qualifier("examService")
     private IExamService examService;
+    @Autowired
+    @Qualifier("examinersService")
+    private IExaminersService examinersService;
     /**
      * 进入选择考次界面
      *
@@ -39,7 +45,7 @@ public class SignController {
     }
 
     /**
-     * 进入选择考次界面
+     * 确认信息
      *
      * @return
      */
@@ -47,8 +53,28 @@ public class SignController {
     public String getsign(HttpSession session, HttpServletRequest request,int eId) {
         session.setAttribute("eId",eId);
         Stu stu=(Stu) session.getAttribute("stuSession");
-        List<Stu> list=stuService.queryStu();
+        Stu list=stuService.getStuSId(stu.getsId());
+        Map list1=examService.getExamEId(eId);
+        list.setsId(stu.getsId());
+        list1.put("eId",eId);
         request.setAttribute("List",list);
-        return  "/stu/sign.jsp";
+        request.setAttribute("exam",list1);
+        return  "/stu/signing.jsp";
+    }
+
+    /**
+     * 提交报名信息
+     * @param session
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "signed")
+    public String signed(HttpSession session, HttpServletRequest request) {
+        int eId=Integer.valueOf(session.getAttribute("eId")+"");
+        Stu stu=(Stu) session.getAttribute("stuSession");
+        Map list=examService.getExamEId(eId);
+        Examiners examiners=new Examiners(0 ,examingROM.addsIdcard(stu.getsNo(),String.valueOf(list.get("eNo"))),stu.getsId(),eId);
+       int rows=examinersService.insertExaminers(examiners);
+        return  "/stu/result.jsp?rows="+rows;
     }
 }
