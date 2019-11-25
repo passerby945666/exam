@@ -23,6 +23,6 @@
         <span style="color:rgb(219,99,48)">服务器返回未知的状态</span>
     </c:otherwise>
 </c:choose>
-<a href="/quebank/queryQuebank">返回查询页面</a>
+<a href="/welcome.jsp">返回欢迎页面</a>
 </body>
 </html>
