@@ -33,7 +33,7 @@ public class TongjiController {
     public String sexnum(HttpServletRequest request){
         Map map=stuService.getSexnum();
         request.setAttribute("map",map);
-        return "/charts-1";
+        return "/charts-1.jsp";
     }
 
     @RequestMapping(value = "yearnum")
@@ -42,7 +42,7 @@ public class TongjiController {
         Map mapb=stuService.getYearnum(2);
         request.setAttribute("mapa",mapa);
         request.setAttribute("mapb",mapb);
-        return "/yearnum";
+        return "/yearnum.jsp";
     }
     @RequestMapping(value = "avgnum")
     public String avgnum(HttpServletRequest request){
@@ -60,6 +60,6 @@ public class TongjiController {
         }
         request.setAttribute("ListLL",listLL);
 
-        return "/avgnum";
+        return "/avgnum.jsp";
     }
 }
