@@ -96,6 +96,7 @@ public class ExamingController {
         session.setAttribute("Exam",listAll);
         request.setAttribute("List",listAll);
         request.setAttribute("thisI",eId);
+        request.setAttribute("time",map.get("timeTest"));
         return "/stu/examing2.jsp";
     }
     /**

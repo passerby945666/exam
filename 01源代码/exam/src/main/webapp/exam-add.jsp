@@ -53,26 +53,26 @@
 	<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">报名时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })" id="commentdatemin" name="timeBaomin" class="input-text Wdate">
+				<input type="date" id="commentdatemin" name="timeBaomin" class="input-text Wdate">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">报名截止时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })" id="commentdatemin" name="timeEnd" class="input-text Wdate">
+				<input type="date"  id="commentdatemin1" name="timeEnd" class="input-text Wdate">
 			</div>
 		</div>
 	
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">开考时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })" id="commentdatemin" name="timeBegin" class="input-text Wdate">
+				<input type="date"  id="commentdatemin2" name="timeBegin" class="input-text Wdate">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">考试时长</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle2" name="timeTest">
+				<input type="text" class="input-text" value="" placeholder="" id="articletitle7" name="timeTest">
 			</div>
 		</div>
 		

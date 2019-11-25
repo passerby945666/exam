@@ -30,14 +30,14 @@
 	<div class="text-c">
 		<form action="/exam/getExamExam">
 		<button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
-	 <span class="select-box inline">
-		<select name="exam11" class="select">
-			<option value="">科目</option>
-			<c:forEach items="${examList}" var="examList">
-				<option value="${examList.kName}" <c:if test="${examList.kName == exam}">selected</c:if>>${examList.kName}
-								</option>
-			</c:forEach>
-		 </select>
+            科目:
+	    <span class="select-box inline">
+            <select name="kId" class="select">
+                <option value="%">全部</option>
+                <c:forEach  items="${kName}" var="k">
+                    <option value="${k.kId}">${k.kName}</option>
+                </c:forEach>
+            </select>
 		</span>
 		<input type="text" name="exam"  value="" placeholder=" 考试名称" style="width:250px" class="input-text">
 		<button name=""  class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜考试</button>
@@ -45,7 +45,7 @@
 	</div>
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
 	<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> 
-	<a class="btn btn-primary radius" data-title="添加考试" data-href="exam-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
+	<a class="btn btn-primary radius" data-title="添加考试" data-href="/exam-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
 	<i class="Hui-iconfont">&#xe600;</i> 新增考试</a></span> <span class="r">共有数据：<strong>${fn:length(requestScope.examList)}</strong> 条</span> </div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
@@ -101,34 +101,7 @@
 <script type="text/javascript" src="/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
-$('.table-sort').dataTable({
-	"aaSorting": [[ 1, "desc" ]],//默认第几个排序
-	"bStateSave": true,//状态保存
-	"pading":false,
-	"aoColumnDefs": [
-	  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
-	  {"orderable":false,"aTargets":[0,8]}// 不参与排序的列
-	]
-});
 
-/*资讯-添加*/
-function article_add(title,url,w,h){
-	var index = layer.open({
-		type: 2,
-		title: title,
-		content: url
-	});
-	layer.full(index);
-}
-/*/!*考试-编辑*!/
-function article_edit(title,url,id,w,h){
-	var index = layer.open({
-		type: 2,
-		title: title,
-		content: url
-	});
-	layer.full(index);
-}*/
 /*考试-删除*/
 function article_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
@@ -148,26 +121,6 @@ function article_del(obj,id){
 	});
 }
 
-/*资讯-审核*/
-function article_shenhe(obj,id){
-	layer.confirm('审核文章？', {
-		btn: ['通过','不通过','取消'], 
-		shade: false,
-		closeBtn: 0
-	},
-	function(){
-		$(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="article_start(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-		$(obj).remove();
-		layer.msg('已发布', {icon:6,time:1000});
-	},
-	function(){
-		$(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="article_shenqing(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-danger radius">未通过</span>');
-		$(obj).remove();
-    	layer.msg('未通过', {icon:5,time:1000});
-	});	
-}
 /*资讯-下架*/
 function article_stop(obj,id){
 	layer.confirm('确认要下架吗？',function(index){
@@ -178,21 +131,6 @@ function article_stop(obj,id){
 	});
 }
 
-/*资讯-发布*/
-function article_start(obj,id){
-	layer.confirm('确认要发布吗？',function(index){
-		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-		$(obj).remove();
-		layer.msg('已发布!',{icon: 6,time:1000});
-	});
-}
-/*资讯-申请上线*/
-function article_shenqing(obj,id){
-	$(obj).parents("tr").find(".td-status").html('<span class="label label-default radius">待审核</span>');
-	$(obj).parents("tr").find(".td-manage").html("");
-	layer.msg('已提交申请，耐心等待审核!', {icon: 1,time:2000});
-}
 
 </script> 
 </body>

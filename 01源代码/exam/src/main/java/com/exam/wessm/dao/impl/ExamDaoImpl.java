@@ -65,4 +65,9 @@ public class ExamDaoImpl implements IExamDao {
     public List<Map> getExamBaoming(Integer sId) {
         return examMapper.getExamBaoming(sId);
     }
+
+    @Override
+    public List<Map> queryExamKId(String kId) {
+        return examMapper.queryExamKId(kId);
+    }
 }

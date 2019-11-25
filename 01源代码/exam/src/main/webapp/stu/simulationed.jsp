@@ -34,7 +34,7 @@
                     <div class="col-md-12 column">
                         <table class="table  table-hover">
                             <td><input type="hidden" name="Id" value="${thisI}"></td>
-                            <span>${grade}</span>
+                            <span>分数：${grade} （未计算问答题）</span>
                             <c:choose>
                             <c:when test="${List==null}"><span>页面发生异常</span></c:when>
                             <c:when test="${empty  List} "><span>没有数据</span></c:when>

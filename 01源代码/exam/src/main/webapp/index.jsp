@@ -84,7 +84,7 @@
 			<dt><i class="Hui-iconfont">&#xe620;</i> 题库管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="/quebank/queryQuebank" data-title="题库管理" href="javascript:void(0)">题库管理</a></li>
+					<li><a data-href="/quebank/queryQuebank" data-title="题库管理" href="javascript:">题库管理</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -94,7 +94,7 @@
 			<dd>
 				<ul>
 					<li><a data-href="/stu/queryStu" data-title="考生列表" href="javascript:;">考生列表</a></li>
-					<li><a data-href="member-del.jsp" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
+					<li><a data-href="/stu/deleteStu" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -112,8 +112,9 @@
 			<dt><i class="Hui-iconfont">&#xe61a;</i> 统计查询<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="charts-1.jsp" data-title="折线图" href="javascript:void(0)">折线图</a></li>
-					<li><a data-href="charts-2.jsp" data-title="时间轴折线图" href="javascript:void(0)">时间轴折线图</a></li>
+					<li><a data-href="/tongji/sexnum" data-title="男女比例图" href="javascript:void(0)">男女比例图</ a></li>
+					<li><a data-href="/tongji/yearnum" data-title="考生年龄统计" href="javascript:void(0)">考生年龄统计</ a></li>
+					<li><a data-href="/tongji/avgnum" data-title="考试平均分" href="javascript:void(0)">考试平均分</ a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -125,7 +126,7 @@
 		<div class="Hui-tabNav-wp">
 			<ul id="min_title_list" class="acrossTab cl">
 				<li class="active">
-					<span title="我的桌面" data-href="welcome.jsp">我的桌面</span>
+					<span title="我的桌面" data-href="/welcome.jsp">我的桌面</span>
 					<em></em></li>
 		</ul>
 	</div>
@@ -134,7 +135,7 @@
 	<div id="iframe_box" class="Hui-article">
 		<div class="show_iframe">
 			<div style="display:none" class="loading"></div>
-			<iframe scrolling="yes" frameborder="0" src="welcome.jsp"></iframe>
+			<iframe scrolling="yes" frameborder="0" src="/welcome.jsp"></iframe>
 	</div>
 </div>
 </section>

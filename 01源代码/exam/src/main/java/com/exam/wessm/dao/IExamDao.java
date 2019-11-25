@@ -77,4 +77,12 @@ public interface IExamDao {
      */
     List<Map> getExamBaoming(Integer sId);
 
+    /**
+     *根据下拉框加载考试
+     *
+     * @param
+     * @return
+     */
+    List<Map> queryExamKId(String kId);
+
 }

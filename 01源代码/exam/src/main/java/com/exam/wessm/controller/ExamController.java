@@ -1,7 +1,10 @@
 package com.exam.wessm.controller;
 ;
 import com.exam.wessm.entity.Exam;
+import com.exam.wessm.entity.Subject;
 import com.exam.wessm.service.IExamService;
+import com.exam.wessm.service.IQuebankService;
+import com.exam.wessm.service.ISubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -22,6 +25,12 @@ public class ExamController {
     @Autowired
     @Qualifier("examService")
     private IExamService examService;
+    @Autowired
+    @Qualifier("quebankService")
+    private IQuebankService quebankService;
+    @Autowired
+    @Qualifier("subjectService")
+    private ISubjectService subjectService;
 
     /**
      * 查询考试所有信息
@@ -30,6 +39,8 @@ public class ExamController {
     @RequestMapping(value = "queryExam")
     public String queryExam(Model model) {
         List<Map> examList = examService.queryExam();
+        List<Subject> subjectList=subjectService.querySubject();
+        model.addAttribute("kName",subjectList);
         model.addAttribute("examList",examList);
         return "/exam-list.jsp";
     }
@@ -43,7 +54,7 @@ public class ExamController {
     @RequestMapping(value = "insertExam")
     public  String insertExam(Exam exam) {
        int rows =examService.insertExam(exam);
-        return "redirect:/result.jsp?rows="+rows;
+       return "redirect:/result.jsp?rows="+rows;
     }
 
 
@@ -90,9 +101,16 @@ public class ExamController {
      * @return
      */
    @RequestMapping(value = "getExamExam")
-   public String getExamExam(String exam,Model model){
-        List<Map> examList =examService.getExamExam(exam);
-       model.addAttribute("examList",examList);
+   public String getExamExam(String exam,Model model,String kId){
+       List<Map> examList =examService.getExamExam(exam);
+       List<Map> exam1=examService.queryExamKId(kId);
+       List<Subject> subjectList=subjectService.querySubject();
+       model.addAttribute("kName",subjectList);
+       if(exam.equals("")) {
+           model.addAttribute("examList", exam1);
+       }else {
+           model.addAttribute("examList", examList);
+       }
        return "/exam-list.jsp";
 }
 
