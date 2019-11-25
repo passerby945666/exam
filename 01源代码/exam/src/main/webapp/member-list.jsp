@@ -28,7 +28,6 @@
 		</form>
 	</div>
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-	<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
 	<a class="btn btn-primary radius" data-title="添加考生" data-href="member-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
 	<i class="Hui-iconfont">&#xe600;</i> 新增考生信息</a></span>
 		<span class="r">共有数据：<strong>${fn:length(requestScope.stuList)}</strong> 条</span></div>

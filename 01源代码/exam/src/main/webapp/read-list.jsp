@@ -34,7 +34,6 @@
 		<input type="text" name=""  placeholder=" 考试名称" style="width:250px" class="input-text">
 		<button name="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜成绩</button>
 	</div>
-    <span class="l"><a href="/grade/deleteGrade"  class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
         <a class="btn btn-primary radius" data-title="添加成绩" href="/read-add.jsp"><i class="Hui-iconfont">&#xe600;</i> 添加成绩</a></span>
     <span class="r">共有数据：<strong>${size}</strong> 条</span>
 	<div class="mt-20">
