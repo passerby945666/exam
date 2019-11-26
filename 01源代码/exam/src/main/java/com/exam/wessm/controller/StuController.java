@@ -143,7 +143,7 @@ public class StuController {
         stu.setsId(sId);
         model.addAttribute("stu",stu);
         model.addAttribute("sId",sId);
-        return "/member-edit.jsp";
+        return "/stu/stumassage.jsp";
     }
 
     /**
@@ -177,10 +177,11 @@ public class StuController {
      * @return
      */
     @RequestMapping(value ="getStu" )
-    public  String  getStu(String stu,Model model){
-        List<Stu> stuList =stuService.getStu(stu);
-        model.addAttribute("stuList",stuList);
-        return  "/member-list.jsp";
+    public  String  getStu(int stu,Model model){
+        Stu stuList =stuService.getStuSId(stu);
+        model.addAttribute("stu",stuList);
+        model.addAttribute("sId",stu);
+        return  "/member-edit.jsp";
     }
 
     /**
