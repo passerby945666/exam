@@ -18,7 +18,7 @@
 <body>
 <div>
 <c:choose>
-    <c:when test="${stu==null}"><span>查询考试发生异常</span></c:when>
+    <c:when test="${stu==null}"><span>查询个人信息发生异常</span></c:when>
     <c:when test="${empty  stu} "><span>没查到数据</span></c:when>
     <c:otherwise>
         <div style="text-align: center;">

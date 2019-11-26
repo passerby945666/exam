@@ -132,7 +132,7 @@ public class StuController {
     }
 
     /**
-     * 到管理员考生信息修改页面
+     * 到考生信息修改页面
      * @param sId
      * @param model
      * @return
@@ -147,7 +147,7 @@ public class StuController {
     }
 
     /**
-     * 考生信息修改
+     * 管理员考生信息修改
      * @param stu
      * @return
      */
@@ -156,6 +156,7 @@ public class StuController {
         int rows=stuService.updateStu(stu);
         return "redirect:/result.jsp?rows="+rows;
     }
+
 
     /**
      * 根据考生编号或名字或身份证号加载考生信息

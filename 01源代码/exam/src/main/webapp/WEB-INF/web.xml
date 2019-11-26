@@ -62,9 +62,9 @@
   </servlet-mapping>
   <!-- 欢迎页面-->
   <welcome-file-list>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.jspx</welcome-file>
+    <welcome-file>indexM.htm</welcome-file>
+    <welcome-file>indexM.html</welcome-file>
+    <welcome-file>indexM.jsp</welcome-file>
+    <welcome-file>indexM.jspx</welcome-file>
   </welcome-file-list>
 </web-app>

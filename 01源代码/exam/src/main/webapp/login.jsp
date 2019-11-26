@@ -85,9 +85,9 @@ $(".registerform").Validform({
 
 
 <div class="header">
-  <h1 class="headerLogo"><a title="在线考试系统" target="_blank" href="#"><img alt="logo" style="width:140px" src="images/logo.png"></a></h1>
+  <h1 class="headerLogo"><a title="思考官网" target="_blank" href="indexM.jsp"><img alt="logo" style="width:140px" src="images/logo.png"></a></h1>
 	<div class="headerNav">
-		<a target="_blank" href="#">思考官网</a>
+		<a target="_blank" href="indexM.jsp">思考官网</a>
 		<a target="_blank" href="#">关于我们</a>
 		<a target="_blank" href="#">开发团队</a>
 		<a target="_blank" href="#">意见反馈</a>
@@ -119,7 +119,6 @@ $(".registerform").Validform({
        <div class="fm-item">
         <input type="radio" name="type" value="1" checked style="color: red" />考生
            <input type="radio" name="type" value="2"  style="color: red" />管理员
-
            <span style="color: red">${param.msg}</span>
        </div>
 

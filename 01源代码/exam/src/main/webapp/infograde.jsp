@@ -252,7 +252,7 @@ ol li div a {
                         <div class="s3">
                             <input id="submitButton" style="cursor:hand;" type="submit" value="查询">
                             <input name="button" id="button" type="button" value="重填">
-                            <input style="cursor:pointer" onclick="javascript:window.open('indexM.jsp','_self')" type="button" value="返回">
+                            <input style="cursor:pointer" onclick="javascript:window.open('/indexM.jsp','_self')" type="button" value="返回">
                         </div>
                     </div>
                 </div>

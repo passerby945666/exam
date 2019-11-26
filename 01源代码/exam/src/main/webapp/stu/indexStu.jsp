@@ -16,43 +16,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="This is my page">
+<meta http-equiv="description" content="考生首页">
 
 
 <link rel="stylesheet" href="<%=basePath%>css/bootstrap.min.css">
 <script src="<%=basePath%>js/jquery-1.11.3.min.js"></script>
 <script src="<%=basePath%>js/bootstrap.min.js"></script>
 <script type="text/javascript">
-
-//通过id获取修改的客户信息
-function editCustomer(id) {
-    $.ajax({
-        type:"get",
-        url:"<%=basePath%>customer/getCustomerById.action",
-        data:{"id":id},
-        success:function(data) {
-            $("#edit_cust_id").val(data.cust_id);
-            $("#edit_customerName").val(data.cust_name);
-            $("#edit_customerFrom").val(data.cust_source)
-            $("#edit_custIndustry").val(data.cust_industry)
-            $("#edit_custLevel").val(data.cust_level)
-            $("#edit_linkMan").val(data.cust_linkman);
-            $("#edit_phone").val(data.cust_phone);
-            $("#edit_mobile").val(data.cust_mobile);
-            $("#edit_zipcode").val(data.cust_zipcode);
-            $("#edit_address").val(data.cust_address);
-            
-        }
-    });
-}
-
-function loginout(){
-	if(confirm("确认退出")){
-		window.location.href="<%=basePath%>loginout.action"
-	}
-	
-}
-
 </script>
 </head>
 <body>
@@ -115,7 +85,7 @@ function loginout(){
 
 
 <div class="col-md-10 column">
-			<iframe    name="table" frameborder="0" width="100%" style="height:750px;">
+			<iframe    name="table" frameborder="0" width="100%"  style="border:0px;padding:0px;margin:0px;height:750px;">
             </iframe>
 </div>
 </body>
