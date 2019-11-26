@@ -44,7 +44,7 @@
         </form>
     </div>
 	<div class="cl pd-5 bg-1 bk-gray mt-20">
-        <a class="btn btn-primary radius" data-title="添加题库" href="/quebank-add.jsp"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span>
+        <a class="btn btn-primary radius" data-title="添加题库" href="/quebank/getKId"><i class="Hui-iconfont">&#xe600;</i> 添加题库</a></span>
         <span class="r">共有数据：<strong>${size}</strong> 条</span>
     </div>
 	<div class="mt-20">
