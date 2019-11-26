@@ -119,8 +119,8 @@
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                    <li class=" scroll active"><a href="#home">首页</a></li>
 			                    <li class="scroll"><a href="#works">关于我们</a></li>
+								<li class="scroll"><a href="#reviews">考试动态</a></li>
 			                    <li class="scroll"><a href="#explore">开发团队</a></li>
-			                    <li class="scroll"><a href="#reviews">意见反馈</a></li>
 			                    <li class="scroll"><a href="#blog">常见问题</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
@@ -177,9 +177,9 @@
 						<li>
 							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
-								<!-- <div class="single-list-topics-icon">
+								 <div class="single-list-topics-icon">
 									<i class="flaticon-restaurant"></i>
-								</div> -->
+								</div>
 								<h2><a href="https://www.baidu.com/">项目介绍</a></h2>
 								<p>本项目由</p>
 							</div>
@@ -188,9 +188,9 @@
 						<li>
 							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
-							<!-- 	<div class="single-list-topics-icon">
+								<div class="single-list-topics-icon">
 									<i class="flaticon-travel"></i>
-								</div> -->
+								</div>
 								<h2><a href="#">在线报名</a></h2>
 								<p>214 listings</p>
 							</div>
@@ -199,9 +199,9 @@
 						<li>
 							<button>
 							<div class="single-list-topics-content">
-								<!-- <div class="single-list-topics-icon">
+								<div class="single-list-topics-icon">
 									<i class="flaticon-building"></i>
-								</div> -->
+								</div>
 								<h2><a href="infograde.jsp">成绩查询</a></h2>
 								<p>185 listings</p>
 							</div>
@@ -210,10 +210,10 @@
 						<li>
 							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
-								<!-- <div class="single-list-topics-icon">
+								<div class="single-list-topics-icon">
 									<i class="flaticon-pills"></i>
-								</div> -->
-								<h2><a href="#">考试资讯</a></h2>
+								</div>
+								<h2><a href="#">考试安排</a></h2>
 								<p>200 listings</p>
 							</div>
 							</button>
@@ -221,9 +221,9 @@
 						<li>
 							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
-							<!-- 	<div class="single-list-topics-icon">
+						<div class="single-list-topics-icon">
 									<i class="flaticon-transport"></i>
-								</div> -->
+								</div>
 								<h2><a href="#">成绩证明</a></h2>
 								<p>120 listings</p>
 							</div>
@@ -241,15 +241,11 @@
 			<div class="container">
 				<div class="section-header">
 					<h2>关于我们</h2>
-					
 				</div><!--/.section-header-->
 				<div class="works-content">
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
 							<div class="single-how-works">
-								<div class="single-how-works-icon">
-									<i class="flaticon-lightbulb-idea"></i>
-								</div>
 								<h2><a href="#">choose <span> what to</span> do</a></h2>
 								<p>
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
@@ -259,11 +255,9 @@
 								</button>
 							</div>
 						</div>
+
 						<div class="col-md-4 col-sm-6">
 							<div class="single-how-works">
-								<div class="single-how-works-icon">
-									<i class="flaticon-networking"></i>
-								</div>
 								<h2><a href="#">find <span> what you want</span></a></h2>
 								<p>
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
@@ -275,9 +269,6 @@
 						</div>
 						<div class="col-md-4 col-sm-6">
 							<div class="single-how-works">
-								<div class="single-how-works-icon">
-									<i class="flaticon-location-on-road"></i>
-								</div>
 								<h2><a href="#">explore <span> amazing</span> place</a></h2>
 								<p>
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
@@ -287,6 +278,20 @@
 								</button>
 							</div>
 						</div>
+
+
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<h2><a href="#">explore <span> amazing</span> place</a></h2>
+								<p>
+									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.
+								</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+									read more
+								</button>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div><!--/.container-->
@@ -295,7 +300,241 @@
 		<!--works end -->
 
 
-	
+
+
+		<!--reviews start -->
+		<section id="reviews" class="reviews">
+			<div class="section-header">
+				<h2>考试动态</h2>
+			</div><!--/.section-header-->
+			<div class="reviews-content">
+				<div class="testimonial-carousel">
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2019年下半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									   英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									二、报名方式
+									　　第一阶段：10月23日9时-10月30日17时
+									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									　　第二阶段：11月18日9时开始
+									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2019年下半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									　一、发布时间
+									　　2019年8月21日9时
+									　二、发布内容
+									　2019年上半年全国大学英语四、六级考试（含口语）成绩
+									　　2019年上半年全国大学日语四、六级考试成绩
+									　　2019年上半年全国大学德语四、六级考试成绩
+									　　2019年上半年全国大学俄语四、六级考试成绩
+									　　2019年上半年全国大学法语四级考试成绩
+									　　三、查询方式
+									　　中国教育考试网
+									　　网址: http://cet.neea.edu.cn/cet
+									　　中国高等教育学生信息网
+									　　网址: http://www.chsi.com.cn/cet
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+
+								<div class="testimonial-person">
+									<h2>2019年上半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									二、报名方式
+									　　第一阶段：10月23日9时-10月30日17时
+									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									　　第二阶段：11月18日9时开始
+									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2019年上半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									二、报名方式
+									　　第一阶段：10月23日9时-10月30日17时
+									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									　　第二阶段：11月18日9时开始
+									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2019年上半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									二、报名方式
+									　　第一阶段：10月23日9时-10月30日17时
+									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									　　第二阶段：11月18日9时开始
+									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+
+								<div class="testimonial-person">
+									<h2>2019年上半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									二、报名方式
+									　　第一阶段：10月23日9时-10月30日17时
+									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									　　第二阶段：11月18日9时开始
+									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2019年上半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									二、报名方式
+									　　第一阶段：10月23日9时-10月30日17时
+									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									　　第二阶段：11月18日9时开始
+									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+								</p>
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2019年上半年CET考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									二、报名方式
+									　　第一阶段：10月23日9时-10月30日17时
+									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									　　第二阶段：11月18日9时开始
+									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+								</p>
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+				</div>
+			</div>
+
+		</section><!--/.reviews-->
+		<!--reviews end -->
+
+
+
+
+		<!--blog start -->
+		<section id="blog" class="blog" >
+			<div class="container">
+				<div class="section-header">
+					<h2>常见问题</h2>
+				</div><!--/.section-header-->
+				<div class="blog-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-txt">
+									<h2><a href="#">什么是全国大学英语四、六级考试（CET）？</a></h2>
+									<p>
+										全国大学英语四、六级考试（以下简称“CET”）系教育部主办、由教育部考试中心组织实施的全国统一标准化考试，考试目的是检测在校大学生的英语能力。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-txt">
+									<h2><a href="#">什么是全国大学英语四、六级考试（CET）？</a></h2>
+									<p>
+										全国大学英语四、六级考试（以下简称“CET”）系教育部主办、由教育部考试中心组织实施的全国统一标准化考试，考试目的是检测在校大学生的英语能力。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-blog-item">
+								<div class="single-blog-item-txt">
+									<h2><a href="#">什么是全国大学英语四、六级考试（CET）？</a></h2>
+									<p>
+										全国大学英语四、六级考试（以下简称“CET”）系教育部主办、由教育部考试中心组织实施的全国统一标准化考试，考试目的是检测在校大学生的英语能力。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.blog-->
+		<!--blog end -->
+
+
 
 
 		<!--footer start-->
