@@ -69,7 +69,7 @@ public class HquestionServiceImpl implements IHquestionService {
     public int updateHquestion(Hquestion hq) {
         int rows=-1;
         try {
-            hquestionDao.updateHquestion(hq);
+            rows=hquestionDao.updateHquestion(hq);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

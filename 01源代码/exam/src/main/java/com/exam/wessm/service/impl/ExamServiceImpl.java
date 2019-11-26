@@ -45,7 +45,7 @@ public class ExamServiceImpl implements IExamService {
     public int insertExam(Exam exam) {
         int rows=-1;
         try {
-             rows=examDao.insertExam(exam);
+            rows=rows=examDao.insertExam(exam);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -59,7 +59,7 @@ public class ExamServiceImpl implements IExamService {
     public int deleteExam(Integer eId) {
         int rows=-1;
         try {
-            examDao.deleteExam(eId);
+            rows=examDao.deleteExam(eId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -73,7 +73,7 @@ public class ExamServiceImpl implements IExamService {
     public int updateExam(Exam exam) {
         int rows=-1;
         try {
-            examDao.updateExam(exam);
+            rows=examDao.updateExam(exam);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

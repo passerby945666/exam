@@ -25,7 +25,7 @@ public class ManagerServiceImpl implements IManagerService {
     public int registerManager(Manager manager) {
         int rows=-1;
         try {
-            managerDao.registerManager(manager);
+            rows=managerDao.registerManager(manager);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -63,7 +63,7 @@ public class ManagerServiceImpl implements IManagerService {
     public int insertManager(Manager manager) {
         int rows=-1;
         try {
-            managerDao.insertManager(manager);
+            rows=managerDao.insertManager(manager);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -77,7 +77,7 @@ public class ManagerServiceImpl implements IManagerService {
     public int deleteManager(Integer mId) {
         int rows=-1;
         try {
-            managerDao.deleteManager(mId);
+            rows=managerDao.deleteManager(mId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -91,7 +91,7 @@ public class ManagerServiceImpl implements IManagerService {
     public int updateManager(Manager manager) {
         int rows=-1;
         try {
-            managerDao.updateManager(manager);
+            rows=managerDao.updateManager(manager);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -104,7 +104,7 @@ public class ManagerServiceImpl implements IManagerService {
     public int updateManagerPassword(Manager manager) {
         int rows=-1;
         try {
-            managerDao.updateManagerPassword(manager);
+            rows=managerDao.updateManagerPassword(manager);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

@@ -41,7 +41,7 @@ public class SubjectServiceImpl implements ISubjectService {
     public int insertSubject(Subject subject) {
         int rows=-1;
         try {
-            subjectDao.insertSubject(subject);
+            rows=subjectDao.insertSubject(subject);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -55,7 +55,7 @@ public class SubjectServiceImpl implements ISubjectService {
     public int deleteSubject(Integer kId) {
         int rows=-1;
         try {
-            subjectDao.deleteSubject(kId);
+            rows=subjectDao.deleteSubject(kId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -69,7 +69,7 @@ public class SubjectServiceImpl implements ISubjectService {
     public int updateSubject(Subject subject) {
         int rows=-1;
         try {
-            subjectDao.updateSubject(subject);
+            rows=subjectDao.updateSubject(subject);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

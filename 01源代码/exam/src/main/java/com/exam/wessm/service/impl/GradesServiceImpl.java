@@ -54,7 +54,7 @@ public class GradesServiceImpl implements IGradesService {
     public int insertGrade(Grades grades) {
         int rows=-1;
         try {
-            gradesDao.insertGrade(grades);
+            rows=gradesDao.insertGrade(grades);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -68,7 +68,7 @@ public class GradesServiceImpl implements IGradesService {
     public int deleteGrade(int gId) {
         int rows=-1;
         try {
-            gradesDao.deleteGrade(gId);
+            rows=gradesDao.deleteGrade(gId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -82,7 +82,7 @@ public class GradesServiceImpl implements IGradesService {
     public int updateGrade(Grades grades) {
         int rows=-1;
         try {
-            gradesDao.updateGrade(grades);
+            rows=gradesDao.updateGrade(grades);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

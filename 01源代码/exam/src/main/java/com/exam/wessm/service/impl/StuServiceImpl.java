@@ -23,7 +23,7 @@ public class StuServiceImpl implements IStuService {
     public int registerStu(Stu stu) {
         int rows=-1;
         try {
-            stuDao.registerStu(stu);
+            rows=stuDao.registerStu(stu);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -61,7 +61,7 @@ public class StuServiceImpl implements IStuService {
     public int insertStu(Stu stu) {
         int rows=-1;
         try {
-            stuDao.insertStu(stu);
+            rows=stuDao.insertStu(stu);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -75,7 +75,7 @@ public class StuServiceImpl implements IStuService {
     public int deleteStu(Integer sId) {
         int rows=-1;
         try {
-            stuDao.deleteStu(sId);
+            rows=stuDao.deleteStu(sId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -89,7 +89,7 @@ public class StuServiceImpl implements IStuService {
     public int updateStu(Stu stu) {
         int rows=-1;
         try {
-            stuDao.updateStu(stu);
+            rows=stuDao.updateStu(stu);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -103,7 +103,7 @@ public class StuServiceImpl implements IStuService {
     public int updateStuPassword(Stu stu) {
         int rows=-1;
         try {
-            stuDao.updateStuPassword(stu);
+            rows=stuDao.updateStuPassword(stu);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

@@ -42,7 +42,7 @@ public class ExaminersServiceImpl implements IExaminersService {
     public int insertExaminers(Examiners examiners) {
         int rows=-1;
         try {
-            examinersDao.insertExaminers(examiners);
+            rows=examinersDao.insertExaminers(examiners);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -56,7 +56,7 @@ public class ExaminersServiceImpl implements IExaminersService {
     public int deleteExaminers(Integer exId) {
         int rows=-1;
         try {
-            examinersDao.deleteExaminers(exId);
+            rows=examinersDao.deleteExaminers(exId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -70,7 +70,7 @@ public class ExaminersServiceImpl implements IExaminersService {
     public int updateExaminers(Examiners examiners) {
         int rows=-1;
         try {
-            examinersDao.updateExaminers(examiners);
+            rows=examinersDao.updateExaminers(examiners);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

@@ -42,7 +42,7 @@ public class QuebankServiceImpl implements IQuebankService {
     public int insertQuebank(Quebank quebank) {
         int rows=-1;
         try {
-            quebankDao.insertQuebank(quebank);
+            rows=rows=quebankDao.insertQuebank(quebank);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -56,7 +56,7 @@ public class QuebankServiceImpl implements IQuebankService {
     public int deleteQuebank(Integer tId) {
         int rows=-1;
         try {
-            quebankDao.deleteQuebank(tId);
+            rows=quebankDao.deleteQuebank(tId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -70,7 +70,7 @@ public class QuebankServiceImpl implements IQuebankService {
     public int updateQuebank(Quebank quebank) {
         int rows=-1;
         try {
-            quebankDao.updateQuebank(quebank);
+            rows=quebankDao.updateQuebank(quebank);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;

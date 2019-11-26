@@ -40,7 +40,7 @@ public class QuetypeServiceImpl implements IQuetypeService {
     public int insertQuetype(Quetype quetype) {
         int rows=-1;
         try {
-            quetypeDao.insertQuetype(quetype);
+            rows=quetypeDao.insertQuetype(quetype);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -54,7 +54,7 @@ public class QuetypeServiceImpl implements IQuetypeService {
     public int deleteQuetype(Integer qId) {
         int rows=-1;
         try {
-            quetypeDao.deleteQuetype(qId);
+            rows= quetypeDao.deleteQuetype(qId);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
@@ -68,7 +68,7 @@ public class QuetypeServiceImpl implements IQuetypeService {
     public int updateQuetype(Quetype quetype) {
         int rows=-1;
         try {
-            quetypeDao.updateQuetype(quetype);
+            rows=quetypeDao.updateQuetype(quetype);
         }catch (Exception e){
             e.printStackTrace();
             rows=0;
