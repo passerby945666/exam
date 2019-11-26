@@ -132,7 +132,7 @@ public class StuController {
     }
 
     /**
-     * 到考生信息修改页面
+     * 到考生个人信息页面
      * @param sId
      * @param model
      * @return
@@ -146,6 +146,20 @@ public class StuController {
         return "/stu/stumassage.jsp";
     }
 
+    /**
+     * 到考生信息修改页面
+     * @param sId
+     * @param model
+     * @return
+     */
+    @RequestMapping(value ="getStudent" )
+    public  String getStudent(Integer sId,Model model){
+        Stu stu=stuService.getStuSId(sId);
+        stu.setsId(sId);
+        model.addAttribute("stu",stu);
+        model.addAttribute("sId",sId);
+        return "/stu/upstudent.jsp";
+    }
     /**
      * 管理员考生信息修改
      * @param stu

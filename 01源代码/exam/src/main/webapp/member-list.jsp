@@ -28,7 +28,7 @@
 		</form>
 	</div>
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-	<a class="btn btn-primary radius" data-title="添加考生" data-href="member-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
+	<a class="btn btn-primary radius" data-title="添加考生" data-href="/member-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
 	<i class="Hui-iconfont">&#xe600;</i> 新增考生信息</a></span>
 		<span class="r">共有数据：<strong>${fn:length(requestScope.stuList)}</strong> 条</span></div>
 	<div class="mt-20">
@@ -58,9 +58,10 @@
 				<td>${1==stu.sSex?'男':'女'}</td>
 				<td>${stu.sIdcard}</td>
 				<td><fmt:formatDate value="${stu.sBirthday}" pattern="yyyy-MM-dd"/></td>
-				<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>
-					<a style="text-decoration:none" class="ml-5" onClick="member_edit()" href="/stu/getStuSId?sId=${stu.sId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
-					<a style="text-decoration:none" class="ml-5" onClick="member_del(this,${stu.sId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				<td>
+					<a style="text-decoration:none" class="ml-5" onClick="member_edit()" href="/stu/getStu?stu=${stu.sId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<a style="text-decoration:none" class="ml-5" onClick="member_del(this,${stu.sId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a>
+				</td>
 			</tr>
 			</c:forEach>
 			</c:otherwise>

@@ -17,7 +17,7 @@
 </head>
 <body>
 <div>
-    <form action="/stu/updateStuM">
+    <form action="/stu/getStudent">
 <c:choose>
     <c:when test="${stu==null}"><span>查询个人信息发生异常</span></c:when>
     <c:when test="${empty  stu} "><span>没查到数据</span></c:when>
@@ -57,6 +57,7 @@
                 <input type="text" readonly="readonly" style="width: 55%;background-color:#ECECEC;" value="${stu.sBirthday}"/>
             </div>
             <div style="width:40%;float: left;margin-bottom: 20px;margin-left: 50px;">
+                <input type="hidden" value="${sId}"  name="sId" />
                 <input type="submit" readonly="readonly" style="width: 95%;" value="修改信息" />
             </div>
         </div>
