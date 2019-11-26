@@ -143,7 +143,7 @@ public class StuController {
         stu.setsId(sId);
         model.addAttribute("stu",stu);
         model.addAttribute("sId",sId);
-        return "/stumassage.jsp";
+        return "/member-edit.jsp";
     }
 
     /**

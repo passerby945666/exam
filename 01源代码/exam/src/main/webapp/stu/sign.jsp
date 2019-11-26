@@ -24,7 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<table class="table  table-hover">
 						<thead>
 							<tr>
-								<th></th>
 								<th>考试编号</th>
 								<th>科目名称</th>
 								<th>开考时间</th>

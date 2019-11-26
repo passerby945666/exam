@@ -1,5 +1,6 @@
 package com.exam.wessm.util.examing;
 
+import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Stu;
 
 import java.util.ArrayList;
@@ -86,6 +87,19 @@ public  class  examingROM {
             }
         }
         return rows;
+    }
+    /**    核对管理员
+     *
+
+     * @return
+     */
+    public static Manager eqmNo(String mNo, List<Manager> managers){
+        for(Manager manager:managers){
+            if(manager.getmNo().equals(mNo)){
+                return manager;
+            }
+        }
+        return null;
     }
 
 }

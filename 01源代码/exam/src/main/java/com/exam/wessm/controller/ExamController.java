@@ -1,10 +1,13 @@
 package com.exam.wessm.controller;
 ;
 import com.exam.wessm.entity.Exam;
+import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Subject;
 import com.exam.wessm.service.IExamService;
+import com.exam.wessm.service.IManagerService;
 import com.exam.wessm.service.IQuebankService;
 import com.exam.wessm.service.ISubjectService;
+import com.exam.wessm.util.examing.examingROM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -31,6 +34,9 @@ public class ExamController {
     @Autowired
     @Qualifier("subjectService")
     private ISubjectService subjectService;
+    @Autowired
+    @Qualifier("managerService")
+    private IManagerService managerService;
 
     /**
      * 查询考试所有信息
@@ -46,13 +52,34 @@ public class ExamController {
     }
 
     /**
+     *进入新增考试界面
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "getinsertExam")
+    public  String getinsertExam(Model model) {
+        List<Subject> listSubject=subjectService.querySubject();
+        model.addAttribute("Subject",listSubject);
+        return "/exam-add.jsp";
+    }
+
+
+    /**
      *新增考试
      * @param exam
      * @return
      */
     @RequestMapping(value = "insertExam")
-    public  String insertExam(Exam exam) {
+    public  String insertExam(Exam exam,String mNo,String timeBaomin,String timeTest,String timeEnd) {
+       List<Map>list=examService.getExamExam(mNo);
+       List<Manager> list1=managerService.getManager(mNo);
+        Manager map=examingROM.eqmNo(mNo,list1);
+       if(map==null){
+           return "/result.jsp?rows=0";
+        }
+       exam.setmId(map.getmId());
        int rows =examService.insertExam(exam);
+
        return "/result.jsp?rows="+rows;
     }
 
@@ -77,8 +104,10 @@ public class ExamController {
     @RequestMapping(value = "getExamEId")
     public String getExamEId(Integer eId,Model model) {
      Map map=examService.getExamEId(eId);
+     List<Subject> list=subjectService.querySubject();
      model.addAttribute("map",map);
      model.addAttribute("eId",eId);
+     model.addAttribute("Subject",list);
      return  "/exam-edit.jsp";
     }
 

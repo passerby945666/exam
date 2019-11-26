@@ -1,4 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<
 <!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
@@ -47,7 +50,12 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">科目：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle2" name="kName">
+				<select name="kId" class="select">
+
+					<c:forEach  items="${Subject}" var="k">
+						<option value="${k.kId}">${k.kName}</option>
+					</c:forEach>
+				</select>
 			</div>
 		</div>
 	<div class="row cl">
@@ -77,9 +85,9 @@
 		</div>
 		
 				<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">负责人:</label>
+			<label class="form-label col-xs-4 col-sm-2">负责人(编号):</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="author" name="mName">
+				<input type="text" class="input-text" value="" placeholder="" id="author" name="mNo">
 			</div>
 		</div>
 		

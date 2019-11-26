@@ -33,7 +33,6 @@
             科目:
 	    <span class="select-box inline">
             <select name="kId" class="select">
-                <option value="%">全部</option>
                 <c:forEach  items="${kName}" var="k">
                     <option value="${k.kId}">${k.kName}</option>
                 </c:forEach>
@@ -44,7 +43,7 @@
 		</form>
 	</div>
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-	<a class="btn btn-primary radius" data-title="添加考试" data-href="/exam-add.jsp" onclick="Hui_admin_tab(this)" href="javascript:;">
+	<a class="btn btn-primary radius" data-title="添加考试" data-href="/exam/getinsertExam" onclick="Hui_admin_tab(this)" href="javascript:;">
 	<i class="Hui-iconfont">&#xe600;</i> 新增考试</a></span> <span class="r">共有数据：<strong>${fn:length(requestScope.examList)}</strong> 条</span> </div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
@@ -116,7 +115,7 @@ function article_del(obj,id){
 			error:function(data) {
 				console.log(data.msg);
 			},
-		});		
+		});
 	});
 }
 
@@ -131,6 +130,6 @@ function article_stop(obj,id){
 }
 
 
-</script> 
+</script>
 </body>
 </html>

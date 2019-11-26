@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -53,13 +54,14 @@ public class ManagerController {
      * @return
      */
     @RequestMapping(value = "insertManager",method = RequestMethod.POST)
-    public String insertManager(Manager manager,String password2) {
+    public String insertManager(Manager manager, String password2, HttpServletRequest request) {
         if (password2.equals(manager.getmPassword())){
             int rows = managerService.insertManager(manager);
             return "/result.jsp?rows=" + rows;
         }
       else {
-          return "/404.jsp";
+          request.setAttribute("smg","密码不一致");
+          return "/admin-add.jsp";
         }
     }
 
