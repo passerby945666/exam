@@ -70,6 +70,13 @@ public interface StuMapper {
     int updateStu(Stu stu);
 
     /**
+     * 考生修改自己的个人信息
+     * @param stu
+     * @return
+     */
+    int updateStuM(Stu stu);
+
+    /**
      * 修改考生密码
      * @param
      * @return

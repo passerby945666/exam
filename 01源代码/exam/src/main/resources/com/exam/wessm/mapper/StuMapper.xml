@@ -106,6 +106,18 @@
         where   s_id=#{sId}
      ]]>
     </update>
+    <!-- 考生修改自己的个人信息-->
+    <update id="updateStuM" parameterType="stu">
+    <![CDATA[
+        update  stu
+        set     s_no=#{sNo} ,
+                s_name=#{sName} ,
+                s_idcard=#{sIdcard} ,
+                s_sex=#{sSex} ,
+                s_birthday=#{sBirthday}
+        where   s_id=#{sId}
+     ]]>
+    </update>
     <!-- 根据考生ID修改考生密码-->
     <update id="updateStuPassword" parameterType="stu">
     <![CDATA[

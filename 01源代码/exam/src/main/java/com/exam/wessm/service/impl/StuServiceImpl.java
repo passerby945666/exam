@@ -98,6 +98,21 @@ public class StuServiceImpl implements IStuService {
         }
     }
 
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int updateStuM(Stu stu) {
+        int rows=-1;
+        try {
+            rows=stuDao.updateStuM(stu);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
+    }
+
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateStuPassword(Stu stu) {

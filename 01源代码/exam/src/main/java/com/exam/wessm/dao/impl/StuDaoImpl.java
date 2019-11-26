@@ -64,6 +64,11 @@ public class StuDaoImpl implements IStuDao {
     }
 
     @Override
+    public int updateStuM(Stu stu) {
+        return stuMapper.updateStuM(stu);
+    }
+
+    @Override
     public int updateStuPassword(Stu stu) {
         return stuMapper.updateStuPassword(stu);
     }

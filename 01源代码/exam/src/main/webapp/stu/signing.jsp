@@ -20,6 +20,7 @@
 <br>
 <br>
 <div style="margin-left: 15%;">
+    <form action="/stu/updateStuM"></form>
     <c:choose>
         <c:when test="${List==null}"><span>查询考试发生异常</span></c:when>
         <c:when test="${empty  List} "><span>没查到数据</span></c:when>
@@ -82,7 +83,7 @@
     <br>
     <br>
     <div style="text-align: center;">
-        <button><a href="/sign/signed?eId=${exam.eId}">确定报考</a></button>
+        <button TYPE="submit"><a href="/sign/signed?eId=${exam.eId}">确定报考</a></button>
         &nbsp;&nbsp;
         <button><a href="/sign/choose">重新选择考试</a></button>
         &nbsp;&nbsp;
@@ -91,7 +92,7 @@
     <div class="col-md-12 text-right">
         <navigationTag:page url="${pageContext.request.contextPath }/toCourse.action" />
     </div>
-
+    </form>
 </div>
 </body>
 </html>

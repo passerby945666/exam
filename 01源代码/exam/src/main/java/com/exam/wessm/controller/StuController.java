@@ -159,6 +159,19 @@ public class StuController {
 
 
     /**
+     * 考生修改自己的信息
+     * @param stu
+     * @return
+     */
+    @RequestMapping(value = "updateStuM")
+    public String updateStuM(Stu stu){
+        int rows=stuService.updateStuM(stu);
+        return "redirect:/result.jsp?rows="+rows;
+    }
+
+
+
+    /**
      * 根据考生编号或名字或身份证号加载考生信息
      * @param stu
      * @return
