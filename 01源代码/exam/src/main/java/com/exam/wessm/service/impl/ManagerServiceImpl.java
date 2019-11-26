@@ -23,7 +23,15 @@ public class ManagerServiceImpl implements IManagerService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int registerManager(Manager manager) {
-        return managerDao.registerManager(manager);
+        int rows=-1;
+        try {
+            managerDao.registerManager(manager);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
@@ -53,23 +61,55 @@ public class ManagerServiceImpl implements IManagerService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertManager(Manager manager) {
-        return managerDao.insertManager(manager);
+        int rows=-1;
+        try {
+            managerDao.insertManager(manager);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteManager(Integer mId) {
-        return managerDao.deleteManager(mId);
+        int rows=-1;
+        try {
+            managerDao.deleteManager(mId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateManager(Manager manager) {
-        return managerDao.updateManager(manager);
+        int rows=-1;
+        try {
+            managerDao.updateManager(manager);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     public int updateManagerPassword(Manager manager) {
-        return managerDao.updateManagerPassword(manager);
+        int rows=-1;
+        try {
+            managerDao.updateManagerPassword(manager);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 }

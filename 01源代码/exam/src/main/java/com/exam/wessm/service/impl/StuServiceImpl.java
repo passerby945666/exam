@@ -21,7 +21,15 @@ public class StuServiceImpl implements IStuService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int registerStu(Stu stu) {
-        return stuDao.registerStu(stu);
+        int rows=-1;
+        try {
+            stuDao.registerStu(stu);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
@@ -51,25 +59,57 @@ public class StuServiceImpl implements IStuService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertStu(Stu stu) {
-        return stuDao.insertStu(stu);
+        int rows=-1;
+        try {
+            stuDao.insertStu(stu);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteStu(Integer sId) {
-        return stuDao.deleteStu(sId);
+        int rows=-1;
+        try {
+            stuDao.deleteStu(sId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateStu(Stu stu) {
-        return stuDao.updateStu(stu);
+        int rows=-1;
+        try {
+            stuDao.updateStu(stu);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateStuPassword(Stu stu) {
-        return stuDao.updateStuPassword(stu);
+        int rows=-1;
+        try {
+            stuDao.updateStuPassword(stu);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override

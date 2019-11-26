@@ -40,18 +40,42 @@ public class ExaminersServiceImpl implements IExaminersService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertExaminers(Examiners examiners) {
-        return examinersDao.insertExaminers(examiners);
+        int rows=-1;
+        try {
+            examinersDao.insertExaminers(examiners);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteExaminers(Integer exId) {
-        return examinersDao.deleteExaminers(exId);
+        int rows=-1;
+        try {
+            examinersDao.deleteExaminers(exId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateExaminers(Examiners examiners) {
-        return examinersDao.updateExaminers(examiners);
+        int rows=-1;
+        try {
+            examinersDao.updateExaminers(examiners);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 }

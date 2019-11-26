@@ -38,18 +38,42 @@ public class QuetypeServiceImpl implements IQuetypeService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertQuetype(Quetype quetype) {
-        return quetypeDao.insertQuetype(quetype);
+        int rows=-1;
+        try {
+            quetypeDao.insertQuetype(quetype);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteQuetype(Integer qId) {
-        return quetypeDao.deleteQuetype(qId);
+        int rows=-1;
+        try {
+            quetypeDao.deleteQuetype(qId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateQuetype(Quetype quetype) {
-        return quetypeDao.updateQuetype(quetype);
+        int rows=-1;
+        try {
+            quetypeDao.updateQuetype(quetype);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 }

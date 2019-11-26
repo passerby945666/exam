@@ -39,19 +39,43 @@ public class HquestionServiceImpl implements IHquestionService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertHquestion(Hquestion hq) {
-        return hquestionDao.insertHquestion(hq);
+        int rows=-1;
+        try {
+            hquestionDao.insertHquestion(hq);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteHquestion(int hId) {
-        return hquestionDao.deleteHquestion(hId);
+        int rows=-1;
+        try {
+            hquestionDao.deleteHquestion(hId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateHquestion(Hquestion hq) {
-        return hquestionDao.updateHquestion(hq);
+        int rows=-1;
+        try {
+            hquestionDao.updateHquestion(hq);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override

@@ -52,18 +52,42 @@ public class GradesServiceImpl implements IGradesService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertGrade(Grades grades) {
-        return gradesDao.insertGrade(grades);
+        int rows=-1;
+        try {
+            gradesDao.insertGrade(grades);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteGrade(int gId) {
-        return gradesDao.deleteGrade(gId);
+        int rows=-1;
+        try {
+            gradesDao.deleteGrade(gId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateGrade(Grades grades) {
-        return gradesDao.updateGrade(grades);
+        int rows=-1;
+        try {
+            gradesDao.updateGrade(grades);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 }

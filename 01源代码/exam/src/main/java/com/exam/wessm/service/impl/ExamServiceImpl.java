@@ -57,13 +57,29 @@ public class ExamServiceImpl implements IExamService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteExam(Integer eId) {
-        return examDao.deleteExam(eId);
+        int rows=-1;
+        try {
+            examDao.deleteExam(eId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateExam(Exam exam) {
-        return examDao.updateExam(exam);
+        int rows=-1;
+        try {
+            examDao.updateExam(exam);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override

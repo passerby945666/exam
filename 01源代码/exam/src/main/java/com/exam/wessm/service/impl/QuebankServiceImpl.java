@@ -40,19 +40,43 @@ public class QuebankServiceImpl implements IQuebankService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertQuebank(Quebank quebank) {
-        return quebankDao.insertQuebank(quebank);
+        int rows=-1;
+        try {
+            quebankDao.insertQuebank(quebank);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteQuebank(Integer tId) {
-        return quebankDao.deleteQuebank(tId);
+        int rows=-1;
+        try {
+            quebankDao.deleteQuebank(tId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateQuebank(Quebank quebank) {
-        return quebankDao.updateQuebank(quebank);
+        int rows=-1;
+        try {
+            quebankDao.updateQuebank(quebank);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override

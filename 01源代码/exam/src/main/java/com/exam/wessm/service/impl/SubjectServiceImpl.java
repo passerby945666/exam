@@ -39,18 +39,42 @@ public class SubjectServiceImpl implements ISubjectService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertSubject(Subject subject) {
-        return subjectDao.insertSubject(subject);
+        int rows=-1;
+        try {
+            subjectDao.insertSubject(subject);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int deleteSubject(Integer kId) {
-        return subjectDao.deleteSubject(kId);
+        int rows=-1;
+        try {
+            subjectDao.deleteSubject(kId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateSubject(Subject subject) {
-        return subjectDao.updateSubject(subject);
+        int rows=-1;
+        try {
+            subjectDao.updateSubject(subject);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 }
