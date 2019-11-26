@@ -198,7 +198,7 @@ public class StuController {
             return "/stu/result.jsp?rows="+rows;
         }
         else{
-            model.addAttribute("msg","密码不一致");
+            model.addAttribute("smg","密码不一致");
             return "/stu/uppassword.jsp";
         }
     }

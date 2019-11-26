@@ -119,13 +119,10 @@ public class QuebankController {
      */
     @RequestMapping(value = "updateQuebank")
     public String updateQuebank(@RequestParam Map map,Model model, HttpSession session,Quebank quebank ) {
-        List<Manager> list= managerService.getManager(String.valueOf(map.get("mName")));
         Manager manager=(Manager) session.getAttribute("managerSession");
-        quebank.setmId(manager.getmId());
         Integer qId=Integer.valueOf(String.valueOf(map.get("qId")));
         Integer kId=Integer.valueOf(String.valueOf(map.get("kId")));
-        Integer mId=Integer.valueOf(""+list.get(0).getmId());
-        Quebank quebank1=new Quebank(Integer.valueOf(map.get("tId")+""),String.valueOf(map.get("tNo")),String.valueOf(map.get("content")),qId,String.valueOf(map.get("answer")),String.valueOf(map.get("reply")),null,kId,mId );
+        Quebank quebank1=new Quebank(Integer.valueOf(map.get("tId")+""),String.valueOf(map.get("tNo")),String.valueOf(map.get("content")),qId,String.valueOf(map.get("answer")),String.valueOf(map.get("reply")),null,kId,manager.getmId() );
         int rows =quebankService.updateQuebank(quebank1);
         return "redirect:/result.jsp?rows="+rows;
     }
