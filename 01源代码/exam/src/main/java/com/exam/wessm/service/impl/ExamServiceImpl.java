@@ -43,7 +43,15 @@ public class ExamServiceImpl implements IExamService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int insertExam(Exam exam) {
-        return examDao.insertExam(exam);
+        int rows=-1;
+        try {
+             rows=examDao.insertExam(exam);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 
     @Override

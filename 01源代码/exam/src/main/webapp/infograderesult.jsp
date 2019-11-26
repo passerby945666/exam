@@ -234,10 +234,10 @@
 
 
                 <div class="s3 hisbtn">
-                    <input type="button" value="继续查询" onclick="javascript:window.open('infograde.jsp','_self')" style="cursor:pointer">
-                    <input style="cursor:pointer" onclick="javascript:window.open('indexM.jsp','_self')" type="button" value="返回主页">
+                    <input type="button" value="继续查询" onclick="javascript:window.open('/infograde.jsp','_self')" style="cursor:pointer">
+                    <input style="cursor:pointer" onclick="javascript:window.open('/indexM.jsp','_self')" type="button" value="返回主页">
                 </div>
-                    <a href="indexM.jsp">11111111</a>
+
             </div>
 
             </div>
