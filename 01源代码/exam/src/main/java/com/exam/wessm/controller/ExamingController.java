@@ -104,8 +104,7 @@ public class ExamingController {
      * @return
      */
     @RequestMapping(value = "examed")
-    public String Examed(HttpSession session, HttpServletRequest request,int Id) {
-        int eId=Id;
+    public String Examed(HttpSession session, HttpServletRequest request,int eId) {
         List<Map> list=(List<Map>) session.getAttribute("Exam");
         List<String> hAnswerlist=new ArrayList<>();
         String []arr;
@@ -113,8 +112,10 @@ public class ExamingController {
         for(int i=0;i<list.size();i++){
             if(String.valueOf(list.get(i).get("qType")).equals("2")){
                 arr=request.getParameterValues("hAnswer"+(i+1));
-                for(int j=0;j<arr.length;j++){
-                    s+=arr[j];
+                if(arr!=null){
+                    for(int j=0;j<arr.length;j++){
+                        s+=arr[j];
+                    }
                 }
                 hAnswerlist.add(s);
                 s="";
@@ -207,8 +208,10 @@ public class ExamingController {
         for(int i=0;i<list.size();i++){
             if(String.valueOf(list.get(i).get("qType")).equals("2")){
                 arr=request.getParameterValues("hAnswer"+(i+1));
-                for(int j=0;j<arr.length;j++){
-                    s+=arr[j];
+                if(arr!=null){
+                    for(int j=0;j<arr.length;j++){
+                        s+=arr[j];
+                    }
                 }
                 hAnswerlist.add(s);
                 s="";

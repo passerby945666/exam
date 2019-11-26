@@ -34,7 +34,7 @@
             <div class="panel-body">
                 <div class="col-md-12 column">
                     <table class="table  table-hover">
-                        <td><input type="hidden" name="eId" value="${thisEId}"></td>
+                        <td><input type="hidden" name="eId" value="${thisI}"></td>
                         <div id="timer"></div>
                         <div id="warring"></div>
                         <c:choose>
