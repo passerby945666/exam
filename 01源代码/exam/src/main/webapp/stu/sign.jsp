@@ -58,9 +58,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </c:choose>
 						</tbody>
 					</table>
-					<div class="col-md-12 text-right">
-						<navigationTag:page url="${pageContext.request.contextPath }/toCourse.action" />
-					</div>
 				</div>
 			</div>
 		</div>

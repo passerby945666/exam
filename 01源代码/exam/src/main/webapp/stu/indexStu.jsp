@@ -80,7 +80,11 @@ function loginout(){
 							<li>
 							 <a href="/examing/choose" target="table" >进入考试</a>
 						</li>
-					
+						</li>
+						<li>
+							<a href="/stu/getStuSId?sId=${stu.sId}" target="table" >个人信息</a>
+						</li>
+
 					</ul>
 			
 					<ul class="nav navbar-nav navbar-right">
@@ -88,9 +92,9 @@ function loginout(){
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎：${stu.sNo}<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
-								<li>
-									 <a href="/stu/getStuSId"  class="btn btn-primary" data-toggle="modal" data-target="#stuEditDialog">个人信息</a>
-								</li>
+								<%--<li>--%>
+									 <%--<a href="/stu/getStuSId"  class="btn btn-primary" data-toggle="modal" data-target="#stuEditDialog">个人信息</a>--%>
+								<%--</li>--%>
 								<li>
 									 <a href="/stu/uppassword.jsp" target="table">修改密码</a>
 								</li>
@@ -117,66 +121,5 @@ function loginout(){
 </body>
 
 
-
-	
-<!-- 修改个人信息模态框 -->
-<div class="modal fade" id="stuEditDialog" tabindex="-1" role="dialog"
-	aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel">修改个人信息</h4>
-			</div>
-			<div class="modal-body">
-				<form class="form-horizontal" id="edit_customer_form">
-					<input type="hidden" id="edit_cust_id" name="cust_id"/>
-					<div class="form-group">
-						<label for="edit_customerName" class="col-sm-2 control-label">考生编号</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" id="edit_sNo" placeholder="考生编号" name="sNo"  value="${stu.sNo}"/>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="edit_customerNe" class="col-sm-2 control-label">考生姓名</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control" placeholder="考生姓名" name="sName"  value="${stu.sName}"/>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="edit_sSex" class="col-sm-2 control-label">性别</label>
-						<div class="col-sm-10">
-							<select	class="form-control" id="edit_sSex" name="sSex">
-								<option value="">--请选择--</option>
-								<c:forEach items="${levelType}" var="item">
-									<option value="${item.dict_id}"<c:if test="${item.dict_id == custLevel}"> selected</c:if>>${item.dict_item_name }</option>
-								</c:forEach>
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="edit_customerName" class="col-sm-2 control-label">身份证号码</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control"  placeholder="身份证号码" name="sIdcard" value="${stu.sIdcard}" />
-						</div>
-					</div>
-				
-					<div class="form-group">
-						<label for="edit_customerName" class="col-sm-2 control-label">出生年月</label>
-						<div class="col-sm-10">
-							<input type="text" class="form-control"  placeholder="出生年月" name="sBirthday"  value="${stu.sBirthday}"/>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-				<button type="button" class="btn btn-primary" onclick="updateCustomer()">保存修改</button>
-			</div>
-		</div>
-	</div>
-</div>
 </html>
 

@@ -143,7 +143,7 @@ public class StuController {
         stu.setsId(sId);
         model.addAttribute("stu",stu);
         model.addAttribute("sId",sId);
-        return "/member-edit.jsp";
+        return "/stumassage.jsp";
     }
 
     /**
@@ -187,6 +187,15 @@ public class StuController {
             return "/stu/uppassword.jsp";
         }
     }
+
+    /**
+     * 考生忘记密码之验证是否是本人
+     * @param sNo
+     * @param sIdcard 身份证号码
+     * @param session
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "forgetStuPassword",method = RequestMethod.POST)
     public String  forgetStuPassword(String sNo, String  sIdcard, HttpSession session, HttpServletRequest request){
         List<Stu> stus=stuService.getStu(sIdcard);
@@ -201,6 +210,14 @@ public class StuController {
              return "/resetBySms.jsp";
     }
 
+    /**
+     * 考生忘记密码之修改密码
+     * @param stu
+     * @param csPassword
+     * @param model
+     * @param session
+     * @return
+     */
     @RequestMapping(value = "forgetStuPassword2",method = RequestMethod.POST)
     public String  forgetStuPassword2(Stu stu,String csPassword, Model model,HttpSession session) {
         String sNo = String.valueOf(session.getAttribute("forget"));
@@ -213,16 +230,15 @@ public class StuController {
                 if(row==1){
                     return "/resetBySms3.jsp?rows=" + rows;
                 }else {
-                    model.addAttribute("msg", "修改发生异常");
+                    model.addAttribute("smg", "修改发生异常");
                     return "/resetBySms2.jsp";
                 }
             } else {
-
+                model.addAttribute("smg", "两次密码不一致");
                 return "/resetBySms2.jsp";
             }
         }
-        model.addAttribute("msg", "非法操作");
+        model.addAttribute("smg", "非法操作");
         return "/resetBySms2.jsp";
     }
-
 }
