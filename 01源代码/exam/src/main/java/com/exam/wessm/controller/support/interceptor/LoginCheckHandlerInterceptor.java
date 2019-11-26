@@ -60,9 +60,8 @@ public class LoginCheckHandlerInterceptor
             requestURL = requestURL.replace(contextPath, StrUtil.EMPTY);
         }
         logger.debug("LoginCheckHandlerInterceptor:" + requestURL);
-
         //从会话中获取用户
-        Object user = request.getSession().getAttribute("managerSession");
+        Object user = request.getSession().getAttribute("stuSession");
         //当user为null,说明当前用户未登录,同时还需要判断当前请求是否为AJAX异步请求
         if (user == null) {
             if (ajaxAsynchURLs == null || ajaxAsynchURLs.isEmpty()) {
