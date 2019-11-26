@@ -109,7 +109,7 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.html">思考<span>在线</span></a>
+			                <a class="navbar-brand" href="indexM.jsp">思考<span>在线</span></a>
 
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
@@ -175,6 +175,7 @@
 				<div class="list-topics-content">
 					<ul>
 						<li>
+							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
 								<!-- <div class="single-list-topics-icon">
 									<i class="flaticon-restaurant"></i>
@@ -182,8 +183,10 @@
 								<h2><a href="https://www.baidu.com/">项目介绍</a></h2>
 								<p>本项目由</p>
 							</div>
+								<button>
 						</li>
 						<li>
+							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
 							<!-- 	<div class="single-list-topics-icon">
 									<i class="flaticon-travel"></i>
@@ -191,8 +194,10 @@
 								<h2><a href="#">在线报名</a></h2>
 								<p>214 listings</p>
 							</div>
+								</button>
 						</li>
 						<li>
+							<button>
 							<div class="single-list-topics-content">
 								<!-- <div class="single-list-topics-icon">
 									<i class="flaticon-building"></i>
@@ -200,8 +205,10 @@
 								<h2><a href="infograde.jsp">成绩查询</a></h2>
 								<p>185 listings</p>
 							</div>
+								</button>
 						</li>
 						<li>
+							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
 								<!-- <div class="single-list-topics-icon">
 									<i class="flaticon-pills"></i>
@@ -209,8 +216,10 @@
 								<h2><a href="#">考试资讯</a></h2>
 								<p>200 listings</p>
 							</div>
+							</button>
 						</li>
 						<li>
+							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
 							<!-- 	<div class="single-list-topics-icon">
 									<i class="flaticon-transport"></i>
@@ -218,6 +227,7 @@
 								<h2><a href="#">成绩证明</a></h2>
 								<p>120 listings</p>
 							</div>
+								<button>
 						</li>
 					</ul>
 				</div>

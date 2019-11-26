@@ -99,4 +99,19 @@ public class GradesController {
         model.addAttribute("mapList",mapList);
         return "/stu/info.jsp";
     }
+
+    /**
+     *
+     * 根据个人准考证号查询成绩
+     * @param examCard
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "getGradeExamCard")
+    public  String  getGradeExamCard(String examCard,Model model){
+    Grades   grades=gradesService.getGradeExamCard(examCard);
+    model.addAttribute("grades",grades);
+    model.addAttribute("examCard",examCard);
+    return  "/infograderesult.jsp";
+}
 }

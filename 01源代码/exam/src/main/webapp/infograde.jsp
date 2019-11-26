@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>成绩查询</title>
 <style>
 body {
 	margin: 0;
 	padding: 0;
-	font: 14px "微软雅黑", san-serif;
+	font: 14px "宋体", san-serif;
 	text-align: left;
 	background: #fff;
 }
@@ -216,12 +216,13 @@ ol li div a {
 </head>
 <body>
 <div id="Body">
-   <div id="Header"><a href="#" style='text-decoration:none;'>思考官网<img alt="" src=""></a></div>
+   <div id="Header"><a href="indexM.jsp" style='text-decoration:none;'>思考官网<img alt="" src=""></a></div>
 
     <div id="Content">
         <div id="Content1">
 
             <div id="query_param">
+                <form action="/grade/getGradeExamCard">
                 <div class="queryLeft" style="min-height: 660px;">
                     <div class="c_tits"><span id="parm_sn">思考在线考试</span>成绩查询<!--  -输入查询条件 --></div>
                     <p class="h2" style="font-size:14px;margin-bottom:35px;text-align:center;margin-top:-20px"><span id="parm_subn">仅限查询当前准考号对应的成绩</span></p>
@@ -229,7 +230,7 @@ ol li div a {
                         <ol>
                             <li><span>准考证号：</span>
                                 <div>
-                                    <input name="zkzh" id="zkzh" type="text" alt="准考证号" value="" autocomplete="off">
+                                    <input name="examCard"  type="text" alt="准考证号" value="" autocomplete="off">
                                 
                                 </div>
                             </li>
@@ -238,7 +239,7 @@ ol li div a {
                             </li>
                             <li><span>姓名：</span>
                                 <div>
-                                    <input name="sName" id="name"  type="text" alt="姓名" value="" autocomplete="off">
+                               <%--     <input name="sName"   type="text" alt="姓名" value="" autocomplete="off">--%>
                                 </div>
                                 <em class="tips" id="nameerror"></em></li>
                             <li class="tip_n"><span>&nbsp;</span>
@@ -249,9 +250,9 @@ ol li div a {
                         </ol>
 
                         <div class="s3">
-                            <input id="submitButton" style="cursor:hand;" type="button" value="查询">
+                            <input id="submitButton" style="cursor:hand;" type="submit" value="查询">
                             <input name="button" id="button" type="button" value="重填">
-                            <input style="cursor:pointer" onclick="javascript:window.open('index.jsp','_self')" type="button" value="返回">
+                            <input style="cursor:pointer" onclick="javascript:window.open('indexM.jsp','_self')" type="button" value="返回">
                         </div>
                     </div>
                 </div>
@@ -271,8 +272,8 @@ ol li div a {
             
        
                 </div>
+                </form>
             </div>
-   
         </div>
 
     </div>
