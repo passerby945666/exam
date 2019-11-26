@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -88,9 +90,25 @@ public class QuebankController {
      * @return
      */
     @RequestMapping(value = "insertQuebank")
-    public String insertQuebank(Quebank quebank) {
+    public String insertQuebank(Quebank quebank, Model model, HttpSession session) {
+        Manager manager=(Manager) session.getAttribute("managerSession");
+        quebank.setmId(manager.getmId());
         int rows = quebankService.insertQuebank(quebank);
         return "redirect:/result.jsp?rows=" + rows;
+    }
+
+    /**
+     * 加载科目和题型信息
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "getKId")
+    public String getKId(Model model){
+        List<Subject> subjectList=subjectService.querySubject();
+        model.addAttribute("kName",subjectList);
+        List<Quetype> quetypeList=quetypeService.queryQuetype();
+        model.addAttribute("qType",quetypeList);
+        return "/quebank-add.jsp";
     }
 
     /**
@@ -100,18 +118,15 @@ public class QuebankController {
      * @return
      */
     @RequestMapping(value = "updateQuebank")
-    public String updateQuebank(@RequestParam Map map,Model model ) {
+    public String updateQuebank(@RequestParam Map map,Model model, HttpSession session,Quebank quebank ) {
         List<Manager> list= managerService.getManager(String.valueOf(map.get("mName")));
-        if(list.size()==0){
-            model.addAttribute("quebank","找不到管理员");
-            getQuebankTId(model,Integer.valueOf(map.get("tId")+""));
-            return "/quebank-edit.jsp";
-        }
+        Manager manager=(Manager) session.getAttribute("managerSession");
+        quebank.setmId(manager.getmId());
         Integer qId=Integer.valueOf(String.valueOf(map.get("qId")));
         Integer kId=Integer.valueOf(String.valueOf(map.get("kId")));
         Integer mId=Integer.valueOf(""+list.get(0).getmId());
-        Quebank quebank=new Quebank(Integer.valueOf(map.get("tId")+""),String.valueOf(map.get("tNo")),String.valueOf(map.get("content")),qId,String.valueOf(map.get("answer")),String.valueOf(map.get("reply")),null,kId,mId );
-        int rows =quebankService.updateQuebank(quebank);
+        Quebank quebank1=new Quebank(Integer.valueOf(map.get("tId")+""),String.valueOf(map.get("tNo")),String.valueOf(map.get("content")),qId,String.valueOf(map.get("answer")),String.valueOf(map.get("reply")),null,kId,mId );
+        int rows =quebankService.updateQuebank(quebank1);
         return "redirect:/result.jsp?rows="+rows;
     }
     /**

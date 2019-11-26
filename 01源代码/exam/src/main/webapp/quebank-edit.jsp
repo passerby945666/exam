@@ -79,18 +79,10 @@
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">负责人:</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="${quebankList.mName}" placeholder="" id="author" name="mName"><span >${quebank}</span>
-            </div>
-        </div>
-
-        <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
                 <input type="hidden" name="tId" value="${tId}">
-                <input  type="submit"  value="保存并提交审核"/>
-                <button onClick="article_save();"class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-                <button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                <input type="hidden" name="mId" value="${mId}">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button>
             </div>
         </div>
     </form>

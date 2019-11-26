@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 ``<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
@@ -48,7 +49,11 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">题目的类型：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="articletitle2" name="qType">
+                <select name="qId" class="select">
+                    <c:forEach  items="${qType}" var="q">
+                        <option value="${q.qId}">${q.qType}</option>
+                    </c:forEach>
+                </select>
             </div>
         </div>
         <div class="row cl">
@@ -66,21 +71,17 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">科目名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="articletitle5" name="kName">
+                <select name="kId" class="select">
+                <c:forEach  items="${kName}" var="k">
+                    <option value="${k.kId}">${k.kName}</option>
+                </c:forEach>
+            </select>
             </div>
         </div>
-        <div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">负责人:</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="author" name="mName">
-			</div>
-		</div>
 		
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
 				<button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button>
-				<button  class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-				<button  class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 			</div>
 		</div>
 	</form>
