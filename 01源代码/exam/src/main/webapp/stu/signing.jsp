@@ -16,7 +16,7 @@
     <script src="<%=basePath%>js/bootstrap.min.js"></script>
     <title>考试报名</title>
 </head>
-<body>
+<body  STYLE="background-color:transparent">
 <br>
 <br>
 <br>

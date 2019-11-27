@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="<%=basePath%>js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body  STYLE="background-color:transparent">
 	<div class="container">
 	
 	

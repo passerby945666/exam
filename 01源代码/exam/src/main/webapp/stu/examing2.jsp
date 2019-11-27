@@ -26,7 +26,7 @@
     <script src="<%=basePath%>js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body  STYLE="background-color:transparent">
 <form action='${scr}' method='post' id="examing2">
 <div class="container">
     <div class="row clearfix">

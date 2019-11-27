@@ -24,13 +24,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="<%=basePath%>js/bootstrap.min.js"></script>
 <script type="text/javascript">
 </script>
+	<style>
+		hr {color:sienna;}
+
+		body {
+			background-image:url(../images/pic1.jpg);
+			background-size: 100%;}
+
+	</style>
 </head>
-<body>
+<body >
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default" role="navigation" >
 			<div class="navbar-header">
-		<a class="navbar-brand" href="<%=basePath%>customer/list.action">思考在线考试 v1.0</a>
+		<a class="navbar-brand" href="/">思考在线考试 v1.0</a>
 	</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -85,9 +93,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 <div class="col-md-10 column">
-			<iframe    name="table" frameborder="0" width="100%"  style="border:0px;padding:0px;margin:0px;height:750px;">
-            </iframe>
+	<iframe   name="table" width="100%" height="100%" align="center" scrolling="auto" frameborder="0" allowTransparency="true" >
+	</iframe>
 </div>
+
 </body>
 
 

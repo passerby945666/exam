@@ -25,7 +25,7 @@
 	<script src="<%=basePath%>js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body  STYLE="background-color:transparent">
 
 <div class="container">
 	<div class="row clearfix">
@@ -49,7 +49,7 @@
 						<c:when test="${empty  List} "><span>没有正在进行的考试</span></c:when>
 						<c:otherwise>
 						<c:forEach  items="${List}" var="exam">
-						<tr>
+						<tr >
 							<td><input type="hidden" name=""></td>
 							<td>${exam.get("eNo")}</td>
 							<td>${exam.get("eName")}</td>

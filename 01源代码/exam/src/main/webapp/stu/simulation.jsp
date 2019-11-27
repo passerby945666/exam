@@ -26,7 +26,7 @@
     <script src="<%=basePath%>js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body STYLE="background-color:transparent">
 <div class="container">
 <div class="row clearfix">
     <div class="panel panel-default">
