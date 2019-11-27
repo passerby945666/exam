@@ -134,7 +134,7 @@ public class ManagerServiceImpl implements IManagerService {
         try {
             List<Integer> listExam=examDao.queryExamMId(mId);
             List<Integer> listQuebank=quebankDao.queryQuebankMId(mId);
-            if(listExam==null){
+            if(listExam!=null){
                 for(Integer eId:listExam){
                     gradesDao.deleteGradeEId(eId);
                     hquestionDao.deleteHquestionEId(eId);
@@ -144,7 +144,7 @@ public class ManagerServiceImpl implements IManagerService {
             }else {
                 return 0;
             }
-            if(listQuebank==null){
+            if(listQuebank!=null){
                 for(Integer tId:listQuebank){
                     hquestionDao.deleteHquestionTId(tId);
                     quebankDao.deleteQuebank(tId);
