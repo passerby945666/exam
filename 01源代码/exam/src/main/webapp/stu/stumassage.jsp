@@ -54,8 +54,7 @@
             </div>
             <div style="width:40%;float: left;">
                 <input type="button" readonly="readonly" style="width: 40%;" value="出生年月" />
-                <input type="text" readonly="readonly" style="width: 55%;background-color:#ECECEC;" value="${stu.sBirthday}"/>
-                <span>${date}</span>
+                <input type="text" readonly="readonly" style="width: 55%;background-color:#ECECEC;" value="${date}"/>
             </div>
             <div style="width:40%;float: left;margin-bottom: 20px;margin-left: 50px;">
                 <input type="hidden" value="${sId}"  name="sId" />

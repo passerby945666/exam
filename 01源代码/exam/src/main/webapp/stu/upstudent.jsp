@@ -84,7 +84,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="form-group">
 									<label for="edit" class="col-sm-2 control-label">出生年月</label>
 									<div class="col-sm-10">
-										<input type="date" class="form-control" id="edit_sName" placeholder="出生年月" name="sBirthday" value="${stu.sBirthday}" />
+										<input type="date" class="form-control" id="edit_sName" placeholder="出生年月" name="sBirthday" value="${date}" />
 										<input type="hidden" value="${date}" name="date">
 									</div>
 								</div>

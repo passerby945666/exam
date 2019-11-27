@@ -77,8 +77,8 @@
 	<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>出生年月：</label>
 		<div class="formControls col-xs-8 col-sm-9">
-			<input type="date"   value="${admin.mBirthday}" class="input-text" name="mBirthday">
-			<input type="hidden" name="date" value="${date}" >${date}
+			<input type="date"   value="${date}}" class="input-text" name="mBirthday">
+			<input type="hidden" name="date" value="${date}" >
 		</div>
 	</div>
 

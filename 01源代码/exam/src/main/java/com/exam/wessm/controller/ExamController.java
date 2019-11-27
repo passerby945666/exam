@@ -136,6 +136,7 @@ public class ExamController {
      */
     @RequestMapping(value = "updateExam")
     public  String  updateExam(Exam exam,String timeBaomin1,String timeEnd1,String timeBegin1,Model model){
+
         Date date1=examingROM.StringToDatetime(timeBaomin1);
         Date date2=examingROM.StringToDatetime(timeEnd1);
         Date date3=examingROM.StringToDatetime(timeBegin1);
@@ -147,6 +148,9 @@ public class ExamController {
             model.addAttribute("smg","时长设置有误");
             return "/result.jsp?rows=0";
         }
+        exam.setTimeBaomin(date1);
+        exam.setTimeEnd(date2);
+        exam.setTimeBegin(date3);
         int rows=examService.updateExam(exam);
         return "redirect:/result.jsp?rows="+rows;
     }
