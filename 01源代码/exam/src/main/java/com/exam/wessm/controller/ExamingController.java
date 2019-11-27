@@ -106,6 +106,7 @@ public class ExamingController {
     @RequestMapping(value = "examed")
     public String Examed(HttpSession session, HttpServletRequest request,int eId) {
         List<Map> list=(List<Map>) session.getAttribute("Exam");
+        session.removeAttribute("Exam");
         List<String> hAnswerlist=new ArrayList<>();
         String []arr;
         String s="";
@@ -202,6 +203,7 @@ public class ExamingController {
     @RequestMapping(value = "simulationed")
     public String Simulationed(HttpSession session, HttpServletRequest request) {
         List<Map> list=(List<Map>) session.getAttribute("Exam");
+        session.removeAttribute("Exam");
         List<String> hAnswerlist=new ArrayList<>();
         String []arr;
         String s="";

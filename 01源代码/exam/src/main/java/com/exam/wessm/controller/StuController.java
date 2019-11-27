@@ -43,15 +43,15 @@ public class StuController {
         if (Cpassword.equals(stu.getsPassword())){
             int rows=stuService.registerStu(stu);
             if(rows==1){
-                return "/login.jsp";
+                return "redirect:/login.jsp";
             }else {
                 model.addAttribute("msg", "用户已存在");
-                return  "/register.jsp";
+                return  "redirect:/register.jsp";
             }
         }
         else {
             model.addAttribute("msg", "密码不一致");
-            return  "/register.jsp";
+            return  "redirect:/register.jsp";
         }
     }
 
@@ -144,9 +144,13 @@ public class StuController {
         Stu stu1=(Stu) session.getAttribute("stuSession");
         Stu stu=stuService.getStuSId(stu1.getsId());
         stu.setsId(stu1.getsId());
-        model.addAttribute("date",examingROM.DateToString(stu.getsBirthday()));
         model.addAttribute("stu",stu);
         model.addAttribute("sId",stu1.getsId());
+        if(stu.getsBirthday()==null){
+            return "/stu/upstudent.jsp";
+        }
+        model.addAttribute("date",examingROM.DateToString(stu.getsBirthday()));
+
         return "/stu/stumassage.jsp";
     }
 
