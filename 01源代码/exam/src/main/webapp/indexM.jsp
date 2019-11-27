@@ -175,15 +175,14 @@
 				<div class="list-topics-content">
 					<ul>
 						<li>
-							<button href="indexM.jsp">
+
 							<div class="single-list-topics-content">
 								 <div class="single-list-topics-icon">
 									<i class="flaticon-restaurant"></i>
 								</div>
 								<h2><a href="https://www.baidu.com/">项目介绍</a></h2>
-								<p>本项目由</p>
 							</div>
-								<button>
+
 						</li>
 						<li>
 							<button href="indexM.jsp">
@@ -191,8 +190,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-travel"></i>
 								</div>
-								<h2><a href="#">在线报名</a></h2>
-								<p>214 listings</p>
+								<h2><a href="/login.jsp">在线报名</a></h2>
 							</div>
 								</button>
 						</li>
@@ -202,8 +200,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-building"></i>
 								</div>
-								<h2><a href="infograde.jsp">成绩查询</a></h2>
-								<p>185 listings</p>
+								<h2><a href="/infograde.jsp">成绩查询</a></h2>
 							</div>
 								</button>
 						</li>
@@ -213,21 +210,17 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-pills"></i>
 								</div>
-								<h2><a href="#">考试安排</a></h2>
-								<p>200 listings</p>
+								<h2><a href="/login.jsp">考试安排</a></h2>
 							</div>
 							</button>
 						</li>
 						<li>
-							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
 						<div class="single-list-topics-icon">
 									<i class="flaticon-transport"></i>
 								</div>
-								<h2><a href="#">成绩证明</a></h2>
-								<p>120 listings</p>
+								<h2><a href="/login.jsp">证书查询</a></h2>
 							</div>
-								<button>
 						</li>
 					</ul>
 				</div>
@@ -251,7 +244,7 @@
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
 								</p>
 								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									read more
+									更多
 								</button>
 							</div>
 						</div>
@@ -263,7 +256,7 @@
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
 								</p>
 								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									read more
+									更多
 								</button>
 							</div>
 						</div>
@@ -274,7 +267,7 @@
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
 								</p>
 								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									read more
+									更多
 								</button>
 							</div>
 						</div>
@@ -287,7 +280,7 @@
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.
 								</p>
 								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									read more
+									更多
 								</button>
 							</div>
 						</div>
@@ -313,19 +306,122 @@
 						<div class="testimonial-description">
 							<div class="testimonial-info">
 								<div class="testimonial-person">
+									<h2>2019年下半年思考英语考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									<br>  英语考试考试时间为12月23日 9:00-11:20（F999次）<br>
+									二、报名方式
+									　<br>　第一阶段：11月23日9时-11月30日17时</br>
+									　　考生登录思考在线考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									<br>  第二阶段：12月20日9时开始</br>
+									　　成功完成报名的考生登录思考在线考试网站查看考生的考试具体时间
+
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2018年下半年思考考试成绩发布通知</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、发布时间
+									<br> 2019年2月21日9时 ）<br>
+									二、发布内容
+									　<br>2019年上半年思考英语考试成绩</br>
+									<br> 2019年上半年思考语文考试成绩</br>
+									<br> 2019年上半年思考计算机等级考试成绩</br>
+									三、查询方式
+									<br><a href="infograde.jsp">点这里</a></br>
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+
+								<div class="testimonial-person">
+									<h2>2019年下半年思考语文考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									<br>  语文考试考试时间为12月18日 9:00-11:20（G999次）<br>
+									二、报名方式
+									　<br>　第一阶段：11月22日9时-11月30日17时</br>
+									　　考生登录思考在线考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									<br>  第二阶段：12月15日9时开始</br>
+									　　成功完成报名的考生登录思考在线考试网站查看考生的考试具体时间
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2019下年上半年思考英语考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									<br>  英语考试考试时间为12月23日 9:00-11:20（F999次）<br>
+									二、报名方式
+									　<br>　第一阶段：11月23日9时-11月30日17时</br>
+									　　考生登录思考在线考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									<br>  第二阶段：12月20日9时开始</br>
+									　　成功完成报名的考生登录思考在线考试网站查看考生的考试具体时间
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+								<div class="testimonial-person">
+									<h2>2018年下半年思考英语成绩考试时间及报名方式</h2>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-info-->
+							<div class="testimonial-comment">
+								<p>
+									一、考试科目及时间
+									<br>  英语考试考试时间为12月23日 9:00-11:20（F999次）<br>
+									二、报名方式
+									　<br>　第一阶段：11月23日9时-11月30日17时</br>
+									　　考生登录思考在线考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									<br>  第二阶段：12月20日9时开始</br>
+									　　成功完成报名的考生登录思考在线考试网站查看考生的考试具体时间
+								</p>
+							</div><!--/.testimonial-comment-->
+						</div><!--/.testimonial-description-->
+					</div><!--/.single-testimonial-box-->
+					<div class="single-testimonial-box">
+						<div class="testimonial-description">
+							<div class="testimonial-info">
+
+								<div class="testimonial-person">
 									<h2>2019年下半年CET考试时间及报名方式</h2>
 								</div><!--/.testimonial-person-->
 							</div><!--/.testimonial-info-->
 							<div class="testimonial-comment">
 								<p>
 									一、考试科目及时间
-									   英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									<br>  英语考试考试时间为12月23日 9:00-11:20（F999次）<br>
 									二、报名方式
-									　　第一阶段：10月23日9时-10月30日17时
-									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
-									　　第二阶段：11月18日9时开始
-									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
-
+									　<br>　第一阶段：11月23日9时-11月30日17时</br>
+									　　考生登录思考在线考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									<br>  第二阶段：12月20日9时开始</br>
+									　　成功完成报名的考生登录思考在线考试网站查看考生的考试具体时间
 								</p>
 							</div><!--/.testimonial-comment-->
 						</div><!--/.testimonial-description-->
@@ -339,121 +435,13 @@
 							</div><!--/.testimonial-info-->
 							<div class="testimonial-comment">
 								<p>
-									　一、发布时间
-									　　2019年8月21日9时
-									　二、发布内容
-									　2019年上半年全国大学英语四、六级考试（含口语）成绩
-									　　2019年上半年全国大学日语四、六级考试成绩
-									　　2019年上半年全国大学德语四、六级考试成绩
-									　　2019年上半年全国大学俄语四、六级考试成绩
-									　　2019年上半年全国大学法语四级考试成绩
-									　　三、查询方式
-									　　中国教育考试网
-									　　网址: http://cet.neea.edu.cn/cet
-									　　中国高等教育学生信息网
-									　　网址: http://www.chsi.com.cn/cet
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-
-								<div class="testimonial-person">
-									<h2>2019年上半年CET考试时间及报名方式</h2>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
 									一、考试科目及时间
-									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									<br>  英语考试考试时间为12月23日 9:00-11:20（F999次）<br>
 									二、报名方式
-									　　第一阶段：10月23日9时-10月30日17时
-									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
-									　　第二阶段：11月18日9时开始
-									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-person">
-									<h2>2019年上半年CET考试时间及报名方式</h2>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									一、考试科目及时间
-									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
-									二、报名方式
-									　　第一阶段：10月23日9时-10月30日17时
-									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
-									　　第二阶段：11月18日9时开始
-									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-person">
-									<h2>2019年上半年CET考试时间及报名方式</h2>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									一、考试科目及时间
-									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
-									二、报名方式
-									　　第一阶段：10月23日9时-10月30日17时
-									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
-									　　第二阶段：11月18日9时开始
-									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-
-								<div class="testimonial-person">
-									<h2>2019年上半年CET考试时间及报名方式</h2>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									一、考试科目及时间
-									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
-									二、报名方式
-									　　第一阶段：10月23日9时-10月30日17时
-									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
-									　　第二阶段：11月18日9时开始
-									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
-								</p>
-							</div><!--/.testimonial-comment-->
-						</div><!--/.testimonial-description-->
-					</div><!--/.single-testimonial-box-->
-					<div class="single-testimonial-box">
-						<div class="testimonial-description">
-							<div class="testimonial-info">
-								<div class="testimonial-person">
-									<h2>2019年上半年CET考试时间及报名方式</h2>
-								</div><!--/.testimonial-person-->
-							</div><!--/.testimonial-info-->
-							<div class="testimonial-comment">
-								<p>
-									一、考试科目及时间
-									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
-									二、报名方式
-									　　第一阶段：10月23日9时-10月30日17时
-									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
-									　　第二阶段：11月18日9时开始
-									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+									　<br>　第一阶段：11月23日9时-11月30日17时</br>
+									　　考生登录思考在线考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									<br>  第二阶段：12月20日9时开始</br>
+									　　成功完成报名的考生登录思考在线考试网站查看考生的考试具体时间
 								</p>
 								</p>
 							</div><!--/.testimonial-comment-->
@@ -463,18 +451,18 @@
 						<div class="testimonial-description">
 							<div class="testimonial-info">
 								<div class="testimonial-person">
-									<h2>2019年上半年CET考试时间及报名方式</h2>
+									<h2>2019年下半年CET考试时间及报名方式</h2>
 								</div><!--/.testimonial-person-->
 							</div><!--/.testimonial-info-->
 							<div class="testimonial-comment">
 								<p>
 									一、考试科目及时间
-									英语四级口语考试（CET-SET4）考试时间为11月23日（F193次），英语六级口语考试考试时间为11月24日（S194次）
+									<br>  英语考试考试时间为12月23日 9:00-11:20（F999次）<br>
 									二、报名方式
-									　　第一阶段：10月23日9时-10月30日17时
-									　　考生登录全国大学英语四、六级考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
-									　　第二阶段：11月18日9时开始
-									　　成功完成报名的考生登录全国大学英语四、六级考试网站查看考生的考试具体时间及地点均以准考证上所示为准，不得更改。
+									　<br>　第一阶段：11月23日9时-11月30日17时</br>
+									　　考生登录思考在线考试网站，点击考试报名栏目进行报名完成信息填报等报名手续
+									<br>  第二阶段：12月20日9时开始</br>
+									　　成功完成报名的考生登录思考在线考试网站查看考生的考试具体时间
 								</p>
 								</p>
 							</div><!--/.testimonial-comment-->
@@ -500,9 +488,9 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-txt">
-									<h2><a href="#">什么是全国大学英语四、六级考试（CET）？</a></h2>
+									<h2><a href="#">什么是思考在线考试（SK）？</a></h2>
 									<p>
-										全国大学英语四、六级考试（以下简称“CET”）系教育部主办、由教育部考试中心组织实施的全国统一标准化考试，考试目的是检测在校大学生的英语能力。
+										思考在线考试，系思考主办统一标准化考试，由思考考试中心组织实施的统一标准化考试。
 									</p>
 								</div>
 							</div>
@@ -510,9 +498,9 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-txt">
-									<h2><a href="#">什么是全国大学英语四、六级考试（CET）？</a></h2>
+									<h2><a href="#">思考在线考试所包含的科目？</a></h2>
 									<p>
-										全国大学英语四、六级考试（以下简称“CET”）系教育部主办、由教育部考试中心组织实施的全国统一标准化考试，考试目的是检测在校大学生的英语能力。
+										　　英语四级、六级，Java二级、四级，网络技术二级、三级、数据库二级、三级和四级。
 									</p>
 								</div>
 							</div>
@@ -520,9 +508,9 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-blog-item">
 								<div class="single-blog-item-txt">
-									<h2><a href="#">什么是全国大学英语四、六级考试（CET）？</a></h2>
+									<h2><a href="#">思考在线考试报考资格及如何报名？</a></h2>
 									<p>
-										全国大学英语四、六级考试（以下简称“CET”）系教育部主办、由教育部考试中心组织实施的全国统一标准化考试，考试目的是检测在校大学生的英语能力。
+										SK笔试报考资格为全日制普通高等院校本科、专科在校生、专科在校生，在籍研究生。
 									</p>
 								</div>
 							</div>
@@ -563,7 +551,7 @@
 
 			<div id="scroll-Top">
 				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+					<i class="fa fa-angle-up " id="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
 				</div>
 				
 			</div><!--/.scroll-Top-->
