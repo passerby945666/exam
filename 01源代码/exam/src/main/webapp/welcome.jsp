@@ -22,7 +22,7 @@
 <![endif]-->
 <title>我的桌面</title>
 </head>
-<body>
+<body style="background:#A3C6C8">
 <div style="text-align: center">
 	<p style="font-size: 100px;padding-top: 100px">
 		学习，使学生们快乐

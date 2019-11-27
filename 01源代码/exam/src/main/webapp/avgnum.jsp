@@ -51,7 +51,7 @@
             text: '考试平均成绩折线图'
         };
         var subtitle = {
-            text: '今天是个好日子'
+            text: ''
         };
         var xAxis = {
             categories: [ '最近第1次', '最近第2次','最近第3次', '最近第4次', '最近第5次']

@@ -38,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default" role="navigation" >
 			<div class="navbar-header">
-		<a class="navbar-brand" href="/">思考在线考试 v1.0</a>
+		<a class="navbar-brand" >思考在线考试 </a>
 	</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
