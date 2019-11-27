@@ -80,7 +80,11 @@ public interface GradesMapper {
      * @return
      */
     int deleteGradeSId(@Param("s_id")int sId);
-
-
+    /**
+     * 根据两个id查找成绩id
+     * @param
+     * @return
+     */
+    int getGradeGId2(Map map);
 
 }

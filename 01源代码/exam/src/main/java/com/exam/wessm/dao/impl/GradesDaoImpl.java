@@ -75,4 +75,11 @@ public class GradesDaoImpl implements IGradesDao {
     public int deleteGradeSId(int sId) {
         return gradesMapper.deleteGradeSId(sId);
     }
+    @Override
+    public int getGradeGId2(Integer sId,Integer eId) {
+        Map map=new HashMap();
+        map.put("s_id",sId);
+        map.put("e_id",eId);
+        return gradesMapper.getGradeGId2(map);
+    }
 }

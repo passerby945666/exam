@@ -11,24 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda712de-5a30-411e-b24d-11908a17d5b1" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;01源代码/exam/src/main/webapp/index.jsp">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/exam_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/exam_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/CorrectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/CorrectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/util/examing/examingROM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/util/examing/examingROM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/GradesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/GradesDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/GradesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/GradesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ssm-smvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ssm-smvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/exam-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exam-edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/member-edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/member-edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/stu/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stu/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/stu/simulationed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stu/simulationed.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/stu/stumassage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stu/stumassage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/stu/upstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stu/upstudent.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exam/wessm/test/StuTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exam/wessm/test/StuTest01.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,75 +50,93 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="143" column="40" lean-forward="true" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-edit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="75" column="108" selection-start-line="75" selection-start-column="100" selection-end-line="75" selection-end-column="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/util/examing/examingROM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="155" column="14" lean-forward="true" selection-start-line="155" selection-start-column="14" selection-end-line="155" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="162">
+              <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/stumassage.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/result.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="191">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Stu.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/simulationed.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+            <state relative-caret-position="2489">
+              <caret line="131" column="119" selection-start-line="131" selection-start-column="119" selection-end-line="131" selection-end-column="119" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/HquestionMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-513">
+              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="964">
+              <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/GradesDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1661#1662#0" expanded="true" />
-                <element signature="e#1693#1694#0" expanded="true" />
+                <element signature="e#1962#1963#0" expanded="true" />
+                <element signature="e#2017#2018#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/CorrectController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="76" column="48" lean-forward="true" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/read-correcting.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-627" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IHquestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -178,11 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/stu/uppassword.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/GradesMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/GradesDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IGradesService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/HquestionMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IHquestionService.java" />
@@ -196,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IExaminersService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/ExaminersServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/GradesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IExamService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/ExamServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/QuebankController.java" />
@@ -218,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/exam/wessm/test/StuTest01.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/stu/upstudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/result.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/stu/result.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/member-edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin-edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ManagerController.java" />
@@ -226,9 +230,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/exam-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/exam-edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/util/examing/examingROM.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/stu/stumassage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/GradesMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/GradesDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/CorrectController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/stu/result.jsp" />
       </list>
     </option>
   </component>
@@ -259,10 +270,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="330" />
-    <option name="y" value="75" />
+    <option name="y" value="10" />
     <option name="width" value="975" />
-    <option name="height" value="1050" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -366,7 +376,52 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="exam" type="462c0819:PsiDirectoryNode" />
               <item name="wessm" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="wessm" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="wessm" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="wessm" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="wessm" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exam" type="b2602c69:ProjectViewProjectNode" />
@@ -519,13 +574,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574857021371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574864586366" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15302144" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -716,7 +771,7 @@
       <workItem from="1574414309854" duration="21631000" />
       <workItem from="1574471811510" duration="28539000" />
       <workItem from="1574603037277" duration="24151000" />
-      <workItem from="1574662316913" duration="89608000" />
+      <workItem from="1574662316913" duration="96853000" />
     </task>
     <task id="LOCAL-00001" summary="空的java文件  （少几个）">
       <created>1573912234659</created>
@@ -1012,7 +1067,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574830115405</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="处理时间格式显示与输入问题">
+      <created>1574857385100</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1574857385100</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1048,13 +1110,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347351000" />
+    <option name="totallyTimeSpent" value="354596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22989276" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22989276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -1066,20 +1128,20 @@
       <window_info id="Learn" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.049423393" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6347185" weight="0.25212464" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.708445" weight="0.4022663" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6347185" weight="0.5651558" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.708445" weight="0.40084985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.36384267" side_tool="true" weight="0.59637564" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3150134" side_tool="true" weight="0.36260623" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.1630972" />
-      <window_info active="true" anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.6849866" visible="true" weight="0.36260623" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.3150134" side_tool="true" visible="true" weight="0.36260623" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.6849866" visible="true" weight="0.36260623" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.3150134" side_tool="true" weight="0.36260623" />
       <window_info anchor="bottom" id="Application Servers" order="16" weight="0.12516823" />
       <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.288874" weight="0.048158642" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1136,7 +1198,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="考试v3" />
     <MESSAGE value="考试v2" />
     <MESSAGE value="考试v4" />
     <MESSAGE value="管理员模块" />
@@ -1161,7 +1222,8 @@
     <MESSAGE value="考试bug修复" />
     <MESSAGE value="题库bug" />
     <MESSAGE value="完善删除功能，没写提示请小心使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善删除功能，没写提示请小心使用" />
+    <MESSAGE value="处理时间格式显示与输入问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="处理时间格式显示与输入问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1184,6 +1246,12 @@
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1192,169 +1260,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/GradesDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
-          <folding>
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="94" selection-start-line="94" selection-end-line="100" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/HquestionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-          <folding>
-            <element signature="e#1562#1563#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1867#1868#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IHquestionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/HquestionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/HquestionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/ExaminersMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/ExaminersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="65" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IExaminersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="83" column="32" selection-start-line="71" selection-start-column="1" selection-end-line="83" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/ExaminersServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IGradesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/GradesServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IExaminersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IHquestionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="85" selection-start-line="85" selection-end-line="90" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/ExaminersDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
-          <folding>
-            <element signature="e#1419#1420#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/QuebankController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IExamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IQuebankService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1519,24 +1424,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/simulationed.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="131" column="119" selection-start-line="131" selection-start-column="119" selection-end-line="131" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1501">
           <caret line="91" column="71" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1569,37 +1460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="75" column="108" selection-start-line="75" selection-start-column="100" selection-end-line="75" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/util/examing/examingROM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="143" column="40" lean-forward="true" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/StuController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1612,8 +1472,187 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/stumassage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="-664">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/TongjiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/SignController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/util/examing/examingROM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/GradesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Hquestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/entity/Grades.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-372">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="942">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin-add.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/exam-edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="75" column="108" selection-start-line="75" selection-start-column="100" selection-end-line="75" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/ExamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="73" column="117" lean-forward="true" selection-start-line="73" selection-start-column="117" selection-end-line="73" selection-end-column="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ssm-smvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-778">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/mapper/GradesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/read-correcting.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/GradesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/simulationed.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2489">
+          <caret line="131" column="119" selection-start-line="131" selection-start-column="119" selection-end-line="131" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/IGradesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/exam/wessm/mapper/HquestionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/springframework/spring-aop/5.1.10.RELEASE/spring-aop-5.1.10.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/dao/impl/GradesDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+          <folding>
+            <element signature="e#1962#1963#0" expanded="true" />
+            <element signature="e#2017#2018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/controller/CorrectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="76" column="48" lean-forward="true" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/IHquestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/exam/wessm/service/impl/HquestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stu/result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1623,7 +1662,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>exam:war exploded</last-edited>
+          <last-edited>exam:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

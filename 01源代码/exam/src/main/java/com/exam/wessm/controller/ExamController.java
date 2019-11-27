@@ -86,6 +86,10 @@ public class ExamController {
            model.addAttribute("smg","没找到管理员");
            return "/result.jsp?rows=0";
         }
+        if(examingROM.timeTest01(exam.getTimeTest())<=0){
+            model.addAttribute("smg","时长设置有误");
+            return "/result.jsp?rows=0";
+        }
        exam.setmId(map.getmId());
        exam.setTimeBaomin(date1);
        exam.setTimeBegin(date2);

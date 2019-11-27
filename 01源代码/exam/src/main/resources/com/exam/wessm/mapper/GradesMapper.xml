@@ -99,5 +99,15 @@ delete from  grades where  g_id=#{g_id};
     <delete id="deleteGradeSId" parameterType="int">
  delete from  grades where  s_id=#{s_id};
     </delete>
-
+    <select id="getGradeGId2" resultType="int" parameterType="java.util.Map" >
+        <![CDATA[
+SELECT
+	g_id as gId
+FROM
+	grades
+WHERE
+	e_id =#{e_id}
+	AND s_id=#{s_id};
+        ]]>
+    </select>
 </mapper>

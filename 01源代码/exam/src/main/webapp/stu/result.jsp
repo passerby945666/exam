@@ -24,6 +24,6 @@
     </c:otherwise>
 </c:choose>
 <span>${smg}</span>
-<a href="/stu/indexStu.jsp">返回</a>
+<a href="/stu/welcome.jsp">返回</a>
 </body>
 </html>

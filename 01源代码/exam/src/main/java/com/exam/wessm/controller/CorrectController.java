@@ -60,7 +60,7 @@ public class CorrectController {
         }
 
         /**
-         * 加载需要批改的试题
+         * 批改题目
          *
          * @return
          */
