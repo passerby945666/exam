@@ -57,7 +57,6 @@
             m_no as mNo,
             m_name as mName,
             m_sex as mSex,
-            mIdcard,
             m_birthday as mBirthday
         from
             manager

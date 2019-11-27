@@ -58,7 +58,7 @@ public class ManagerController {
     public String insertManager(Manager manager, String password2, HttpServletRequest request,Model model) {
         if(manager.getmBirthday()==null){
             model.addAttribute("smg","时间不可为空");
-            return "redirect:/result.jsp?rows=0&smg=时间不可为空";
+            return "redirect:/result.jsp?rows=0";
         }
         if (password2.equals(manager.getmPassword())){
             int rows = managerService.insertManager(manager);

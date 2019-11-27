@@ -1,4 +1,4 @@
-﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+﻿w<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -33,7 +33,7 @@
 <div class="page-container">
 	<form action="/admin/getManager">
 	<div class="text-c">
-		<input type="text" class="input-text" style="width:250px" placeholder="输入管理员名称" name="manager">
+		<input type="text" class="input-text" style="width:250px" placeholder="搜索框优先于下拉框，请输入编号或名称" name="manager">
 		<button type="submit" class="btn btn-success" name="sName"><i class="Hui-iconfont">&#xe665;</i> 搜管理员</button>
 	</div>
 	</form>

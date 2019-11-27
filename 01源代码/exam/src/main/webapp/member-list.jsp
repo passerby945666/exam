@@ -23,7 +23,7 @@
 	<div class="text-c">
 		<form action="/stu/getStu">
 			<button onclick="removeIframe()" class="btn btn-primary radius">关闭选项卡</button>
-			<input type="text" name="stu"  value="" placeholder="考生编号或名字或身份证号" style="width:250px" class="input-text">
+			<input type="text" name="stu"  value="" placeholder="搜索框优先于下拉框，请输入编号或名字或身份证号" style="width:250px" class="input-text">
 			<button name=""  class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜考生</button>
 		</form>
 	</div>

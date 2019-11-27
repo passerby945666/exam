@@ -39,7 +39,7 @@
                     </c:forEach>
                 </select>
             </span>
-            <input type="text"  placeholder=" 题库名称" style="width:250px" class="input-text" name="que">
+            <input type="text"  placeholder="搜索框优先于下拉框，请输入编号或名称" style="width:250px" class="input-text" name="que">
             <button class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜题库</button>
         </form>
     </div>
