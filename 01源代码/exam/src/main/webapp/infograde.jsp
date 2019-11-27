@@ -39,15 +39,15 @@ img {
 	font-size: 42px;
 	text-align: left;
 	text-indent: 0.5em;
-	color: #3083c7;
-	border-bottom: 3px #3083c7 solid;
+	color: #ff545a;
+	border-bottom: 3px #ff545a solid;
 }
 #Content {
 	padding: 42px 0 0 0;
 }
 
 a {
-	color: #333;
+	color: #ff545a;
 }
 #Content1 {
 	width: 1200px;
@@ -56,7 +56,7 @@ a {
 .c_tits {
 	height: 30px;
 	line-height: 30px;
-	color: #3083c7;
+	color: #ff545a;
 	font-size: 22px;
 	text-align: center;
 	margin: 40px 0;
@@ -71,7 +71,7 @@ input {
 }
 .s3 input, .s3 button, .s3 a {
 	background-image: none;
-	background-color: #01adef;
+	background-color: #ff545a;
 	color: #fff;
 	width: 80px;
 	height: 30px;
@@ -93,7 +93,7 @@ ul, li {
 	overflow: hidden;
 	clear: both;
 	margin-bottom: 15px;
-	color: rgb(7, 78, 151);
+	color: rgb(255, 84, 90);
 }
 .clist li strong {
 	float: left;
@@ -235,17 +235,17 @@ ol li div a {
                                 </div>
                             </li>
                             <li class="tip_n"><span>&nbsp;</span>
-                                <div>请输入15位准考证号</div>
+                            <%--    <div>请输入15位准考证号</div>
                             </li>
                             <li><span>姓名：</span>
                                 <div>
-                               <%--     <input name="sName"   type="text" alt="姓名" value="" autocomplete="off">--%>
+                               &lt;%&ndash;     <input name="sName"   type="text" alt="姓名" value="" autocomplete="off">&ndash;%&gt;
                                 </div>
                                 <em class="tips" id="nameerror"></em></li>
-                            <li class="tip_n"><span>&nbsp;</span>
-                                <div>姓名超过3个字，可只输入前3个</div>
+                            <li class="tip_n"><span>&nbsp;</span>--%>
+                                <div><%--姓名超过3个字，可只输入前3个--%></div>
                             </li>
-                       
+
                        
                         </ol>
 
@@ -262,7 +262,7 @@ ol li div a {
                 
                     <ul>
                         <li style="margin-bottom: 10px;">
-                            1、输入准考证号和姓名，点击查询按钮进行查询。
+                            1、输入准考证号<%--和姓名--%>，点击查询按钮进行查询。
                         </li>
                     
                         <li style="margin-bottom: 10px;">

@@ -40,15 +40,15 @@
             font-size: 42px;
             text-align: left;
             text-indent: 0.5em;
-            color: #3083c7;
-            border-bottom: 3px #3083c7 solid;
+            color: #ff545a;
+            border-bottom: 3px #ff545a solid;
         }
         #Content {
             padding: 42px 0 0 0;
         }
 
         a {
-            color: #333;
+            color: #ff545a;
         }
         #Content1 {
             width: 1200px;
@@ -60,8 +60,8 @@
         .c_tits {
             height: 30px;
             line-height: 30px;
-            color: #3083c7;
-            font-size: 22px;
+            color: #ea4f23;
+            font-size: 40px;
             text-align: center;
             margin: 40px 0;
         }
@@ -78,7 +78,7 @@
         }
         .s3 input, .s3 button, .s3 a {
             background-image: none;
-            background-color: #01adef;
+            background-color: #ff545a;
             color: #fff;
             width: 80px;
             height: 30px;
@@ -102,7 +102,7 @@
             overflow: hidden;
             clear: both;
             margin-bottom: 15px;
-            color: rgb(7, 78, 151);
+            color: rgb(255, 84, 90);
         }
         .clist li strong {
             float: left;
@@ -204,7 +204,7 @@
             padding: 0 5px;
         }
         #verifysStrDiv a {
-            color: #00aef1;
+            color:#ff545a;
             line-height: 30px;
             font-size: 14px;
         }
@@ -215,7 +215,7 @@
 </head>
 <body>
 <div id="Body">
-   <div id="Header"><a href="indexM.jsp" style='text-decoration:none;'>思考官网<img alt="" src=""></a></div>
+   <div id="Header"><a href="/indexM.jsp" style='text-decoration:none;'>思考官网<img alt="" src=""></a></div>
 
     <div id="Content">
         <div id="Content1">

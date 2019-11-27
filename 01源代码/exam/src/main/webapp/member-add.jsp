@@ -73,7 +73,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">出生年月：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="date" class="input-text" placeholder="" name="sBirthday">
+				<input type="date" class="input-text" placeholder="格式：yyyy-MM-dd" name="sBirthday">
 			</div>
 		</div>
 
