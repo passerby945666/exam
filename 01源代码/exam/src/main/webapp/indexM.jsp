@@ -137,7 +137,7 @@
 		<section id="home" class="welcome-hero">
 			<div class="container">
 				<div class="welcome-hero-txt">
-					<h2>best place to find and explore <br> that all you need </h2>
+					<h2>FIND AND EXPLORE </h2>
 				</div>
 			<%--	<div class="welcome-hero-serch-box">
 					<div class="welcome-hero-form">--%>
@@ -177,19 +177,19 @@
 						<li>
 
 							<div class="single-list-topics-content">
-								 <div class="single-list-topics-icon">
+								<%-- <div class="single-list-topics-icon">
 									<i class="flaticon-restaurant"></i>
-								</div>
-								<h2><a href="https://www.baidu.com/">项目介绍</a></h2>
+								</div>--%>
+								<h2><a href="/indexM.jsp">项目介绍</a></h2>
 							</div>
 
 						</li>
 						<li>
 							<button href="indexM.jsp">
 							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
+							<%--	<div class="single-list-topics-icon">
 									<i class="flaticon-travel"></i>
-								</div>
+								</div>--%>
 								<h2><a href="/login.jsp">在线报名</a></h2>
 							</div>
 								</button>
@@ -197,28 +197,28 @@
 						<li>
 							<button>
 							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
+							<%--	<div class="single-list-topics-icon">
 									<i class="flaticon-building"></i>
-								</div>
+								</div>--%>
 								<h2><a href="/infograde.jsp">成绩查询</a></h2>
 							</div>
 								</button>
 						</li>
 						<li>
-							<button href="indexM.jsp">
+
 							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
+							<%--	<div class="single-list-topics-icon">
 									<i class="flaticon-pills"></i>
-								</div>
+								</div>--%>
 								<h2><a href="/login.jsp">考试安排</a></h2>
 							</div>
-							</button>
+
 						</li>
 						<li>
 							<div class="single-list-topics-content">
-						<div class="single-list-topics-icon">
+						<%--<div class="single-list-topics-icon">
 									<i class="flaticon-transport"></i>
-								</div>
+								</div>--%>
 								<h2><a href="/login.jsp">证书查询</a></h2>
 							</div>
 						</li>
