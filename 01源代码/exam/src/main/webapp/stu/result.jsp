@@ -17,10 +17,10 @@
         <span style="color:rgb(0,0,255)">操作成功</span>
     </c:when>
     <c:when test="${0==param.rows}">
-        <span style="color:rgb(255,0,0)">操作失败,服务器异常</span>
+        <span style="color:rgb(255,0,0)">操作失败</span>
     </c:when>
     <c:otherwise>
-        <span style="color:rgb(219,99,48)">服务器返回未知的状态</span>
+        <span style="color:rgb(219,99,48)">服务器异常</span>
     </c:otherwise>
 </c:choose>
 <span>${smg}</span>

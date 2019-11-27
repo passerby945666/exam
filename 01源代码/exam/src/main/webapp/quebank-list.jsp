@@ -81,7 +81,6 @@
                     <td>${quebank.kName}</td>
                     <td>${quebank.mName}</td>
                     <td class="f-14 td-manage">
-                           <a style="text-decoration:none" onClick="quebank_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>
                            <a style="text-decoration:none" class="ml-5" onClick="" href="/quebank/getQuebankTId?tId=${quebank.tId}"  title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
                            <a style="text-decoration:none" class="ml-5" onClick=" quebank_del(this,'${quebank.tId}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a>
                     </td>
@@ -126,15 +125,6 @@ function quebank_del(obj,tId){
 	});
 }
 
-/*资讯-下架*/
-function quebank_stop(obj,id){
-	layer.confirm('确认要下架吗？',function(index){
-		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="quebank_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已下架</span>');
-		$(obj).remove();
-		layer.msg('已下架!',{icon: 5,time:1000});
-	});
-}
 </script> 
 </body>
 </html>
