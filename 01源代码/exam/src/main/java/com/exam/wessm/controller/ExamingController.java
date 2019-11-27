@@ -79,7 +79,7 @@ public class ExamingController {
     public String Examing(HttpSession session, HttpServletRequest request,int eId) {
         Map map=examService.getExamEId(eId);
         int kid=(int)map.get("kId");
-        int[] arr={1,1,1,1};
+        int[] arr=examingROM.examun();
         List<Map> list;
         List<Map> listAll=new ArrayList<>();
         for(int i=0;i<arr.length;i++){
@@ -175,7 +175,7 @@ public class ExamingController {
     @RequestMapping(value = "simulation")
     public String Simulation(HttpSession session, HttpServletRequest request,int kId) {
 
-        int[] arr={1,1,1,1};
+        int[] arr=examingROM.examun();
         List<Map> list;
         List<Map> listAll=new ArrayList<>();
         for(int i=0;i<arr.length;i++){

@@ -76,9 +76,11 @@ public class StuController {
            }
            else if(type==2){
                Manager manager=managerService.findManagerNoAndPass(sNo,sPassword);
-               session.setAttribute("managerSession",manager);
-               model.addAttribute("stu",manager);
-            return "/index.jsp";
+               if(manager!=null){
+                   session.setAttribute("managerSession",manager);
+                   model.addAttribute("stu",manager);
+                   return "/index.jsp";
+               }
            }
           model.addAttribute("msg","账号密码错误");
            return  "redirect:/login.jsp";

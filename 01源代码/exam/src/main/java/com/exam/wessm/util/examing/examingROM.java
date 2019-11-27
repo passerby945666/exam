@@ -161,4 +161,13 @@ public  class  examingROM {
         }
     }
 
+    /**
+     * 选题数量
+     * @return
+     */
+    public static int[] examun(){
+        int[] arr={5,5,5,2};
+        return arr;
+    }
+
 }

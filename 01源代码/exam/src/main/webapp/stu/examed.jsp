@@ -27,7 +27,7 @@
 </head>
 <body>
 <h1>试卷已经提交</h1>
-<a href="/stu/indexStu.jsp">点击返回主页</a>
+<a href="/stu/welcome.jsp">点击返回主页</a>
 </body>
 
 </html>
