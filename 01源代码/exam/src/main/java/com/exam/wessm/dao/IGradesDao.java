@@ -82,6 +82,13 @@ public interface IGradesDao {
      * @return
      */
     int deleteGradeSId(int sId);
+    /**
+     * 根据两个id查找成绩id
+     * @param
+     * @return
+     */
+    int getGradeGId2(Integer sId,Integer eId);
+
 
 
 

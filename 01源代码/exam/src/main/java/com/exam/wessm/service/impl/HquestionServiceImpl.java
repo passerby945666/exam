@@ -1,6 +1,8 @@
 package com.exam.wessm.service.impl;
 
+import com.exam.wessm.dao.IGradesDao;
 import com.exam.wessm.dao.IHquestionDao;
+import com.exam.wessm.entity.Grades;
 import com.exam.wessm.entity.Hquestion;
 import com.exam.wessm.service.IHquestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,9 @@ public class HquestionServiceImpl implements IHquestionService {
     @Autowired
     @Qualifier("hquestionDao")
     private IHquestionDao hquestionDao;
+    @Autowired
+    @Qualifier("gradesDao")
+    private IGradesDao gradesDao;
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
@@ -88,9 +93,20 @@ public class HquestionServiceImpl implements IHquestionService {
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
     public int updateHquestions(List<Hquestion> list) {
         int rows=-1;
+        int gId=0;
+        int grade;
+        int add;
         for(Hquestion hquestion:list){
             try{
+
+                Hquestion hquestion1=hquestionDao.getHquestion(hquestion.gethId());
+                gId=gradesDao.getGradeGId2(hquestion1.getsId(),hquestion1.geteId());
+                Grades grades=gradesDao.getGradegId(gId);
+                grade=Integer.valueOf(grades.getGrade());
+                add=Integer.valueOf(hquestion.gethGrade());
+                Grades grades1=new Grades(0,hquestion1.getsId(),hquestion1.geteId(),String.valueOf(grade+add));
                 rows=hquestionDao.updateHquestion(hquestion);
+                gradesDao.updateGrade(grades1);
                 if(rows!=1){
                     return 0;
                 }
