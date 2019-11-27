@@ -59,7 +59,7 @@
 				<td>${stu.sIdcard}</td>
 				<td><fmt:formatDate value="${stu.sBirthday}" pattern="yyyy-MM-dd"/></td>
 				<td>
-					<a style="text-decoration:none" class="ml-5" onClick="member_edit()" href="/stu/getStu?stu=${stu.sId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<a style="text-decoration:none" class="ml-5" onClick="member_edit()" href="/stu/getStudent?sId=${stu.sId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
 					<a style="text-decoration:none" class="ml-5" onClick="member_del(this,${stu.sId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a>
 				</td>
 			</tr>

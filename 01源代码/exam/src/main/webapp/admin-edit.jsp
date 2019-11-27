@@ -28,7 +28,6 @@
 <body>
 <article class="page-container">
 	<form class="form form-horizontal"  action="/admin/updateManager" >
-		<tr>${mId}</tr>
 		<input type="hidden"  value="${mId}"   name="mId">
 		<div class="row cl">
 		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>管理员账号：</label>

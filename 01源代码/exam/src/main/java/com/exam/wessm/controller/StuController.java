@@ -191,11 +191,11 @@ public class StuController {
      * @return
      */
     @RequestMapping(value ="getStu" )
-    public  String  getStu(int stu,Model model){
-        Stu stuList =stuService.getStuSId(stu);
-        model.addAttribute("stu",stuList);
+    public  String  getStu(String stu,Model model){
+        List<Stu> stuList =stuService.getStu(stu);
+        model.addAttribute("stuList",stuList);
         model.addAttribute("sId",stu);
-        return  "/member-edit.jsp";
+        return  "/member-list.jsp";
     }
 
     /**
