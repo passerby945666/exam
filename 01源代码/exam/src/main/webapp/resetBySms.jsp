@@ -35,7 +35,7 @@
             <br>
             <div style="float: left;">
                 <button type="submit" class="btn btn-default">确认修改</button>
-                <button type="reset" class="btn btn-default"class="text-right" >取消</button>
+               <input style="cursor:pointer" onclick="javascript:window.open('/login.jsp','_self')" type="button" value="返回">
             </div>
             <div style="float: right;margin-right: 20px">
                 <span>${smg}</span>
