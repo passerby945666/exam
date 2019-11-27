@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -50,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                      <td><input type="hidden" value="" name="${map.eId}"></td>
                     <td>${map.eNo}</td>
                     <td>${map.eName}</td>
-                    <td>${map.timeBegin}</td>
+							<td><fmt:formatDate value="${map.timeBegin}" pattern="yyyy-MM-dd hh:mm"/></td>
                     <td>${map.timeTest}</td>
 							<td>${map.examCard}</td>
                     </tr>

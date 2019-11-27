@@ -2,6 +2,7 @@
          pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -63,7 +64,7 @@
                 </tr>
                 <tr>
                     <td>开考时间</td>
-                    <td>${exam.timeBegin}</td>
+                    <td><fmt:formatDate value="${exam.timeBegin}" pattern="yyyy-MM-dd hh:mm"/></td>
                 </tr>
                 <tr>
                     <td>考试时长</td>

@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -73,10 +74,10 @@
                     <td>${exam.eNo}</td>
                     <td>${exam.eName}</td>
 					<td>${exam.kName}</td>
-                    <td>${exam.timeBegin}</td>
+				<td><fmt:formatDate value="${exam.timeBegin}" pattern="yyyy-MM-dd hh:mm"/></td>
                     <td>${exam.timeTest}</td>
-                    <td>${exam.timeBaomin}</td>
-                    <td>${exam.timeEnd}</td>
+				<td><fmt:formatDate value="${exam.timeBaomin}" pattern="yyyy-MM-dd hh:mm"/></td>
+				<td><fmt:formatDate value="${exam.timeEnd}" pattern="yyyy-MM-dd hh:mm"/></td>
 					<td>${exam.mName}</td>
 					<td class="f-14 td-manage"> <a style="text-decoration:none" class="ml-5" onClick="article_edit()" href="/exam/getExamEId?eId=${exam.eId}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,${exam.eId})" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                     </tr>

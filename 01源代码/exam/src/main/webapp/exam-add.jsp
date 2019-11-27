@@ -61,20 +61,20 @@
 	<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">报名时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="date" id="commentdatemin" name="timeBaomin" class="input-text Wdate">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeBaomin">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">报名截止时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="date"  id="commentdatemin1" name="timeEnd" class="input-text Wdate">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeEnd">
 			</div>
 		</div>
 	
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">开考时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="date"  id="commentdatemin2" name="timeBegin" class="input-text Wdate">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeBegin">
 			</div>
 		</div>
 		<div class="row cl">
@@ -123,7 +123,7 @@ $(function(){
 		radioClass: 'iradio-blue',
 		increaseArea: '20%'
 	});
-	
+
 	//表单验证
 	$("#form-article-add").validate({
 		onkeyup:false,
@@ -136,6 +136,7 @@ $(function(){
 			parent.layer.close(index);
 		}
 	});
+});
 </script>
 <!--/请在上方写此页面业务相关的脚本-->
 </body>
