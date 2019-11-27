@@ -50,20 +50,24 @@
                                     <c:choose>
                                         <c:when test="${map.hAnswer eq map.answer}">
                                             <div>
+                                                考生答案：
                                                 <input size="10" readonly="readonly" value="${map.answer}" />
                                             </div>
                                         </c:when>
                                         <c:otherwise>
                                             <div>
+                                                考生答案：
                                                 <input size="10" readonly="readonly" value="${map.hAnswer}" />
                                             </div>
                                             <div>
+                                                参考答案：
                                                 <input size="10" readonly="readonly" value="${map.answer}" style="color: red"/>
                                             </div>
                                         </c:otherwise>
                                     </c:choose>
                                 </div>
                                 <div>
+                                    题目解析：<br>
                                     <textarea style="width: 70%;" name="401" maxlength="500" readonly="readonly">${map. reply}</textarea>
                                 </div>
                             </div>
@@ -77,20 +81,24 @@
                                     <c:choose>
                                         <c:when test="${map.hAnswer eq map.answer}">
                                             <div>
+                                                考生答案：
                                                 <input size="10" readonly="readonly" value="${map.answer}" />
                                             </div>
                                         </c:when>
                                         <c:otherwise>
                                             <div>
+                                                考生答案：
                                                 <input size="10" readonly="readonly" value="${map.hAnswer}" />
                                             </div>
                                             <div>
+                                                参考答案：
                                                 <input size="10" readonly="readonly" value="${map.answer}" style="color: red"/>
                                             </div>
                                         </c:otherwise>
                                     </c:choose>
                                 </div>
                                 <div>
+                                    题目解析：<br>
                                     <textarea style="width: 70%;" name="401" maxlength="500" readonly="readonly">${map. reply}</textarea>
                                 </div>
                             </div>
@@ -104,21 +112,25 @@
                                     <c:choose>
                                         <c:when test="${map.hAnswer eq map.answer}">
                                             <div>
+                                                考生答案：
                                                 <input size="10" readonly="readonly" value="${map.answer}" />
                                             </div>
                                         </c:when>
                                         <c:otherwise>
                                             <div>
+                                                考生答案：
                                                 <input size="10" readonly="readonly" value="${map.hAnswer}" />
                                             </div>
                                             <div>
+                                                参考答案：
                                                 <input size="10" readonly="readonly" value="${map.answer}" style="color: red"/>
                                             </div>
                                         </c:otherwise>
                                     </c:choose>
                                 </div>
                                 <div>
-                                    <textarea style="width: 70%;" name="401" maxlength="500" readonly="readonly">${map. reply}</textarea>
+                                    题目解析：<br>
+                                    <textarea style="width: 70%;" name="401" maxlength="500" readonly="readonly">${map.reply}</textarea>
                                 </div>
                             </div>
                             </c:when>
@@ -126,9 +138,11 @@
                             <div id="401">
                                 <div>${map.No}、${map.content}</div>
                                 <div>
+                                    考生答案：<br>
                                     <textarea style="width: 70%;" name="401" maxlength="500" placeholder="${map.hAnswer}"></textarea>
                                 </div>
                                 <div>
+                                    题目解析：<br>
                                     <textarea style="width: 70%;" name="401" maxlength="500" placeholder="${map.reply}"></textarea>
                                 </div>
                             </div>
