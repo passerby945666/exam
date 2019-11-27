@@ -15,7 +15,7 @@
     <script src="<%=basePath%>js/bootstrap.min.js"></script>
     <title>个人信息</title>
 </head>
-<body>
+<body STYLE="background-color:transparent">
 <div>
     <form action="/stu/getStumy">
 <c:choose>
