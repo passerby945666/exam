@@ -20,9 +20,9 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>我的桌面</title>
+<title></title>
 </head>
-<body>
+<body style="background: #79b9dc">
 <div style="text-align: center">
 	<p style="font-size: 100px;padding-top: 100px">
 		学习，使学生们快乐
