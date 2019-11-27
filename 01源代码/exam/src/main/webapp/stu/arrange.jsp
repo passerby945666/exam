@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="<%=basePath%>js/jquery-1.11.3.min.js"></script>
 <script src="<%=basePath%>js/bootstrap.min.js"></script>
 </head>
-<body>
+<body  style="background-color:transparent">
 <div class="container">
 	<div class="row clearfix">
 		<div class="panel panel-default">
@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="col-md-12 column">
 					<table class="table  table-hover">
 						<thead>
-							<tr>
+							<tr class="active">
 								<th></th>
 								<th>考试编号</th>
 								<th>考试名称</th>
@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <c:when test="${empty  mapList} "><span>没查到数据</span></c:when>
             <c:otherwise>
                 <c:forEach  items="${mapList}" var="map">
-                    <tr>
+                    <tr class="danger">
                      <td><input type="hidden" value="" name="${map.eId}"></td>
                     <td>${map.eNo}</td>
                     <td>${map.eName}</td>

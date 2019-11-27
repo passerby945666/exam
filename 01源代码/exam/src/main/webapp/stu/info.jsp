@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="<%=basePath%>js/bootstrap.min.js"></script>
 <title>成绩查询</title>
 </head>
-<body>
+<body  STYLE="background-color:transparent">
 <div class="container">
 	<div class="row clearfix">
 		<div class="panel panel-default">
@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="col-md-12 column">
 					<table class="table  table-hover">
 						<thead>
-							<tr>
+							<tr class="success">
 								<th>考试科目</th>
 								<th>考生名称</th>
 								<th>分数</th>
@@ -44,7 +44,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <c:when test="${mapList==null}"><span>查询成绩发生异常</span></c:when>
             <c:otherwise>
                 <c:forEach  items="${mapList}" var="map">
-                    <tr>
+                    <tr class="danger">
 					<td>${map.eName}</td>
                     <td>${map.sName}</td>
                     <td>${map.grade}</td>

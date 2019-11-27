@@ -16,7 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="<%=basePath%>js/bootstrap.min.js"></script>
 <title>考试报名</title>
 </head>
-<body>
+<body  STYLE="background-color:transparent">
 <div class="container">
 	<div class="row clearfix">
 		<div class="panel panel-default">
@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="col-md-12 column">
 					<table class="table  table-hover">
 						<thead>
-							<tr>
+							<tr class="success">
 								<th>考试编号</th>
 								<th>科目名称</th>
 								<th>开考时间</th>
@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <c:when test="${empty  List} "><span>没查到数据</span></c:when>
             <c:otherwise>
                 <c:forEach  items="${List}" var="exam">
-                    <tr>
+                    <tr class="danger">
                     <td>${exam.eNo}</td>
                     <td>${exam.eName}</td>
 						<td><fmt:formatDate value="${exam.timeBegin}" pattern="yyyy-MM-dd hh:mm"/></td>
