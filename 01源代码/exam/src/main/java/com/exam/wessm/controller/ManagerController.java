@@ -55,7 +55,11 @@ public class ManagerController {
      * @return
      */
     @RequestMapping(value = "insertManager",method = RequestMethod.POST)
-    public String insertManager(Manager manager, String password2, HttpServletRequest request) {
+    public String insertManager(Manager manager, String password2, HttpServletRequest request,Model model) {
+        if(manager.getmBirthday()==null){
+            model.addAttribute("smg","时间不可为空");
+            return "redirect:/result.jsp?rows=0&smg=时间不可为空";
+        }
         if (password2.equals(manager.getmPassword())){
             int rows = managerService.insertManager(manager);
             return "/result.jsp?rows=" + rows;

@@ -130,6 +130,10 @@ public class StuController {
      */
     @RequestMapping(value = "insertStu",method = RequestMethod.POST)
     public String insertStu(Stu stu,Model model){
+        if(stu.getsBirthday()==null){
+            model.addAttribute("smg","时间不可为空");
+            return "redirect:/result.jsp?rows=0&smg=时间不可为空";
+        }
         int rows=stuService.insertStu(stu);
         return "redirect:/result.jsp?rows="+rows;
     }

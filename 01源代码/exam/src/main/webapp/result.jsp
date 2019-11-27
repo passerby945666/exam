@@ -24,6 +24,7 @@
     </c:otherwise>
 </c:choose>
 <span>${smg}</span>
+<span>${param.smg}</span>
 <a href="/stu/welcome.jsp">返回欢迎页面</a>
 </body>
 </html>
