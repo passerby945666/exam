@@ -78,7 +78,7 @@ public class QuebankController {
     @ResponseBody
     @RequestMapping(value = "deleteQuebank")
     public String deleteQuebank(int tId) {
-        int rows = quebankService.deleteQuebank(tId);
+        int rows = quebankService.deleteQuebankAll(tId);
         //重定向到删除结果的页面
         return "redirect:/result.jsp?rows=" + rows;
     }

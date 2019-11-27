@@ -92,7 +92,7 @@ public class ExamController {
     @RequestMapping(value = "deleteExam")
     @ResponseBody
     public int deleteExam(Integer eId) {
-        int rows =examService.deleteExam(eId);
+        int rows =examService.deleteExamAll(eId);
         return rows;
     }
 

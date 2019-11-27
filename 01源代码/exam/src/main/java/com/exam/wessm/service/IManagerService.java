@@ -72,4 +72,12 @@ public interface IManagerService {
      * @return
      */
     int updateManagerPassword(Manager manager);
+
+    /**
+     * 根据管理员ID删除管理员
+     * @param
+     * @return
+     */
+    int deleteManagerAll(Integer mId);
+
 }

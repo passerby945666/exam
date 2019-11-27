@@ -75,4 +75,14 @@ public class QuebankDaoImpl implements IQuebankDao {
         map.put("qId",qId);
         return quebankMapper.queryQuebankKId(map);
     }
+
+    @Override
+    public int deleteQuebankMId(Integer mId) {
+        return quebankMapper.deleteQuebankMId(mId);
+    }
+
+    @Override
+    public List<Integer> queryQuebankMId(Integer mId) {
+        return quebankMapper.queryQuebankMId(mId);
+    }
 }

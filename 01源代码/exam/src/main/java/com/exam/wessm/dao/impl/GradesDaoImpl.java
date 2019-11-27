@@ -65,4 +65,14 @@ public class GradesDaoImpl implements IGradesDao {
     public int updateGrade(Grades grades) {
         return gradesMapper.updateGrade(grades);
     }
+
+    @Override
+    public int deleteGradeEId(int eId) {
+        return gradesMapper.deleteGradeEId(eId);
+    }
+
+    @Override
+    public int deleteGradeSId(int sId) {
+        return gradesMapper.deleteGradeSId(sId);
+    }
 }

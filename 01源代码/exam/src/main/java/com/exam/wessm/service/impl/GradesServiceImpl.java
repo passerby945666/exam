@@ -90,4 +90,32 @@ public class GradesServiceImpl implements IGradesService {
             return rows;
         }
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteGradeEId(int eId) {
+        int rows=-1;
+        try{
+            rows=gradesDao.deleteGradeEId(eId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteGradeSId(int sId) {
+        int rows=-1;
+        try{
+            rows=gradesDao.deleteGradeSId(sId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
+    }
 }

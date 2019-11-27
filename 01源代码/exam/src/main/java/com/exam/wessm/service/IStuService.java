@@ -101,4 +101,13 @@ public interface IStuService {
      * @return
      */
     List<Map> getAvgnum(Integer kId);
+
+
+    /**
+     * 根据考生ID删除考生
+     * @param    sId  ID号
+     * @return
+     */
+    int deleteStuAll(Integer sId);
+
 }

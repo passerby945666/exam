@@ -71,4 +71,9 @@ public class ExamDaoImpl implements IExamDao {
     public List<Map> queryExamKId(String kId) {
         return examMapper.queryExamKId(kId);
     }
+
+    @Override
+    public List<Integer> queryExamMId(int mId) {
+        return examMapper.queryExamMId(mId);
+    }
 }

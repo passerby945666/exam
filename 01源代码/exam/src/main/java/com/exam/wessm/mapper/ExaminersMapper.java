@@ -51,4 +51,18 @@ public interface ExaminersMapper {
      */
     int updateExaminers(Examiners examiners);
 
+    /**
+     * 根据考试成员Id删除考试成员
+     * @param
+     * @return
+     */
+    int deleteExaminersEId(@Param("e_id")Integer eId);
+
+    /**
+     * 根据考试成员Id删除考试成员
+     * @param
+     * @return
+     */
+    int deleteExaminersSId(@Param("s_id")Integer sId);
+
 }

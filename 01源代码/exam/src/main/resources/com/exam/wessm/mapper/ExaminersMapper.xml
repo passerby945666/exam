@@ -80,4 +80,17 @@
         where   ex_id=#{exId}
      ]]>
     </update>
+    <delete id="deleteExaminersEId" parameterType="int">
+        <![CDATA[
+        delete from examiners
+        where e_id=#{e_id}
+      ]]>
+    </delete>
+    <delete id="deleteExaminersSId" parameterType="int">
+        <![CDATA[
+        delete from examiners
+        where s_id=#{s_id}
+      ]]>
+    </delete>
+
 </mapper>

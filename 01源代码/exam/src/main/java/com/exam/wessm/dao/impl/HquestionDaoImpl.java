@@ -58,4 +58,19 @@ public class HquestionDaoImpl implements IHquestionDao {
     public List<Map> queryHquestionMNo(String mNo) {
         return hquestionMapper.queryHquestionMNo(mNo);
     }
+
+    @Override
+    public int deleteHquestionSId(int sId) {
+        return hquestionMapper.deleteHquestionSId(sId);
+    }
+
+    @Override
+    public int deleteHquestionEId(int eId) {
+        return hquestionMapper.deleteHquestionEId(eId);
+    }
+
+    @Override
+    public int deleteHquestionTId(int tId) {
+        return hquestionMapper.deleteHquestionTId(tId);
+    }
 }

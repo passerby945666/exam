@@ -50,4 +50,14 @@ public class ExaminersDaoImpl implements IExaminersDao {
     public int updateExaminers(Examiners examiners) {
         return examinersMapper.updateExaminers(examiners);
     }
+
+    @Override
+    public int deleteExaminersEId(Integer eId) {
+        return examinersMapper.deleteExaminersEId(eId);
+    }
+
+    @Override
+    public int deleteExaminersSId(Integer sId) {
+        return examinersMapper.deleteExaminersSId(sId);
+    }
 }

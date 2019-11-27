@@ -116,7 +116,7 @@ public class StuController {
     @ResponseBody
     @RequestMapping(value = "deleteStu")
     public  int deleteStu(Integer sId){
-        int rows=stuService.deleteStu(sId);
+        int rows=stuService.deleteStuAll(sId);
         return rows;
     }
 

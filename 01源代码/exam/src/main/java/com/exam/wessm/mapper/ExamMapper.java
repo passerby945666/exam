@@ -82,4 +82,12 @@ public interface ExamMapper {
      * @return
      */
     List<Map> queryExamKId(@Param("k_id") String kId);
+
+  /**
+   *用管理员差考试id
+   *
+   * @param
+   * @return
+   */
+    List<Integer> queryExamMId (@Param("m_id") int mId);
 }

@@ -86,4 +86,12 @@ public interface IExamService {
      */
     List<Map> queryExamKId(String kId);
 
+
+    /**
+     * 根据考试Id删除考试以及所有相关信息
+     * @param
+     * @return
+     */
+    int deleteExamAll(Integer eId);
+
 }

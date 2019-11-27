@@ -65,4 +65,18 @@ public interface IGradesService {
      */
     int updateGrade(Grades grades);
 
+    /**
+     * 根据考试id删除成绩记录
+     * @param
+     * @return
+     */
+    int deleteGradeEId(int eId);
+
+    /**
+     * 根据考生id删除成绩记录
+     * @param
+     * @return
+     */
+    int deleteGradeSId(int sId);
+
 }

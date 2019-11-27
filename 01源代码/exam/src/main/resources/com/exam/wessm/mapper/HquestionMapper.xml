@@ -116,5 +116,31 @@ GROUP BY
 
         ]]>
     </select>
-
+    <delete id="deleteHquestionEId"  parameterType="int" >
+        <![CDATA[
+DELETE
+FROM
+	hquestion
+WHERE
+	e_id = #{e_id};
+        ]]>
+    </delete>
+    <delete id="deleteHquestionSId"  parameterType="int" >
+        <![CDATA[
+DELETE
+FROM
+	hquestion
+WHERE
+	s_id = #{s_id};
+        ]]>
+    </delete>
+<delete id="deleteHquestionTId"  parameterType="int" >
+<![CDATA[
+DELETE
+FROM
+	hquestion
+WHERE
+	t_id = #{t_id};
+        ]]>
+    </delete>
 </mapper>

@@ -78,4 +78,30 @@ public class ExaminersServiceImpl implements IExaminersService {
             return rows;
         }
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteExaminersEId(Integer eId) {
+        int rows=-1;
+        try {
+            rows=examinersDao.deleteExaminersEId(eId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }
+        return rows;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteExaminersSId(Integer sId) {
+        int rows=-1;
+        try {
+            rows=examinersDao.deleteExaminersSId(sId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }
+        return rows;
+    }
 }

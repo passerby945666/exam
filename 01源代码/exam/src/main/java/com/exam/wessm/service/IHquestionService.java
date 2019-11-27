@@ -69,5 +69,26 @@ public interface IHquestionService {
      */
     int updateHquestions(List<Hquestion> list);
 
+    /**
+     * 根据历史考生ID删除记录
+     * @param    sId  ID号
+     * @return
+     */
+    int deleteHquestionSId( int sId);
+
+    /**
+     * 根据考试ID删除记录
+     * @param    eId  ID号
+     * @return
+     */
+    int deleteHquestionEId( int eId);
+
+    /**
+     * 根据考题ID删除记录
+     * @param    tId  ID号
+     * @return
+     */
+    int deleteHquestionTId( int tId);
+
 
 }

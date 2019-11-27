@@ -193,4 +193,14 @@
         where exam.k_id like #{k_id}
         ]]>
     </select>
+    <select id="queryExamMId" resultType="int" parameterType="int">
+        <![CDATA[
+        select
+        e_id as eId
+        from
+            exam
+        where m_id=#{m_id};
+        ]]>
+    </select>
+
 </mapper>

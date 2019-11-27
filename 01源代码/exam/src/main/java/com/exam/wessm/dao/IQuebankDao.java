@@ -3,6 +3,7 @@ package com.exam.wessm.dao;
 import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Quebank;
 import com.exam.wessm.entity.Subject;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -74,4 +75,19 @@ public interface IQuebankDao {
      * @return
      */
     List<Map> queryQuebankKId(String kId,String qId);
+
+
+    /**
+     * 根据题库id删除题库信息
+     * @param
+     * @return
+     */
+    int deleteQuebankMId( Integer mId);
+
+    /**
+     * 根据管理员id查题库id信息
+     * @param
+     * @return
+     */
+    List<Integer> queryQuebankMId(Integer mId);
 }

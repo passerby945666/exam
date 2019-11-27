@@ -75,4 +75,18 @@ public interface IQuebankService {
      * @return
      */
     List<Map> queryQuebankKId(String kId,String qId);
+    /**
+     * 根据题库id删除题库信息,以及相关数据
+     * @param
+     * @return
+     */
+    int deleteQuebankAll(Integer tId);
+
+
+    /**
+     * 根据题库id删除题库信息
+     * @param
+     * @return
+     */
+    int deleteQuebankMId( Integer mId);
 }

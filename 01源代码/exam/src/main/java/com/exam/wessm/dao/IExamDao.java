@@ -84,5 +84,12 @@ public interface IExamDao {
      * @return
      */
     List<Map> queryExamKId(String kId);
+    /**
+     *用管理员差考试id
+     *
+     * @param
+     * @return
+     */
+    List<Integer> queryExamMId (int mId);
 
 }

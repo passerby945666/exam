@@ -73,4 +73,19 @@ public interface QuebankMapper {
      * @return
      */
     List<Map> queryQuebankKId(Map map);
+
+
+    /**
+     * 根据管理员id删除题库信息
+     * @param
+     * @return
+     */
+    int deleteQuebankMId(@Param("m_id") Integer mId);
+
+    /**
+     * 根据管理员id查题库id信息
+     * @param
+     * @return
+     */
+    List<Integer> queryQuebankMId(@Param("m_id")Integer mId);
 }

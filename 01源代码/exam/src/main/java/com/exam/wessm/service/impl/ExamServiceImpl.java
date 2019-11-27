@@ -1,6 +1,9 @@
 package com.exam.wessm.service.impl;
 
 import com.exam.wessm.dao.IExamDao;
+import com.exam.wessm.dao.IExaminersDao;
+import com.exam.wessm.dao.IGradesDao;
+import com.exam.wessm.dao.IHquestionDao;
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Subject;
@@ -20,6 +23,17 @@ public class ExamServiceImpl implements IExamService {
     @Autowired
     @Qualifier("examDao")
     private IExamDao examDao;
+    @Autowired
+    @Qualifier("gradesDao")
+    private IGradesDao gradesDao;
+    @Autowired
+    @Qualifier("examinersDao")
+    private IExaminersDao examinersDao;
+    @Autowired
+    @Qualifier("hquestionDao")
+    private IHquestionDao hquestionDao;
+
+
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
@@ -104,5 +118,23 @@ public class ExamServiceImpl implements IExamService {
     @Transactional(propagation = Propagation.REQUIRED)
     public List<Map> queryExamKId(String kId) {
         return examDao.queryExamKId(kId);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteExamAll(Integer eId) {
+        int rows=-1;
+        try {
+           gradesDao.deleteGradeEId(eId);
+           hquestionDao.deleteHquestionEId(eId);
+           examinersDao.deleteExaminersEId(eId);
+           rows=examDao.deleteExam(eId);
+
+        }catch (Exception e){
+              rows=0;
+              e.printStackTrace();
+        }finally {
+            return rows;
+        }
     }
 }

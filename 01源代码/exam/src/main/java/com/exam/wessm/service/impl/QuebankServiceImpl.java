@@ -1,5 +1,6 @@
 package com.exam.wessm.service.impl;
 
+import com.exam.wessm.dao.IHquestionDao;
 import com.exam.wessm.dao.IQuebankDao;
 import com.exam.wessm.entity.Quebank;
 import com.exam.wessm.service.IQuebankService;
@@ -18,6 +19,9 @@ public class QuebankServiceImpl implements IQuebankService {
     @Autowired
     @Qualifier("quebankDao")
     private IQuebankDao quebankDao;
+    @Autowired
+    @Qualifier("hquestionDao")
+    private IHquestionDao hquestionDao;
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
@@ -95,5 +99,34 @@ public class QuebankServiceImpl implements IQuebankService {
     @Transactional(propagation = Propagation.REQUIRED)
     public List<Map> queryQuebankKId(String kId, String qId) {
         return quebankDao.queryQuebankKId(kId, qId);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteQuebankAll(Integer tId) {
+        int rows=-1;
+        try {
+            hquestionDao.deleteHquestionTId(tId);
+            rows=quebankDao.deleteQuebank(tId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows;
+        }
+    }
+
+    @Override
+    public int deleteQuebankMId(Integer mId) {
+        int rows=-1;
+        try {
+            rows=quebankDao.deleteQuebankMId(mId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }finally {
+            return rows ;
+        }
+
     }
 }

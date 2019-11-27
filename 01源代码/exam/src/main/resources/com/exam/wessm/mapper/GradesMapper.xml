@@ -92,4 +92,12 @@ update grades SET grade=#{grade} where s_id=#{sId} and e_id=#{eId};
 delete from  grades where  g_id=#{g_id};
     </delete>
 
+    <delete id="deleteGradeEId" parameterType="int">
+ delete from  grades where  e_id=#{e_id};
+    </delete>
+
+    <delete id="deleteGradeSId" parameterType="int">
+ delete from  grades where  s_id=#{s_id};
+    </delete>
+
 </mapper>

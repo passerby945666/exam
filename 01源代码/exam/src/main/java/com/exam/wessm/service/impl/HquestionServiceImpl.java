@@ -89,11 +89,52 @@ public class HquestionServiceImpl implements IHquestionService {
     public int updateHquestions(List<Hquestion> list) {
         int rows=-1;
         for(Hquestion hquestion:list){
-               rows=hquestionDao.updateHquestion(hquestion);
-               if(rows!=1){
-                   return 0;
-               }
+            try{
+                rows=hquestionDao.updateHquestion(hquestion);
+                if(rows!=1){
+                    return 0;
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+                return 0;
+            }
            }
         return 1;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteHquestionSId(int sId) {
+        int rows=-1;
+        try {
+            rows=hquestionDao.deleteHquestionSId(sId);
+        }catch (Exception e){
+            rows=0;
+        }
+        return rows;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteHquestionEId(int eId) {
+        int rows=-1;
+        try {
+            rows=hquestionDao.deleteHquestionEId(eId);
+        }catch (Exception e){
+            rows=0;
+        }
+        return rows;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteHquestionTId(int tId) {
+        int rows=-1;
+        try {
+            rows=hquestionDao.deleteHquestionTId(tId);
+        }catch (Exception e){
+            rows=0;
+        }
+        return rows;
     }
 }

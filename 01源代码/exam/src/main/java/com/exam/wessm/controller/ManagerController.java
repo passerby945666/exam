@@ -43,7 +43,7 @@ public class ManagerController {
     @ResponseBody
     @RequestMapping(value = "deleteManager")
     public int  deleteManager(Integer mId) {
-        int rows = managerService.deleteManager(mId);
+        int rows = managerService.deleteManagerAll(mId);
         return  rows;
     }
 

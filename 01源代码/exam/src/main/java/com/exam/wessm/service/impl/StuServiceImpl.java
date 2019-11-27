@@ -1,5 +1,8 @@
 package com.exam.wessm.service.impl;
 
+import com.exam.wessm.dao.IExaminersDao;
+import com.exam.wessm.dao.IGradesDao;
+import com.exam.wessm.dao.IHquestionDao;
 import com.exam.wessm.dao.IStuDao;
 import com.exam.wessm.entity.Stu;
 import com.exam.wessm.service.IStuService;
@@ -17,6 +20,15 @@ public class StuServiceImpl implements IStuService {
     @Autowired
     @Qualifier("stuDao")
     private IStuDao stuDao;
+    @Autowired
+    @Qualifier("gradesDao")
+    private IGradesDao gradesDao;
+    @Autowired
+    @Qualifier("examinersDao")
+    private IExaminersDao examinersDao;
+    @Autowired
+    @Qualifier("hquestionDao")
+    private IHquestionDao hquestionDao;
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
@@ -143,5 +155,20 @@ public class StuServiceImpl implements IStuService {
     @Transactional(propagation = Propagation.REQUIRED)
     public List<Map> getAvgnum(Integer kId) {
         return stuDao.getAvgnum( kId);
+    }
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    @Override
+    public int deleteStuAll(Integer sId) {
+        int rows=-1;
+        try {
+            hquestionDao.deleteHquestionSId(sId);
+            gradesDao.deleteGradeSId(sId);
+            examinersDao.deleteExaminersSId(sId);
+            rows=stuDao.deleteStu(sId);
+        }catch (Exception e){
+            rows=0;
+        }finally {
+            return rows;
+        }
     }
 }

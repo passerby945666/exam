@@ -1,7 +1,6 @@
 package com.exam.wessm.service.impl;
 
-import com.exam.wessm.dao.IExamDao;
-import com.exam.wessm.dao.IManagerDao;
+import com.exam.wessm.dao.*;
 import com.exam.wessm.entity.Exam;
 import com.exam.wessm.entity.Manager;
 import com.exam.wessm.service.IManagerService;
@@ -19,6 +18,21 @@ public class ManagerServiceImpl implements IManagerService {
     @Autowired
     @Qualifier("managerDao")
     private IManagerDao managerDao;
+    @Autowired
+    @Qualifier("examDao")
+    private IExamDao examDao;
+    @Autowired
+    @Qualifier("gradesDao")
+    private IGradesDao gradesDao;
+    @Autowired
+    @Qualifier("examinersDao")
+    private IExaminersDao examinersDao;
+    @Autowired
+    @Qualifier("hquestionDao")
+    private IHquestionDao hquestionDao;
+    @Autowired
+    @Qualifier("quebankDao")
+    private IQuebankDao quebankDao;
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
@@ -111,5 +125,38 @@ public class ManagerServiceImpl implements IManagerService {
         }finally {
             return rows;
         }
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = Exception.class)
+    public int deleteManagerAll(Integer mId) {
+        int rows=-1;
+        try {
+            List<Integer> listExam=examDao.queryExamMId(mId);
+            List<Integer> listQuebank=quebankDao.queryQuebankMId(mId);
+            if(listExam==null){
+                for(Integer eId:listExam){
+                    gradesDao.deleteGradeEId(eId);
+                    hquestionDao.deleteHquestionEId(eId);
+                    examinersDao.deleteExaminersEId(eId);
+                    examDao.deleteExam(eId);
+                }
+            }else {
+                return 0;
+            }
+            if(listQuebank==null){
+                for(Integer tId:listQuebank){
+                    hquestionDao.deleteHquestionTId(tId);
+                    quebankDao.deleteQuebank(tId);
+                }
+            }else {
+                return 0;
+            }
+            rows=managerDao.deleteManager(mId);
+        }catch (Exception e){
+            e.printStackTrace();
+            rows=0;
+        }
+        return rows;
     }
 }

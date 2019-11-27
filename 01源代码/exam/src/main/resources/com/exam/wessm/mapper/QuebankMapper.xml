@@ -182,4 +182,23 @@
         where quebank.k_id like #{kId} and quebank.q_id like #{qId}
         ]]>
     </select>
+
+    <!-- 根据题目ID删除题目记录-->
+    <delete id="deleteQuebankMId" parameterType="int">
+        <![CDATA[
+        delete from quebank
+        where m_id=#{m_id}
+      ]]>
+    </delete>
+
+    <select id="queryQuebankMId" resultType="int" parameterType="int">
+        <![CDATA[
+       select
+        t_id as tId
+
+        from
+            quebank
+        where m_id=#{m_id}
+        ]]>
+    </select>
 </mapper>

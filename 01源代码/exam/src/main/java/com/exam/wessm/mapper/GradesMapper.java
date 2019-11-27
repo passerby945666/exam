@@ -67,6 +67,20 @@ public interface GradesMapper {
      */
     int updateGrade(Grades grades);
 
+    /**
+     * 根据考试id删除成绩记录
+     * @param
+     * @return
+     */
+    int deleteGradeEId(@Param("e_id")int eId);
+
+    /**
+     * 根据考生id删除成绩记录
+     * @param
+     * @return
+     */
+    int deleteGradeSId(@Param("s_id")int sId);
+
 
 
 }
