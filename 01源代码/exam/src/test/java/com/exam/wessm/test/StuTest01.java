@@ -1,6 +1,7 @@
 package com.exam.wessm.test;
 import com.exam.wessm.entity.Stu;
 import com.exam.wessm.service.IStuService;
+import com.exam.wessm.util.examing.examingROM;
 import org.junit.Test;
 import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -101,5 +102,10 @@ public class StuTest01 {
         IStuService stuService = (IStuService) context.getBean("stuService");
         Stu stu=stuService.findNoAndPass("10088","123456");
         System.out.println(stu.toString());
+    }
+    @Test
+    public void sss(){
+        java.util.Date date=new java.util.Date();
+        System.out.println(examingROM.DateToString(date));
     }
 }

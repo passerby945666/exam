@@ -34,7 +34,7 @@
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal" id="form-article-add" action="/exam/insertExam">
+	<form class="form form-horizontal" id="form-article-add" action="/exam/insertExam" method="post">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">考试编号：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -61,20 +61,20 @@
 	<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">报名时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeBaomin">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeBaomin1">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">报名截止时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeEnd">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeEnd1">
 			</div>
 		</div>
 	
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">开考时间：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeBegin">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'commentdatemax\')||\'%y-%M-%d\'}' })"  value="" class="input-text Wdate" name="timeBegin1">
 			</div>
 		</div>
 		<div class="row cl">
@@ -125,17 +125,7 @@ $(function(){
 	});
 
 	//表单验证
-	$("#form-article-add").validate({
-		onkeyup:false,
-		focusCleanup:true,
-		success:"valid",
-		submitHandler:function(form){
-			//$(form).ajaxSubmit();
-			var index = parent.layer.getFrameIndex(window.name);
-			//parent.$('.btn-refresh').click();
-			parent.layer.close(index);
-		}
-	});
+
 });
 </script>
 <!--/请在上方写此页面业务相关的脚本-->

@@ -129,7 +129,7 @@
                                     <textarea style="width: 70%;" name="401" maxlength="500" placeholder="${map.hAnswer}"></textarea>
                                 </div>
                                 <div>
-                                    <textarea style="width: 70%;" name="401" maxlength="500" placeholder=${map. reply}></textarea>
+                                    <textarea style="width: 70%;" name="401" maxlength="500" placeholder="${map.reply}"></textarea>
                                 </div>
                             </div>
                             </c:when>

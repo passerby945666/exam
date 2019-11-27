@@ -23,6 +23,7 @@
         <span style="color:rgb(219,99,48)">服务器返回未知的状态</span>
     </c:otherwise>
 </c:choose>
+<span>${smg}</span>
 <a href="/stu/indexStu.jsp">返回</a>
 </body>
 </html>

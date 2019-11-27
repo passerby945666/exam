@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -126,28 +127,48 @@ public class StuController {
      * @return
      */
     @RequestMapping(value = "insertStu",method = RequestMethod.POST)
-    public String insertStu(Stu stu){
+    public String insertStu(Stu stu,Model model){
         int rows=stuService.insertStu(stu);
         return "redirect:/result.jsp?rows="+rows;
     }
 
     /**
      * 到考生个人信息页面
-     * @param sId
      * @param model
      * @return
      */
     @RequestMapping(value ="getStuSId" )
-    public  String getStuSId(Integer sId,Model model){
-        Stu stu=stuService.getStuSId(sId);
-        stu.setsId(sId);
+    public  String getStuSId(Model model, HttpSession session){
+        Stu stu1=(Stu) session.getAttribute("stuSession");
+        Stu stu=stuService.getStuSId(stu1.getsId());
+        stu.setsId(stu1.getsId());
+        model.addAttribute("date",examingROM.DateToString(stu.getsBirthday()));
         model.addAttribute("stu",stu);
-        model.addAttribute("sId",sId);
+        model.addAttribute("sId",stu1.getsId());
         return "/stu/stumassage.jsp";
     }
 
+
     /**
-     * 到考生信息修改页面
+     * 考生自己跳到信息修改页面
+     * @param
+     * @param model
+     * @return
+     */
+    @RequestMapping(value ="getStumy" )
+    public  String getStumy(Model model,HttpSession session){
+        Stu stu1=(Stu)session.getAttribute("stuSession");
+        Integer sId=stu1.getsId();
+        Stu stu=stuService.getStuSId(sId);
+        stu.setsId(sId);
+        model.addAttribute("date",examingROM.DateToString(stu.getsBirthday()));
+        model.addAttribute("stu",stu);
+        model.addAttribute("sId",sId);
+        return "/stu/upstudent.jsp";
+    }
+
+    /**
+     * 管理员到考生信息修改页面
      * @param sId
      * @param model
      * @return
@@ -156,9 +177,10 @@ public class StuController {
     public  String getStudent(Integer sId,Model model){
         Stu stu=stuService.getStuSId(sId);
         stu.setsId(sId);
+        model.addAttribute("date",examingROM.DateToString(stu.getsBirthday()));
         model.addAttribute("stu",stu);
         model.addAttribute("sId",sId);
-        return "/stu/upstudent.jsp";
+        return "/member-edit.jsp";
     }
     /**
      * 管理员考生信息修改
@@ -166,8 +188,23 @@ public class StuController {
      * @return
      */
     @RequestMapping(value = "updateStu")
-    public String updateStu(Stu stu){
-        int rows=stuService.updateStu(stu);
+    public String updateStu(Stu stu,Model model,String date){
+        int rows=-1;
+        if(stu.getsBirthday()==null&&date!=null){
+            java.util.Date date1=examingROM.StringToDate(date);
+            if(date1!=null){
+                stu.setsBirthday(date1);
+                rows=stuService.updateStuM(stu);
+            }else {
+                rows=0;
+                model.addAttribute("smg","日期格式输入有误,例：1970-01-01");
+            }
+
+        }else if(stu.getsBirthday()!=null){
+            rows=stuService.updateStuM(stu);
+        }else {
+            model.addAttribute("smg","原日期与输入日期都为空");
+        }
         return "redirect:/result.jsp?rows="+rows;
     }
 
@@ -178,8 +215,23 @@ public class StuController {
      * @return
      */
     @RequestMapping(value = "updateStuM")
-    public String updateStuM(Stu stu){
-        int rows=stuService.updateStuM(stu);
+    public String updateStuM(Stu stu,String date,Model model){
+        int rows=-1;
+        if(stu.getsBirthday()==null&&date!=null){
+            java.util.Date date1=examingROM.StringToDate(date);
+            if(date1!=null){
+                stu.setsBirthday(date1);
+                rows=stuService.updateStuM(stu);
+            }else {
+                rows=0;
+                model.addAttribute("smg","日期格式输入有误,例：1970-01-01");
+            }
+
+        }else if(stu.getsBirthday()!=null){
+            rows=stuService.updateStuM(stu);
+        }else {
+            model.addAttribute("smg","原日期与输入日期都为空");
+        }
         return "redirect:/result.jsp?rows="+rows;
     }
 

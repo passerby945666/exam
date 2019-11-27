@@ -23,6 +23,7 @@
         <span style="color:rgb(219,99,48)">服务器异常</span>
     </c:otherwise>
 </c:choose>
+<span>${smg}</span>
 <a href="/welcome.jsp">返回欢迎页面</a>
 </body>
 </html>

@@ -17,7 +17,7 @@
 </head>
 <body>
 <div>
-    <form action="/stu/getStudent">
+    <form action="/stu/getStumy">
 <c:choose>
     <c:when test="${stu==null}"><span>查询个人信息发生异常</span></c:when>
     <c:when test="${empty  stu} "><span>没查到数据</span></c:when>
@@ -55,6 +55,7 @@
             <div style="width:40%;float: left;">
                 <input type="button" readonly="readonly" style="width: 40%;" value="出生年月" />
                 <input type="text" readonly="readonly" style="width: 55%;background-color:#ECECEC;" value="${stu.sBirthday}"/>
+                <span>${date}</span>
             </div>
             <div style="width:40%;float: left;margin-bottom: 20px;margin-left: 50px;">
                 <input type="hidden" value="${sId}"  name="sId" />

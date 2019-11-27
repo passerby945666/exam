@@ -2,6 +2,7 @@ package com.exam.wessm.controller;
 
 import com.exam.wessm.entity.Manager;
 import com.exam.wessm.service.IManagerService;
+import com.exam.wessm.util.examing.examingROM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -74,6 +75,7 @@ public class ManagerController {
  @RequestMapping(value = "getManagerMId")
  public String getManagerMId(Integer mId,Model model){
      Manager admin =managerService.getManagerMId(mId);
+     model.addAttribute("date", examingROM.DateToString(admin.getmBirthday()));
      model.addAttribute("admin",admin);
      model.addAttribute("mId",mId);
      return  "/admin-edit.jsp";
@@ -87,8 +89,21 @@ public class ManagerController {
      * @return
      */
     @RequestMapping(value = "updateManager")
-    public String updateManager(Manager manager) {
-        int rows = managerService.updateManager(manager);
+    public String updateManager(Manager manager,String date,Model model) {
+        int rows=-1;
+        if(manager.getmBirthday()!=null){
+            rows = managerService.updateManager(manager);
+        }else if(manager.getmBirthday()==null&&date!=null){
+            java.util.Date date1=examingROM.StringToDate(date);
+            if(date1!=null){
+                manager.setmBirthday(date1);
+                rows = managerService.updateManager(manager);
+            }else {
+                rows=0;
+            }
+        }else {
+            model.addAttribute("smg","原日期与输入日期都不规范");
+        }
         return "redirect:/result.jsp?rows="+rows;
     }
 

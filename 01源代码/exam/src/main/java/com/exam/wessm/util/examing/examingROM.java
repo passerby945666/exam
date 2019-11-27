@@ -3,6 +3,8 @@ package com.exam.wessm.util.examing;
 import com.exam.wessm.entity.Manager;
 import com.exam.wessm.entity.Stu;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -103,5 +105,60 @@ public  class  examingROM {
         return null;
     }
 
+    /**4个时间与字符串转换
+     *
+     * @param date
+     * @return
+     */
+    public static String DatetimeToString(Date date){
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String string=simpleDateFormat.format(date);
+       return string;
+    }
+    public static Date StringToDatetime(String str){
+        Date date=null;
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            date=simpleDateFormat.parse(str);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            return date;
+        }
+    }
+    public static String DateToString(Date date){
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+        String string=simpleDateFormat.format(date);
+        return string;
+    }
+    public static Date StringToDate(String str){
+        Date date=null;
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            date=simpleDateFormat.parse(str);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            return date;
+        }
+    }
+
+    /**
+     * 判断考试时长是否合法
+     * @param str
+     * @return
+     */
+    public static int timeTest01(String str){
+        int re=-1;
+        try {
+            re=Integer.valueOf(str);
+
+        }catch (Exception e){
+            e.printStackTrace();
+            re=0;
+        }finally {
+            return re;
+        }
+    }
 
 }
